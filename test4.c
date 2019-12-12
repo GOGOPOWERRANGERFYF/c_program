@@ -170,7 +170,7 @@ void unsigned_int_operation(void)
 {
     short unsigned int us1 = 10, us2 = 20, result;
 
-    result = us1 - us2;
+    result = us1 - us2; //无符号数一般不这样用,这里只是验证一下无符号数的编码储存
 
     printf("Wrong result:%hu,Right result:%hd,Right result:%hu\n", result, result, us1 + us2);
     return;
