@@ -19,7 +19,7 @@ int main(void)
     float f,n,value;
     float m = 3.14e-3;
 
-    /* short long unsigned 附属关键字 */
+    /* short long unsigned 附属关键字 《c primer plus》P125 */
     /* short = short int, long = long int, unsigned = unsighed int */
     /* unsighed 无符号类型. int,float,double默认其实都是有符号类型signed */
     short s;
