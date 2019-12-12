@@ -1,4 +1,6 @@
 #include <stdio.h>
+//c库中的文件<limits.h>定义了一组常量,用来限定编译器complier运行的这台机器的整型数据类型的取值范围
+#include <limits.h> 
 //预备知识:
 //+1元:我有1元钱; -1元:我欠某人1块钱,也可以说我有-1元钱...
 //1-2= 怎么得到结果-1
@@ -120,6 +122,8 @@
 //所以他们一共有多少钱?有上面B2T(11)函数可得结果
 //
 
+void limits_head_constants(void); //函数声明,function declaration
+
 int main(void)
 {
     short int  x,s,a = 6,b = -7;
@@ -143,10 +147,16 @@ int main(void)
     printf("\x41 \077\n"); //转移序列 \xhh十六进制
     printf("what is you name\" \n");
     printf("%hx\n", 1-2);
+    limits_head_constants();
     return 0;
 }
 
-
+void limits_head_constants(void)
+{
+    printf("int Max:%d\n", INT_MAX);
+    printf("unsigned int Max:%u\n", UINT_MAX);
+    return;
+}
 
 
 
