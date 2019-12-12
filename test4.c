@@ -172,7 +172,9 @@ void unsigned_int_operation(void)
 
     result = us1 - us2; //无符号数一般不这样用,这里只是验证一下无符号数的编码储存
     //本质是位向量的运算(bit vector),加上模和补数的知识,转换说明相当于"function",最后得到(映射到)结果,
-    //映射到啥就是啥了~
+    //映射到啥就是啥了~ 
+    //B2T[w](x) 二进制数 to(映射) 二补数(补码), 
+    //二进制数运算后的结果 映射 到的补数 = 真值(补码的巧妙之处,当然前提是补数和运算结果没有溢出)
     printf("Wrong result:%hu,Right result:%hd,Right result:%hu\n", result, result, us1 + us2);
     return;
 }
