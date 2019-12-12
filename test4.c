@@ -154,6 +154,7 @@ int main(void)
 void limits_head_constants(void)
 {
     printf("int Max:%d\n", INT_MAX);
+    printf("int Min:%d\n", INT_MIN);
     printf("unsigned int Max:%u\n", UINT_MAX);
     return;
 }
