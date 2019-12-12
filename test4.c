@@ -121,9 +121,13 @@
 //我个人的理解->有两个人,拥有1块钱的有一人,欠债2块钱的有一人,补码11,数位0的权值为1,数位1的权值为-2,
 //所以他们一共有多少钱?有上面B2T(11)函数可得结果
 //
-//原码(sign magnitude) 补码(two's complement) 反码(one's complement)
-
+//unsigned encodings 无符号数编码
+//原码(sign magnitude) 补码(two's complement) 反码(one's complement) 都是机器数,
+//机器数所对应的真正数值,称真值
+//
+//
 void limits_head_constants(void); //函数声明,function declaration
+void unsigned_int_operation(void);
 
 int main(void)
 {
@@ -148,7 +152,9 @@ int main(void)
     printf("\x41 \077\n"); //转移序列 \xhh十六进制
     printf("what is you name\" \n");
     printf("%hx\n", 1-2);
+    
     limits_head_constants();
+    unsigned_int_operation();
     return 0;
 }
 
@@ -159,6 +165,21 @@ void limits_head_constants(void)
     printf("unsigned int Max:%u\n", UINT_MAX);
     return;
 }
+
+void unsigned_int_operation(void)
+{
+    short unsigned int us1 = 10, us2 = 20, result;
+
+    result = us1 - us2;
+
+    printf("Wrong result:%hu,Right result:%hd,Right result:%hu\n", result, result, us1 + us2);
+    return;
+}
+
+
+
+
+
 
 
 
