@@ -122,7 +122,7 @@
 //所以他们一共有多少钱?有上面B2T(11)函数可得结果
 //
 //unsigned encodings 无符号数编码
-//原码(sign magnitude) 补码(two's complement) 反码(one's complement) 都是机器数,
+//原码(sign符号 magnitude大小) 补码(two's complement) 反码(one's complement) 都是机器数,
 //机器数所对应的真正数值,称真值
 //
 // binary    unsigned    sign magnitude    one's complement    two's complement
@@ -136,6 +136,7 @@
 //  111        7              -3               -0                  -1
 //
 //附注: 10补数,9补数 2补数(two's complement),1补数(one's complement)的概念,知乎收藏夹[数字电路设计-第二讲]
+//      理解末端进位,可以判断 被减数和减数 之间的大小
 //
 void limits_head_constants(void); //函数声明,function declaration
 void unsigned_int_operation(void);
