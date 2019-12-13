@@ -173,8 +173,13 @@ void unsigned_int_operation(void)
     result = us1 - us2; //无符号数一般不这样用,这里只是验证一下无符号数的编码储存
     //本质是位向量的运算(bit vector),加上模和补数的知识,转换说明相当于"function",最后得到(映射到真值)结果,
     //映射到啥就是啥了~ 
-    //B2T[w](x:bit vector) {二进制数binary to 二补数(补码)two's complement} =映射--> 有符号整数(真值)
+
+    //数学术语双射,《深入理解计算机系统》(原书第三版)P44 无符号数编码,补码编码的唯一性
     //B2U[w](x:bit vector) {二进制数binary to 无符号数编码unsigned encodings} =映射--> 无符号整数(真值)
+    //U2B[w](x:decimal value) {二补数(补码)two's complement to 二进制数binary } =反射--> 二进制数(补码表示)
+
+    //B2T[w](x:bit vector) {二进制数binary to 二补数(补码)two's complement} =映射--> 有符号整数(真值)
+    //T2B[w](x:decimal value) {二补数(补码)two's complement to 二进制数binary } =反射--> 二进制数(补码表示)
     printf("Wrong result:%hu,Right result:%hd,Right result:%hu\n", result, result, us1 + us2);
     return;
 }
