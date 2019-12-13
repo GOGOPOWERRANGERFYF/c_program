@@ -125,6 +125,15 @@
 //原码(sign magnitude) 补码(two's complement) 反码(one's complement) 都是机器数,
 //机器数所对应的真正数值,称真值
 //
+// binary    unsigned    sign magnitude    one's complement    two's complement
+//  000        0               0                0                   0
+//  001        1               1                1                   1
+//  010        2               2                2                   2
+//  011        3               3                3                   3
+//  100        4              -0               -3                  -4
+//  101        5              -1               -2                  -3
+//  110        6              -2               -1                  -2
+//  111        7              -3               -0                  -1
 //
 void limits_head_constants(void); //函数声明,function declaration
 void unsigned_int_operation(void);
@@ -177,9 +186,9 @@ void unsigned_int_operation(void)
     //数学术语双射,《深入理解计算机系统》(原书第三版)P44 无符号数编码,补码编码的唯一性
     //个人心得:w(字长:计算机分配的数据存储长度)一样的情况下,binary都一样,只是映射到不同的真值,
     //         映射到unsigned,反射回binary,这个binary就是unsigned encodings；
-    //         映射到two's complement，反射回binary,这个binary就是补码编码
+    //         映射到two's complement number，反射回binary,这个binary就是补码编码
     //注:个人心得未必正确,只是目前个人的理解.
-    
+
     //B2U[w](x:bit vector) {二进制数binary to 无符号数编码unsigned encodings} =映射--> 无符号整数(真值)
     //U2B[w](x:decimal value) {二补数(补码)two's complement to 二进制数binary } =反射--> 二进制数(补码表示)
 
