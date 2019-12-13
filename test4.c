@@ -137,7 +137,7 @@
 //
 //附注: 10补数,9补数 2补数(two's complement),1补数(one's complement)的概念,知乎收藏夹[数字电路设计-第二讲]
 //      理解末端进位,可以判断 被减数和减数 之间的大小
-//
+//      two's complement 001和111为一对二补数,分别映射有符号整数1和-1
 void limits_head_constants(void); //函数声明,function declaration
 void unsigned_int_operation(void);
 
