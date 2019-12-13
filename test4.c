@@ -135,6 +135,8 @@
 //  110        6              -2               -1                  -2
 //  111        7              -3               -0                  -1
 //
+//附注: 10补数,9补数 2补数(two's complement),1补数(one's complement)的概念,知乎收藏夹[数字电路设计-第二讲]
+//
 void limits_head_constants(void); //函数声明,function declaration
 void unsigned_int_operation(void);
 
