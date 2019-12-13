@@ -169,12 +169,17 @@ void limits_head_constants(void)
 void unsigned_int_operation(void)
 {
     short unsigned int us1 = 10, us2 = 20, result;
-
-    result = us1 - us2; //无符号数一般不这样用,这里只是验证一下无符号数的编码储存
+    //无符号数一般不这样用,这里只是验证一下无符号数的编码储存
+    result = us1 - us2; 
     //本质是位向量的运算(bit vector),加上模和补数的知识,转换说明相当于"function",最后得到(映射到真值)结果,
     //映射到啥就是啥了~ 
 
     //数学术语双射,《深入理解计算机系统》(原书第三版)P44 无符号数编码,补码编码的唯一性
+    //个人心得:w(字长:计算机分配的数据存储长度)一样的情况下,binary都一样,只是映射到不同的真值,
+    //         映射到unsigned,反射回binary,这个binary就是unsigned encodings；
+    //         映射到two's complement，反射回binary,这个binary就是补码编码
+    //注:个人心得未必正确,只是目前个人的理解.
+    
     //B2U[w](x:bit vector) {二进制数binary to 无符号数编码unsigned encodings} =映射--> 无符号整数(真值)
     //U2B[w](x:decimal value) {二补数(补码)two's complement to 二进制数binary } =反射--> 二进制数(补码表示)
 
