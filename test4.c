@@ -138,6 +138,23 @@
 //附注: 10补数,9补数 2补数(two's complement),1补数(one's complement)的概念,知乎收藏夹[数字电路设计-第二讲]
 //      理解末端进位,可以判断 被减数和减数 之间的大小
 //      two's complement 001和111为一对二补数,分别映射有符号整数1和-1
+//
+//20191114暂时小结:
+//     位向量(bit vector) --(函数function)[映射map]--> 真值    (位向量和真值一一对应,唯一性)
+//     
+//     sign magnitude(符号+大小,国内所谓的原码,这翻译不直观):
+//        真值encode成sign magnitude--映射-->位向量,反之,位向量=sign magnitude--[映射]-->真值
+//     
+//     one's complement(国内译反码现在的机器基本都用two's complement了,这里就不展开了,理解什么是9补数和1补数就行了)
+//    
+//     two's complement(二补数,国内译补码):
+//        真值encode成two's complement--映射-->位向量,反之,位向量=two's complement--[映射]-->真值
+//        two's complement 001和111互为二补数,分别映射有符号整数1和-1
+//
+//     two's complemnt的加减法,本质就是位向量的模运算(详情阅读上面模运算的笔记)
+//        二补数(补码)的运算结果正确,是位向量模运算后的余数映射到的真值结果与真值运算的结果相同,
+//        当然前提是参与运算的数和结果要在补码映射的范围内,不然发生溢出,结果错误
+//             
 void limits_head_constants(void); //函数声明,function declaration
 void unsigned_int_operation(void);
 
