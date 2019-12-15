@@ -111,6 +111,7 @@ int main(void)
     printf("Size of float variable:%d.\n", sizeof(f1));
     //char constant(字符常量)与int constant(整数常量一样),占4个字节
     //float constant(浮点数常量)为double float(双精度浮点型), 占8个字节.
+    //编译器默认假定浮点数常量为double型,8个字节，64位
     printf("Size of float constant:%d.\n", sizeof(111.1));
     printf("Size of double constant:%d.\n", sizeof(111.11111111));
     printf("Size of dobule variable:%d.\n", sizeof(d1));
