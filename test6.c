@@ -127,7 +127,7 @@ int main(void)
     //浮点数常量后面加l(L小写)或L,则编译器会看作long double类型,建议加L,小写L跟1(阿拉伯数字一)太像了。。。
     //suffix:后缀
     printf("Size of float/double/long double constant(no suffix):%d,%d,%d.\n", \
-        sizeof(111.111111), sizeof(111.1111111111), sizeof(111.1111111111111));
+        sizeof(111.111111), sizeof(111.1111111111e-2), sizeof(111.1111111111111));
     printf("Size of float constant(have suffix f or F):%d.\n", sizeof(111.11F));
     printf("Size of long double constant(have suffix L):%d.\n", sizeof(111.11L));
     printf("Size of float variable:%d.\n", sizeof(f1));
