@@ -105,7 +105,7 @@ int main(void)
     //exponent 指数计数法中的指数 指数计数法 1.334e10、2.14e-3
     //实数的两种格式,在C语言中可以像下面=后面那样这样省略:
     //decimal notation 11.11, 0.11=.11, 11.0=11 
-    //exponential notation 1.23e2, 0.23e4=.23e4, 23.0e4=23e4, 19.11e-1=19.11
+    //exponential notation 1.23e2, 0.23e4=.23e4, 23.0e4=23e4, 19.11e-1=19.11 
     float f1 = 1e6, f2 = .001234, f3 = 123, f4 = 666.666;
     double d1, d2 = 666.666;
     long double ld1, ld2 = 6.6666666;
