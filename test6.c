@@ -103,14 +103,17 @@ int main(void)
 {
     //power 幂 科学计数法 1*10^8、2.234*10^6
     //exponent 指数计数法中的指数 指数计数法 1.334e10、2.14e-3
-    float f1 = 1e6, f2 = .001234, f3 = 123., f4 = 666.666;
+    //实数的两种格式,在C语言中可以像下面=后面那样这样省略:
+    //decimal notation 11.11, 0.11=.11, 11.0=11 
+    //exponential notation 1.23e2, 0.23e4=.23e4, 23.0e4=23e4, 19.11e-1=19.11
+    float f1 = 1e6, f2 = .001234, f3 = 123, f4 = 666.666;
     double d1, d2 = 666.666;
     long double ld1, ld2 = 6.6666666;
     //format specifier:格式说明符(c primer plus中文版翻转换说明,我觉得格式说明符更好)
     //format specifier example: %d %f...
     //decimal notation 十进制计数法 notation 记号,符号
     //exponential notation 指数计数法,e指数计数,
-    printf("These is decimal notation float: %f, %f, %f, %f.\n", f1, f2, f3, f4);
+    printf("These is decimal notation float: %f, %f, %f, %f,.\n", f1, f2, f3, f4);
     printf("These is decimal notation double: %f, %f.\n", d1, d2);
     printf("These is exponential notation float: %e, %e, %e, %e.\n", f1, f2, f3, f4);
     printf("These is exponetial notation double: %e, %e.\n\n", d1, d2);
