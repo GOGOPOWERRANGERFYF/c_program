@@ -105,10 +105,17 @@ int main(void)
     //exponent 指数计数法中的指数 指数计数法 1.334e10、2.14e-3
     float f1 = 1e6, f2 = .001234, f3 = 123., f4 = 666.666;
     double d1, d2 = 666.666;
-    long double ld1, ld2 = 666.666;
-
-    printf("This is float:%f,%f,%f,%f.\n", f1, f2, f3, f4);
-    printf("Size of float variable:%d.\n", sizeof(f1));
+    long double ld1, ld2 = 6.6666666;
+    //format specifier:格式说明符(c primer plus中文版翻转换说明,我觉得格式说明符更好)
+    //format specifier example: %d %f...
+    //decimal notation 十进制计数法 notation 记号,符号
+    //exponential notation 指数计数法,e指数计数,
+    printf("These is decimal notation float: %f, %f, %f, %f.\n", f1, f2, f3, f4);
+    printf("These is decimal notation double: %f, %f.\n", d1, d2);
+    printf("These is exponential notation float: %e, %e, %e, %e.\n", f1, f2, f3, f4);
+    printf("These is exponetial notation double: %e, %e.\n\n", d1, d2);
+    printf("These is decimal notation long double: %Lf, %Lf.\n", ld1, ld2);
+    printf("These is exponetial notation long double: %Le, %Le.\n\n", ld1, ld2);
     //float有效为最少6位,double有效位至少10位,long double有效位至少13位,有效位就是小数点后保留的位数
     //char constant(字符常量)与int constant(整数常量一样),占4个字节
     //编译器默认假定浮点数常量为double型,8个字节，64位,想要float或long double constant的在后面加suffix后缀
@@ -118,8 +125,9 @@ int main(void)
     printf("Size of float/double/long double constant(no suffix):%d,%d,%d.\n", \
         sizeof(111.111111), sizeof(111.1111111111), sizeof(111.1111111111111));
     printf("Size of float constant(have suffix f or F):%d.\n", sizeof(111.11F));
-    printf("Size of dobule variable:%d.\n", sizeof(d1));
     printf("Size of long double constant(have suffix L):%d.\n", sizeof(111.11L));
+    printf("Size of float variable:%d.\n", sizeof(f1));
+    printf("Size of dobule variable:%d.\n", sizeof(d1));
     printf("Size of long dobule variable:%d.\n", sizeof(ld1));
     //printf("This is double:%.10f\n", d2);
     //printf("This is long double:%.20Lf\n", ld2);
