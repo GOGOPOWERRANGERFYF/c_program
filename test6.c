@@ -114,7 +114,7 @@ int main(void)
     printf("These is decimal notation double: %f, %f.\n", d1, d2);
     printf("These is exponential notation float: %e, %e, %e, %e.\n", f1, f2, f3, f4);
     printf("These is exponetial notation double: %e, %e.\n\n", d1, d2);
-    //windows下用gcc编译(8.1.0),long double存在问题(网上说的,我linux系统删了,没法验证,但现在在windows7下确实输出结果有问题)
+    //*注意:windows下用gcc编译(8.1.0),long double存在问题(网上说的,我linux系统删了,没法验证,但现在在windows7下确实输出结果有问题)
     printf("These is decimal notation long double: %Lf, %Lf.\n", ld1, ld2);
     printf("These is exponetial notation long double: %Le, %Le.\n\n", ld1, ld2);
     //float有效为最少6位,double有效位至少10位,long double有效位至少13位,有效位就是小数点后保留的位数
