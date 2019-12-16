@@ -161,17 +161,9 @@ int main(void)
     printf("Size of long dobule variable:%d.\n", sizeof(ld1));
     //printf("This is double:%.10f\n", d2);
     //printf("This is long double:%.20Lf\n", ld2);
+    printf("%a\n", 5.5F); //%a format specifier,以16进制hexadecimal指数形式输出浮点数
     return 0;
 }
-
-
-
-
-
-
-
-
-
 
 
 
