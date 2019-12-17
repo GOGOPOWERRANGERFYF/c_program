@@ -150,7 +150,8 @@
 //     sign magnitude(符号+大小,国内所谓的原码,这翻译不直观):
 //        真值encode成sign magnitude--映射-->位向量,反之,位向量=sign magnitude--[映射]-->真值
 //     
-//     one's complement(国内译反码现在的机器基本都用two's complement了,这里就不展开了,理解什么是9补数和1补数就行了)
+//     one's complement(国内译反码现在的机器基本都用two's complement了,这里就不展开了,理解什么是9补数和1补数就行了,
+//                        需特别注意,0的10补数是0,而不是套公式所得到的值)
 //    
 //     two's complement(二补数,国内译补码):
 //        真值encode成two's complement--映射-->位向量,反之,位向量=two's complement--[映射]-->真值
