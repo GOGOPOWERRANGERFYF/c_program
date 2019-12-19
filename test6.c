@@ -135,7 +135,14 @@
 //没事~接下来直接看下面这个正浮点数的表~哈哈哈哈哈哈哈哈 
 //
 //正浮点数: 1) 这里的f表示小数部分,小数=整数部分.小数部分
-//         2) b(bias)=2^(3-1)-1=3
+//         2) 下表中 假设指数字段3bit,尾数字段2bit,符号位不说也知道是1bit吧
+//                     sign  exponent  mantissa    word
+//             float   1bit   8bit      23bit   4byte 32bit
+//             double  1bit  11bit      52bit   8byte 64bit
+//         3) b(bias偏置量)=2^(3-1)-1=3
+//                      bias(binary)                        bias(decimal)
+//             float   1000 0000 - 0000 0001=0111 1111     1*2^7 - 1 = 127  
+//             double  同上,位数填满到11位                   1*2^10 - 1 = 1023
 //     -------位表示bit representation--------             
 //     sign[S]   exponent[E]    mantissa[M]       [S]  [E]decimal--fraction  [M]mantissa [true value]
 //   非规格数---------------------------------           e  E=(1-b)   2^E     binary      binary *decimal
