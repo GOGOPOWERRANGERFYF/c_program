@@ -277,6 +277,8 @@ int main(void)
     printf("float Min(hexadecimal): %a\n", -3.4e38);
     printf("float Max(hexadecimal): %a\n", 3.4e38);
     printf("float Min(hexadecimal): %a\n", -3.4e38);
+    printf("float Max(decimal): %f\n", 3.4e38);
+    printf("float Min(decimal): %f\n", -3.4e38);
     //infinity 无穷,无限
     printf("float +infinity(hexadecimal): %a\n", f_infinity=3.4e39);
     printf("float +infinity(hexadecimal): %a\n", f_infinity=3.5e38);
