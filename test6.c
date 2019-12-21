@@ -110,9 +110,17 @@
 //float(单精度浮点型): 0      0000 0001   0000 0000 0000 0000 0000 000   最小规格化数  
 //  二进制表示: value(binary)   = 1.0000 0000 0000 0000 000 * 10^(1-0111 1111)   excess_127=bias=127(decimal)=0111 1111(binary)
 //                             = 1.0000 0000 0000 0000 000 * 10^(-0111 1110)
-//  十进制表示: value(decimal)  = 1 * 2^(-126)
+//  十进制表示: value(decimal)  = 1*2^0 * 2^(-126) = 2^-126
 //                             = 1/2^126
 //                             ≈ 1.2 * 10^-38
+//
+//                    sign   exponent    mantissa
+//float(单精度浮点型): 0      1111 1110   1111 1111 1111 1111 1111 111   最大规格化数  
+//  二进制表示: value(binary)   = 1.1111 1111 1111 1111 1111 111 * 10^(1111 1110-0111 1111)   excess_127=bias=127(decimal)=0111 1111(binary)
+//                             = 1.1111 1111 1111 1111 1111 111 * 10^(0111 1111)
+//  十进制表示: value(decimal)  = 1 * 2^(127)
+//                             = 
+//                             ≈ 
 //-----------------------------------------------------------------------------------
 // 6.75(10) >> 110.11(2)
 // 科学计数法  十进制 123.456*10^2(10) 1.23456*10^4(10) 0.123456*10^5(10)
@@ -233,7 +241,7 @@ int main(void)
     //实数的两种格式,在C语言中可以像下面=后面那样这样省略:
     //decimal notation 11.11, 0.11=.11, 11.0=11 
     //exponential notation 1.23e2, 0.23e4=.23e4, 23.0e4=23e4, 19.11e-1=19.11 
-    float f1 = 1e6, f2 = .001234, f3 = 123, f4 = 666.666;
+    float f1 = 1e6, f2 = .001234, f3 = 123, f4 = 666.666, f_infinity, f_min;
     double d1, d2 = 666.666;
     long double ld1, ld2 = 6.6666666;
     //format specifier:格式说明符(c primer plus中文版翻转换说明,我觉得格式说明符更好)
@@ -253,17 +261,27 @@ int main(void)
     //浮点数常量后面加f或F,编译器会把这个浮点数常量看作float类型
     //浮点数常量后面加l(L小写)或L,则编译器会看作long double类型,建议加L,小写L跟1(阿拉伯数字一)太像了。。。
     //suffix:后缀
-    printf("Size of float/double/long double constant(no suffix):%d,%d,%d.\n", \
+    printf("Size of float/double/long double constant(no suffix): %d,%d,%d.\n", \
         sizeof(111.111111), sizeof(111.1111111111e-2), sizeof(111.1111111111111));
-    printf("Size of float constant(have suffix f or F):%d.\n", sizeof(111.11F));
-    printf("Size of long double constant(have suffix L):%d.\n", sizeof(111.11L));
-    printf("Size of float variable:%d.\n", sizeof(f1));
-    printf("Size of dobule variable:%d.\n", sizeof(d1));
-    printf("Size of long dobule variable:%d.\n", sizeof(ld1));
+    printf("Size of float constant(have suffix f or F): %d.\n", sizeof(111.11F));
+    printf("Size of long double constant(have suffix L): %d.\n", sizeof(111.11L));
+    printf("Size of float variable: %d.\n", sizeof(f1));
+    printf("Size of dobule variable: %d.\n", sizeof(d1));
+    printf("Size of long dobule variable: %d.\n", sizeof(ld1));
     //printf("This is double:%.10f\n", d2);
     //printf("This is long double:%.20Lf\n", ld2);
-    printf("%a\n", 5.5F); //%a format specifier,以16进制hexadecimal指数形式输出浮点数
-    printf("%a\n", 1e-38F);
+    printf("float (hexadecimal): %a\n", 5.5F); //%a format specifier,以16进制hexadecimal指数形式输出浮点数
+    printf("float (hexadecimal): %a\n", 1e-38F);
+    printf("float Max(decimal): %f\n", 3.4e38);
+    printf("float Max(hexadecimal): %a\n", 3.4e38);
+    printf("float Min(hexadecimal): %a\n", -3.4e38);
+    printf("float Max(hexadecimal): %a\n", 3.4e38);
+    printf("float Min(hexadecimal): %a\n", -3.4e38);
+    //infinity 无穷,无限
+    printf("float +infinity(hexadecimal): %a\n", f_infinity=3.4e39);
+    printf("float +infinity(hexadecimal): %a\n", f_infinity=3.5e38);
+    printf("float -infinity(hexadecimal): %a\n", f_infinity=-3.4e39);
+    printf("float -infinity(hexadecimal): %a\n", f_infinity=-3.5e38);
     return 0;
 }
 
