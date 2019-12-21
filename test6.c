@@ -241,7 +241,7 @@ int main(void)
     //实数的两种格式,在C语言中可以像下面=后面那样这样省略:
     //decimal notation 11.11, 0.11=.11, 11.0=11 
     //exponential notation 1.23e2, 0.23e4=.23e4, 23.0e4=23e4, 19.11e-1=19.11 
-    float f1 = 1e6, f2 = .001234, f3 = 123, f4 = 666.666, f_infinity, f_min;
+    float f1 = 1e6, f2 = .001234, f3 = 123, f4 = 666.666, f_var, f_infinity, f_min;
     double d1, d2 = 666.666;
     long double ld1, ld2 = 6.6666666;
     //format specifier:格式说明符(c primer plus中文版翻转换说明,我觉得格式说明符更好)
@@ -257,7 +257,7 @@ int main(void)
     printf("These is exponetial notation long double: %Le, %Le.\n\n", ld1, ld2);
     //float有效为最少6位,double有效位至少10位,long double有效位至少13位,有效位就是小数点后保留的位数
     //char constant(字符常量)与int constant(整数常量一样),占4个字节
-    //编译器默认假定浮点数常量为double型,8个字节，64位,想要float或long double constant的在后面加suffix后缀
+    //*编译器默认假定浮点数常量为double型,8个字节，64位,想要float或long double constant的在后面加suffix后缀
     //浮点数常量后面加f或F,编译器会把这个浮点数常量看作float类型
     //浮点数常量后面加l(L小写)或L,则编译器会看作long double类型,建议加L,小写L跟1(阿拉伯数字一)太像了。。。
     //suffix:后缀
@@ -270,14 +270,14 @@ int main(void)
     printf("Size of long dobule variable: %d.\n", sizeof(ld1));
     //printf("This is double:%.10f\n", d2);
     //printf("This is long double:%.20Lf\n", ld2);
-    printf("float (hexadecimal): %a\n", 5.5F); //%a format specifier,以16进制hexadecimal指数形式输出浮点数
-    printf("float (hexadecimal): %a\n", 1e-38F);
-    printf("float Max(hexadecimal,(mantissa)16*(10)16^E): %a\n", 3.4e38);
-    printf("float Min(hexadecimal): %a\n", -3.4e38);
-    printf("float Max(hexadecimal): %a\n", 3.4e38);
-    printf("float Min(hexadecimal): %a\n", -3.4e38);
-    printf("float Max(decimal): %f\n", 3.4e38);
-    printf("float Min(decimal): %f\n", -3.4e38);
+    printf("float (hexadecimal): %a\n", f_var=5.5F); //%a format specifier,以16进制hexadecimal指数形式输出浮点数
+    printf("float (hexadecimal): %a\n", f_var=1e-38F);
+    printf("float Max(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_var=3.4e38);
+    printf("float Min(hexadecimal): %a\n", f_var=-3.4e38);
+    printf("float Max(hexadecimal): %a\n", f_var=3.4e38);
+    printf("float Min(hexadecimal): %a\n", f_var=-3.4e38);
+    printf("float Max(decimal): %f\n", f_var=3.4e38);
+    printf("float Min(decimal): %f\n", f_var=-3.4e38);
     //infinity 无穷,无限
     printf("float +infinity(hexadecimal): %a\n", f_infinity=3.4e39);
     printf("float +infinity(hexadecimal): %a\n", f_infinity=3.5e38);
