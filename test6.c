@@ -270,19 +270,19 @@ int main(void)
     printf("Size of long dobule variable: %d.\n", sizeof(ld1));
     //printf("This is double:%.10f\n", d2);
     //printf("This is long double:%.20Lf\n", ld2);
-    printf("float (hexadecimal): %a\n", f_var=5.5F); //%a format specifier,以16进制hexadecimal指数形式输出浮点数
-    printf("float (hexadecimal): %a\n", f_var=1e-38F);
+    printf("float (hexadecimal,(mantissa)16*(10)16^E): %a\n", f_var=5.5F); //%a format specifier,以16进制hexadecimal指数形式输出浮点数
+    printf("float (hexadecimal,(mantissa)16*(10)16^E): %a\n", f_var=1e-38F);
     printf("float Max(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_var=3.4e38);
-    printf("float Min(hexadecimal): %a\n", f_var=-3.4e38);
-    printf("float Max(hexadecimal): %a\n", f_var=3.4e38);
-    printf("float Min(hexadecimal): %a\n", f_var=-3.4e38);
+    printf("float Min(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_var=-3.4e38);
+    printf("float Max(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_var=3.4e38);
+    printf("float Min(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_var=-3.4e38);
     printf("float Max(decimal): %f\n", f_var=3.4e38);
     printf("float Min(decimal): %f\n", f_var=-3.4e38);
     //infinity 无穷,无限
-    printf("float +infinity(hexadecimal): %a\n", f_infinity=3.4e39);
-    printf("float +infinity(hexadecimal): %a\n", f_infinity=3.5e38);
-    printf("float -infinity(hexadecimal): %a\n", f_infinity=-3.4e39);
-    printf("float -infinity(hexadecimal): %a\n", f_infinity=-3.5e38);
+    printf("float +infinity(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_infinity=3.4e39);
+    printf("float +infinity(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_infinity=3.5e38);
+    printf("float -infinity(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_infinity=-3.4e39);
+    printf("float -infinity(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_infinity=-3.5e38);
     return 0;
 }
 
