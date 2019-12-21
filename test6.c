@@ -272,7 +272,6 @@ int main(void)
     //printf("This is long double:%.20Lf\n", ld2);
     printf("float (hexadecimal): %a\n", 5.5F); //%a format specifier,以16进制hexadecimal指数形式输出浮点数
     printf("float (hexadecimal): %a\n", 1e-38F);
-    printf("float Max(decimal): %f\n", 3.4e38);
     printf("float Max(hexadecimal): %a\n", 3.4e38);
     printf("float Min(hexadecimal): %a\n", -3.4e38);
     printf("float Max(hexadecimal): %a\n", 3.4e38);
