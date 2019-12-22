@@ -169,7 +169,8 @@
 //    w位无符号数加法运算: 0 =< x+y < 2^w + 2^w
 //                        0 =< x+y < 2 * 2^w
 //                        0 =< x+y < 2^w+1
-//             
+//           
+//  
 void limits_head_constants(void); //函数声明,function declaration
 void unsigned_int_operation(void);
 
