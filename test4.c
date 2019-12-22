@@ -169,7 +169,10 @@
 //    w位无符号数加法运算: 0 =< x+y < 2^w + 2^w
 //                        0 =< x+y < 2 * 2^w
 //                        0 =< x+y < 2^w+1       其实x+y实际小于2^w -1,因为x+y最大只能到2^w -2
-//           
+//
+//   w=3   0 =< x,y < 2^w --> 0 =< x,y < 2^3 --> 0 =< x,y < 8
+//         0 =< x+y < 8+8-1 --> x,y取最大值, 7+7 < 15
+//         111+111=0(110) < 1000(d:2^3) -1 
 void limits_head_constants(void); //函数声明,function declaration
 void unsigned_int_operation(void);
 
