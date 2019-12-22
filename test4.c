@@ -168,7 +168,7 @@
 //    取值范围: 0 =< x,y < 2^w
 //    w位无符号数加法运算: 0 =< x+y < 2^w + 2^w
 //                        0 =< x+y < 2 * 2^w
-//                        0 =< x+y < 2^w+1
+//                        0 =< x+y < 2^w+1       其实x+y实际小于2^w -1,因为x+y最大只能到2^w -2
 //           
 void limits_head_constants(void); //函数声明,function declaration
 void unsigned_int_operation(void);
