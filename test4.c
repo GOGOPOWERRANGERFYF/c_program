@@ -172,7 +172,7 @@
 //
 //   w=3   0 =< x,y < 2^w --> 0 =< x,y < 2^3 --> 0 =< x,y < 8
 //         0 =< x+y < 8+8-1 --> x,y取最大值, 7+7 < 15
-//         111+111=0(110) < 1000(d:2^3) -1 
+//         111+111=1(110) < 10000(d:2^3+1) -1=1111 
 void limits_head_constants(void); //函数声明,function declaration
 void unsigned_int_operation(void);
 
