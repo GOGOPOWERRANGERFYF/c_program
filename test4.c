@@ -221,7 +221,7 @@
 //   英文定义感觉更容易理解:
 //   The power (or exponent) of a number says how many times to use the number in a multiplication(乘法). 
 //   A negative exponent means how many times to divide by the number   
-//   乘于这个数多少次,除于这个数多少次
+//   乘于这个数多少次,除于这个数多少次(乘于一个数的倒数相当于除于这个数)
 //   
 //  2^w   乘法: 2^a * 2^b-->2^(a+b)
 //        除法: 2^a/2^b-->2^(a-b)
