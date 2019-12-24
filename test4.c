@@ -230,6 +230,7 @@
 //  一半代表非负数(非负数还要有一个组合代表0),一半代表负数,得到如下取值范围,
 //  取值范围: -2^w-1 <= x,y <= 2^w-1 -1
 //  它们的和: -2^w-1 + -2^w-1 <= x+y <= 2^w-1 -1 + 2^w-1 -1
+//
 void limits_head_constants(void); //函数声明,function declaration
 void unsigned_int_operation(void);
 
