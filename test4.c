@@ -218,7 +218,10 @@
 //   2^3 *2=2^3 *2^1=2*2*2*2=2^4
 //   2^3/2^1=2^3 *1/2^1=2*2*2/2=2^2=2^(3-1)  -->所以定义 1/2^1=2^-1 (*2^1增加两倍,*2^-1刚好缩小两倍)
 //                                              这样正整数指数幂和负整数指数幂作用刚好相反
-//         
+//   英文定义感觉更容易理解:
+//   The power (or exponent) of a number says how many times to use the number in a multiplication(乘法). 
+//   A negative exponent means how many times to divide by the number   
+//      
 //  2^w   乘法: 2^a * 2^b-->2^(a+b)
 //        除法: 2^a/2^b-->2^(a-b)
 //        举例: 2^3 * 2^2 = 2*2*2 * 2*2 = 2^5 = 2^(3+2)
