@@ -263,6 +263,7 @@
 //
 void limits_head_constants(void); //函数声明,function declaration
 void unsigned_int_operation(void);
+void integer_multiplication(void);//multiplication乘法
 
 int main(void)
 {
@@ -290,6 +291,7 @@ int main(void)
     
     limits_head_constants();
     unsigned_int_operation();
+    integer_multiplication();
     return 0;
 }
 
@@ -324,7 +326,18 @@ void unsigned_int_operation(void)
     return;
 }
 
-
+void integer_multiplication(void)
+{
+    short int a=2, b=6, c=16384, r;
+    // short int 16384   binary: 0100000000000000         
+    //                         * 0000000000000010
+    //                           0000000000000000
+    //                          0100000000000000
+    //                          01000000000000000
+    //                    w=16   1000000000000000 (结果为0100000000000000像左移一位)
+    printf("2*6=%hi,overflow:2*16384=%hi\n", r=a*b, r=c*a);
+    return;
+}
 
 
 
