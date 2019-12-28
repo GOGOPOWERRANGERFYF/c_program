@@ -306,12 +306,14 @@
 //  取值范围: -2^w-1 <= x,y <= 2^w-1 -1
 //  它们的和: -2^w-1 + -2^w-1 <= x+y <= 2^w-1 -1 + 2^w-1 -1
 //  
-// 对取模运算做个小小的了结:
+// 对取模运算(这里暂时主要讨论整数的取模运算)做个小小的了结:
 //  注: modulo(模数) division(分裂,除法) modulo division(模除法) division operation(除法运算)
 //      multiplication(乘法)
-//  modulo operation(模除,取模操作,取模运算),模除得到的是一个数除以另一个数的余数.
+//  modulo operation(模除,取模操作,取模运算):模除得到的是一个数除以另一个数的余数.
 //  给定两个正整数:被除数a和除数n, a modulo n(缩写为a mod n)得到的是使用欧几里德除法(带余除法)时a/n的余数
-//
+//  通常情况下a和n都是整数(对实数,浮点数取模也是可以的,这里暂时不讨论),余数r的取值范围[0,n-1],
+//  a mod 1
+//  带余除法:
 //       (110)
 //       (101)
 //       (100)        
@@ -412,7 +414,9 @@ void a_modulo_n(void)
 {
     short unsigned int a=11, n=2;
     // %操作符为整数取模,fmod()函数包含在math.h里,浮点数取模
-    printf("a mod n = %hu\n", a%n);
+    // (short int)1 对整型常量进行强制类型转换
+    printf("a mod n = %hu, a mod 1 =%hu, size of (short)1: %d\n", \
+            a%n, a%(short int)1, sizeof((short int)1));
     return;
 }
 
