@@ -305,11 +305,33 @@
 //  一半代表非负数(非负数还要有一个组合代表0),一半代表负数,得到如下取值范围,
 //  取值范围: -2^w-1 <= x,y <= 2^w-1 -1
 //  它们的和: -2^w-1 + -2^w-1 <= x+y <= 2^w-1 -1 + 2^w-1 -1
+//  
+// 对取模运算做个小小的了结:
+//  注: modulo(模数) division(分裂,除法) modulo division(模除法) division operation(除法运算)
+//      multiplication(乘法)
+//  modulo operation(模除,取模操作,取模运算),模除得到的是一个数除以另一个数的余数.
+//  给定两个正整数:被除数a和除数n, a modulo n(缩写为a mod n)得到的是使用欧几里德除法(带余除法)时a/n的余数
 //
+//       (110)
+//       (101)
+//       (100)        
+//        011
+//        010
+//        001
+//        000
+//        111
+//        110
+//        101
+//        100
+//      1(011)
+//      1(010)
+//      1(001)
+//      1(000)
 //
 void limits_head_constants(void); //函数声明,function declaration
 void unsigned_int_operation(void);
 void integer_multiplication(void);//multiplication乘法
+void a_modulo_n(void);
 
 int main(void)
 {
@@ -338,6 +360,7 @@ int main(void)
     limits_head_constants();
     unsigned_int_operation();
     integer_multiplication();
+    a_modulo_n();
     return 0;
 }
 
@@ -385,7 +408,12 @@ void integer_multiplication(void)
     return;
 }
 
-
+void a_modulo_n(void)
+{
+    short unsigned int a=11, n=2;
+    printf("%hu\n", a%n);
+    return;
+}
 
 
 
