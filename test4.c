@@ -411,7 +411,7 @@ void integer_multiplication(void)
 void a_modulo_n(void)
 {
     short unsigned int a=11, n=2;
-    printf("%hu\n", a%n);
+    printf("a mod n = %hu\n", a%n);
     return;
 }
 
