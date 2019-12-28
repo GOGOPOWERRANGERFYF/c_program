@@ -411,6 +411,7 @@ void integer_multiplication(void)
 void a_modulo_n(void)
 {
     short unsigned int a=11, n=2;
+    // %操作符为整数取模,fmod()函数包含在math.h里,浮点数取模
     printf("a mod n = %hu\n", a%n);
     return;
 }
