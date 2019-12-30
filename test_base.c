@@ -38,7 +38,7 @@
 
 int main(void)
 {
-    printf("hello world!\n")
+    printf("hello world!\n");
 }
 //屏幕上显示的这段代码只是ascii码对应的字体文件的屏幕输出(这只是我个人的简化理解)
 
