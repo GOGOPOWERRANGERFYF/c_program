@@ -2,6 +2,11 @@
 //包含0~9,大小写字母和常用符号,用一个字节的数据表示
 //unicode(unique universal uniform character encode):唯一 通用 统一 字符编码
 //utf-8(8-bit unicode transformation format):8比特位unicode转换格式
+//ALU(arithmetic logic unit):算术逻辑单元
+//PS(program counter):程序计数器
+//USB(universal serial bus):通用串行总线
+//shell是一个命令行解释器,如果输入命令行的第一个单词不是shell内置命令,那么shell会假设这个是
+//可执行文件的名字,它将加载并运行这个文件
 
 /*
     |<-- compilation system编译系统
