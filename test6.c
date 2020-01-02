@@ -297,6 +297,7 @@ int main(void)
     printf("float Min(decimal): %f\n", f_var=-3.4e38);
     printf("double Max(decimal): %f\n", d_max);
     printf("double Max(exponential notation): %e\n", d_max);
+    printf("double Max(hexadecimal,(mantissa)16*(2^E)10): %a\n", d_max);
     //infinity 无穷,无限
     printf("float +infinity(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_infinity=3.4e39);
     printf("float +infinity(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_infinity=3.5e38);
