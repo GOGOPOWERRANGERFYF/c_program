@@ -254,7 +254,7 @@ int main(void)
     //decimal notation 11.11, 0.11=.11, 11.0=11 
     //exponential notation 1.23e2, 0.23e4=.23e4, 23.0e4=23e4, 19.11e-1=19.11 
     float f1 = 1e6, f2 = .001234, f3 = 123, f4 = 666.666, f_var, f_infinity, f_min;
-    double d1, d2 = 666.666;
+    double d1, d2 = 666.666, d_max=1.79e308;
     long double ld1, ld2 = 6.6666666;
     //format specifier:格式说明符(c primer plus中文版翻转换说明,我觉得格式说明符更好)
     //format specifier example: %d %f...
@@ -295,6 +295,8 @@ int main(void)
     printf("float Min(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_var=-3.4e38);
     printf("float Max(decimal): %f\n", f_var=3.4e38);
     printf("float Min(decimal): %f\n", f_var=-3.4e38);
+    printf("double Max(decimal): %f\n", d_max);
+    printf("double Max(decimal): %e\n", d_max);
     //infinity 无穷,无限
     printf("float +infinity(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_infinity=3.4e39);
     printf("float +infinity(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_infinity=3.5e38);
