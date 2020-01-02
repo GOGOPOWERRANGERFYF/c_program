@@ -276,6 +276,8 @@ int main(void)
     printf("Size of float variable: %d.\n", sizeof(f1));
     printf("Size of dobule variable: %d.\n", sizeof(d1));
     printf("Size of long dobule variable: %d.\n", sizeof(ld1));
+    printf("sizeof(f1*2.0f): %d, sizeof(2.0f*2.0f): %d, sizeof(2.0f*2.0): %d\n", \
+        sizeof(f1*2.0f), sizeof(2.0f*2.0f), sizeof(2.0f*2.0));
     //printf("This is double:%.10f\n", d2);
     //printf("This is long double:%.20Lf\n", ld2);
     //*知识点:C99标准添加的十六进制浮点数常量格式: 
@@ -293,6 +295,7 @@ int main(void)
     printf("float +infinity(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_infinity=3.5e38);
     printf("float -infinity(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_infinity=-3.4e39);
     printf("float -infinity(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_infinity=-3.5e38);
+
     return 0;
 }
 
