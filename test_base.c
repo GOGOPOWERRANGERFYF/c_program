@@ -7,6 +7,7 @@
 //USB(universal serial bus):通用串行总线
 //shell是一个命令行解释器,如果输入命令行的第一个单词不是shell内置命令,那么shell会假设这个是
 //可执行文件的名字,它将加载并运行这个文件
+//sizeof是运算符(operator):唯一一个单词运算符
 
 /*
     |<-- compilation system编译系统

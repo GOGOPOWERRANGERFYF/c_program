@@ -282,6 +282,7 @@ int main(void)
     printf("Size of long dobule variable: %d.\n", sizeof(ld1));
     printf("sizeof(f1*2.0f): %d, sizeof(2.0f*2.0f): %d, sizeof(2.0f*2.0): %d\n", \
         sizeof(f1*2.0f), sizeof(2.0f*2.0f), sizeof(2.0f*2.0));
+    printf("%d,\n", sizeof());
     //printf("This is double:%.10f\n", d2);
     //printf("This is long double:%.20Lf\n", ld2);
     //*知识点:C99标准添加的十六进制浮点数常量格式: 
