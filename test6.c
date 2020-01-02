@@ -287,16 +287,16 @@ int main(void)
     //printf("This is long double:%.20Lf\n", ld2);
     //*知识点:C99标准添加的十六进制浮点数常量格式: 
     // 1.ap10  mantisa:(1.a)16; 重点->p10=2^10  
-    printf("float (hexadecimal,(mantissa)16*(10)16^E): %a\n", f_var=5.5F); //%a format specifier,以16进制hexadecimal指数形式输出浮点数
-    printf("float (hexadecimal,(mantissa)16*(10)16^E): %a\n", f_var=1.2e-38F);
-    printf("float Max(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_var=3.4e38);
-    printf("float Min(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_var=-3.4e38);
-    printf("float Max(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_var=3.4e38);
-    printf("float Min(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_var=-3.4e38);
+    printf("float (hexadecimal,(mantissa)16*(2^E)10): %a\n", f_var=5.5F); //%a format specifier,以16进制hexadecimal指数形式输出浮点数
+    printf("float (hexadecimal,(mantissa)16*(2^E)10): %a\n", f_var=1.2e-38F);
+    printf("float Max(hexadecimal,(mantissa)16*(2^E)10): %a\n", f_var=3.4e38);
+    printf("float Min(hexadecimal,(mantissa)16*(2^E)10): %a\n", f_var=-3.4e38);
+    printf("float Max(hexadecimal,(mantissa)16*(2^E)10): %a\n", f_var=3.4e38);
+    printf("float Min(hexadecimal,(mantissa)16*(2^E)10): %a\n", f_var=-3.4e38);
     printf("float Max(decimal): %f\n", f_var=3.4e38);
     printf("float Min(decimal): %f\n", f_var=-3.4e38);
     printf("double Max(decimal): %f\n", d_max);
-    printf("double Max(decimal): %e\n", d_max);
+    printf("double Max(exponential notation): %e\n", d_max);
     //infinity 无穷,无限
     printf("float +infinity(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_infinity=3.4e39);
     printf("float +infinity(hexadecimal,(mantissa)16*(10)16^E): %a\n", f_infinity=3.5e38);
