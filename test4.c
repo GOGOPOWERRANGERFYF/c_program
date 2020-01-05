@@ -467,6 +467,11 @@
 //  (10100为-1100的5位二补数,也是-1100在计算机中的二补数编码,计算机中w至少5位才能存储真值-1100)  
 //  (负数在计算机中都是以二补数编码储存的)                   
 //
+// decimal |  binary  | unsigned encode | two's complement encode 
+//    7        111          111                  0111
+//   -7       -111           -                   1001
+//   -8      -1000           -                   1000
+// 
 //======================================================================================================
 void limits_head_constants(void); //函数声明,function declaration
 void unsigned_int_operation(void);
