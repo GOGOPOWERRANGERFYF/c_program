@@ -540,6 +540,9 @@ int main(void)
     printf("\x41 \077\n"); //转移序列 \xhh十六进制
     printf("what is you name\" \n");
     printf("%hx\n", 1-2);
+    printf("4294967295 hexadecimal: %x,decimal: %u\n", 4294967295, 4294967295);
+    printf("4294967296 hexadecimal: %x,decimal: %u\n", 4294967296, 4294967296);
+    printf("-4294967295 decimal: %u\n", -4294967295);
     
     limits_head_constants();
     unsigned_int_operation();
