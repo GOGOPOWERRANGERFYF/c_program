@@ -541,8 +541,21 @@ int main(void)
     printf("what is you name\" \n");
     printf("%hx\n", 1-2);
     printf("4294967295 hexadecimal: %x,decimal: %u\n", 4294967295, 4294967295);
+    //decimal(4294967296): 1 0000 0000 0000 0000 0000 0000 0000 0000
+    //int constant 4byte:    0000 0000 0000 0000 0000 0000 0000 0000
+    // --> printf --> 0
     printf("4294967296 hexadecimal: %x,decimal: %u\n", 4294967296, 4294967296);
-    printf("-4294967295 decimal: %u\n", -4294967295);
+    //decimal(-4294967296): - 1 0000 0000 0000 0000 0000 0000 0000 0000
+    //two's complement:       1 0000 0000 0000 0000 0000 0000 0000 0000
+    //int constant 4byte:       0000 0000 0000 0000 0000 0000 0000 0000
+    // --> printf --> 0
+    printf("-4294967296 decimal: %u\n", -4294967296);
+    //decimal(-4294967295): - 1111 1111 1111 1111 1111 1111 1111 1111
+    // --> 二补数编码储存:   - 1111 1111 1111 1111 1111 1111 1111 1111 
+    // --> 需要33bit:     - 0 1111 1111 1111 1111 1111 1111 1111 1111
+    //two's complement:     1 0000 0000 0000 0000 0000 0000 0000 0001
+    // --> printf --> 1
+    printf("-4294967295 decimal: %d, unsigned: %u\n", -4294967295, -4294967295);
     
     limits_head_constants();
     unsigned_int_operation();
