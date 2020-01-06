@@ -628,6 +628,7 @@ void integer_constants_limits(void)
 {
     //整数常量作为有符号整数编码,即用二补数编码储存
     //储存长度是可变的,4byte和8byte两种字长
+    //4byte[-2^31,2^31-1], 8byte[-2^63,2^63-1]
     printf("sizeof(2147483647):%d\n", sizeof(2147483647));
     printf("sizeof(2147483648):%d\n", sizeof(2147483648));
     printf("sizeof(4294967296):%d\n", sizeof(4294967296));
