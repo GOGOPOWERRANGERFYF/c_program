@@ -516,6 +516,7 @@ void limits_head_constants(void); //函数声明,function declaration
 void unsigned_int_operation(void);
 void integer_multiplication(void);//multiplication乘法
 void a_modulo_n(void);
+void integer_constants_limits(void);
 
 int main(void)
 {
@@ -563,6 +564,7 @@ int main(void)
     unsigned_int_operation();
     integer_multiplication();
     a_modulo_n();
+    integer_constants_limits();
     return 0;
 }
 
@@ -622,7 +624,16 @@ void a_modulo_n(void)
     return;
 }
 
-
+void integer_constants_limits(void)
+{
+    //整数常量作为有符号整数编码,即用二补数编码储存
+    //储存长度是可变的,4byte和8byte两种字长
+    printf("sizeof(2147483647):%d\n", sizeof(2147483647));
+    printf("sizeof(2147483648):%d\n", sizeof(2147483648));
+    printf("sizeof(4294967296):%d\n", sizeof(4294967296));
+    printf("sizeof(9223372036854775807):%d\n", sizeof(9223372036854775807));
+    return;
+}
 
 
 
