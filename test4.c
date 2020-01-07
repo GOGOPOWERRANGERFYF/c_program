@@ -635,6 +635,8 @@ void integer_constants_limits(void)
     printf("sizeof(4294967296):%d\n", sizeof(4294967296));
     printf("sizeof(9223372036854775807):%d\n", sizeof(9223372036854775807));
     //溢出:printf("sizeof(9223372036854775808):%d\n", sizeof(9223372036854775808));
+    //printf--> -1 现在用的编译系统的问题,long int和int都是32bit,%ld跟%d一样...
+    printf("sizeof(9223372036854775808):%ld\n", sizeof(9223372036854775808));
     return;
 }
 
