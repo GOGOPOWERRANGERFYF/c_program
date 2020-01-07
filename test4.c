@@ -626,6 +626,8 @@ void a_modulo_n(void)
 
 void integer_constants_limits(void)
 {
+    long long int lli1 = 9223372036854775807;
+    //备忘:test2.c是在Linux系统下写的。。。
     //c标准规定long int型大于等于int,存储字长看编译系统(4byte\8byte)
     //整数常量作为有符号整数编码,即用二补数编码储存
     //储存长度是可变的,4byte和8byte两种字长(gcc编译系统的原因)
@@ -633,6 +635,7 @@ void integer_constants_limits(void)
     //C语言标准,C编译器也还是在不断发展的,目前clang和gcc为主流
     //写C还是用linux比较好,编译系统比较新
     //4byte[-2^31,2^31-1], 8byte[-2^63,2^63-1]
+    printf("sizeof(long long int):%d\n",sizeof(lli1));
     printf("sizeof(2147483647):%d\n", sizeof(2147483647));
     printf("sizeof(2147483648):%d\n", sizeof(2147483648));
     printf("sizeof(4294967296):%d\n", sizeof(4294967296));
@@ -641,7 +644,7 @@ void integer_constants_limits(void)
     //printf--> -1 现在用的编译系统的问题,long int和int都是32bit,%ld跟%d一样...
     printf("sizeof(9223372036854775807) d:%d\n", 9223372036854775807);
     printf("sizeof(9223372036854775807) ld:%ld\n", 9223372036854775807);
-    printf("sizeof(9223372036854775807) ld:%lld\n", 9223372036854775807);
+    printf("sizeof(9223372036854775807) lld:%lld\n", 9223372036854775807);
     return;
 }
 
