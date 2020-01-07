@@ -634,6 +634,7 @@ void integer_constants_limits(void)
     printf("sizeof(2147483648):%d\n", sizeof(2147483648));
     printf("sizeof(4294967296):%d\n", sizeof(4294967296));
     printf("sizeof(9223372036854775807):%d\n", sizeof(9223372036854775807));
+    //溢出:printf("sizeof(9223372036854775808):%d\n", sizeof(9223372036854775808));
     return;
 }
 
