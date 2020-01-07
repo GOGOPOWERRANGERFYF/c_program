@@ -641,6 +641,7 @@ void integer_constants_limits(void)
     //printf--> -1 现在用的编译系统的问题,long int和int都是32bit,%ld跟%d一样...
     printf("sizeof(9223372036854775807) d:%d\n", 9223372036854775807);
     printf("sizeof(9223372036854775807) ld:%ld\n", 9223372036854775807);
+    printf("sizeof(9223372036854775807) ld:%lld\n", 9223372036854775807);
     return;
 }
 
