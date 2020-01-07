@@ -628,7 +628,9 @@ void integer_constants_limits(void)
 {
     //c标准规定long int型大于等于int,存储字长看编译系统(4byte\8byte)
     //整数常量作为有符号整数编码,即用二补数编码储存
-    //储存长度是可变的,4byte和8byte两种字长
+    //储存长度是可变的,4byte和8byte两种字长(gcc编译系统的原因)
+    //clang编译系统使用64为绝对地址储存整数常量
+    //C语言标准,C编译器也还是在不断发展的,目前clang和gcc为主流
     //4byte[-2^31,2^31-1], 8byte[-2^63,2^63-1]
     printf("sizeof(2147483647):%d\n", sizeof(2147483647));
     printf("sizeof(2147483648):%d\n", sizeof(2147483648));
