@@ -626,6 +626,7 @@ void a_modulo_n(void)
 
 void integer_constants_limits(void)
 {
+    //c标准规定long int型大于等于int,存储字长看编译系统(4byte\8byte)
     //整数常量作为有符号整数编码,即用二补数编码储存
     //储存长度是可变的,4byte和8byte两种字长
     //4byte[-2^31,2^31-1], 8byte[-2^63,2^63-1]
