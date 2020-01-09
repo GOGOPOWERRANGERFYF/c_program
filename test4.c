@@ -678,6 +678,7 @@ void integer_constants_limits(void)
     */
     // long long int 最小值的正确输出方式:
     printf("-9223372036854775808 lld:%lld\n", -9223372036854775807-1);
+    printf("-9223372036854775808 llx:%llx\n", -9223372036854775807-1);
     printf("9223372036854775808u llu:%llu\n", 9223372036854775808u);
     return;
 }
