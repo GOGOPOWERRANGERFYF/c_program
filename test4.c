@@ -575,9 +575,12 @@ void limits_head_constants(void)
     printf("unsigned int Max:%u\n", UINT_MAX);
     printf("long Max:%ld\n", LONG_MAX);
     printf("long Min:%ld\n", LONG_MIN);
+    /*
+    mingw compiler
     printf("long long Max:%lld\n", LONG_LONG_MAX);
     printf("long long Min(hexadecimal):%llx\n", LONG_LONG_MIN);
     printf("unsigned long long Max:%llu\n", ULONG_LONG_MAX);
+    */
     return;
 }
 
@@ -631,7 +634,7 @@ void a_modulo_n(void)
 
 void integer_constants_limits(void)
 {
-    long long int lli1 = 9223372036854775807, lli2 = -9223372036854775808;
+    long long int lli1 = 9223372036854775807; /*lli2 = -9223372036854775808*/
     //备忘:test2.c是在Linux系统下写的。。。
     //c标准规定long int型大于等于int,存储字长看编译系统(4byte\8byte)
     //整数常量作为有符号整数编码,即用二补数编码储存
@@ -655,7 +658,7 @@ void integer_constants_limits(void)
     //0111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111
     //最大有符号整数
     printf("-9223372036854775807 lld:%lld\n", -9223372036854775807);
-    printf("-9223372036854775808 llx:%llx\n", lli2);
+    //printf("-9223372036854775808 llx:%llx\n", lli2);
     printf("9223372036854775808u llu:%llu\n", 9223372036854775808u);
     return;
 }
