@@ -573,6 +573,10 @@ void limits_head_constants(void)
     printf("int Max:%d\n", INT_MAX);
     printf("int Min:%d\n", INT_MIN);
     printf("unsigned int Max:%u\n", UINT_MAX);
+    printf("long Max:%ld\n", LONG_MAX);
+    printf("long Min:%ld\n", LONG_MIN);
+    printf("long long Max:%lld\n", LONG_LONG_MAX);
+    printf("unsigned long long Max:%llu\n", ULONG_LONG_MAX);
     return;
 }
 
