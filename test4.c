@@ -581,6 +581,10 @@ void limits_head_constants(void)
     printf("long long Min(hexadecimal):%llx\n", LONG_LONG_MIN);
     printf("unsigned long long Max:%llu\n", ULONG_LONG_MAX);
     */
+    //cygwin gcc
+    printf("long long Max:%lld\n", LLONG_MAX);
+    printf("long long Min(hexadecimal):%lld\n", LLONG_MIN);
+    printf("long long Min(hexadecimal):%llx\n", LLONG_MIN);
     return;
 }
 
