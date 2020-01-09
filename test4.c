@@ -663,7 +663,12 @@ void integer_constants_limits(void)
     //最大有符号整数
     printf("-9223372036854775807 lld:%lld\n", -9223372036854775807);
     printf("-9223372036854775807 llx:%llx\n", -9223372036854775807);
-    //printf("-9223372036854775808 llx:%llx\n", lli2);
+    /*
+        <limits.h>  long long int 最小值的定义
+        # define LLONG_MIN (-LLONG_MAX - 1LL)
+    */
+    // long long int 最小值的正确输出方式:
+    printf("-9223372036854775808 llx:%lld\n", -9223372036854775807-1);
     printf("9223372036854775808u llu:%llu\n", 9223372036854775808u);
     return;
 }
