@@ -576,6 +576,7 @@ void limits_head_constants(void)
     printf("long Max:%ld\n", LONG_MAX);
     printf("long Min:%ld\n", LONG_MIN);
     printf("long long Max:%lld\n", LONG_LONG_MAX);
+    printf("long long Min(hexadecimal):%llx\n", LONG_LONG_MIN);
     printf("unsigned long long Max:%llu\n", ULONG_LONG_MAX);
     return;
 }
@@ -654,7 +655,7 @@ void integer_constants_limits(void)
     //0111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111
     //最大有符号整数
     printf("-9223372036854775807 lld:%lld\n", -9223372036854775807);
-    //printf("-9223372036854775808 lld:%lld\n", -9223372036854775808);
+    //printf("-9223372036854775808 llx:%llx\n", -9223372036854775808);
     printf("9223372036854775808u llu:%llu\n", 9223372036854775808u);
     return;
 }
