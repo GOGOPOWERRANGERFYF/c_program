@@ -631,7 +631,7 @@ void a_modulo_n(void)
 
 void integer_constants_limits(void)
 {
-    long long int lli1 = 9223372036854775807;
+    long long int lli1 = 9223372036854775807, lli2 = -9223372036854775808;
     //备忘:test2.c是在Linux系统下写的。。。
     //c标准规定long int型大于等于int,存储字长看编译系统(4byte\8byte)
     //整数常量作为有符号整数编码,即用二补数编码储存
@@ -655,7 +655,7 @@ void integer_constants_limits(void)
     //0111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111
     //最大有符号整数
     printf("-9223372036854775807 lld:%lld\n", -9223372036854775807);
-    //printf("-9223372036854775808 llx:%llx\n", -9223372036854775808);
+    printf("-9223372036854775808 llx:%llx\n", lli2);
     printf("9223372036854775808u llu:%llu\n", 9223372036854775808u);
     return;
 }
