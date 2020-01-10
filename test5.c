@@ -13,8 +13,8 @@ void main(void)
 
     printf("%d\n",f1);
     printf("%d\n", sizeof(f1));
-    printf("%f\n", fa + fb);
-    printf("%f\n", fa - fb);
+    printf("%f, %a\n", fa + fb, fa + fb);
+    printf("%f, %a\n", fa - fb, fa - fb);
     return;
 }
 
