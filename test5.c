@@ -9,10 +9,11 @@
 void main(void)
 {
     float f1 = 111.111, fa = 1.4, fb = 0.1;
-    // 1.4
-
+    // 1.4 --> 1.
+    // 0.1 --> 0.
     printf("%d\n",f1);
     printf("%d\n", sizeof(f1));
+    printf("%.10f, %.6a\n", fa, fa);
     printf("%f, %a\n", fa + fb, fa + fb);
     printf("%f, %a\n", fa - fb, fa - fb);
     return;
