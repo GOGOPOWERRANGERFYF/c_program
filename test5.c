@@ -14,6 +14,7 @@ void main(void)
     printf("%d\n",f1);
     printf("%d\n", sizeof(f1));
     printf("%.10f, %.6a\n", fa, fa);
+    printf("%.10f, %.6a\n", fb, fb);
     printf("%f, %a\n", fa + fb, fa + fb);
     printf("%f, %a\n", fa - fb, fa - fb);
     return;
