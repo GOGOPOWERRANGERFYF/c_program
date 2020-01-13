@@ -95,12 +95,16 @@ void main(void)
     printf("f1(d):%d\n",f1);
     printf("sizeof(f1):%d\n", sizeof(f1));
     //format specific %f %a 默认保留小数点后六位
-    printf("fa(decimal):%.10f,fa(hexadecimal .6a):%.6a\n", fa, fa);
-    printf("fb(decimal):%.10f,fb(hexadecimal .6a):%.6a\n", fb, fb);
-    printf("fa(hexadecimal .7a):%.7a\n", fa);
-    printf("fb(hexadecimal .7a):%.7a\n", fb);
+    printf("fa(decimal):%f\n", fa);
+    printf("fb(decimal):%f\n", fb);
+    printf("fa(decimal .10f):%.10f,fa(hexadecimal .6a):%a\n", fa, fa);
+    printf("fb(decimal .10f):%.10f,fb(hexadecimal .6a):%a\n", fb, fb);
+    printf("fa(hexadecimal .7a):%.6a\n", fa);
+    printf("fb(hexadecimal .7a):%.6a\n", fb);
     printf("fa + fb(f)=(decimal):%f,fa + fb(a)=(hexadecimal): %a\n", fa + fb, fa + fb);
     printf("fa - fb(f)=(decimal):%f,fa + fb(a)=(hexadecimal): %a\n", fa - fb, fa - fb);
+    printf("fa + fb(a)=(hexadecimal): %.6a\n", fa + fb);
+    printf("fa + fb(a)=(hexadecimal): %.6a\n", fa - fb);
     return;
 }
 
