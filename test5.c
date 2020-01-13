@@ -72,13 +72,15 @@ void main(void)
     // 0.1(binary): 0.0001 1001 1001 1001 1001 100|11001 * (2^0)10
     //      规格化: 0 0001.10011001100110011001100|1 * (2^-4)10       
     //        -->       1.10011001100110011001100|1(rounding) * (2^-4)10
-    //        -->       1. 1001 1001 1001 1001 1001 101 * (2^-4)10
+    //        -->       1. 1001 1001 1001 1001 1001 100|1(怎么舍入?) * (2^-4)10
     //                  1.  9    9    9    9    9    9  * (2^-4)10
     //
     printf("f1(d):%d\n",f1);
     printf("sizeof(f1):%d\n", sizeof(f1));
-    printf("fa(decimal):%.10f,fa(hexadecimal):%.6a\n", fa, fa);
-    printf("fb(decimal):%.10f,fb(hexadecimal):%.6a\n", fb, fb);
+    printf("fa(decimal):%.10f,fa(hexadecimal .6a):%.6a\n", fa, fa);
+    printf("fb(decimal):%.10f,fb(hexadecimal .6a):%.6a\n", fb, fb);
+    printf("fa(hexadecimal .7a):%.7a\n", fa);
+    printf("fb(hexadecimal .7a):%.7a\n", fb);
     printf("fa + fb(f)=(decimal):%f,fa + fb(a)=(hexadecimal): %a\n", fa + fb, fa + fb);
     printf("fa - fb(f)=(decimal):%f,fa + fb(a)=(hexadecimal): %a\n", fa - fb, fa - fb);
     return;
