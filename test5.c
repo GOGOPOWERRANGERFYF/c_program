@@ -1,8 +1,6 @@
 #include <stdio.h>
 // Floating-Point Operations 浮点数运算
 // addition:
-//    
-//
 //exponent指数 指数计数法:1.0e9
 //             科学计数法:1.0*10^9
 //                   数字:1000000000
