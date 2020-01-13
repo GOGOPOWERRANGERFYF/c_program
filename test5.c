@@ -97,14 +97,14 @@ void main(void)
     //format specific %f %a 默认保留小数点后六位
     printf("fa(f):%f\n", fa);
     printf("fb(f):%f\n", fb);
-    printf("fa(.10f):%.10f,fa(hexadecimal a):%a\n", fa, fa);
-    printf("fb(.10f):%.10f,fb(hexadecimal a):%a\n", fb, fb);
-    printf("fa(hexadecimal .6a):%.6a\n", fa);
-    printf("fb(hexadecimal .6a):%.6a\n", fb);
-    printf("fa + fb(float):%f,fa + fb(a:hexadecimal): %a\n", fa + fb, fa + fb);
-    printf("fa - fb(float):%f,fa + fb(a:hexadecimal): %a\n", fa - fb, fa - fb);
-    printf("fa + fb(.6a:hexadecimal): %.6a\n", fa + fb);
-    printf("fa + fb(.6a:hexadecimal): %.6a\n", fa - fb);
+    printf("fa(.10f):%.10f,fa(a):%a\n", fa, fa);
+    printf("fb(.10f):%.10f,fb(a):%a\n", fb, fb);
+    printf("fa(.6a):%.6a\n", fa);
+    printf("fb(.6a):%.6a\n", fb);
+    printf("fa + fb(float):%f,fa + fb(a): %a\n", fa + fb, fa + fb);
+    printf("fa - fb(float):%f,fa + fb(a): %a\n", fa - fb, fa - fb);
+    printf("fa + fb(.6a): %.6a\n", fa + fb);
+    printf("fa + fb(.6a): %.6a\n", fa - fb);
     return;
 }
 
