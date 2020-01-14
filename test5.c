@@ -12,16 +12,18 @@ void main(void)
 
     printf("f1(d):%d\n",f1);
     printf("sizeof(f1):%d\n", sizeof(f1));
-    //format specific %f %a 默认保留小数点后六位
+    //format specific %f 默认保留小数点后六位
+    //                %a float默认保留小数点后六位
+    //                %a double默认保留小数点后十三位
     printf("fa(f):%f\n", fa);
-    printf("fb(f):%f\n", fb);
+    printf("fb(f):%f\n\n", fb);
     printf("fc(f):%f, fc(a):%a\n", fc, fc);
     printf("fd(f):%f, fd(a):%a, fd(.7a):%.7a\n", fd, fd, fd);
-    printf("fe(f):%f, fe(a):%a\n", fe, fe);
+    printf("fe(f):%f, fe(a):%a\n\n", fe, fe);
     //float double 格式说明符都是 %f
     printf("dc(f):%f, dc(a):%a\n", dc, dc);
     printf("dd(f):%f, dd(a):%a, dd(.7a):%.7a\n", dd, dd, dd);
-    printf("de(f):%f, de(a):%a\n", de, de);
+    printf("de(f):%f, de(a):%a\n\n", de, de);
     
     printf("fa(.10f):%.10f,fa(a):%a\n", fa, fa);
     printf("fb(.10f):%.10f,fb(a):%a\n", fb, fb);
