@@ -16,7 +16,7 @@ void main(void)
     printf("fa(f):%f\n", fa);
     printf("fb(f):%f\n", fb);
     printf("fc(f):%f, fc(a):%a\n", fc, fc);
-    printf("fd(f):%f, fd(a):%a\n", fd, fd);
+    printf("fd(f):%f, fd(a):%a, fd(a):%.7a\n", fd, fd, fd);
     printf("fe(f):%f, fe(a):%a\n", fe, fe);
     //float double 格式说明符都是 %f
     printf("dc(f):%f, dc(a):%a\n", fc, fc);
