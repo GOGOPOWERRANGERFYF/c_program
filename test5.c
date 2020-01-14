@@ -8,7 +8,7 @@ void main(void)
 {
     float f1 = 111.111, fa = 1.4, fb = 0.1, \
     fc = 1.3999999, fd = 1.3999995, fe = 1.3999994;
-    double dd = 1.3999995, de = 1.3999994;
+    double dc = 1.3999999, dd = 1.3999995, de = 1.3999994;
 
     printf("f1(d):%d\n",f1);
     printf("sizeof(f1):%d\n", sizeof(f1));
@@ -19,6 +19,7 @@ void main(void)
     printf("fd(f):%f, fd(a):%a\n", fd, fd);
     printf("fe(f):%f, fe(a):%a\n", fe, fe);
     //float double 格式说明符都是 %f
+    printf("dc(f):%f, dc(a):%a\n", fc, fc);
     printf("dd(f):%f, dd(a):%a\n", fd, fd);
     printf("de(f):%f, de(a):%a\n", fe, fe);
     printf("fa(.10f):%.10f,fa(a):%a\n", fa, fa);
