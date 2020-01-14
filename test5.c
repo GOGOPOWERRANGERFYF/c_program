@@ -6,7 +6,27 @@
 //                   数字:1000000000
 void main(void)
 {
-    float f1 = 111.111, fa = 1.4, fb = 0.1;
+    float f1 = 111.111, fa = 1.4, fb = 0.1, \
+    fc = 1.3999999, fd = 1.3999995, fe = 1.3999994;
+
+    printf("f1(d):%d\n",f1);
+    printf("sizeof(f1):%d\n", sizeof(f1));
+    //format specific %f 默认保留小数点后六位
+    printf("fa(f):%f\n", fa);
+    printf("fb(f):%f\n", fb);
+    printf("fc(f):%f, fc(a):%a\n", fc);
+    printf("fd(f):%f, fd(a):%a\n", fd);
+    printf("fe(f):%f, fe(a):%a\n", fe);
+    printf("fa(.10f):%.10f,fa(a):%a\n", fa, fa);
+    printf("fb(.10f):%.10f,fb(a):%a\n", fb, fb);
+    printf("fa(.6a):%.6a\n", fa);
+    printf("fb(.6a):%.6a\n", fb);
+    
+    printf("fa + fb(float):%f,fa + fb(a): %a\n", fa + fb, fa + fb);
+    printf("fa - fb(float):%f,fa + fb(a): %a\n", fa - fb, fa - fb);
+    printf("fa + fb(.6a): %.6a\n", fa + fb);
+    printf("fa + fb(.6a): %.6a\n", fa - fb);
+    return;
     // 1.4 -->  
     //  整数部分:    2 | 1 --> 余 1
     //  小数部分:  0.4 * 2 = 0.8 --> 0
@@ -87,21 +107,6 @@ void main(void)
     //        0.000110011001100110011001(rounding)--|
     //        0.00011001100110011001101 <-----------|
     //        1.10000000000000000000000
-    //
-    printf("f1(d):%d\n",f1);
-    printf("sizeof(f1):%d\n", sizeof(f1));
-    //format specific %f %a 默认保留小数点后六位
-    printf("fa(f):%f\n", fa);
-    printf("fb(f):%f\n", fb);
-    printf("fa(.10f):%.10f,fa(a):%a\n", fa, fa);
-    printf("fb(.10f):%.10f,fb(a):%a\n", fb, fb);
-    printf("fa(.6a):%.6a\n", fa);
-    printf("fb(.6a):%.6a\n", fb);
-    printf("fa + fb(float):%f,fa + fb(a): %a\n", fa + fb, fa + fb);
-    printf("fa - fb(float):%f,fa + fb(a): %a\n", fa - fb, fa - fb);
-    printf("fa + fb(.6a): %.6a\n", fa + fb);
-    printf("fa + fb(.6a): %.6a\n", fa - fb);
-    return;
 }
 
 
