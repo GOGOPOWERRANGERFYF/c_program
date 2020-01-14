@@ -15,6 +15,7 @@ void main(void)
     //format specific %f 默认保留小数点后六位
     //                %a float默认保留小数点后六位
     //                %a double默认保留小数点后十三位
+    //double 即可用 %f 也可用 %lf
     printf("fa(f):%f\n", fa);
     printf("fb(f):%f\n\n", fb);
     printf("fc(f):%f, fc(a):%a\n", fc, fc);
@@ -22,7 +23,7 @@ void main(void)
     printf("fe(f):%f, fe(a):%a\n\n", fe, fe);
     //float double 格式说明符都是 %f
     printf("dc(f):%f, dc(a):%a, dc(.7a):%.7a\n", dc, dc, dc);
-    printf("dd(f):%f, dd(a):%a, dd(.7a):%.7a\n", dd, dd, dd);
+    printf("dd(f):%f, dd(lf):%lf, dd(a):%a, dd(.7a):%.7a\n", dd, dd, dd, dd);
     printf("de(f):%f, de(a):%a, de(.7a):%.7a\n\n", de, de, de);
     
     printf("fa(.10f):%.10f,fa(a):%a\n", fa, fa);
