@@ -21,9 +21,9 @@ void main(void)
     printf("fd(f):%f, fd(a):%a, fd(.7a):%.7a\n", fd, fd, fd);
     printf("fe(f):%f, fe(a):%a\n\n", fe, fe);
     //float double 格式说明符都是 %f
-    printf("dc(f):%f, dc(a):%a\n", dc, dc);
+    printf("dc(f):%f, dc(a):%a, dc(.7a):%.7a\n", dc, dc, dc);
     printf("dd(f):%f, dd(a):%a, dd(.7a):%.7a\n", dd, dd, dd);
-    printf("de(f):%f, de(a):%a\n\n", de, de);
+    printf("de(f):%f, de(a):%a, de(.7a):%.7a\n\n", de, de, de);
     
     printf("fa(.10f):%.10f,fa(a):%a\n", fa, fa);
     printf("fb(.10f):%.10f,fb(a):%a\n", fb, fb);
