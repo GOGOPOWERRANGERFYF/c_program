@@ -4,6 +4,8 @@
 //exponent指数 指数计数法:1.0e9
 //             科学计数法:1.0*10^9
 //                   数字:1000000000
+void float_double_limits(void);
+
 void main(void)
 {
     float f1 = 111.111, fa = 1.4, fb = 0.1, \
@@ -34,7 +36,9 @@ void main(void)
     printf("fa + fb(float):%f,fa + fb(a): %a\n", fa + fb, fa + fb);
     printf("fa - fb(float):%f,fa + fb(a): %a\n", fa - fb, fa - fb);
     printf("fa + fb(.6a): %.6a\n", fa + fb);
-    printf("fa + fb(.6a): %.6a\n", fa - fb);
+    printf("fa + fb(.6a): %.6a\n\n", fa - fb);
+
+    float_double_limits();
     return;
     // 1.4 -->  
     //  整数部分:    2 | 1 --> 余 1
@@ -118,7 +122,13 @@ void main(void)
     //        1.10000000000000000000000
 }
 
-
+void float_double_limits(void)
+{
+    float fa = 1.3999995;
+    double da = 1.3999995;
+    printf("fa(.52f):%.52f,\nda(.52f):%.52f\n", fa, da);
+    return;
+}
 
 
 
