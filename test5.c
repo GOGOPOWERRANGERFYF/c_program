@@ -126,6 +126,8 @@ void float_double_limits(void)
 {
     float fa = 1.3999995;
     double da = 1.3999995;
+    long double lda;
+    printf("sizeof(lda):%d\n", sizeof(lda));
     printf("fa(.52f):%.52f,\nda(.52f):%.52f\n", fa, da);
     printf("fa(.53f):%.53f,\nda(.53f):%.53f\n", fa, da);
     return;
