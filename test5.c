@@ -133,8 +133,8 @@ void float_double_limits(void)
     printf("sizeof(fa):%d\n", sizeof(fa));
     printf("sizeof(da):%d\n", sizeof(da));
     printf("sizeof(lda):%d\n", sizeof(lda));
-    printf("fa(.20a):%.20a,\nfa(.40a):%.40a\n", fa, fa);
-    printf("da(.20a):%.20a,\nda(.40a):%.40a\n", da, da);
+    printf("fa(.20a):  %.20a,\nfa(.40a):  %.40a\n", fa, fa);
+    printf("da(.20a):  %.20a,\nda(.40a):  %.40a\n", da, da);
     //%lf double; %Lf long double
     printf("lda(.60La):%.60La\n", lda);
     return;
