@@ -5,6 +5,7 @@
 //             科学计数法:1.0*10^9
 //                   数字:1000000000
 void float_double_limits(void);
+void float_double_multiplication(void);
 
 void main(void)
 {
@@ -141,6 +142,18 @@ void float_double_limits(void)
     printf("lda(.60La):%.60La\n", lda);
     return;
 }
+
+void float_double_multiplication(void)
+{
+    float fa = 1.75, fb = 0.625;
+    printf("%.10a\n", fa + fb);
+    return;
+}
+
+
+
+
+
 
 
 
