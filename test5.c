@@ -193,6 +193,14 @@ void float_double_multiplication(void)
     //         1*4 * 1 = 4 (2^2)
     //         1*4 * 1*4 = 16 (2^4)
     //
+    //乘法本质的一点理解:
+    //      102
+    //    *   2
+    //   --------
+    //        4     拆分成两步,更好理解本质
+    //      200
+    // 4 + 200 = 204
+    //
     float fa = 1.75, fb = 0.625;
     printf("fa * fb(.10a):%.10a, fa * fb(.10f):%.10f\n", fa * fb, fa * fb);
     return;
