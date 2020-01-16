@@ -40,6 +40,7 @@ void main(void)
     printf("fa + fb(.6a): %.6a\n\n", fa - fb);
 
     float_double_limits();
+    float_double_multiplication();
     return;
     // 1.4 -->  
     //  整数部分:    2 | 1 --> 余 1
@@ -145,6 +146,22 @@ void float_double_limits(void)
 
 void float_double_multiplication(void)
 {
+    // (1.75)10 --> (1.11)2 * (2^0)10
+    // (0.625)10 --> (0.101)2 --> (1.01)2 * (2^-1)10
+    // (1.11)2 * (2^0)10  *  (1.01)2 * (2^-1)10
+    // (1.11  *  1.01*2^-1) * 2^0
+    // (1.11  *  0.101) * 2^0
+    //
+    //           1.110
+    //         * 0.101
+    //         ---------
+    //           1 110
+    //          00 00
+    //         111 0
+    //         ---------
+    //        1000.110
+    // 1.000110 * 2^3 
+    // 1.1800000000         
     float fa = 1.75, fb = 0.625;
     printf("%.10a\n", fa * fb);
     return;
