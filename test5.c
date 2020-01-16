@@ -146,7 +146,7 @@ void float_double_limits(void)
 void float_double_multiplication(void)
 {
     float fa = 1.75, fb = 0.625;
-    printf("%.10a\n", fa + fb);
+    printf("%.10a\n", fa * fb);
     return;
 }
 
