@@ -1,10 +1,10 @@
 #include <stdio.h>
 // Floating-Point Operations 浮点数运算
-// addition:
 //exponent指数 指数计数法:1.0e9
 //             科学计数法:1.0*10^9
 //                   数字:1000000000
 void float_double_limits(void);
+void float_double_addition(void);
 void float_double_multiplication(void);
 
 void main(void)
@@ -34,14 +34,41 @@ void main(void)
     printf("fa(.6a):%.6a\n", fa);
     printf("fb(.6a):%.6a\n", fb);
     
+    float_double_limits();
+    float_double_addition();
+    float_double_multiplication();
+    return;
+}
+
+void float_double_limits(void)
+{
+    float fa = 1.3, fb = 1.1;
+    double da = 1.3, db = 1.1;
+    long double lda = 1.3;
+    //float: 1 8 23; size: 32
+    //double: 1 11 52; size: 64
+    //long double: 1 
+    printf("sizeof(fa):%d\n", sizeof(fa));
+    printf("sizeof(da):%d\n", sizeof(da));
+    printf("sizeof(lda):%d\n", sizeof(lda));
+    printf("fb(.20a):  %.20a,\nfb(.40a):  %.40a\n", fb, fb);
+    printf("db(.20a):  %.20a,\ndb(.40a):  %.40a\n", db, db);
+    printf("fa(.20a):  %.20a,\nfa(.40a):  %.40a\n", fa, fa);
+    printf("da(.20a):  %.20a,\nda(.40a):  %.40a\n", da, da);
+    //%lf double; %Lf long double
+    printf("lda(.60La):%.60La\n", lda);
+    return;
+}
+
+void float_double_addition(void)
+{ 
+    float fa = 1.4, fb = 0.1;
     printf("fa + fb(float):%f,fa + fb(a): %a\n", fa + fb, fa + fb);
     printf("fa - fb(float):%f,fa + fb(a): %a\n", fa - fb, fa - fb);
     printf("fa + fb(.6a): %.6a\n", fa + fb);
     printf("fa + fb(.6a): %.6a\n\n", fa - fb);
-
-    float_double_limits();
-    float_double_multiplication();
     return;
+    // float double addition:
     // 1.4 -->  
     //  整数部分:    2 | 1 --> 余 1
     //  小数部分:  0.4 * 2 = 0.8 --> 0
@@ -122,26 +149,6 @@ void main(void)
     //        0.000110011001100110011001(rounding)--|
     //        0.00011001100110011001101 <-----------|
     //        1.10000000000000000000000
-}
-
-void float_double_limits(void)
-{
-    float fa = 1.3, fb = 1.1;
-    double da = 1.3, db = 1.1;
-    long double lda = 1.3;
-    //float: 1 8 23; size: 32
-    //double: 1 11 52; size: 64
-    //long double: 1 
-    printf("sizeof(fa):%d\n", sizeof(fa));
-    printf("sizeof(da):%d\n", sizeof(da));
-    printf("sizeof(lda):%d\n", sizeof(lda));
-    printf("fb(.20a):  %.20a,\nfb(.40a):  %.40a\n", fb, fb);
-    printf("db(.20a):  %.20a,\ndb(.40a):  %.40a\n", db, db);
-    printf("fa(.20a):  %.20a,\nfa(.40a):  %.40a\n", fa, fa);
-    printf("da(.20a):  %.20a,\nda(.40a):  %.40a\n", da, da);
-    //%lf double; %Lf long double
-    printf("lda(.60La):%.60La\n", lda);
-    return;
 }
 
 void float_double_multiplication(void)
