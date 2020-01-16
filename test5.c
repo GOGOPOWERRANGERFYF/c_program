@@ -33,6 +33,7 @@ void main(void)
     printf("fb(.10f):%.10f,fb(a):%a\n", fb, fb);
     printf("fa(.6a):%.6a\n", fa);
     printf("fb(.6a):%.6a\n", fb);
+    printf("\n");
     
     float_double_limits();
     float_double_addition();
@@ -56,7 +57,7 @@ void float_double_limits(void)
     printf("fa(.20a):  %.20a,\nfa(.40a):  %.40a\n", fa, fa);
     printf("da(.20a):  %.20a,\nda(.40a):  %.40a\n", da, da);
     //%lf double; %Lf long double
-    printf("lda(.60La):%.60La\n", lda);
+    printf("lda(.60La):%.60La\n\n", lda);
     return;
 }
 
