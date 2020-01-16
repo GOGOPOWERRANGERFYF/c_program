@@ -159,8 +159,8 @@ void float_double_multiplication(void)
     //          00 00
     //         111 0
     //         ---------
-    //        1000.110
-    // 1.000110 * 2^3 
+    //       1.000 110
+    // 1.000110 * 2^0 
     // 1.1800000000         
     float fa = 1.75, fb = 0.625;
     printf("fa * fb(.10a):%.10a, fa * fb(.10f):%.10f\n", fa * fb, fa * fb);
