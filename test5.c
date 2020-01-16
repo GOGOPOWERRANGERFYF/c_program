@@ -163,7 +163,7 @@ void float_double_multiplication(void)
     // 1.000110 * 2^3 
     // 1.1800000000         
     float fa = 1.75, fb = 0.625;
-    printf("fa * fb(.10a):%.10a, fa * fb(.10f):%.10f\n,", fa * fb, fa * fb);
+    printf("fa * fb(.10a):%.10a, fa * fb(.10f):%.10f\n", fa * fb, fa * fb);
     return;
 }
 
