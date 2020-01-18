@@ -246,6 +246,8 @@ void float_double_multiplication(void)
 }
 
 //division
+//    2/2 :2根辣条分成两份        --> 2/2=1
+//    2/(1/2) :2跟1/2份,可分成4份 --> 2/(1/2)=2*2=4
 
 
 
