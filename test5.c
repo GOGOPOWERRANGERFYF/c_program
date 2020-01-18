@@ -5,6 +5,7 @@
 //                   数字:1000000000
 void float_double_limits(void);
 void float_double_addition(void);
+void float_double_subtraction(void);
 void float_double_multiplication(void);
 
 void main(void)
@@ -37,6 +38,7 @@ void main(void)
     
     float_double_limits();
     float_double_addition();
+    float_double_subtraction();
     float_double_multiplication();
     return;
 }
@@ -153,6 +155,18 @@ void float_double_addition(void)
     //        1.10000000000000000000000
 }
 
+void float_double_subtraction(void)
+{
+    //subtraction
+    //减数与被减数都是负数,直接符号位不变,阶码转换成与阶码值大的一致,尾数做加法即可;
+    //减数与被减数一正一负,阶码转换成与数值大的浮点数一致,
+    //符号位以尾数值大的为准,尾数(大)-尾数(小)-->尾数(大)+尾数(小)的二补数:结果肯定溢出,舍掉溢出位即可
+    float fa = 1.75 , fb = 0.625;
+    printf("fa - fb=(.10f):%.10f\n", fa - fb);
+    printf("fb - fa=(.10f):%.10f\n", fb - fa);
+    return;
+}
+
 void float_double_multiplication(void)
 {
     // (1.75)10 --> (1.11)2 * (2^0)10
@@ -208,10 +222,6 @@ void float_double_multiplication(void)
     return;
 }
 
-//subtraction
-//减数与被减数都是负数,直接符号位不变,阶码转换成与阶码值大的一致,尾数做加法即可;
-//减数与被减数一正一负,阶码转换成与数值大的浮点数一致,
-//符号位以尾数值大的为准,尾数(大)-尾数(小)-->尾数(大)+尾数(小)的二补数:结果肯定溢出,舍掉溢出位即可
 //
 //division
 
