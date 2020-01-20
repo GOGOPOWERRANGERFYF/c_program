@@ -8,6 +8,7 @@ void float_double_addition(void);
 void float_double_subtraction(void);
 void float_double_multiplication(void);
 void float_double_division(void);
+void float_double_format_specific(void);
 
 void main(void)
 {
@@ -42,6 +43,7 @@ void main(void)
     float_double_subtraction();
     float_double_multiplication();
     float_double_division();
+    float_double_format_specific();
     return;
 }
 
@@ -306,5 +308,13 @@ void float_double_division(void)
     return;
 }
 
-
+void float_double_format_specific(void)
+{
+    int fa = 1.75, fb = 1.75e1;
+    printf("sizeof(int) zd:%zd\n", sizeof(int));
+    printf("sizeof(int) d:%d\n", sizeof(int));
+    printf("int fa = 1.75: %d\n", fa);
+    printf("int fb = 1.75e1: %d\n", fb);
+    return;
+}
 
