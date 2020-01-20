@@ -7,6 +7,7 @@ void float_double_limits(void);
 void float_double_addition(void);
 void float_double_subtraction(void);
 void float_double_multiplication(void);
+void float_double_division(void);
 
 void main(void)
 {
@@ -40,6 +41,7 @@ void main(void)
     float_double_addition();
     float_double_subtraction();
     float_double_multiplication();
+    float_double_division();
     return;
 }
 
@@ -245,6 +247,9 @@ void float_double_multiplication(void)
     return;
 }
 
+void float_double_division(void)
+{
+    float fa = 1.75, fb = 0.25;
 //division
 //    2/2 :2根辣条分成两份  --> 2/2=1
 //    2/(1/2) :分成1/2根辣条每份,可分成4份 --> 2/(1/2)=2*2=4
@@ -270,7 +275,9 @@ void float_double_multiplication(void)
 //                      0
 //
 //
-
+    printf("fa/fb=(.10f):%.10f\n", fa/fb);
+    return;
+}
 
 
 
