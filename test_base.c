@@ -36,7 +36,7 @@
 //处理器在进程间切换让单核处理器看上去能并发处理多个程序
 //操作系统实现这种进程间交错执行的机制称为上下文切换
 
-#include <stdio.h> \\standard input & output . head头文件
+#include <stdio.h> //standard input & output . head头文件
 //stdio.h是C编译器软件包的标准库的一个文件,它提供键盘输入和屏幕输出的支持
 //cpp(c pre-processor:预处理器)会读取stdio.h文件的内容并插入到程序文本中
 //结果得到另外一个C程序,通常以.i作为文件扩展名
@@ -53,8 +53,12 @@
 //合并后得到文件hello,可执行目标文件(简称可执行文件),可以加载到内存中,有系统执行.
 int main(void)
 {
+    float f_var_a;
+    // \b : 光标左移一位
+    printf("Enter floating point number: $__________\b\b\b\b\b\b\b\b\b\b");
+    scanf("%f", &f_var_a);
     printf("hello world!\n");
-    return;                    
+    return 0;                    
     //函数体内程序结束,不加的话运行到函数内的最后一句代码之后也是会结束返回的
     //return后面可以加返回值
     //加在这里,下面的代码就不会运行了
