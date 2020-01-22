@@ -55,6 +55,8 @@ int main(void)
 {
     float f_var_a;
     // \b : 光标左移一位
+    // \r : 光标回到当前行起始处
+    // \n : 光标移到下一行起始处
     printf("Enter floating point number: $__________\b\b\b\b\b\b\b\b\b\b");
     scanf("%f", &f_var_a);
     printf("hello world!\n");
