@@ -18,6 +18,8 @@ void main(void)
     printf("sizeof(c_var): %d\n", sizeof(c_var));
     //&取数组变量的地址
     printf("sizeof(&c_var): %d\n", sizeof(&c_var));
+    printf("x(&c_var): %x\n", &c_var);
+    printf("lx(&c_var): %lx\n", &c_var);
     printf("sizeof(si_var): %d\n", sizeof(si_var));
     printf("sizeof(&si_var): %d\n", sizeof(&si_var));
     return;
