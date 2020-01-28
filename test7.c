@@ -1,8 +1,9 @@
 // ANSI(american national standards institute):美国国家标准学会
 #include <stdio.h>
 #include <string.h>
+void short_int_array(void);
 
-void main()
+void main(void)
 {
     //c_var[40]是一个可容纳40个字符的数组
     char c_var[40];
@@ -11,8 +12,19 @@ void main()
     scanf("%s", c_var);
     printf("My Name is: %s\n", c_var);
     // strlen()函数获取字符串的长度
-    printf("string length: %d", strlen(c_var));
+    printf("string length: %d\n", strlen(c_var));
+
+    short_int_array();
     return;
 }
+
+void short_int_array(void)
+{
+    //短整型数组
+    short int si_array_a[5];
+    printf("sizeof(si_array_a): %d", sizeof(si_array_a));
+    return;
+}
+
 
 
