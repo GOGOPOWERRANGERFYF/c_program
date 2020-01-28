@@ -10,7 +10,7 @@ void main(void)
     // \b 光标向左移一位,一个字符占一位 
     printf("Input You Name:__________\b\b\b\b\b\b\b\b\b\b");
     scanf("%s", c_var);
-    printf("    My Name is:%s\n", c_var);
+    printf("My Name is:%s\n", c_var);
     //strlen()函数获取字符串的长度
     printf("string length: %d\n", strlen(c_var));
     printf("sizeof(c_var): %d\n", sizeof(c_var));
