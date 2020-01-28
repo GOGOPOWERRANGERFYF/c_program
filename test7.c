@@ -13,6 +13,7 @@ void main(void)
     printf("    My Name is:%s\n", c_var);
     //strlen()函数获取字符串的长度
     printf("string length: %d\n", strlen(c_var));
+    printf("sizeof(c_var): %d\n", sizeof(c_var));
     return;
 }
 
