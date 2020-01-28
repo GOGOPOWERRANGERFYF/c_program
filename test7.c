@@ -7,6 +7,7 @@ void main(void)
     //c_var[40]是一个可容纳40个字符的数组
     //该数组占用内存中连续 1*40个字节byte
     char c_var[40];
+    short int si_var[5];
     // \b 光标向左移一位,一个字符占一位 
     printf("Input You Name:__________\b\b\b\b\b\b\b\b\b\b");
     scanf("%s", c_var);
@@ -14,6 +15,7 @@ void main(void)
     //strlen()函数获取字符串的长度
     printf("string length: %d\n", strlen(c_var));
     printf("sizeof(c_var): %d\n", sizeof(c_var));
+    printf("sizeof(si_var): %d\n", sizeof(si_var));
     return;
 }
 
