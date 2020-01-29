@@ -16,7 +16,10 @@ void main(void)
     //strlen()函数获取字符串的长度
     printf("string length: %d\n", strlen(c_var));
     printf("sizeof(c_var): %d\n", sizeof(c_var));
-    //&取数组变量的地址
+    //计算机主存每字节都有一个唯一的物理地址(physical address),物理寻址physical addressing
+    //&取数组变量的地址(虚拟地址virtual address\虚拟寻址virtual addressing)
+    //CPU芯片上的内存管理单元(memory management unit: MMU)将虚拟地址转换成物理地址
+    //《深入理解计算机系统第三版》 P560 
     printf("sizeof(&c_var): %d\n", sizeof(&c_var));
     printf("lx(&c_var): %lx\n", &c_var);
     printf("sizeof(si_var): %d\n", sizeof(si_var));
