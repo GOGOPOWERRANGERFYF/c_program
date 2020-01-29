@@ -21,6 +21,7 @@ void main(void)
     //CPU芯片上的内存管理单元(memory management unit: MMU)将虚拟地址转换成物理地址
     //《深入理解计算机系统第三版》 P560 
     printf("sizeof(&c_var): %d\n", sizeof(&c_var));
+    //&c_var是数组第一个字节的虚拟地址(个人理解,待验证)
     printf("lx(&c_var)/64bit virtual address(hexadecimal): %lx\n", &c_var);
     printf("sizeof(si_var): %d\n", sizeof(si_var));
     printf("sizeof(&si_var): %d\n", sizeof(&si_var));
