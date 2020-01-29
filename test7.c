@@ -1,6 +1,13 @@
 // ANSI(american national standards institute):美国国家标准学会
+// 'x' 一个字符   | x |    |
+// "x" 一个字符串 | x | \0 |
+// \0 空字符:null character(非打印字符)
+//scanf()函数会自动添加空字符
+//scnaf() 只会读取fyfa fyfb中的fyfa
+//字符串常量 编译器会添加空字符
 #include <stdio.h>
 #include <string.h>
+#define NAME "FuYunFeng" //定义字符串常量
 
 void main(void)
 {
