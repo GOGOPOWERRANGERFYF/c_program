@@ -16,7 +16,7 @@ void main(void)
     char c_var[40];
     //该短整型数组占用内存中连续 2*5个字节byte
     short int si_var[5];
-    printf("character string 字符串\n");
+    printf("character string 字符串,string constant: %s\n", NAME);
     // \b 光标向左移一位,一个字符占一位 
     printf("Input You Name:__________\b\b\b\b\b\b\b\b\b\b");
     scanf("%s", c_var);
