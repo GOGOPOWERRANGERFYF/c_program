@@ -25,7 +25,7 @@ void main(void)
     printf("My Name is:%s\n", c_var);
     //strlen()函数获取字符串的长度,获取空字符(null character)之前的字符串的长度
     // strlen()函数 和 sizeof运算符 返回值为无符号整数类型(unsigned integer)  注:网上说的...不知道对不对
-    // 输出返回值用%zd或%u
+    // 输出返回值用%zd或%u,C99和C11标准用%zd,较早的C用%u
     // sizeof运算符用法示例: 1)sizeof(object);  2)sizeof object;  3)sizeof(type);
     printf("string length, strlen(c_var): %u\n", strlen(c_var));
     printf("string length, strlen(NAME): %u\n", strlen(NAME));
