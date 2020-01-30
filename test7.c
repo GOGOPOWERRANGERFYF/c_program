@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <string.h>      /* 该头文件提供strlen()函数 */
 #define NAME "FuYunFeng" /* 定义字符串常量 */
+void code_new_line(void);
 
 void main(void)
 {
@@ -35,6 +36,21 @@ void main(void)
     printf("lx(&c_var)/64bit virtual address(hexadecimal): %lx\n", &c_var);
     printf("sizeof(si_var): %d\n", sizeof(si_var));
     printf("sizeof(&si_var): %d\n", sizeof(&si_var));
+
+    code_new_line();
+    return;
+}
+
+void code_new_line(void)
+{
+    printf("233333333333333333333333333333333333333333, This is my name: %s\n", NAME);
+    //处理很长的printf()语句的两种方法:
+    // 1)
+    printf("233333333333333333333333333333333333333333, This is my name: %s\n",
+     NAME);
+    // 2)
+    printf("233333333333333333333333333333333333333333, ");
+    printf("This is my name: %s\n", NAME);
     return;
 }
 
