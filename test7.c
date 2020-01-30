@@ -24,18 +24,21 @@ void main(void)
     scanf("%s", c_var);
     printf("My Name is:%s\n", c_var);
     //strlen()函数获取字符串的长度,获取空字符(null character)之前的字符串的长度
-    printf("string length, strlen(c_var): %d\n", strlen(c_var));
-    printf("string length, strlen(NAME): %d\n", strlen(NAME));
-    printf("sizeof(c_var): %d\n", sizeof(c_var));
+    // strlen()函数 和 sizeof运算符 返回值为无符号整数类型(unsigned integer)
+    // 输出返回值用%zd或%u
+    // sizeof运算符用法示例: 1)sizeof(object);  2)sizeof object;  3)sizeof(type);
+    printf("string length, strlen(c_var): %u\n", strlen(c_var));
+    printf("string length, strlen(NAME): %u\n", strlen(NAME));
+    printf("sizeof(c_var): %u\n", sizeof(c_var));
     //计算机主存每字节都有一个唯一的物理地址(physical address),物理寻址physical addressing
     //&取数组变量的地址(虚拟地址virtual address\虚拟寻址virtual addressing)
     //CPU芯片上的内存管理单元(memory management unit: MMU)将虚拟地址转换成物理地址
     //《深入理解计算机系统第三版》 P560 
-    printf("sizeof(&c_var): %d\n", sizeof(&c_var));
+    printf("sizeof(&c_var): %u\n", sizeof(&c_var));
     //&c_var是数组第一个字节的虚拟地址(个人理解,待验证)
     printf("lx(&c_var)/64bit virtual address(hexadecimal): %lx\n", &c_var);
-    printf("sizeof(si_var): %d\n", sizeof(si_var));
-    printf("sizeof(&si_var): %d\n", sizeof(&si_var));
+    printf("sizeof(si_var): %u\n", sizeof(si_var));
+    printf("sizeof(&si_var): %u\n", sizeof(&si_var));
 
     code_new_line();
     return;
