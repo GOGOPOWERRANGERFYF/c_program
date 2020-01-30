@@ -13,6 +13,7 @@ void main(void)
 {
     //c_var[40]是一个可容纳40个字符的数组
     //该字符数组占用内存中连续 1*40个字节byte
+    //定义字符类型数组
     char c_var[40];
     //该短整型数组占用内存中连续 2*5个字节byte
     short int si_var[5];
