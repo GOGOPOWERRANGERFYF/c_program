@@ -23,7 +23,7 @@ void main(void)
     printf("Input You Name:__________\b\b\b\b\b\b\b\b\b\b");
     scanf("%s", c_var);
     printf("My Name is:%s\n", c_var);
-    //strlen()函数获取字符串的长度
+    //strlen()函数获取字符串的长度,获取空字符(null character)之前的字符串的长度
     printf("string length, strlen(c_var): %d\n", strlen(c_var));
     printf("string length, strlen(NAME): %d\n", strlen(NAME));
     printf("sizeof(c_var): %d\n", sizeof(c_var));
