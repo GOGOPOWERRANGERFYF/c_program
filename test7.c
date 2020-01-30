@@ -6,8 +6,8 @@
 //scnaf() 只会读取fyfa fyfb中的fyfa
 //字符串常量 编译器会添加空字符
 #include <stdio.h>
-#include <string.h>
-#define NAME "FuYunFeng" //定义字符串常量
+#include <string.h>      /* 该头文件提供strlen()函数 */
+#define NAME "FuYunFeng" /* 定义字符串常量 */
 
 void main(void)
 {
