@@ -7,7 +7,7 @@
 //字符串常量 编译器会添加空字符
 #include <stdio.h>
 #include <string.h>      /* 该头文件提供strlen()函数 */
-#define NAME "FuYunFeng" /* 定义字符串常量 */
+#define NAME "Fu YunFeng" /* 定义字符串常量 */
 void code_new_line(void);
 
 void main(void)
