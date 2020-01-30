@@ -23,7 +23,8 @@ void main(void)
     scanf("%s", c_var);
     printf("My Name is:%s\n", c_var);
     //strlen()函数获取字符串的长度
-    printf("string length: %d\n", strlen(c_var));
+    printf("string length, strlen(c_var): %d\n", strlen(c_var));
+    printf("string length, strlen(NAME): %d\n", strlen(NAME));
     printf("sizeof(c_var): %d\n", sizeof(c_var));
     //计算机主存每字节都有一个唯一的物理地址(physical address),物理寻址physical addressing
     //&取数组变量的地址(虚拟地址virtual address\虚拟寻址virtual addressing)
