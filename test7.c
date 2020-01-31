@@ -7,7 +7,7 @@
 //字符串常量 编译器会添加空字符
 #include <stdio.h>
 #include <string.h>      /* 该头文件提供strlen()函数 */
-//编译程序的时候,程序中的符号常量会被替换成所定义的常量,编译时替换(compile-time substitution)
+//编译程序的时候,程序中的符号常量会被替换成所定义的值(常量),编译时替换(compile-time substitution)
 #define NAME "Fu YunFeng." /* 定义符号常量 */
 #define PI 3.14159         /* 定义符号常量(symbolic constant) */
 void code_new_line(void);
