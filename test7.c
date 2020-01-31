@@ -11,6 +11,7 @@
 #define NAME "Fu YunFeng." /* 定义符号常量 */
 #define PI 3.14159         /* 定义符号常量(symbolic constant) */
 void code_new_line(void);
+void circle_arithmetic(void);
 
 void main(void)
 {
@@ -22,7 +23,7 @@ void main(void)
     short int si_var[5];
     printf("character string 字符串,string constant Name: %s\n", NAME);
     // \b 光标向左移一位,一个字符占一位 
-    printf("Input You Name:__________\b\b\b\b\b\b\b\b\b\b");
+    //printf("Input You Name:__________\b\b\b\b\b\b\b\b\b\b");
     scanf("%s", c_var);
     printf("My Name is:%s\n", c_var);
     //strlen()函数获取字符串的长度,获取空字符(null character)之前的字符串的长度
@@ -43,6 +44,7 @@ void main(void)
     printf("sizeof(&si_var): %u\n", sizeof(&si_var));
 
     code_new_line();
+    circle_arithmetic();
     return;
 }
 
@@ -59,4 +61,13 @@ void code_new_line(void)
     return;
 }
 
-
+void circle_arithmetic(void)
+{
+    double r, l, a;
+    printf("input r(floating-point number):__________\b\b\b\b\b\b\b\b\b\b");
+    scanf("%f", &r);
+    l = 2 * PI * r;
+    a = PI * r * r;
+    printf("\ncircle_l: %f, circle_a: %f.", l, a);
+    return;
+}
