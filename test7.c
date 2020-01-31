@@ -111,6 +111,12 @@ void circle_long_double_arithmetic(void)
     float f_a = 1.3F;
     double d_a = 1.3;
     long double ld_a = 1.3L;
+    printf("sizeof(f_a): %zd\n", sizeof(f_a));
+    printf("%.60e\n", f_a);
+    printf("%.30a\n", f_a);
+    printf("sizeof(d_a): %zd\n", sizeof(d_a));
+    printf("%.60e\n", d_a);
+    printf("%.30a\n", d_a);
     printf("sizeof(ld_a): %zd\n", sizeof(ld_a));
     printf("%.60e\n", ld_a);
     printf("%.30a\n", ld_a);
