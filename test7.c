@@ -8,6 +8,8 @@
 #include <stdio.h>
 #include <string.h>      /* 该头文件提供strlen()函数 */
 //编译程序的时候,程序中的符号常量会被替换成所定义的值(常量),编译时替换(compile-time substitution)
+//符号常量后面的内容被用来替换符号常量 《c primer plus第六版》p189
+#define C 'A'
 #define NAME "Fu YunFeng." /* 定义符号常量 */
 #define PI 3.14159         /* 定义符号常量(symbolic constant) */
 void code_new_line(void);
