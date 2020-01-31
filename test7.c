@@ -13,6 +13,7 @@
 void code_new_line(void);
 void circle_float_arithmetic(void);
 void circle_double_arithmetic(void);
+void circle_long_double_arithmetic(void);
 
 void main(void)
 {
@@ -104,5 +105,13 @@ void circle_double_arithmetic(void)
     return;
 }
 
+void circle_long_double_arithmetic(void)
+{
+    float f_a;
+    double d_a;
+    long double ld_a;
+    printf("%zd\n", sizeof(d_a));
+    return;
+}
 
 
