@@ -68,6 +68,6 @@ void circle_arithmetic(void)
     scanf("%f", &r);
     l = 2.0 * PI * r;
     a = PI * r * r;
-    printf("circle_l: %.10f, circle_a: %10f", l, a);
+    printf("circle_l: %10.15f, circle_a: %10.15f", l, a);
     return;
 }
