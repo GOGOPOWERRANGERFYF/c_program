@@ -83,9 +83,9 @@ void circle_float_arithmetic(void)
     scanf("%f", &r);
     l = 2.0 * PI * r;
     a = PI * r * r;
-    printf("circle_l: %f, circle_a: %f\n", l, a);
-    printf("circle_l: %e, circle_a: %e\n", l, a);
-    printf("circle_l: %a, circle_a: %a\n", l, a);
+    printf("circle_l(f): %f, circle_a(f): %f\n", l, a);
+    printf("circle_l(e): %e, circle_a(e): %e\n", l, a);
+    printf("circle_l(a): %a, circle_a(a): %a\n", l, a);
     return;
 }
 
@@ -98,9 +98,9 @@ void circle_double_arithmetic(void)
     scanf("%lf", &d_r);
     d_l = 2.0 * PI * d_r;
     d_a = PI * d_r * d_r;
-    printf("circle_l: %f, circle_a: %f\n", d_l, d_a);
-    printf("circle_l: %e, circle_a: %e\n", d_l, d_a);
-    printf("circle_l: %a, circle_a: %a\n", d_l, d_a);
+    printf("circle_l(f): %f, circle_a(f): %f\n", d_l, d_a);
+    printf("circle_l(e): %e, circle_a(e): %e\n", d_l, d_a);
+    printf("circle_l(a): %a, circle_a(a): %a\n", d_l, d_a);
     return;
 }
 
