@@ -65,7 +65,8 @@ void code_new_line(void)
     return;
 }
 
-//格式说明符(format specific)
+//格式说明符(format specific) 
+//注:long double类型有点特殊,需要硬件,操作系统支持,虽然编译器有定义这个类型,我暂时用不到就不折腾了...
 // [1] scanf()
 //     float: %f %e %a
 //     double: %lf %le %la
@@ -74,7 +75,7 @@ void code_new_line(void)
 //     %f %e 默认保留小数点后六位
 //     float: %f %e %a
 //     double: %f %e %a
-//     long double: %f %e %a
+//     long double: %f %e %a  
 // 浮点数不加后缀,默认double类型
 void circle_float_arithmetic(void)
 {
@@ -110,16 +111,14 @@ void circle_long_double_arithmetic(void)
 {
     float f_a = 1.3F;
     double d_a = 1.3;
-    long double ld_a = 1.3L;
     printf("sizeof(f_a): %zd\n", sizeof(f_a));
+    printf("%.60f\n", f_a);
     printf("%.60e\n", f_a);
-    printf("%.30a\n", f_a);
+    printf("%.60a\n", f_a);
     printf("sizeof(d_a): %zd\n", sizeof(d_a));
+    printf("%.60f\n", d_a);
     printf("%.60e\n", d_a);
-    printf("%.30a\n", d_a);
-    printf("sizeof(ld_a): %zd\n", sizeof(ld_a));
-    printf("%.60e\n", ld_a);
-    printf("%.30a\n", ld_a);
+    printf("%.60a\n", d_a);
     return;
 }
 
