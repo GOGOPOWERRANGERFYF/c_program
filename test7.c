@@ -65,13 +65,14 @@ void code_new_line(void)
 
 //格式说明符(format specific)
 // [1] scanf()
-//     float: %f
-//     double: %lf
-//     long double: %Lf
+//     float: %f %e %a
+//     double: %lf %le %la
+//     long double: %Lf %Le %La
 // [2] printf()
-//     float: %f
-//     double: %f
-//     long double: %f
+//     float: %f %e %a
+//     double: %f %e %a
+//     long double: %f %e %a
+// 浮点数不加后缀,默认double类型
 void circle_float_arithmetic(void)
 {
     float r, l, a;
