@@ -69,6 +69,7 @@ void code_new_line(void)
 //     double: %lf %le %la
 //     long double: %Lf %Le %La
 // [2] printf()
+//     %f %e 默认保留小数点后六位
 //     float: %f %e %a
 //     double: %f %e %a
 //     long double: %f %e %a
