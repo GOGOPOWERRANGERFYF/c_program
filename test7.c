@@ -97,7 +97,7 @@ void circle_double_arithmetic(void)
     scanf("%lf", &d_r);
     d_l = 2.0 * PI * d_r;
     d_a = PI * d_r * d_r;
-    printf("circle_l: %.15f, circle_a: %.15f\n", d_l, d_a);
+    printf("circle_l: %f, circle_a: %f\n", d_l, d_a);
     printf("circle_l: %e, circle_a: %e\n", d_l, d_a);
     printf("circle_l: %a, circle_a: %a\n", d_l, d_a);
     return;
