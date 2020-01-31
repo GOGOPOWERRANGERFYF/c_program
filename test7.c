@@ -23,7 +23,7 @@ void main(void)
     short int si_var[5];
     printf("character string 字符串,string constant Name: %s\n", NAME);
     // \b 光标向左移一位,一个字符占一位 
-    //printf("Input You Name:__________\b\b\b\b\b\b\b\b\b\b");
+    printf("Input You Name:__________\b\b\b\b\b\b\b\b\b\b");
     scanf("%s", c_var);
     printf("My Name is:%s\n", c_var);
     //strlen()函数获取字符串的长度,获取空字符(null character)之前的字符串的长度
@@ -66,8 +66,8 @@ void circle_arithmetic(void)
     double r, l, a;
     printf("input r(floating-point number):__________\b\b\b\b\b\b\b\b\b\b");
     scanf("%f", &r);
-    l = 2 * PI * r;
+    l = 2.0 * PI * r;
     a = PI * r * r;
-    printf("\ncircle_l: %f, circle_a: %f.", l, a);
+    printf("circle_l: %.10f, circle_a: %10f", l, a);
     return;
 }
