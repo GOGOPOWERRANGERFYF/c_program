@@ -63,6 +63,15 @@ void code_new_line(void)
     return;
 }
 
+//格式说明符(format specific)
+// [1] scanf()
+//     float: %f
+//     double: %lf
+//     long double: %Lf
+// [2] printf()
+//     float: %f
+//     double: %f
+//     long double: %f
 void circle_float_arithmetic(void)
 {
     float r, l, a;
