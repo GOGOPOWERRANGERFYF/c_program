@@ -111,7 +111,7 @@ void circle_long_double_arithmetic(void)
     float f_a;
     double d_a;
     long double ld_a;
-    printf("%zd\n", sizeof(ld_a));
+    printf("sizeof(ld_a): %zd\n", sizeof(ld_a));
     return;
 }
 
