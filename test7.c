@@ -108,10 +108,12 @@ void circle_double_arithmetic(void)
 
 void circle_long_double_arithmetic(void)
 {
-    float f_a;
-    double d_a;
-    long double ld_a;
+    float f_a = 1.3F;
+    double d_a = 1.3;
+    long double ld_a = 1.3L;
     printf("sizeof(ld_a): %zd\n", sizeof(ld_a));
+    printf("%.60e\n", ld_a);
+    printf("%.30a\n", ld_a);
     return;
 }
 
