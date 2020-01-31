@@ -66,7 +66,7 @@ void circle_arithmetic(void)
     float r, l, a;
     double d_r, d_l, d_a;
     printf("sizeof(r): %zd,sizeof(d_r): %zd,sizeof(PI): %zd\n",
-     sizeof(r), sizeof(d_r)), sizeof(PI);
+     sizeof(r), sizeof(d_r), sizeof(PI));
     printf("input r(floating-point number):______\b\b\b\b\b\b");
     scanf("%f", &r);
     l = 2.0 * PI * r;
