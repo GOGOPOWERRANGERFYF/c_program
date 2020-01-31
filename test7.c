@@ -11,7 +11,8 @@
 #define NAME "Fu YunFeng." /* 定义符号常量 */
 #define PI 3.14159         /* 定义符号常量(symbolic constant) */
 void code_new_line(void);
-void circle_arithmetic(void);
+void circle_float_arithmetic(void);
+void circle_double_arithmetic(void);
 
 void main(void)
 {
@@ -44,7 +45,8 @@ void main(void)
     printf("sizeof(&si_var): %u\n", sizeof(&si_var));
 
     code_new_line();
-    circle_arithmetic();
+    circle_float_arithmetic();
+    circle_double_arithmetic();
     return;
 }
 
@@ -61,12 +63,11 @@ void code_new_line(void)
     return;
 }
 
-void circle_arithmetic(void)
+void circle_float_arithmetic(void)
 {
     float r, l, a;
-    double d_r, d_l, d_a;
-    printf("sizeof(r): %zd,sizeof(d_r): %zd,sizeof(PI): %zd\n",
-     sizeof(r), sizeof(d_r), sizeof(PI));
+    printf("sizeof(r): %zd, sizeof(PI): %zd\n",
+     sizeof(r), sizeof(PI));
     printf("input r(floating-point number):______\b\b\b\b\b\b");
     scanf("%f", &r);
     l = 2.0 * PI * r;
@@ -77,7 +78,20 @@ void circle_arithmetic(void)
     return;
 }
 
-
+void circle_double_arithmetic(void)
+{
+    double d_r, d_l, d_a;
+    printf("sizeof(d_r): %zd,sizeof(PI): %zd\n",
+     sizeof(d_r), sizeof(PI));
+    printf("input r(floating-point number):______\b\b\b\b\b\b");
+    scanf("%lf", &d_r);
+    d_l = 2.0 * PI * d_r;
+    d_a = PI * d_r * d_r;
+    printf("circle_l: %.2f, circle_a: %.2f\n", d_l, d_a);
+    printf("circle_l: %e, circle_a: %e\n", d_l, d_a);
+    printf("circle_l: %a, circle_a: %a\n", d_l, d_a);
+    return;
+}
 
 
 
