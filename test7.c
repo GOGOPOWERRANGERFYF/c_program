@@ -66,7 +66,7 @@ void code_new_line(void)
 }
 
 //格式说明符(format specific) 
-//注:long double类型有点特殊,需要硬件,操作系统支持,虽然编译器有定义这个类型,我暂时用不到就不折腾了...
+//注:long double类型有点特殊,需要考虑硬件,操作系统等因素,虽然编译器有定义这个类型,我暂时用不到就不折腾了...
 // [1] scanf()
 //     float: %f %e %a
 //     double: %lf %le %la
