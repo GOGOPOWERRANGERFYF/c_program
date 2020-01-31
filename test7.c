@@ -48,6 +48,7 @@ void main(void)
     code_new_line();
     circle_float_arithmetic();
     circle_double_arithmetic();
+    circle_long_double_arithmetic();
     return;
 }
 
@@ -110,7 +111,7 @@ void circle_long_double_arithmetic(void)
     float f_a;
     double d_a;
     long double ld_a;
-    printf("%zd\n", sizeof(d_a));
+    printf("%zd\n", sizeof(ld_a));
     return;
 }
 
