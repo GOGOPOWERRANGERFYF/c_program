@@ -63,11 +63,19 @@ void code_new_line(void)
 
 void circle_arithmetic(void)
 {
-    double r, l, a;
-    printf("input r(floating-point number):__________\b\b\b\b\b\b\b\b\b\b");
+    float r, l, a;
+    //double r, l, a;
+    printf("input r(floating-point number):______\b\b\b\b\b\b");
     scanf("%f", &r);
     l = 2.0 * PI * r;
     a = PI * r * r;
-    printf("circle_l: %10.15f, circle_a: %10.15f", l, a);
+    printf("circle_l: %.2f, circle_a: %.2f\n", l, a);
+    printf("circle_l: %e, circle_a: %e\n", l, a);
+    printf("circle_l: %a, circle_a: %a\n", l, a);
     return;
 }
+
+
+
+
+
