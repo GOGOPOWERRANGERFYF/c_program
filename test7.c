@@ -4,7 +4,10 @@
 // \0 空字符:null character(非打印字符)
 //scanf()函数会自动添加空字符
 //scnaf() 只会读取fyfa fyfb中的fyfa
+//--------------------------------------------------------------
 //conversion specification(转换说明) 例如: %d %f
+// 1) printf() --> conversion specification表 《c primer plus第六版》P195
+//--------------------------------------------------------------
 //字符串常量 编译器会添加空字符
 #include <stdio.h>
 #include <string.h>      /* 该头文件提供strlen()函数 */
