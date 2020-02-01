@@ -16,6 +16,7 @@ void code_new_line(void);
 void circle_float_arithmetic(void);
 void circle_double_arithmetic(void);
 void circle_long_double_arithmetic(void);
+void define_and_const(void);
 
 void main(void)
 {
@@ -51,6 +52,7 @@ void main(void)
     circle_float_arithmetic();
     circle_double_arithmetic();
     circle_long_double_arithmetic();
+    define_and_const();
     return;
 }
 
@@ -121,6 +123,19 @@ void circle_long_double_arithmetic(void)
     printf("%.60f\n", d_a);
     printf("%.60e\n", d_a);
     printf("%.60a\n", d_a);
+    return;
+}
+
+void define_and_const(void)
+{
+    //const关键字(key woird)限定一个变量为只读,赋值编译器会报错
+    //用法比define更灵活
+    // PI = 5.555; 符号常量不能更改其内容
+    // csi_b = 88; const限定变量只读,不可更改
+    const short int csi_a = 55, csi_b = 66;
+    printf("%hd\n", csi_a);
+    printf("%hd\n", csi_b);
+    printf("%f\n", PI);
     return;
 }
 
