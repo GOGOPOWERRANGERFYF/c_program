@@ -1,3 +1,5 @@
+#include <limits.h> /* 提供整数类型大小相关的信息  */
+#include <float.h>  /* 提供浮点数类型大小相关的信息 */
 //ascii(american standard code for information interchange):美国信息交换标准代码
 //包含0~9,大小写字母和常用符号,用一个字节的数据表示
 //unicode(unique universal uniform character encode):唯一 通用 统一 字符编码
@@ -36,7 +38,7 @@
 //处理器在进程间切换让单核处理器看上去能并发处理多个程序
 //操作系统实现这种进程间交错执行的机制称为上下文切换
 
-#include <stdio.h> //standard input & output . head头文件
+#include <stdio.h> /* standard input & output . head头文件 */
 //stdio.h是C编译器软件包的标准库的一个文件,它提供键盘输入和屏幕输出的支持
 //cpp(c pre-processor:预处理器)会读取stdio.h文件的内容并插入到程序文本中
 //结果得到另外一个C程序,通常以.i作为文件扩展名
