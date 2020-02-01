@@ -137,14 +137,15 @@ void define_and_const(void)
     // PI = 5.555; 符号常量不能更改其内容
     // csi_b = 88; const限定变量只读,不可更改
     const short int csi_a = 55, csi_b = 66;
-    printf("%hd\n", csi_a);
-    printf("%hd\n", csi_b);
+    printf("csi_a(%%hd)%hd\n", csi_a);
+    printf("csi_b(%%hd)%hd\n", csi_b);
     // 计算机中储存的是 3.14159的近似值
-    printf("PI(f): %f\n", PI);
-    printf("PI(.10f): %.10e\n", PI);
+    // %%   printf()转换说明 打印一个百分号
+    printf("PI(%%f): %f\n", PI);
+    printf("PI(%%.10f): %.10e\n", PI);
     // double类型 尾数52位,因此只能计算最长值 %.13a,超过这个长度后面只是填充0而已
-    printf("PI(.13a): %.13a\n", PI);
-    printf("PI(.15a): %.15a\n", PI);
+    printf("PI(%%.13a): %.13a\n", PI);
+    printf("PI(%%.15a): %.15a\n", PI);
     return;
 }
 
