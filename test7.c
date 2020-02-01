@@ -15,7 +15,7 @@
 //符号常量后面的内容被用来替换符号常量 《c primer plus第六版》p189
 #define C 'A'
 #define NAME "Fu YunFeng." /* 定义符号常量 */
-#define PI 3.14159         /* 定义符号常量(symbolic constant) */
+#define PI 3.141593         /* 定义符号常量(symbolic constant) */
 void code_new_line(void);
 void circle_float_arithmetic(void);
 void circle_double_arithmetic(void);
