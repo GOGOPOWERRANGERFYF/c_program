@@ -133,6 +133,7 @@ void circle_long_double_arithmetic(void)
 void define_and_const(void)
 {
     //const关键字(key woird)限定一个变量为只读,赋值编译器会报错
+    // short long signed unsigned const 限定符
     //用法比define更灵活
     // PI = 5.555; 符号常量不能更改其内容
     // csi_b = 88; const限定变量只读,不可更改
