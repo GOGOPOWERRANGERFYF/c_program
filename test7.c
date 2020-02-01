@@ -135,7 +135,11 @@ void define_and_const(void)
     const short int csi_a = 55, csi_b = 66;
     printf("%hd\n", csi_a);
     printf("%hd\n", csi_b);
-    printf("%f\n", PI);
+    printf("PI(f): %f\n", PI);
+    printf("PI(.10f): %.10e\n", PI);
+    // double类型 尾数52位,因此只能计算最长值 %.13a,超过这个长度后面只是填充0而已
+    printf("PI(.13a): %.13a\n", PI);
+    printf("PI(.15a): %.15a\n", PI);
     return;
 }
 
