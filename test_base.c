@@ -1,5 +1,5 @@
-#include <limits.h> /* 提供整数类型大小相关的信息  */
-#include <float.h>  /* 提供浮点数类型大小相关的信息 */
+#include <limits.h> /* 提供整数类型大小相关的信息,里面定义了明示常量 具体《c primer plus》P190  */
+#include <float.h>  /* 提供浮点数类型大小相关的信息,里面定义了明示常量 */
 //ascii(american standard code for information interchange):美国信息交换标准代码
 //包含0~9,大小写字母和常用符号,用一个字节的数据表示
 //unicode(unique universal uniform character encode):唯一 通用 统一 字符编码
