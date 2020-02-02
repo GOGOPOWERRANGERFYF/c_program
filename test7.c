@@ -158,7 +158,10 @@ void define_and_const(void)
 
 void stdio_include_stddef_size_type(void)
 {
-    //underlying type(底层类型)
+    // long unsigned int
+    //       |
+    //       V
+    // __SIZE_TYPE__  <-- underlying type(底层类型)
     // stddef.h头文件中, #define __SIZE_TYPE__ long unsigned int
     // 
     printf("sizeof(int):%d\n", sizeof(int));
