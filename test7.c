@@ -21,6 +21,7 @@ void circle_float_arithmetic(void);
 void circle_double_arithmetic(void);
 void circle_long_double_arithmetic(void);
 void define_and_const(void);
+void stdio_include_stddef_size_type(void);
 
 void main(void)
 {
@@ -57,6 +58,7 @@ void main(void)
     circle_double_arithmetic();
     circle_long_double_arithmetic();
     define_and_const();
+    stdio_include_stddef_size_type();
     return;
 }
 
@@ -149,11 +151,20 @@ void define_and_const(void)
     printf("PI(%%.15a): %.15a\n", PI);
     return;
 }
-
 // printf("格式化字符串/转换说明", 待打印列表)
 // 待打印列表项: 常量,变量,表达式的值
 // 《c primer plus第六版》P200 表4.5 转换说明修饰符
 // 需要注意的: l和整数转换说明使用,L和浮点数转换说明使用
 
-// underlying type(底层类型)
-//
+void stdio_include_stddef_size_type(void)
+{
+    //underlying type(底层类型)
+    // stddef.h头文件中, #define __SIZE_TYPE__ long unsigned int
+    // 
+    printf("sizeof(int):%d\n", sizeof(int));
+    printf("sizeof(sizeof(int):%d --> long unsigned int\n",
+     sizeof(sizeof(int)));
+    return;
+}
+
+
