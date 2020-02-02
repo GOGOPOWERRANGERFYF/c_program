@@ -165,8 +165,8 @@ void stdio_include_stddef_size_type(void)
     // 
     // stddef.h(在包含stdio.h时已包含其中,书本上说的,具体怎么实现我目前还不懂。。。)头文件中, 
     // #define __SIZE_TYPE__ long unsigned int
-    printf("sizeof(int):%d\n", sizeof(int));
-    printf("sizeof(sizeof(int):%d --> long unsigned int\n",
+    printf("sizeof(int):%zd\n", sizeof(int));
+    printf("sizeof(sizeof(int):%zd --> long unsigned int\n",
      sizeof(sizeof(int)));
     return;
 }
