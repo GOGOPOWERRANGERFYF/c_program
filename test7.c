@@ -152,4 +152,5 @@ void define_and_const(void)
 
 // printf("格式化字符串/转换说明", 待打印列表)
 // 待打印列表项: 常量,变量,表达式的值
+// 《c primer plus第六版》P200 表4.5 转换说明修饰符
 
