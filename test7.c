@@ -154,3 +154,6 @@ void define_and_const(void)
 // 待打印列表项: 常量,变量,表达式的值
 // 《c primer plus第六版》P200 表4.5 转换说明修饰符
 // 需要注意的: l和整数转换说明使用,L和浮点数转换说明使用
+
+// underlying type(底层类型)
+//
