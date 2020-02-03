@@ -188,14 +188,14 @@ void stdio_include_stddef_size_type(void)
     //历史遗留问题,为了兼容
     //因为在K&R C中,表达式或参数中的float类型会被自动转换成double类型
     //具体看《c primer plus第六版》P201
-    // f_a*f_b表达式返回值打印结果可看出,ANSI C不会自动把float转换成double
+    // f_a*f_b表达式返回值打印结果可看出,一般而言,ANSI C不会自动把float转换成double
+    //《c primer plus第六版》P201 第8行
+    //从f_var_a和d_var_a两个变量的打印结果可印证,printf()的float仍自动转换成double
     printf("sizeof(f_a*f_b): %zd\n", sizeof(f_a*f_b));
     printf("sizeof(f_a*2.0): %zd\n", sizeof(f_a*2.0));
     printf("sizeof(f_a*d_var_a): %zd\n", sizeof(f_a*d_var_a));
     printf("f_var_a=1.0 (a): %a\n", f_var_a);
     printf("d_var_a=1.0 (a): %a\n", d_var_a);
-    //《c primer plus第六版》P201 第8行
-    //从f_var_a和d_var_a两个变量的打印结果可印证,printf()的float仍自动转换成double
     printf("f_var_a=1.0 (x): %x\n", f_var_a);
     printf("f_var_a=1.0 (lx): %lx\n", f_var_a);
     printf("d_var_a=1.0 (x): %x\n", d_var_a);
