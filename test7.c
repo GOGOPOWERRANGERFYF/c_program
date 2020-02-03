@@ -159,10 +159,11 @@ void define_and_const(void)
 void stdio_include_stddef_size_type(void)
 {
     float f_a = 1.0, f_b = 2.0;
+    size_t size_type_a;
     // long unsigned int
     //       |
     //       V
-    // __SIZE_TYPE__  <-- underlying type(底层类型) 注:个人理解,待以后确认。。。
+    // __SIZE_TYPE__ --> size_t  <-- underlying type(底层类型) 注:个人理解,待以后确认。。。
     // 
     // stddef.h(在包含stdio.h时已包含其中,书本上说的,具体怎么实现我目前还不懂。。。)头文件中, 
     // C标准只规定了sizeof返回值类型为无符号整数类型
@@ -171,7 +172,8 @@ void stdio_include_stddef_size_type(void)
     // unsigned int, unsigned long, unsigned long long都有可能)
     // z修饰符和整数转换说明一起使用,表示size_t类型的值
     printf("sizeof(int): %zd\n", sizeof(int));
-    printf("sizeof(sizeof(int): %zd\n --> long unsigned int\n",
+    printf("sizeof(size_t): %zd --> long unsigned int\n", sizeof(size_t));
+    printf("sizeof(sizeof(int)): %zd --> long unsigned int\n",
      sizeof(sizeof(int)));
     printf("sizeof(float): %zd\n", sizeof(float));
     printf("sizeof(double): %zd\n", sizeof(double));
