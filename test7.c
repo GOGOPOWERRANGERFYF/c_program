@@ -163,7 +163,7 @@ void stdio_include_stddef_size_type(void)
     // long unsigned int
     //       |
     //       V
-    // __SIZE_TYPE__ --> size_t  <-- underlying type(底层类型) 注:个人理解,待以后确认。。。
+    // __SIZE_TYPE__ --> size_t类型  <-- underlying type(底层类型) 注:个人理解,待以后确认。。。
     // 
     // stddef.h(在包含stdio.h时已包含其中,书本上说的,具体怎么实现我目前还不懂。。。)头文件中, 
     // C标准只规定了sizeof返回值类型为无符号整数类型
