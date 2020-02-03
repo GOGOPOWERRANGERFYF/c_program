@@ -159,6 +159,7 @@ void define_and_const(void)
 void stdio_include_stddef_size_type(void)
 {
     float f_a = 1.0, f_b = 2.0, f_var_a = 99.99, f_var_b;
+    double d_var_a = 99.99, d_var_b;
     size_t size_type_a;
     // long unsigned int
     //       |
@@ -182,8 +183,6 @@ void stdio_include_stddef_size_type(void)
     printf("sizeof(1.0): %zd\n", sizeof(1.0));
     printf("sizeof(f_a): %zd\n", sizeof(f_a));
     printf("constant 99.99 (x): %x\n", 99.99);
-    printf("have define --> float f_var_a = 99.99 (x): %x\n", f_var_a);
-    printf("f_var_b = 99.99(x): %x\n", f_var_b = 99.99);
     printf("sizeof(f_b): %zd\n", sizeof(f_b));
     //printf() 的浮点数转换说明为什么只有 %f
     //历史遗留问题,为了兼容
@@ -191,6 +190,12 @@ void stdio_include_stddef_size_type(void)
     //具体看《c primer plus第六版》P201
     printf("sizeof(f_a*f_b): %zd\n", sizeof(f_a*f_b));
     printf("sizeof(f_a*2.0): %zd\n", sizeof(f_a*2.0));
+    printf("f_var_a(a): %a\n", f_var_a);
+    printf("f_var_a(x): %x\n", f_var_a);
+    //printf("have define --> float f_var_a = 99.99 (x): %x\n", f_var_a);
+    //printf("f_var_b = 99.99(x): %x\n", f_var_b = 99.99);
+    //printf("have define --> double d_var_a = 99.99 (x): %x\n", d_var_a);
+    //printf("d_var_b = 99.99(x): %x\n", d_var_b = 99.99);
     return;
 }
 
