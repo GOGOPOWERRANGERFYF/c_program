@@ -190,6 +190,7 @@ void stdio_include_stddef_size_type(void)
     //具体看《c primer plus第六版》P201
     printf("sizeof(f_a*f_b): %zd\n", sizeof(f_a*f_b));
     printf("sizeof(f_a*2.0): %zd\n", sizeof(f_a*2.0));
+    printf("sizeof(f_a*d_var_a): %zd\n", sizeof(f_a*d_var_a));
     printf("f_var_a=1.0 (a): %a\n", f_var_a);
     printf("d_var_a=1.0 (a): %a\n", d_var_a);
     //《c primer plus第六版》P201 第8行
