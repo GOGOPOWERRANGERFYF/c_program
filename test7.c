@@ -191,17 +191,13 @@ void stdio_include_stddef_size_type(void)
     printf("sizeof(f_a*f_b): %zd\n", sizeof(f_a*f_b));
     printf("sizeof(f_a*2.0): %zd\n", sizeof(f_a*2.0));
     printf("f_var_a=1.0 (a): %a\n", f_var_a);
+    printf("d_var_a=1.0 (a): %a\n", d_var_a);
     //《c primer plus第六版》P201 第8行
     //从f_var_a和d_var_a两个变量的打印结果可印证,printf()的float仍自动转换成double
     printf("f_var_a=1.0 (x): %x\n", f_var_a);
     printf("f_var_a=1.0 (lx): %lx\n", f_var_a);
     printf("d_var_a=1.0 (x): %x\n", d_var_a);
     printf("d_var_a=1.0 (lx): %lx\n", d_var_a);
-    printf("d_var_a=1.0 (a): %a\n", d_var_a);
-    //printf("have define --> float f_var_a = 99.99 (x): %x\n", f_var_a);
-    //printf("f_var_b = 99.99(x): %x\n", f_var_b = 99.99);
-    //printf("have define --> double d_var_a = 99.99 (x): %x\n", d_var_a);
-    //printf("d_var_b = 99.99(x): %x\n", d_var_b = 99.99);
     return;
 }
 
