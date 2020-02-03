@@ -158,6 +158,7 @@ void define_and_const(void)
 
 void stdio_include_stddef_size_type(void)
 {
+    float f_a = 1.0, f_b = 2.0;
     // long unsigned int
     //       |
     //       V
@@ -169,9 +170,20 @@ void stdio_include_stddef_size_type(void)
     // (可移植性更好 sizeof返回值类型,不同编译器,
     // unsigned int, unsigned long, unsigned long long都有可能)
     // z修饰符和整数转换说明一起使用,表示size_t类型的值
-    printf("sizeof(int):%zd\n", sizeof(int));
-    printf("sizeof(sizeof(int):%zd --> long unsigned int\n",
+    printf("sizeof(int): %zd\n", sizeof(int));
+    printf("sizeof(sizeof(int): %zd\n --> long unsigned int\n",
      sizeof(sizeof(int)));
+    printf("sizeof(float): %zd\n", sizeof(float));
+    printf("sizeof(double): %zd\n", sizeof(double));
+    printf("sizeof(1.0): %zd\n", sizeof(1.0));
+    printf("sizeof(f_a): %zd\n", sizeof(f_a));
+    printf("sizeof(f_b): %zd\n", sizeof(f_b));
+    //printf() 的浮点数转换说明为什么只有 %f
+    //历史遗留问题,为了兼容
+    //因为在K&R C中,表达式或参数中的float类型会被自动转换成double类型
+    //具体看《c primer plus第六版》P201
+    printf("sizeof(f_a*f_b): %zd\n", sizeof(f_a*f_b));
+    printf("sizeof(f_a*2.0): %zd\n", sizeof(f_a*2.0));
     return;
 }
 
