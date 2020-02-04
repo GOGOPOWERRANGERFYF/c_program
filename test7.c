@@ -191,6 +191,7 @@ void stdio_include_stddef_size_type(void)
     // f_a*f_b表达式返回值打印结果可看出,一般而言,ANSI C不会自动把float转换成double
     //《c primer plus第六版》P201 第8行
     //从f_var_a和d_var_a两个变量的打印结果可印证,printf()的float仍自动转换成double
+    //所以没有float类型的专用转换说明,float和double类型都是用%f
     printf("sizeof(f_a*f_b): %zd\n", sizeof(f_a*f_b));
     printf("sizeof(f_a*2.0): %zd\n", sizeof(f_a*2.0));
     printf("sizeof(f_a*d_var_a): %zd\n", sizeof(f_a*d_var_a));
