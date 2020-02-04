@@ -201,8 +201,14 @@ void stdio_include_stddef_size_type(void)
     printf("f_var_a=1.0 (lx): %lx\n", f_var_a);
     printf("d_var_a=1.0 (x): %x\n", d_var_a);
     printf("d_var_a=1.0 (lx): %lx\n", d_var_a);
-    //《c primer plus第六版》P201 表4.5 printf()中的标记 
+    //《c primer plus第六版》P201 表4.5 printf()中的标记
+    // +标记  值为正,则前面显示+号;值为负,则前面显示-号
+    printf("%+.2f\n", f_a);
+    // (一个空格)标记  值为正,则前面显示一个空格;值为负,则前面显示-号
+    printf("% .2f\n", f_a);
     return;
 }
+
+
 
 
