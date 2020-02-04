@@ -158,6 +158,7 @@ void define_and_const(void)
 
 void stdio_include_stddef_size_type(void)
 {
+    int i_a = 111;
     float f_a = 1.0, f_b = 2.0, f_var_a = 1.0, f_var_b;
     double d_var_a = 1.0;
     size_t size_type_a;
@@ -206,6 +207,10 @@ void stdio_include_stddef_size_type(void)
     printf("%+.2f\n", f_a);
     // (一个空格)标记  值为正,则前面显示一个空格;值为负,则前面显示-号
     printf("% .2f\n", f_a);
+    // %10d 整数字段宽度10
+    printf("*%10d*", i_a);
+    // %-10d 整数字段宽度10, -标记 左对齐
+    printf("*%-10d*", i_a);
     return;
 }
 
