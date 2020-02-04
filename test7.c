@@ -201,6 +201,7 @@ void stdio_include_stddef_size_type(void)
     printf("f_var_a=1.0 (lx): %lx\n", f_var_a);
     printf("d_var_a=1.0 (x): %x\n", d_var_a);
     printf("d_var_a=1.0 (lx): %lx\n", d_var_a);
+    //《c primer plus第六版》P201 表4.5 printf()中的标记 
     return;
 }
 
