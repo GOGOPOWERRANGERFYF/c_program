@@ -216,6 +216,7 @@ void stdio_include_stddef_size_type(void)
     // 浮点数类型的修饰符和标记也是相同原理
     // %10.2f 表示字段宽度10,保留小数点后两位,其它的就不展示了
     // 要了解看《c primer plus第六版》P203就好了
+    printf("*%10.2e*\n", 1.3);
     return;
 }
 
