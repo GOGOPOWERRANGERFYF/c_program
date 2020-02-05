@@ -239,7 +239,9 @@ void conversion_specification_modifiers_and_flags(void)
     printf("%.3f\n", cd_a);
     // flags # 显示前缀
     printf("%#lx\n", cd_a);
-    printf("*%.3d*\n", 6);
+    // .3d 整数数值位数不够的前面填充0
+    // 10d 字段宽度10
+    printf("*%10.3d*\n", 6);
     return;
 }
 
