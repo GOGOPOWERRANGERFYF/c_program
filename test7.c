@@ -238,7 +238,7 @@ void conversion_specification_modifiers_and_flags(void)
     const double cd_a = 123456.789;
     printf("%.3f\n", cd_a);
     // flags # 显示前缀
-    printf("%#x\n", cd_a);
+    printf("%#lx\n", cd_a);
     return;
 }
 
