@@ -239,6 +239,7 @@ void conversion_specification_modifiers_and_flags(void)
     printf("%.3f\n", cd_a);
     // flags # 显示前缀
     printf("%#lx\n", cd_a);
+    printf("*%.3d*\n", 6);
     return;
 }
 
