@@ -230,6 +230,3 @@ void stdio_include_stddef_size_type(void)
     return;
 }
 
-
-
-
