@@ -22,6 +22,7 @@ void circle_double_arithmetic(void);
 void circle_long_double_arithmetic(void);
 void define_and_const(void);
 void stdio_include_stddef_size_type(void);
+void conversion_specification_modifiers_and_flags(void);
 
 void main(void)
 {
@@ -59,6 +60,7 @@ void main(void)
     circle_long_double_arithmetic();
     define_and_const();
     stdio_include_stddef_size_type();
+    conversion_specification_modifiers_and_flags();
     return;
 }
 
@@ -230,4 +232,13 @@ void stdio_include_stddef_size_type(void)
     printf("1.399(%%10.1e): *%10.1e*\n", 1.399);
     return;
 }
+
+void conversion_specification_modifiers_and_flags(void)
+{
+    const double cd_a = 123456.789;
+    printf("%.3f\n", cd_a);
+    return;
+}
+
+
 
