@@ -175,6 +175,7 @@ void stdio_include_stddef_size_type(void)
     // (可移植性更好 sizeof返回值类型,不同编译器,
     // unsigned int, unsigned long, unsigned long long都有可能)
     // z修饰符和整数转换说明一起使用,表示size_t类型的值
+    // printf() conversion specification modifiers 输出函数转换说明修饰符
     printf("sizeof(int): %zd\n", sizeof(int));
     printf("sizeof(size_t): %zd --> long unsigned int\n", sizeof(size_t));
     printf("sizeof(sizeof(int)): %zd --> long unsigned int\n",
@@ -202,7 +203,7 @@ void stdio_include_stddef_size_type(void)
     printf("f_var_a=1.0 (lx): %lx\n", f_var_a);
     printf("d_var_a=1.0 (x): %x\n", d_var_a);
     printf("d_var_a=1.0 (lx): %lx\n", d_var_a);
-    //《c primer plus第六版》P201 表4.5 printf()中的标记
+    //《c primer plus第六版》P201 表4.5 printf()中的标记(flags)
     // +标记  值为正,则前面显示+号;值为负,则前面显示-号
     printf("f_a(%%+.2f): %+.2f\n", f_a);
     // (一个空格)标记  值为正,则前面显示一个空格;值为负,则前面显示-号
