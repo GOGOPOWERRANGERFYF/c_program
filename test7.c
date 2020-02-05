@@ -218,9 +218,11 @@ void stdio_include_stddef_size_type(void)
     // 要了解看《c primer plus第六版》P203就好了
     printf("*%e*\n", 11.3);
     printf("*%.2e*\n", 11.3);
+    // rounding 舍入
+    printf("*%.1e*\n", 11.3);
     printf("*%10.2e*\n", 11.3);
     printf("*%10.2e*\n", 1.3);
-    // 下面的两种情况会对结果进行舍入
+    // 下面的两种情况会对结果进行舍入rounding
     printf("*%10.2e*\n", 1.399);
     printf("*%10.1e*\n", 1.399);
     return;
