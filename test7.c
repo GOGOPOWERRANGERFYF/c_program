@@ -209,8 +209,12 @@ void stdio_include_stddef_size_type(void)
     printf("% .2f\n", f_a);
     // %10d 整数字段宽度10(个人感觉10个字符宽度更容易理解)
     printf("*%10d*\n", i_a);
+    // %010d 整数字段宽度为10,数值位数不足的前面填充0
+    printf("*%010d*\n", i_a);
     // %-10d 整数字段宽度10, -标记 左对齐
     printf("*%-10d*\n", i_a);
+    // 浮点数类型的修饰符和标记也是相同原理,这里就不展示了
+    // 要了解看《c primer plus第六版》P203就好了
     return;
 }
 
