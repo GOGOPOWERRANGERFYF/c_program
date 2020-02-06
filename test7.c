@@ -276,8 +276,9 @@ void conversion_specification_modifiers_and_flags(void)
 void printf_function_stack(void)
 {
     int i_a = 10000, i_b = 666;
+    float f_a = 3.0;
     //参数传递 stack栈 《c primer plus第六版》P212
-    printf("%hd,%hd\n", i_a, i_b);
+    printf("%hd,%hd,%hd\n", f_a, i_a, i_b);
     return;
 }
 
