@@ -257,6 +257,7 @@ void conversion_specification_modifiers_and_flags(void)
     // %30s 输出字符串宽度30,字符数不足的前面填充空格
     printf("[%30s]\n", NAME);
     printf("%ld\n", f_a);
+    printf("%ld\n", d_a);
     return;
 }
 
