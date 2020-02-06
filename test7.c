@@ -236,6 +236,7 @@ void stdio_include_stddef_size_type(void)
 void conversion_specification_modifiers_and_flags(void)
 {
     const double cd_a = 123456.789;
+    double d_a = 3.4e39;
     printf("%.3f\n", cd_a);
     // %E e输出变大写字母E
     printf("%E\n", cd_a);
@@ -254,6 +255,13 @@ void conversion_specification_modifiers_and_flags(void)
     printf("[%.5s]\n", NAME);
     // %30s 输出字符串宽度30,字符数不足的前面填充空格
     printf("[%30s]\n", NAME);
+    // printf() float double 转换说明都一样直接用%f %e %a就好
+    printf("%f\n", d_a);
+    printf("%lf\n", d_a);
+    printf("%e\n", d_a);
+    printf("%le\n", d_a);
+    printf("%a\n", d_a);
+    printf("%la\n", d_a);
     return;
 }
 
