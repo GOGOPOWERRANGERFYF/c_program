@@ -278,6 +278,8 @@ void printf_function_stack(void)
     int i_a = 10000, i_b = 666;
     float f_a = 3.0;
     //参数传递 stack栈 《c primer plus第六版》P212
+    //书本中可能编译器的版本太老了,而且应该还是32位系统
+    //现在我用的编译器并没有发生里面所介绍的输出错误
     printf("%hd,%hd,%hd\n", f_a, i_a, i_b);
     return;
 }
