@@ -248,6 +248,10 @@ void conversion_specification_modifiers_and_flags(void)
     // 相同点,整数数值位数足够或超过的,以原值为准输出
     // 10d 字段宽度10
     printf("*%10.3d*\n", 6);
+    // character string 字符串 flags 标记
+    printf("[%s]\n", NAME);
+    printf("[%.15s]\n", NAME);
+    printf("[%30s]\n", NAME);
     return;
 }
 
