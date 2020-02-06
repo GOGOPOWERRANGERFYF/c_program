@@ -23,6 +23,7 @@ void circle_long_double_arithmetic(void);
 void define_and_const(void);
 void stdio_include_stddef_size_type(void);
 void conversion_specification_modifiers_and_flags(void);
+void printf_function_stack(void);
 
 void main(void)
 {
@@ -61,6 +62,7 @@ void main(void)
     define_and_const();
     stdio_include_stddef_size_type();
     conversion_specification_modifiers_and_flags();
+    printf_function_stack();
     return;
 }
 
@@ -258,7 +260,6 @@ void conversion_specification_modifiers_and_flags(void)
     printf("[%30s]\n", NAME);
     printf("%ld\n", f_a);
     printf("%ld\n", d_a);
-    //参数传递 stack栈 《c primer plus第六版》P212
     return;
 }
 
@@ -272,3 +273,10 @@ void conversion_specification_modifiers_and_flags(void)
 //    把计算机中储存的二进制数"转换"(翻译)成文本(字符/字符串)打印出来
 //    并不改变计算机中储存的数据  
 
+void printf_function_stack(void)
+{
+    int i_a = 10000, i_b = 666;
+    //参数传递 stack栈 《c primer plus第六版》P212
+    printf("%hd,%hd\n", i_a, i_b);
+    return;
+}
