@@ -236,6 +236,7 @@ void stdio_include_stddef_size_type(void)
 void conversion_specification_modifiers_and_flags(void)
 {
     const double cd_a = 123456.789;
+    float f_a = 3.0;
     double d_a = 3.4e39;
     printf("%.3f\n", cd_a);
     // %E e输出变大写字母E
@@ -255,6 +256,7 @@ void conversion_specification_modifiers_and_flags(void)
     printf("[%.5s]\n", NAME);
     // %30s 输出字符串宽度30,字符数不足的前面填充空格
     printf("[%30s]\n", NAME);
+    printf("%ld\n", f_a);
     return;
 }
 
