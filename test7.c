@@ -250,10 +250,15 @@ void conversion_specification_modifiers_and_flags(void)
     printf("*%10.3d*\n", 6);
     // character string 字符串 flags 标记
     printf("[%s]\n", NAME);
-    printf("[%.15s]\n", NAME);
+    // %.5s 只输出字符串前面5个字符
+    printf("[%.5s]\n", NAME);
+    // %30s 输出字符串宽度30,字符数不足的前面填充空格
     printf("[%30s]\n", NAME);
     return;
 }
 
-
+// 注: %.5d(输出整数位数最少为5,不足补0)
+//     %.5f(保留小数点后5位)
+//     %.5s(输出字符串前5个字符)
+//     %5d %5f %5s (输出字段宽度为5)
 
