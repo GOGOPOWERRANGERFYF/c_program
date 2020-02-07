@@ -272,7 +272,7 @@ void conversion_specification_modifiers_and_flags(void)
 // 转换说明的意义:
 //    转换说明实际上是翻译说明,
 //    把计算机中储存的二进制数"转换"(翻译)成文本(字符/字符串)打印出来
-//    并不改变计算机中储存的数据  
+//    并不改变计算机中储存的数据(原始值)  
 
 void printf_function_stack(void)
 {
