@@ -240,26 +240,26 @@ void conversion_specification_modifiers_and_flags(void)
     const double cd_a = 123456.789;
     float f_a = 3.0;
     double d_a = 3.4e39;
-    printf("%.3f\n", cd_a);
+    printf("cd_a(%%.3f): %.3f\n", cd_a);
     // %E e输出变大写字母E
-    printf("%E\n", cd_a);
+    printf("cd_a(%%E): %E\n", cd_a);
     // flags # 显示前缀
-    printf("%#lx\n", cd_a);
+    printf("cd_a(%%#lx): %#lx\n", cd_a);
     // %X 十六进制中的字母输出大写字母格式
-    printf("%#lX\n", cd_a);
+    printf("cd_a(%%#lX): %#lX\n", cd_a);
     // .3d 整数数值位数不够的前面填充0 
     // 5d  整数数值位数不够的前面填充空格
     // 相同点,整数数值位数足够或超过的,以原值为准输出
     // 10d 字段宽度10
-    printf("*%10.3d*\n", 6);
+    printf("6(*%%10.3d*): *%10.3d*\n", 6);
     // character string 字符串 flags 标记
-    printf("[%s]\n", NAME);
+    printf("NAME([%%s]): [%s]\n", NAME);
     // %.5s 只输出字符串前面5个字符
-    printf("[%.5s]\n", NAME);
+    printf("NAME([%%.5s]): [%.5s]\n", NAME);
     // %30s 输出字符串宽度30,字符数不足的前面填充空格
-    printf("[%30s]\n", NAME);
-    printf("%ld\n", f_a);
-    printf("%ld\n", d_a);
+    printf("NAME([%30s]): [%30s]\n", NAME);
+    printf("f_a(%%ld): %ld\n", f_a);
+    printf("d_a(%ld): %ld\n", d_a);
     return;
 }
 
