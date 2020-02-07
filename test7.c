@@ -290,10 +290,9 @@ void printf_function_stack(void)
     float f_a = 1.125e-3;
     double d_a = 3.0;
     //参数传递 stack栈 《c primer plus第六版》P212
-    //参数传递机制因实现而异
+    //参数传递机制因编译器实现而异
     //书本中可能编译器的版本问题
-    //现在我用的编译器并没有发生里面所介绍的输出错误
-    //看来不同编译器的实现差异还是很大的...
+    //目前我用的编译器并未发现里面所介绍的输出错误
     printf("%.15a, %zd\n", i_a, sizeof(f_a));
     printf("%a\n", f_a);
     return;
