@@ -295,7 +295,7 @@ void printf_function_stack(void)
     //书本中可能编译器的版本问题
     //目前我用的编译器并未发现里面所介绍的输出错误
     printf("%.15a, %zd\n", i_a, sizeof(ld_a));
-    printf("%a\n", f_a);
+    printf("%.15e\n", i_a);
     return;
 }
 
