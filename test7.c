@@ -285,19 +285,16 @@ void conversion_specification_modifiers_and_flags(void)
 
 void printf_function_stack(void)
 {
-    int i_a = 999999999, i_b = 222222222, i_c = 666666666,\
+    int i_a = -256, i_b = 222222222, i_c = 666666666,\
      i_d = 66, i_e = 70;
     float f_a = 3.0;
     double d_a = 3.0;
     //参数传递 stack栈 《c primer plus第六版》P212
-    //书本中可能编译器的版本太老了,而且应该还是32位系统
+    //参数传递机制因实现而异
+    //书本中可能编译器的版本问题
     //现在我用的编译器并没有发生里面所介绍的输出错误
     //看来不同编译器的实现差异还是很大的...
-    printf("%ld,%ld,%hd,%c,%c\n", i_a, i_b, i_c, i_d, i_e);
-    printf("%hd,%d,%d\n", f_a, i_a, i_b);
-    printf("%hd,%d,%d\n", d_a, i_a, i_b);
-    printf("%d,%d,%d\n", f_a, i_a, i_b);
-    printf("%d,%d,%d\n", d_a, i_a, i_b);
+    printf("%.15a,\n", i_a);
     return;
 }
 
