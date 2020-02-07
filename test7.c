@@ -257,9 +257,9 @@ void conversion_specification_modifiers_and_flags(void)
     // %.5s 只输出字符串前面5个字符
     printf("NAME([%%.5s]): [%.5s]\n", NAME);
     // %30s 输出字符串宽度30,字符数不足的前面填充空格
-    printf("NAME([%30s]): [%30s]\n", NAME);
+    printf("NAME([%%30s]): [%30s]\n", NAME);
     printf("f_a(%%ld): %ld\n", f_a);
-    printf("d_a(%ld): %ld\n", d_a);
+    printf("d_a(%%ld): %ld\n", d_a);
     return;
 }
 
@@ -275,13 +275,18 @@ void conversion_specification_modifiers_and_flags(void)
 
 void printf_function_stack(void)
 {
-    int i_a = 10000, i_b = 666;
+    int i_a = 999999999, i_b = 999999999;
     float f_a = 3.0;
+    double d_a = 3.0;
     //参数传递 stack栈 《c primer plus第六版》P212
     //书本中可能编译器的版本太老了,而且应该还是32位系统
     //现在我用的编译器并没有发生里面所介绍的输出错误
     //看来不同编译器的实现差异还是很大的...
-    printf("%hd,%hd,%hd\n", f_a, i_a, i_b);
+    printf("%ld,%ld\n", i_a, d_a);
+    printf("%hd,%d,%d\n", f_a, i_a, i_b);
+    printf("%hd,%d,%d\n", d_a, i_a, i_b);
+    printf("%d,%d,%d\n", f_a, i_a, i_b);
+    printf("%d,%d,%d\n", d_a, i_a, i_b);
     return;
 }
 
