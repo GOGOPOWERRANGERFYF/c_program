@@ -302,7 +302,6 @@ void printf_function_stack(void)
      3220176896U, sizeof(3220176896U));
     printf("%lx\n", 3220176896U);
     printf("%d\n", ui_a);
-    //printf("%a\n", 0x1p-1043);
     return;
 }
 
