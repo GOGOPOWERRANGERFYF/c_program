@@ -285,17 +285,24 @@ void conversion_specification_modifiers_and_flags(void)
 
 void printf_function_stack(void)
 {
-    int i_a = -256, i_b = 222222222, i_c = 666666666,\
-     i_d = 66, i_e = 70;
-    float f_a = 1.125e-3;
-    double d_a = 3.0;
-    long double ld_a;
     //参数传递 stack栈 《c primer plus第六版》P212
     //参数传递机制因编译器实现而异
     //书本中可能编译器的版本问题
     //目前我用的编译器并未发现里面所介绍的输出错误
-    printf("%.15a, %zd\n", i_a, sizeof(ld_a));
-    printf("%.15e\n", i_a);
+    unsigned int ui_a = 3220176896, ui_b = 3220176896U;
+    unsigned long int uli_a;
+    printf("%u\n", ui_a);
+    //有符号整数常量4byte, 32bit编码储存不了有符号数3220176896,编译器转换成64bit储存
+    printf("int constant 3220176896(%%x): %x, sizeof(3220176896): %zd\n",
+     3220176896, sizeof(3220176896));
+    //为正数时前面的0输出是被省略了,输出负数时就可以看出前面是有填充1的
+    printf("int constant 3220176896(%%lx): %lx\n", 3220176896);
+    printf("int constant -3220176896(%%lx): %lx\n", -3220176896);
+    printf("int constant 3220176896U(%%x): %x, sizeof(3220176896U): %zd\n",
+     3220176896U, sizeof(3220176896U));
+    printf("%lx\n", 3220176896U);
+    printf("%d\n", ui_a);
+    //printf("%a\n", 0x1p-1043);
     return;
 }
 
