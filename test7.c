@@ -289,6 +289,7 @@ void printf_function_stack(void)
     //参数传递机制因编译器实现而异
     //书本中可能编译器的版本问题
     //目前我用的编译器并未发现里面所介绍的输出错误
+    unsigned short int usi_a = 16352, usi_b = 49120;
     unsigned int ui_a = 3220176896, ui_b = 3220176896U;
     unsigned long int uli_a;
     printf("%u\n", ui_a);
@@ -303,6 +304,8 @@ void printf_function_stack(void)
      3220176896U, sizeof(3220176896U));
     printf("%lx\n", 3220176896U);
     printf("%d\n", ui_a);
+    printf("%f\n", usi_a);
+    printf("%lx\n", usi_b);
     return;
 }
 
