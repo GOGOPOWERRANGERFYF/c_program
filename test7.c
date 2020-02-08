@@ -298,6 +298,7 @@ void printf_function_stack(void)
     //为正数时前面的0输出是被省略了,输出负数时就可以看出前面是有填充1的
     printf("int constant 3220176896(%%lx): %lx\n", 3220176896);
     printf("int constant -3220176896(%%lx): %lx\n", -3220176896);
+    printf("int constant -3220176896(%%x): %x\n", -3220176896);
     printf("int constant 3220176896U(%%x): %x, sizeof(3220176896U): %zd\n",
      3220176896U, sizeof(3220176896U));
     printf("%lx\n", 3220176896U);
