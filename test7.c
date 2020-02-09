@@ -313,11 +313,11 @@ void printf_function_stack(void)
     printf("usi_a(%%e): %e\n", usi_a);
     printf("usi_a(%%x): %x\n", usi_a);
     printf("usi_a(%%lx): %lx\n", usi_a);
-    printf("%lx\n", d_a);
-    printf("%f\n", 16.125);
-    printf("%e\n", 16.125);
-    printf("%a\n", 16.125);
-    printf("%lx\n", 16.125);
+    printf("d_a(%%lx): %lx\n", d_a);
+    printf("1) 16.125(%%f):  %f\n", 16.125);
+    printf("2) 16.125(%%lx): %lx\n", 16.125);
+    printf("3) 16.125(%%a):  %a\n", 16.125);
+    printf("4) 16.125(%%e):  %e\n", 16.125);
     return;
 }
 
