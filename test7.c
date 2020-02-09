@@ -296,6 +296,7 @@ void printf_function_stack(void)
     // 49120  0000 0000 0000 0000 1011 1111 1110 0000
     unsigned int ui_a = 3220176896, ui_b = 3220176896U;
     unsigned long int uli_a;
+    double d_a = 1.0;
     printf("%u\n", ui_a);
     //有符号整数常量4byte, 32bit编码储存不了有符号数3220176896,编译器转换成64bit储存
     printf("int constant 3220176896(%%x): %x, sizeof(3220176896): %zd\n",
@@ -308,9 +309,11 @@ void printf_function_stack(void)
     printf("int constant -3220176896(%%x): %x\n", -3220176896);
     printf("3220176896U(%%lx): %lx\n", 3220176896U);
     printf("%hu\n", usi_a);
-    printf("%f\n", usi_a);
+    printf("%a\n", usi_a);
+    printf("%e\n", usi_a);
     printf("%x\n", usi_a);
     printf("%lx\n", usi_a);
+    printf("%lx\n", d_a);
     return;
 }
 
