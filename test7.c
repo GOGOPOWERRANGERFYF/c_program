@@ -314,6 +314,7 @@ void printf_function_stack(void)
     printf("%x\n", usi_a);
     printf("%lx\n", usi_a);
     printf("%lx\n", d_a);
+    printf("%lx\n", 1.125);
     return;
 }
 
