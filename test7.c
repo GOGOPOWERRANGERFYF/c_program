@@ -307,7 +307,7 @@ void printf_function_stack(void)
     printf("int constant -3220176896(%%lx): %lx\n", -3220176896);
     printf("int constant -3220176896(%%x): %x\n", -3220176896);
     printf("3220176896U(%%lx): %lx\n", 3220176896U);
-    printf("%d\n", usi_a);
+    printf("%hu\n", usi_a);
     printf("%f\n", usi_a);
     printf("%x\n", usi_a);
     printf("%lx\n", usi_a);
