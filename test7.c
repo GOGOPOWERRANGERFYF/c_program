@@ -320,7 +320,7 @@ void printf_function_stack(void)
     printf("4) 16.125(%%e):  %e\n", 16.125);
     /*
     exponent
-    true value   
+   true value  two's complement      excess_3
         3 --|     |-- 011 --|      |--  110 --|            |-- 1 011
         2   |     |   010   |      |    101   |            |   1 010
         1   |     |   001   |      |    100   |            |   1 001
@@ -329,6 +329,8 @@ void printf_function_stack(void)
        -2   |     |   110   |      |  1 001   |            |     110
        -3   |     |   101   |      |  1 000   |            |     101
        -4 --|     |-- 100 --|      |--  111 --|            |-- 1 100
+    two's complement -- +011 --> excess_3 (当成一般的二补数运算: 000以上都是正数运算结果,只有111为结果的二补数)
+
     */
     return;
 }
