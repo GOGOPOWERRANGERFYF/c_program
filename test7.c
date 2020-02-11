@@ -363,6 +363,8 @@ void printf_function_stack_b(void)
     si_return_value = printf("1234567890\n");
     // 标准C库函数printf()返回值为打印字符的个数
     printf("return value of printf function (%%hd): %hd\n", si_return_value);
+    // printf()返回值是一个短整型
+    printf("sizeof(si_return_value): %zd\n", sizeof(si_return_value));
     return;
 }
 
