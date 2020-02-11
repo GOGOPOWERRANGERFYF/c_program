@@ -356,13 +356,16 @@ void printf_function_stack_b(void)
     int i_return_value;
     long int n3 = 2000000000;
     long int n4 = 1234567890;
-    printf("%ld, %ld, %ld, %ld\n", n1, n2, n3, n4);
-    printf("%d, %d, %d, %d\n", n1, n2, n3, n4);
+    printf("n1(%%ld): %ld,n2(%%ld): %ld,n3(%%ld): %ld,n4(%%ld): %ld\n",
+     n1, n2, n3, n4);
+    printf("n1(%%d): %d,n2(%%d): %d,n3(%%d): %d,n4(%%d): %d\n",
+     n1, n2, n3, n4);
     // 大部分C函数都有一个返回值
     // 可赋值给变量,可作为参数传递,可参与运算
     // *总之,就是可以把返回值当作其它数值一样使用
-    si_return_value = printf("12345 67890,%f\n", n2);
-    i_return_value = printf("12345 67890,%f\n", n2);
+    //下面两句代码,输出且把返回值赋值给变量
+    si_return_value = printf("12345 67890: %f\n", n2);
+    i_return_value = printf("12345 67890: %f\n", n2);
     // 标准C库函数printf()返回值为打印字符的个数
     printf("return value of printf function (%%hd): %hd\n", si_return_value);
     printf("return value of printf function (%%hd): %d\n", i_return_value);
