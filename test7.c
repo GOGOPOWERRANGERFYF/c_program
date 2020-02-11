@@ -359,6 +359,7 @@ void printf_function_stack_b(void)
     printf("%d, %d, %d, %d\n", n1, n2, n3, n4);
     // 大部分C函数都有一个返回值
     // 可赋值给变量,可作为参数传递,可参与运算
+    // *总之,就是可以把返回值当作其它数值一样使用
     si_return_value = printf("1234567890\n");
     // 标准C库函数printf()返回值为打印字符的个数
     printf("return value of printf function (%%hd): %hd\n", si_return_value);
