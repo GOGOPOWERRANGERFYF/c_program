@@ -368,7 +368,8 @@ void printf_function_stack_b(void)
     printf("return value of printf function (%%hd): %hd\n", i_return_value);
     printf("sizeof(si_return_value): %zd\n", sizeof(si_return_value));
     printf("sizeof(si_return_value): %zd\n", sizeof(i_return_value));
-    // printf()返回值是一个整型,size: 4byte
+    // printf()返回值是一个整数类型,size: 4byte
+    // 是int还是unsigned int还要验证...
     printf("sizeof(printf function return value): %zd\n",
      sizeof(printf("12345 67890,%f\n", n2)));
     return;
