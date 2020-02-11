@@ -25,6 +25,7 @@ void stdio_include_stddef_size_type(void);
 void conversion_specification_modifiers_and_flags(void);
 void printf_function_stack_a(void);
 void printf_function_stack_b(void);
+void print_long_string_methods(void);
 
 void main(void)
 {
@@ -65,6 +66,7 @@ void main(void)
     conversion_specification_modifiers_and_flags();
     printf_function_stack_a();
     printf_function_stack_b();
+    print_long_string_methods();
     return;
 }
 
@@ -380,5 +382,8 @@ void printf_function_stack_b(void)
     return;
 }
 
-
+void print_long_string_methods(void)
+{
+    // 打印较长字符串的三种方法
+}
 
