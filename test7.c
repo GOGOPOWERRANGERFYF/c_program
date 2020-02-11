@@ -365,7 +365,7 @@ void printf_function_stack_b(void)
     i_return_value = printf("12345 67890,%f\n", n2);
     // 标准C库函数printf()返回值为打印字符的个数
     printf("return value of printf function (%%hd): %hd\n", si_return_value);
-    printf("return value of printf function (%%hd): %hd\n", i_return_value);
+    printf("return value of printf function (%%hd): %d\n", i_return_value);
     printf("sizeof(si_return_value): %zd\n", sizeof(si_return_value));
     printf("sizeof(si_return_value): %zd\n", sizeof(i_return_value));
     // printf()返回值是一个整数类型,size: 4byte
