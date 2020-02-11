@@ -286,6 +286,8 @@ void conversion_specification_modifiers_and_flags(void)
 void printf_function_stack(void)
 {
     //参数传递 stack栈 《c primer plus第六版》P212
+    //程序把传入的值放入被称为栈的内存区域
+    //计算机根据变量类型把这些值放入栈中
     //参数传递机制因编译器实现而异
     //书本中可能编译器的版本问题
     //目前我用的编译器并未出现里面所介绍的输出错误
