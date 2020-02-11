@@ -353,6 +353,7 @@ void printf_function_stack_b(void)
     float n1 = 3.0;
     double n2 = 3.0;
     short int si_return_value;
+    int i_return_value;
     long int n3 = 2000000000;
     long int n4 = 1234567890;
     printf("%ld, %ld, %ld, %ld\n", n1, n2, n3, n4);
@@ -361,10 +362,15 @@ void printf_function_stack_b(void)
     // 可赋值给变量,可作为参数传递,可参与运算
     // *总之,就是可以把返回值当作其它数值一样使用
     si_return_value = printf("12345 67890,%f\n", n2);
+    i_return_value = printf("12345 67890,%f\n", n2);
     // 标准C库函数printf()返回值为打印字符的个数
     printf("return value of printf function (%%hd): %hd\n", si_return_value);
-    // printf()返回值是一个短整型
+    printf("return value of printf function (%%hd): %hd\n", i_return_value);
     printf("sizeof(si_return_value): %zd\n", sizeof(si_return_value));
+    printf("sizeof(si_return_value): %zd\n", sizeof(i_return_value));
+    // printf()返回值是一个整型,size: 4byte
+    printf("sizeof(printf function return value): %zd\n",
+     sizeof(printf("12345 67890,%f\n", n2)));
     return;
 }
 
