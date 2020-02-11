@@ -23,7 +23,8 @@ void circle_long_double_arithmetic(void);
 void define_and_const(void);
 void stdio_include_stddef_size_type(void);
 void conversion_specification_modifiers_and_flags(void);
-void printf_function_stack(void);
+void printf_function_stack_a(void);
+void printf_function_stack_b(void);
 
 void main(void)
 {
@@ -62,7 +63,8 @@ void main(void)
     define_and_const();
     stdio_include_stddef_size_type();
     conversion_specification_modifiers_and_flags();
-    printf_function_stack();
+    printf_function_stack_a();
+    printf_function_stack_b();
     return;
 }
 
@@ -283,15 +285,8 @@ void conversion_specification_modifiers_and_flags(void)
 // 这里我不转换成十进制来读,十进制来理解原理就好
 // 
 
-void printf_function_stack(void)
+void printf_function_stack_a(void)
 {
-    //参数传递 stack栈 《c primer plus第六版》P212
-    //程序把传入的值放入被称为栈的内存区域
-    //计算机根据变量类型把这些值放入栈中
-    //参数传递机制因编译器实现而异
-    //书本中可能编译器的版本问题
-    //目前我用的编译器并未出现里面所介绍的输出错误
-    //运行结果去paper_2.exe查看
     unsigned short int usi_a = 16352U, usi_b = 49120U;
     // 16352U                     0011 1111 1110 0000
     // 16352  0000 0000 0000 0000 0011 1111 1110 0000
@@ -347,4 +342,19 @@ void printf_function_stack(void)
     return;
 }
 
-
+void printf_function_stack_b(void)
+{
+    //参数传递 stack栈 《c primer plus第六版》P212
+    //程序把传入的值放入被称为栈的内存区域
+    //计算机根据变量类型把这些值放入栈中
+    //参数传递机制因编译器实现而异
+    //书本中可能编译器的版本问题
+    //目前我用的编译器并未出现里面所介绍的输出错误
+    float n1 = 3.0;
+    double n2 = 3.0;
+    long n3 = 2000000000;
+    long n4 = 1234567890;
+    printf("%ld, %ld, %ld, %ld\n", n1, n2, n3, n4);
+    printf("%d, %d, %d, %d\n", n1, n2, n3, n4);
+    return;
+}
