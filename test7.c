@@ -367,6 +367,8 @@ void printf_function_stack_b(void)
     si_return_value = printf("12345 67890: %f\n", n2);
     i_return_value = printf("12345 67890: %f\n", n2);
     // 标准C库函数printf()返回值为打印字符的个数
+    // 由运行输出结果可得到printf()函数返回值,
+    // 有结果可知计算字符个数结果包括:空格,转义序列(转义字符)
     printf("return value of printf function (%%hd): %hd\n", si_return_value);
     printf("return value of printf function (%%hd): %d\n", i_return_value);
     printf("sizeof(si_return_value): %zd\n", sizeof(si_return_value));
