@@ -352,9 +352,18 @@ void printf_function_stack_b(void)
     //目前我用的编译器并未出现里面所介绍的输出错误
     float n1 = 3.0;
     double n2 = 3.0;
-    long n3 = 2000000000;
-    long n4 = 1234567890;
+    short int si_return_value;
+    long int n3 = 2000000000;
+    long int n4 = 1234567890;
     printf("%ld, %ld, %ld, %ld\n", n1, n2, n3, n4);
     printf("%d, %d, %d, %d\n", n1, n2, n3, n4);
+    // 大部分C函数都有一个返回值
+    // 可赋值给变量,可作为参数传递,可参与运算
+    si_return_value = printf("1234567890\n");
+    // 标准C库函数printf()返回值为打印字符的个数
+    printf("return value of printf function (%%hd): %hd\n", si_return_value);
     return;
 }
+
+
+
