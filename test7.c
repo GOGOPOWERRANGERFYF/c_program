@@ -382,13 +382,6 @@ void printf_function_stack_b(void)
     return;
 }
 
-    /* 
-        printf函数中的字符串常量不能含有enter回车键生成的换行符
-        包含的话编译器会报错
-        示例:
-            printf("abcd
-            efg\n"); 
-    */
 void print_long_string_methods(void)
 {
     // 打印较长字符串的三种方法:
@@ -403,6 +396,14 @@ void print_long_string_methods(void)
 
     // [3] 注:字符串的第二行代码必须从最左边开始,
     //        不然前面的空格会成为字符串一部分,输出的字符串就会包含空格
+    /* 
+        printf函数中的字符串常量不能含有enter回车键产生的换行符
+        包含的话编译器会报错
+        示例:
+            printf("abcd
+            efg\n"); 
+    */
+    // 反斜杠\ 加 enter(回车)的组合 -->  \换行符
     printf("a\
 bcd\n");
     //通过输出结果可知字符串代码第二行前面的空格是两个非显示字符
