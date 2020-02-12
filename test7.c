@@ -405,6 +405,7 @@ void print_long_string_methods(void)
     printf("a\
 bcd\n");
     //通过输出结果可知字符串代码第二行前面的空格是两个非显示字符
+    //*字符串在内存的存储并非我想的那么简单,目前水平有限,先跳过。。。--'
     printf("%zd\n", printf("a\
     bc\n"));
     printf("%lx\n", "a\
