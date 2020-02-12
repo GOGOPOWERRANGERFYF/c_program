@@ -397,6 +397,7 @@ void print_long_string_methods(void)
     printf("efg\n");
     
     // [2]
+    printf("a"     "b"            "c\n"); /*本质*/
     printf("abcd"
     "efg\n");
 
