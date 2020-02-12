@@ -397,6 +397,9 @@ void print_long_string_methods(void)
     printf("a"     "b"            "c\n"); /*本质*/
     printf("abcd"
     "efg\n");
+    printf("123"
+    "456"
+    "789\n");
 
     // [3] 注:字符串的第二行代码必须从最左边开始,
     //        不然前面的空格会成为字符串一部分,输出的字符串就会包含空格
