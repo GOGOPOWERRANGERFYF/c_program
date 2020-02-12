@@ -390,6 +390,10 @@ void print_long_string_methods(void)
     printf("efg\n");
     
     // [2]
+    // ANSI c引入的字符串连接
+    // 两个双引号括起来的字符串之间用空格隔开
+    // C编译器会把这两个字符串看作是一个字符串
+    // 多个字符串也一样
     printf("a"     "b"            "c\n"); /*本质*/
     printf("abcd"
     "efg\n");
