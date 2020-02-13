@@ -428,3 +428,10 @@ bcd\n");
     return;
 }
 
+// 《c primer plus第六版》P217 第三段重点
+//
+
+
+
+
+
