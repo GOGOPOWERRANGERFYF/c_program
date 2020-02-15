@@ -26,6 +26,8 @@ void main(void)
     // 依次把转换说明和字段匹配时跳过空白
     scanf("%d %lf %s", &age, &d_asset, name);
     // scanf() double类型转换说明要加修饰符l %lf,与pirntf()不同
+    // conversion specification 转换说明
+    // modifier 修饰符
     printf("Age: %d, Asset: %.2f, Name: %s.\n",
      age, d_asset, name);
     return;
