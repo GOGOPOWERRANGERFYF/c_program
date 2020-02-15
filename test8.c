@@ -12,3 +12,18 @@
 //
 //scanf()读取基本类型变量的值,在变量名前加&
 //scanf()读取字符串,储存到字符数组中,不使用&
+void main(void)
+{
+    int age;
+    double asset;
+    char name[10];
+    scanf("%d %lf %s", &age, &asset, name);
+    printf("Age: %d, Asset: %.2f, Name: %s.\n",
+    age, asset, name);
+    return;
+}
+
+
+
+
+
