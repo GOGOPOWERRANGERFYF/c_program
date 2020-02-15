@@ -15,11 +15,16 @@
 void main(void)
 {
     int age;
-    double asset;
+    float f_asset;
+    double d_asset;
     char name[10];
-    scanf("%d %lf %s", &age, &asset, name);
+    printf("sizeof(f_asset): %zd,sizeof(d_asset): %zd\n",
+     sizeof(f_asset), sizeof(d_asset));
+    printf("input age  asset  name: ");
+    // 每个输入项之间至少输入一个(换行符、空格、制表符)
+    scanf("%d %lf %s", &age, &d_asset, name);
     printf("Age: %d, Asset: %.2f, Name: %s.\n",
-    age, asset, name);
+     age, d_asset, name);
     return;
 }
 
