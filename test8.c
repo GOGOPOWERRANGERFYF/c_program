@@ -29,8 +29,9 @@ void main(void)
     // conversion specification 转换说明
     // modifier 修饰符
     // 《c primer plus第六版》P220 scanf()转换说明,修饰符
-    printf("Age: %d, Asset: %.2f, Name: %s.\n",
+    printf("Age: %d, Asset: %.2f, Name: %s\n",
      age, d_asset, name);
+    printf("integer variable age virtual address: %p\n", &age);
     return;
 }
 
