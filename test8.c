@@ -21,7 +21,9 @@ void main(void)
     printf("sizeof(f_asset): %zd,sizeof(d_asset): %zd\n",
      sizeof(f_asset), sizeof(d_asset));
     printf("input age  asset  name: ");
-    // 每个输入项之间至少输入一个(换行符、空格、制表符)
+    // 每个输入项之间至少一个空白(换行符、空格、制表符)
+    // scanf()函数使用空白把输入分成多个字段
+    // 依次把转换说明和字段匹配时跳过空白
     scanf("%d %lf %s", &age, &d_asset, name);
     printf("Age: %d, Asset: %.2f, Name: %s.\n",
      age, d_asset, name);
