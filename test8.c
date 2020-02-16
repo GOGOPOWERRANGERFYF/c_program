@@ -28,7 +28,7 @@ void main(void)
     // scanf() double类型转换说明要加修饰符l %lf,与pirntf()不同
     // conversion specification 转换说明
     // modifier 修饰符
-    // 《c primer plus第六版》P220 scanf()转换说明,修饰符
+    // *《c primer plus第六版》P220 scanf()转换说明,修饰符
     printf("Age: %d, Asset: %.2f, Name: %s\n",
      age, d_asset, name);
     // 打印变量的指针(地址)  
