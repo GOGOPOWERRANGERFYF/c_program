@@ -25,7 +25,7 @@ void main(void)
     // scanf()函数使用空白把输入分成多个字段
     // 依次把转换说明和字段匹配时跳过空白
     // 内存区域:
-    //  [...|数字字符|空白字符|数字字符|空白字符|非数字字符|...]
+    //  [...|数字字符|空白字符|数字字符|空白字符|字母字符|...]
     scanf("%d %lf %s", &age, &d_asset, name);
     // scanf() double类型转换说明要加修饰符l %lf,与pirntf()不同
     // conversion specification 转换说明
