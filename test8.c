@@ -14,12 +14,12 @@
 //scanf()读取字符串,储存到字符数组中,不使用&
 void main(void)
 {
-    int age;
-    float f_asset;
-    double d_asset;
-    char name[10];
-    printf("sizeof(f_asset): %zd,sizeof(d_asset): %zd\n",
-     sizeof(f_asset), sizeof(d_asset));
+    int age_a, age_b, age_c;
+    float f_asset_a, f_asset_b, f_asset_c;
+    double d_asset_a;
+    char name_a[10], name_b[10], name_c[10];
+    printf("sizeof(f_asset_a): %zd,sizeof(d_asset_a): %zd\n",
+     sizeof(f_asset_a), sizeof(d_asset_a));
     printf("input age  asset  name: ");
     // 每个输入项之间至少一个空白(换行符、空格、制表符)
     // scanf()函数使用空白把输入分成多个字段
@@ -36,25 +36,25 @@ void main(void)
     // 读取到非数字字符,scanf()函数把非数字字符放回输入
     // 因此输入 32 40000fyf (正常的输入方式 -->:32 40000 fyf)
     // scanf()函数读取的结果也是正确的
-    scanf("%d %lf %s", &age, &d_asset, name);
+    scanf("%d %lf %s", &age_a, &d_asset_a, name_a);
     // scanf() double类型转换说明要加修饰符l %lf,与pirntf()不同
     // conversion specification 转换说明
     // modifier 修饰符
     // *《c primer plus第六版》P220 scanf()转换说明,修饰符
-    printf("Age: %d, Asset: %.2f, Name: %s\n", age, d_asset, name);
+    printf("Age: %d, Asset: %.2f, Name: %s\n", age_a, d_asset_a, name_a);
     // 打印变量的指针(地址)  
     // %p 指针
-    printf("integer variable age virtual address: %p\n", &age);
+    printf("integer variable age virtual address: %p\n", &age_a);
     // %s %d 转换说明顺序
     // scanf()函数先读取非空白字符,读取一个,保存,再读取下一个字符
     // 读取到空白字符,读取结束(与转换说明%s匹配的字符串字段读取结束)
     // 再读取下一个与转换说明%d匹配的整数字段
     printf("input name age: ");
-    scanf("%s %d", name, &age);
-    printf("Name: %s, Age: %d\n", name, age);
+    scanf("%s %d", name_b, &age_b);
+    printf("Name: %s, Age: %d\n", name_b, age_b);
     printf("input age name: ");
-    scanf("%s %d", &age, name);
-    printf("Age: %d, Name: %s\n", age, name);
+    scanf("%s %d", &age_c, name_c);
+    printf("Age: %d, Name: %s\n", age_c, name_c);
     return;
 }
 
