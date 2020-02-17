@@ -52,7 +52,9 @@ void main(void)
     printf("input name age: ");
     scanf("%s %d", name_b, &age_b);
     printf("Name: %s, Age: %d\n", name_b, age_b);
-    
+    // %d %s 转换说明顺序
+    // 如果输入A,scanf()函数读取到A后,将停止读取,并将A放回输入
+    // 不会把值赋给指定变量
     printf("input age name: ");
     scanf("%d %s", &age_c, name_c);
     printf("Age: %d, Name: %s\n", age_c, name_c);
