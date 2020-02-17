@@ -14,10 +14,10 @@
 //scanf()读取字符串,储存到字符数组中,不使用&
 void main(void)
 {
-    int age_a, age_b, age_c;
-    float f_asset_a, f_asset_b, f_asset_c;
+    int age_a, age_b, age_c, age_d;
+    float f_asset_a, f_asset_b, f_asset_c, f_asset_d;
     double d_asset_a;
-    char name_a[10], name_b[10], name_c[10];
+    char name_a[10], name_b[10], name_c[10], name_d[10];
     printf("sizeof(f_asset_a): %zd,sizeof(d_asset_a): %zd\n",
      sizeof(f_asset_a), sizeof(d_asset_a));
     printf("input age  asset  name: ");
@@ -52,9 +52,15 @@ void main(void)
     printf("input name age: ");
     scanf("%s %d", name_b, &age_b);
     printf("Name: %s, Age: %d\n", name_b, age_b);
+    
     printf("input age name: ");
-    scanf("%s %d", &age_c, name_c);
+    scanf("%d %s", &age_c, name_c);
     printf("Age: %d, Name: %s\n", age_c, name_c);
+    
+    printf("input age: ");
+    scanf("%d", &age_d);
+    printf("Age: %d\n", age_d);
+    
     return;
 }
 
