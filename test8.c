@@ -46,6 +46,10 @@ void main(void)
     // 打印变量的指针(地址)  
     // %p 指针
     printf("integer variable age virtual address: %p\n", &age);
+    printf("input name age: ");
+    scanf("%s %d", name, &age);
+    printf("Name: %s, Age: %d\n",
+     name, age);
     return;
 }
 
