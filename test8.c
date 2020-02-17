@@ -58,10 +58,12 @@ void main(void)
     printf("input age name: ");
     scanf("%d %s", &age_c, name_c);
     printf("Age: %d, Name: %s\n", age_c, name_c);
-    
-    //printf("input age: ");
-    //scanf("%d", &age_d);
-    //printf("Age: %d\n", age_d);
+    // %d 一个转换说明
+    // 输入A
+    printf("input age: ");
+    scanf("%d", &age_d);
+    printf("Age(%%d): %d\n", age_d);
+    printf("Age(%%x): %x\n", age_d);
     
     return;
 }
