@@ -46,6 +46,10 @@ void main(void)
     // 打印变量的指针(地址)  
     // %p 指针
     printf("integer variable age virtual address: %p\n", &age);
+    // %s %d 转换说明顺序
+    // scanf()函数先读取非空白字符,读取一个,保存,再读取下一个字符
+    // 读取到空白字符,读取结束(与转换说明%s匹配的字符串字段读取结束)
+    // 在读取下一个与转换说明%d匹配的整数字段
     printf("input name age: ");
     scanf("%s %d", name, &age);
     printf("Name: %s, Age: %d\n",
