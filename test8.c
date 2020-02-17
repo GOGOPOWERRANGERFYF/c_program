@@ -57,9 +57,9 @@ void main(void)
     scanf("%d %s", &age_c, name_c);
     printf("Age: %d, Name: %s\n", age_c, name_c);
     
-    printf("input age: ");
-    scanf("%d", &age_d);
-    printf("Age: %d\n", age_d);
+    //printf("input age: ");
+    //scanf("%d", &age_d);
+    //printf("Age: %d\n", age_d);
     
     return;
 }
