@@ -41,8 +41,7 @@ void main(void)
     // conversion specification 转换说明
     // modifier 修饰符
     // *《c primer plus第六版》P220 scanf()转换说明,修饰符
-    printf("Age: %d, Asset: %.2f, Name: %s\n",
-     age, d_asset, name);
+    printf("Age: %d, Asset: %.2f, Name: %s\n", age, d_asset, name);
     // 打印变量的指针(地址)  
     // %p 指针
     printf("integer variable age virtual address: %p\n", &age);
@@ -52,8 +51,10 @@ void main(void)
     // 再读取下一个与转换说明%d匹配的整数字段
     printf("input name age: ");
     scanf("%s %d", name, &age);
-    printf("Name: %s, Age: %d\n",
-     name, age);
+    printf("Name: %s, Age: %d\n", name, age);
+    printf("input age name: ");
+    scanf("%s %d", &age, name);
+    printf("Age: %d, Name: %s\n", age, name);
     return;
 }
 
