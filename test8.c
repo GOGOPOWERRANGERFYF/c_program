@@ -34,6 +34,8 @@ void main(void)
     // 空白字符会被scanf()函数跳过
     // 遇到第一个数字字符或+/-符号字符开始读取,保存后再读取下一个字符
     // 读取到非数字字符,scanf()函数把非数字字符放回输入
+    // 因此输入 32 50fyf
+    // scanf()函数读取的结果也是正确的
     scanf("%d %lf %s", &age, &d_asset, name);
     // scanf() double类型转换说明要加修饰符l %lf,与pirntf()不同
     // conversion specification 转换说明
