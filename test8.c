@@ -64,7 +64,6 @@ void main(void)
     printf("age(%%d): %d\n", age_d);
     printf("age(%%x): %x\n", age_d);
     printf("&age(%%x): %x\n", &age_d);
-    
     // %d 一个转换说明
     // 输入A,scanf()函数停止读取,把A字符放回输入
     // 程序下一次读取时,从这个A字符开始读取
