@@ -76,7 +76,6 @@ void main(void)
 
     scanf("%s", &name_d);
     printf("name_d(%%s): %s\n", name_d);
-    
     return;
 }
 
