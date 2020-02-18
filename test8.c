@@ -73,7 +73,8 @@ void main(void)
     printf("age(%%d): %d\n", age_d);
     printf("age(%%x): %x\n", age_d);
     printf("&age(%%x): %x\n", &age_d);
-
+    
+    printf("input name: ");
     scanf("%s", &name_d);
     printf("name_d(%%s): %s\n", name_d);
     return;
