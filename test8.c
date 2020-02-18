@@ -76,7 +76,7 @@ void main(void)
     printf("&age(%%x): %x\n", &age_d);
 
     scanf("%s", &name_d);
-    printf("%s\n", name_d);
+    printf("name_d(%%s): %s\n", name_d);
     
     return;
 }
