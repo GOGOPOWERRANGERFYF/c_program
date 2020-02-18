@@ -74,6 +74,11 @@ void main(void)
     printf("age(%%x): %x\n", age_d);
     printf("&age(%%x): %x\n", &age_d);
     
+    // %s
+    // scanf()函数跳过空白字符,直到遇到第一个非空白字符
+    // 读取,保存,再读取下一个字符,保存
+    // 直到再次遇到空白字符,这个空白字符不保存
+    // (这个空白字符放不放回输入不知道,书上没写。。。不过放不放也没啥意义)
     printf("input name: ");
     scanf("%s", &name_d);
     printf("name_d(%%s): %s\n", name_d);
