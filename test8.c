@@ -95,7 +95,8 @@ void main(void)
 void scanf_format_character_string(void)
 {
     int i_a, i_b;
-    printf("input i_a(int), i_b(int):");
+    printf("input i_a(int), i_b(int);");
+    printf("(%%d,%%d): ");
     // 要求第一个输入项后面紧贴着输入一个,(逗号)
     // 与书本上的输入方式有差别,应该是编译器的实现不同...(个人推测 00')
     scanf("%d,%d", &i_a, &i_b);
