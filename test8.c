@@ -56,7 +56,7 @@ void main(void)
     // %d %s 转换说明顺序
     // 如果输入A,scanf()函数读取到A后,将停止读取,并将A放回输入
     // 不会把值赋给指定变量
-    // ***如果scanf()函数带多个转换说明,C规定在第一个出错出停止读取输入
+    // ***如果scanf()函数带多个转换说明,C规定在第一个出错处停止读取输入(后面的读取全部停止)
     printf("input age name: ");
     scanf("%d %s", &age_c, name_c);
     printf("Age: %d, Name: %s\n", age_c, name_c);
