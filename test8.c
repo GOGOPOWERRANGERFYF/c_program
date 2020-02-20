@@ -113,10 +113,10 @@ void scanf_conversion_specification_character(void)
     scanf("%d %d", &i_c, &i_d);
     printf("%d,%d\n", i_c, i_d);
 
-    printf("input char c_a c_b(%%c%%c):")
+    printf("input char c_a c_b(%%c%%c):");
     scanf("%c%c", &c_a, &c_b);
     printf("%c,%c\n", c_a, c_b);
-    printf("input char c_a c_b(%%c %%c):")
+    printf("input char c_a c_b(%%c %%c):");
     scanf("%c %c", &c_c, &c_d);
     printf("%c,%c\n", c_c, c_d);
     return;
