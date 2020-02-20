@@ -127,11 +127,13 @@ void scanf_conversion_specification_character(void)
     printf("input char c_a(%%c):");
     scanf("%c", &c_a);
     printf("c_a(%%c):%c\n", c_a);
+    //换行符ascii码是10,C语言换行符是'\n'
     printf("c_a(%%hhu):%hhu\n", c_a);
     // scanf转换说明前有空格
     printf("input char c_b( %%c):");
     scanf(" %c", &c_b);
     printf("c_b(%%c):%c\n", c_b);
+    // 'A' ascii码是65
     printf("c_b(%%hhu):%hhu\n", c_b);
     return;
 }
