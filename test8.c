@@ -120,18 +120,19 @@ void scanf_conversion_specification_character(void)
     // (注: scanf函数的%c是特殊情况,其它转换说明无这种区别)
     // %c读取一个字符,包括回车键生成的换行符
     // 假设执行到上一个scanf函数,我们输入数据,按回车,
-    // 生成的换行字符会存入缓冲区
+    // 生成的换行字符会存入输入缓冲区
     // scanf("%c")会读取这个换行字符
     // scanf(" %c")则可正确读取
     // scanf转换说明前没有空格
     printf("input char c_a(%%c):");
     scanf("%c", &c_a);
-    printf("%c\n", c_a);
+    printf("c_a(%%c):%c\n", c_a);
+    printf("c_a(%%hhu):%hhu\n", c_a);
     // scanf转换说明前有空格
     printf("input char c_b( %%c):");
     scanf(" %c", &c_b);
-    printf("%c\n", c_b);
-    printf("%hhu\n", c_b);
+    printf("c_b(%%c):%c\n", c_b);
+    printf("c_b(%%hhu):%hhu\n", c_b);
     return;
 }
 
