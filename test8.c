@@ -114,7 +114,14 @@ void scanf_conversion_specification_character(void)
     printf("input char i_a i_b(%%d %%d):");
     scanf("%d %d", &i_c, &i_d);
     printf("%d,%d\n", i_c, i_d);
-
+    
+    // scanf("%c") 和scanf(" %c")是有区别的 
+    // (注: scanf函数的%c是特殊情况,其它转换说明无这种区别)
+    // %c读取一个字符,包括回车键生成的换行符
+    // 假设执行到上一个scanf函数,我们输入数据,按回车,
+    // 生成的换行字符会存入缓冲区
+    // scanf("%c")会读取这个换行字符
+    // scanf(" %c")则可正确读取
     printf("input char c_a c_b(%%c%%c):");
     scanf("%c%c", &c_a, &c_b);
     printf("%c,%c\n", c_a, c_b);
