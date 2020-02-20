@@ -107,7 +107,7 @@ void scanf_format_character_string(void)
 void scanf_conversion_specification_character(void)
 {
     int i_a, i_b, i_c, i_d;
-    char c_a, c_b, c_c, c_d;
+    char c_a, c_b;
 
     printf("input char i_a i_b(%%d%%d):");
     scanf("%d%d", &i_a, &i_b);
@@ -123,12 +123,14 @@ void scanf_conversion_specification_character(void)
     // 生成的换行字符会存入缓冲区
     // scanf("%c")会读取这个换行字符
     // scanf(" %c")则可正确读取
-    printf("input char c_a c_b(%%c %%c):");
-    scanf("%c %c", &c_c, &c_d);
-    printf("%c,%c\n", c_c, c_d);
-    printf("input char c_a c_b(%%c%%c):");
-    scanf("%c%c", &c_a, &c_b);
-    printf("%c,%c\n", c_a, c_b);
+    printf("input char c_a( %%c):");
+    // scanf转换说明前有空格
+    scanf(" %c", &c_a);
+    printf("%c\n", c_a);
+    printf("input char c_a c_b(%%c):");
+    // scanf转换说明前没有空格
+    scanf("%c", &c_b);
+    printf("%c\n", c_b);
     return;
 }
 
