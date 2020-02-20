@@ -123,13 +123,13 @@ void scanf_conversion_specification_character(void)
     // 生成的换行字符会存入缓冲区
     // scanf("%c")会读取这个换行字符
     // scanf(" %c")则可正确读取
-    printf("input char c_a( %%c):");
-    // scanf转换说明前有空格
-    scanf(" %c", &c_a);
-    printf("%c\n", c_a);
-    printf("input char c_a c_b(%%c):");
     // scanf转换说明前没有空格
-    scanf("%c", &c_b);
+    printf("input char c_a(%%c):");
+    scanf("%c", &c_a);
+    printf("%c\n", c_a);
+    // scanf转换说明前有空格
+    printf("input char c_b( %%c):");
+    scanf(" %c", &c_b);
     printf("%c\n", c_b);
     printf("%hhu\n", c_b);
     return;
