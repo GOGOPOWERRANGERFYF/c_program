@@ -134,6 +134,8 @@ void scanf_conversion_specification_character(void)
     scanf(" %c", &c_b);
     printf("c_b(%%c):%c\n", c_b);
     // 'A' ascii码是65
+    // %hhu printf和scanf都有这个转换说明
+    // 作用: 输出或输入一个一个字节的无符号整数
     printf("c_b(%%hhu):%hhu\n", c_b);
     return;
 }
