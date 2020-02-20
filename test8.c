@@ -131,6 +131,7 @@ void scanf_conversion_specification_character(void)
     // scanf转换说明前没有空格
     scanf("%c", &c_b);
     printf("%c\n", c_b);
+    printf("%hhu\n", c_b);
     return;
 }
 
