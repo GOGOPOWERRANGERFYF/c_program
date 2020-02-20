@@ -122,7 +122,7 @@ void scanf_conversion_specification_character(void)
     // 假设执行到上一个scanf函数,我们输入数据,按回车,
     // 生成的换行字符会存入输入缓冲区
     // scanf("%c")会读取这个换行字符
-    // scanf(" %c")则可正确读取
+    // scanf(" %c")则可正确读取,不会读取输入缓冲区中的换行字符(ascii码)
     // scanf转换说明前没有空格
     printf("input char c_a(%%c):");
     scanf("%c", &c_a);
