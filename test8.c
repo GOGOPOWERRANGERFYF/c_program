@@ -93,9 +93,9 @@ void main(void)
 void scanf_format_character_string(void)
 {
     int i_a, i_b;
-    printf("input:");
+    printf("input i_a(int), i_b(int):");
     scanf("%d,%d", &i_a, &i_b);
-    printf("i_a = %d, i_b = %d\n", i_a, i_b);
+    printf("i_a: %d,i_b: %d\n", i_a, i_b);
     return;
 }
 
