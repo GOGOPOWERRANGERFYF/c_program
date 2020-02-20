@@ -91,6 +91,7 @@ void main(void)
 }
 // 注: 在C语言中,scanf()并不是最常用的输入函数,但它能读取不同类型的数据
 //     C语言还有其它的输入函数,例如: getchar()和fgets(),会在后面的章节中介绍
+// * 格式字符串中,除空白字符外的字符必须与输入字符串严格匹配
 
 void scanf_format_character_string(void)
 {
