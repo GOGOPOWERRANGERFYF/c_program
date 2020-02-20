@@ -12,6 +12,8 @@
 //
 //scanf()读取基本类型变量的值,在变量名前加&
 //scanf()读取字符串,储存到字符数组中,不使用&
+void scanf_format_character_string(void);
+
 void main(void)
 {
     int age_a, age_b, age_c, age_d;
@@ -82,9 +84,18 @@ void main(void)
     printf("input name: ");
     scanf("%s", &name_d);
     printf("name_d(%%s): %s\n", name_d);
+    scanf_format_character_string();
     return;
 }
-
 // 注: 在C语言中,scanf()并不是最常用的输入函数,但它能读取不同类型的数据
 //     C语言还有其它的输入函数,例如: getchar()和fgets(),会在后面的章节中介绍
+
+void scanf_format_character_string(void)
+{
+    int i_a, i_b;
+    printf("input:");
+    scanf("%d,%d", &i_a, &i_b);
+    printf("i_a = %d, i_b = %d\n", i_a, i_b);
+    return;
+}
 
