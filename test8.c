@@ -153,6 +153,7 @@ void scanf_conversion_specification_character(void)
     scanf("%c", &c_a);
     printf("c_a(%%c):%c\n", c_a);
     //换行符ascii码是10,C语言换行符是'\n'
+    //空格符(space)ascii码是32
     printf("c_a(%%hhu):%hhu\n", c_a);
     // scanf转换说明前有空格
     printf("input char c_b( %%c):");
