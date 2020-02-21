@@ -108,7 +108,7 @@ void scanf_format_character_string(void)
     
     printf("input i_a(int), i_b(int);");
     printf("(%%d:%%d): ");
-    scanf("%d:%d", &i_a, &i_b);
+    scanf("%d : %d", &i_a, &i_b);
     printf("%d %d\n", i_a, i_b);
     return;
 }
