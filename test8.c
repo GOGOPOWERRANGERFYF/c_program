@@ -94,22 +94,22 @@ void main(void)
 
 void scanf_format_character_string(void)
 {
-    int i_a, i_b;
+    int i_sfcs_a, i_sfcs_b, i_sfcs_c, i_sfcs_d;
     // scanf格式字符串中的普通字符
     // scanf函数允许在格式字符串中加入普通字符
     // * 格式字符串中,除空白字符外的字符必须与输入字符串严格匹配
     // * 空白字符包括(空格字符,制表字符,换行字符和没有空白字符的特殊情况)
-    printf("input i_a(int), i_b(int);");
+    printf("input i_sfcs_a(int), i_sfcs_b(int);");
     printf("(%%d,%%d): ");
     // 要求第一个输入项后面紧贴着输入一个,(逗号)
     // 与书本上的输入方式有差别,应该是编译器的实现不同...(个人推测 00')
-    scanf("%d,%d", &i_a, &i_b);
-    printf("i_a,i_b: %d,%d\n", i_a, i_b);
+    scanf("%d,%d", &i_sfcs_a, &i_sfcs_b);
+    printf("i_a,i_b: %d,%d\n", i_sfcs_a, i_sfcs_b);
     
-    printf("input i_a(int), i_b(int);");
+    printf("input i_sfcs_a(int), i_sfcs_b(int);");
     printf("(%%d:%%d): ");
-    scanf("%d : %d", &i_a, &i_b);
-    printf("%d %d\n", i_a, i_b);
+    scanf("%d : %d", &i_sfcs_c, &i_sfcs_d);
+    printf("%d %d\n", i_sfcs_c, i_sfcs_d);
     return;
 }
 
@@ -118,10 +118,10 @@ void scanf_conversion_specification_character(void)
     int i_a, i_b, i_c, i_d;
     char c_a, c_b;
 
-    printf("input char i_a i_b(%%d%%d):");
+    printf("input int i_a i_b(%%d%%d):");
     scanf("%d%d", &i_a, &i_b);
     printf("%d,%d\n", i_a, i_b);
-    printf("input char i_a i_b(%%d %%d):");
+    printf("input int i_a i_b(%%d %%d):");
     scanf("%d %d", &i_c, &i_d);
     printf("%d,%d\n", i_c, i_d);
     
