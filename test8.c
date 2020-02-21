@@ -102,6 +102,8 @@ void scanf_format_character_string(void)
     // 与书本上的输入方式有差别,应该是编译器的实现不同...(个人推测 00')
     scanf("%d,%d", &i_a, &i_b);
     printf("i_a,i_b: %d,%d\n", i_a, i_b);
+    scanf("%d:%d", &i_a, &i_b);
+    printf("%d %d\n", i_a, i_b);
     return;
 }
 
