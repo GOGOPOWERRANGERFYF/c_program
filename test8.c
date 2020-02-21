@@ -139,6 +139,8 @@ void scanf_conversion_specification_character(void)
     scanf("%d %d", &i_c, &i_d);
     printf("%d,%d\n", i_c, i_d);
     
+    // %c与普通字符情况一样,前面加空白字符的特殊情况(即不加空白字符)
+    // 都是不会跳过输入时的空白字符的
     // scanf("%c") 和scanf(" %c")是有区别的 
     // (注: scanf函数的%c是特殊情况,其它转换说明无这种区别)
     // %c读取一个字符,包括回车键生成的换行符
