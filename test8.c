@@ -101,13 +101,16 @@ void scanf_format_character_string(void)
     // * 空白字符包括(空格字符,制表字符,换行字符和没有空白字符的特殊情况)
     printf("input i_sfcs_a(int), i_sfcs_b(int);");
     printf("(%%d,%%d): ");
-    // 要求第一个输入项后面紧贴着输入一个,(逗号)
-    // 与书本上的输入方式有差别,应该是编译器的实现不同...(个人推测 00')
     scanf("%d,%d", &i_sfcs_a, &i_sfcs_b);
     printf("i_a,i_b: %d,%d\n", i_sfcs_a, i_sfcs_b);
-    
+    //scanf格式字符串中,[转换说明间]加空白字符(包括无空白字符的特殊情况,就是无字符)
+    //作用是匹配输入项时跳过空白字符.
+    //scanf格式字符串中,转换说明间加普通字符
+    //[目前我的简单概括是除(空白字符包括特殊情况外),未必准确,目前知识水平有限]
+    //输入时格式要与scanf格式字符串的格式相匹配,
+    //才能让scanf函数能够从缓冲区中正确读取数据
     printf("input i_sfcs_a(int), i_sfcs_b(int);");
-    printf("(%%d:%%d): ");
+    printf("(%%d : %%d): ");
     scanf("%d : %d", &i_sfcs_c, &i_sfcs_d);
     printf("%d %d\n", i_sfcs_c, i_sfcs_d);
     return;
