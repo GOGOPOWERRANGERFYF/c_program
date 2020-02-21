@@ -176,6 +176,8 @@ void scanf_conversion_specification_character(void)
 // scanf格式字符串的空白字符(包括无空白字符的特殊情况)作用是跳过输入缓冲区的空白字符
 // %c 是个例外  scanf("%c"); 和 scanf(" %c"); 是不等价的
 // scanf格式字符串中的普通字符,输入时要输入相匹配的普通字符,不匹配的话会停止读取
+// scanf只有单个转换说明,输入不匹配,scanf会停止读取,程序有下一个scanf的话,下一个scanf继续读取
+// scanf如果有多个转换说明,输入不匹配的话,C标准规定程序停止读取,即使后面代码中还有scanf
 
 
 
