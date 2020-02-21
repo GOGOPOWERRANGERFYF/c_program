@@ -166,7 +166,12 @@ void scanf_conversion_specification_character(void)
     return;
 }
 
-
+// 总结: %d 转换说明匹配输入项
+//       |空白字符前|整数类型数据|空白字符后|
+//                 |           |
+//跳过空白字符   读取开始     读取结束    读到空白字符后,放回输入缓存区
+// 程序有下一个scanf函数的话,从放回的空白字符开始读取
+//
 
 
 
