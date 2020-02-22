@@ -198,3 +198,7 @@ void scanf_return_value(void)
     return;
 }
 
+// * modifier   *修饰符
+// printf("%*d", width, integer);   *表示字段宽度,不想预先指定字段宽度时用*代替
+
+
