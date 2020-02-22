@@ -185,8 +185,9 @@ void scanf_conversion_specification_character(void)
 void scanf_return_value(void)
 {
     int srv_i_a;
-    scanf("%d", srv_i_a);
-    printf("%zd\n", sizeof(scanf("%d", srv_i_a)));
+    scanf("srv_i_a(%%d): %d", srv_i_a);
+    printf("sizeof(scanf(\"%%d\", srv_i_a)) [%%zd]: %zd\n",
+     sizeof(scanf("%d", srv_i_a)));
     return;
 }
 
