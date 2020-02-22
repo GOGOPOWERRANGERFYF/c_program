@@ -15,6 +15,7 @@
 void scanf_format_character_string(void);
 void scanf_conversion_specification_character(void);
 void scanf_return_value(void);
+void star_modifier(void);
 
 void main(void)
 {
@@ -89,6 +90,7 @@ void main(void)
     scanf_format_character_string();
     scanf_conversion_specification_character();
     scanf_return_value();
+    star_modifier();
     return;
 }
 // 注: 在C语言中,scanf()并不是最常用的输入函数,但它能读取不同类型的数据
@@ -185,7 +187,8 @@ void scanf_conversion_specification_character(void)
 void scanf_return_value(void)
 {
     int srv_i_a;
-    scanf("srv_i_a(%%d): %d", srv_i_a);
+    printf("input srv_i_a(%%d): ");
+    scanf("%d", srv_i_a);
     //scanf返回值为int类型
     // 转义序列(escape sequence)    
     // \" 反斜杠后面的字符,不是它ascii字符本来的意思了
@@ -200,5 +203,13 @@ void scanf_return_value(void)
 
 // * modifier   *修饰符
 // printf("%*d", width, integer);   *表示字段宽度,不想预先指定字段宽度时用*代替
-
+void star_modifier(void)
+{
+    unsigned int before, after;
+    double d_a = 1111111.1111;
+    printf("input width before/after decimal point: ");
+    scanf("%d %d", &before, &after);
+    printf("%*.*f\n", before, after, d_a);
+    return;
+}
 
