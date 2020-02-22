@@ -212,9 +212,12 @@ void printf_star_modifier(void)
 
 void scanf_star_modifier(void)
 {
+    int ssm_i_a;
     //scanf的*修饰符与printf的*修饰符作用不同
-    //scanf("%*d%*d%d", int1, int2, int3);
-    //读取输入时,跳过前两个匹配输入项
+    //scanf("%*d%*d%d", &int);
+    //读取输入缓冲区时,跳过前两个输入项,读取和保存第三个输入项到指定变量
+    scanf("%*d%*d%d", &ssm_i_a);
+    printf("ssm_i_a(%%d): %d\n", ssm_i_a);
     return;
 }
 
