@@ -188,7 +188,10 @@ void scanf_return_value(void)
     scanf("srv_i_a(%%d): %d", srv_i_a);
     //scanf返回值为int类型
     // 转义序列(escape sequence)    
-    // \" 反斜杠后面的字符,不是它ascii字符本来的意思了 
+    // \" 反斜杠后面的字符,不是它ascii字符本来的意思了
+    // " C中原意是字符串符号, \" 转义序列,意思是双引号符号字符本身 
+    // %d 转换说明,转换成整数类型
+    // %% 转换说明,转换成百分号字符本身
     printf("scanf(\"%%d\", srv_i_a): %d\n", scanf("%d", srv_i_a));
     printf("sizeof(scanf(\"%%d\", srv_i_a)) [%%zd]: %zd\n",
      sizeof(scanf("%d", srv_i_a)));
