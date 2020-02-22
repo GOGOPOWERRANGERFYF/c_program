@@ -186,6 +186,9 @@ void scanf_return_value(void)
 {
     int srv_i_a;
     scanf("srv_i_a(%%d): %d", srv_i_a);
+    //scanf返回值为int类型
+    // 转义序列(escape sequence)    
+    // \" 反斜杠后面的字符,不是它ascii字符本来的意思了 
     printf("scanf(\"%%d\", srv_i_a): %d\n", scanf("%d", srv_i_a));
     printf("sizeof(scanf(\"%%d\", srv_i_a)) [%%zd]: %zd\n",
      sizeof(scanf("%d", srv_i_a)));
