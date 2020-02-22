@@ -15,7 +15,8 @@
 void scanf_format_character_string(void);
 void scanf_conversion_specification_character(void);
 //void scanf_return_value(void);
-void star_modifier(void);
+void printf_star_modifier(void);
+void scanf_star_modifier(void);
 
 void main(void)
 {
@@ -90,7 +91,8 @@ void main(void)
     scanf_format_character_string();
     scanf_conversion_specification_character();
     //scanf_return_value();
-    star_modifier();
+    printf_star_modifier();
+    scanf_star_modifier();
     return;
 }
 // 注: 在C语言中,scanf()并不是最常用的输入函数,但它能读取不同类型的数据
@@ -196,7 +198,7 @@ void scanf_conversion_specification_character(void)
 
 // * modifier   *修饰符
 // printf("%*d", width, integer);   *表示字段宽度,不想预先指定字段宽度时用*代替
-void star_modifier(void)
+void printf_star_modifier(void)
 {
     unsigned int before, after;
     double d_a = 1111111.1111;
@@ -208,7 +210,10 @@ void star_modifier(void)
     return;
 }
 
-
+void scanf_star_modifier(void)
+{
+    return;
+}
 
 
 
