@@ -14,7 +14,7 @@
 //scanf()读取字符串,储存到字符数组中,不使用&
 void scanf_format_character_string(void);
 void scanf_conversion_specification_character(void);
-void scanf_return_value(void);
+//void scanf_return_value(void);
 void star_modifier(void);
 
 void main(void)
@@ -89,7 +89,7 @@ void main(void)
     printf("name_d(%%s): %s\n", name_d);
     scanf_format_character_string();
     scanf_conversion_specification_character();
-    scanf_return_value();
+    //scanf_return_value();
     star_modifier();
     return;
 }
@@ -184,22 +184,15 @@ void scanf_conversion_specification_character(void)
 // scanf只有单个转换说明,输入不匹配,scanf会停止读取,程序有下一个scanf的话,下一个scanf继续读取
 // scanf如果有多个转换说明,输入不匹配的话,C标准规定程序停止读取,即使后面代码中还有scanf
 
-void scanf_return_value(void)
-{
-    int srv_i_a;
-    printf("input srv_i_a(%%d): ");
-    scanf("%d", srv_i_a);
-    //scanf返回值为int类型
-    // 转义序列(escape sequence)    
-    // \" 反斜杠后面的字符,不是它ascii字符本来的意思了
-    // " C中原意是字符串符号, \" 转义序列,意思是双引号符号字符本身 
-    // %d 转换说明,转换成整数类型
-    // %% 转换说明,转换成百分号字符本身
-    printf("scanf(\"%%d\", srv_i_a): %d\n", scanf("%d", srv_i_a));
-    printf("sizeof(scanf(\"%%d\", srv_i_a)) [%%zd]: %zd\n",
-     sizeof(scanf("%d", srv_i_a)));
-    return;
-}
+//void scanf_return_value(void)
+//{
+//    //scanf返回值为int类型
+//    // 转义序列(escape sequence)    
+//    // \" 反斜杠后面的字符,不是它ascii字符本来的意思了
+//    // " C中原意是字符串符号, \" 转义序列,意思是双引号符号字符本身 
+//    // %d 转换说明,转换成整数类型
+//    // %% 转换说明,转换成百分号字符本身
+//}
 
 // * modifier   *修饰符
 // printf("%*d", width, integer);   *表示字段宽度,不想预先指定字段宽度时用*代替
@@ -209,7 +202,15 @@ void star_modifier(void)
     double d_a = 1111111.1111;
     printf("input width before/after decimal point: ");
     scanf("%d %d", &before, &after);
+    // %*.*f  第一个*表示浮点数字段宽度,位数不足的填充空格,位数足够或超过的原样输出即可
+    //        第二个*表示浮点数小数点后保留位数
     printf("%*.*f\n", before, after, d_a);
     return;
 }
+
+
+
+
+
+
 
