@@ -14,6 +14,7 @@
 //scanf()读取字符串,储存到字符数组中,不使用&
 void scanf_format_character_string(void);
 void scanf_conversion_specification_character(void);
+void scanf_return_value(void);
 
 void main(void)
 {
@@ -87,6 +88,7 @@ void main(void)
     printf("name_d(%%s): %s\n", name_d);
     scanf_format_character_string();
     scanf_conversion_specification_character();
+    scanf_return_value();
     return;
 }
 // 注: 在C语言中,scanf()并不是最常用的输入函数,但它能读取不同类型的数据
@@ -180,5 +182,11 @@ void scanf_conversion_specification_character(void)
 // scanf只有单个转换说明,输入不匹配,scanf会停止读取,程序有下一个scanf的话,下一个scanf继续读取
 // scanf如果有多个转换说明,输入不匹配的话,C标准规定程序停止读取,即使后面代码中还有scanf
 
-
+void scanf_return_value(void)
+{
+    int srv_i_a;
+    scanf("%d", srv_i_a);
+    printf("%zd\n", sizeof(scanf("%d", srv_i_a)));
+    return;
+}
 
