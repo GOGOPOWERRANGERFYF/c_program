@@ -17,6 +17,7 @@ void scanf_conversion_specification_character(void);
 //void scanf_return_value(void);
 void printf_star_modifier(void);
 void scanf_star_modifier(void);
+void usage_tips_for_printf(void);
 
 void main(void)
 {
@@ -93,6 +94,7 @@ void main(void)
     //scanf_return_value();
     printf_star_modifier();
     scanf_star_modifier();
+    usage_tips_for_printf();
     return;
 }
 // 注: 在C语言中,scanf()并不是最常用的输入函数,但它能读取不同类型的数据
@@ -216,12 +218,29 @@ void scanf_star_modifier(void)
     //scanf的*修饰符与printf的*修饰符作用不同
     //scanf("%*d%*d%d", &int);
     //读取输入缓冲区时,跳过前两个输入项,读取和保存第三个输入项到指定变量
+    printf("&ssm_i_a(%%*d%%*d%%d): ");
     scanf("%*d%*d%d", &ssm_i_a);
     printf("ssm_i_a(%%d): %d\n", ssm_i_a);
     return;
 }
 
-
+// usage 用法
+void usage_tips_for_printf(void)
+{
+    int utfp_i_a, utfp_i_b, utfp_i_c, utfp_i_d, utfp_i_e, utfp_i_f,\
+     utfp_i_g, utfp_i_h, utfp_i_i, utfp_i_j, utfp_i_k, utfp_i_l;
+    
+    scanf("%d %d %d %d %d %d",
+     &utfp_i_a, &utfp_i_b, &utfp_i_c, &utfp_i_d, &utfp_i_e, &utfp_i_f);
+    scanf("%d %d %d %d %d %d",
+     &utfp_i_g, &utfp_i_h, &utfp_i_i, &utfp_i_j, &utfp_i_k, &utfp_i_l);
+    
+    printf("%d %d %d %d %d %d\n",
+     utfp_i_a, utfp_i_b, utfp_i_c, utfp_i_d, utfp_i_e, utfp_i_f);
+    printf("%8d %8d %8d %8d %8d %8d\n",
+     utfp_i_a, utfp_i_b, utfp_i_c, utfp_i_d, utfp_i_e, utfp_i_f);
+    return;
+}
 
 
 
