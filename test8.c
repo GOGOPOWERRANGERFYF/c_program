@@ -230,8 +230,10 @@ void usage_tips_for_printf(void)
     int utfp_i_a, utfp_i_b, utfp_i_c, utfp_i_d, utfp_i_e, utfp_i_f,\
      utfp_i_g, utfp_i_h, utfp_i_i, utfp_i_j, utfp_i_k, utfp_i_l;
     
+    printf("input(%%d %%d %%d %%d %%d %%d): ");
     scanf("%d %d %d %d %d %d",
      &utfp_i_a, &utfp_i_b, &utfp_i_c, &utfp_i_d, &utfp_i_e, &utfp_i_f);
+    printf("input(%%d %%d %%d %%d %%d %%d): ");
     scanf("%d %d %d %d %d %d",
      &utfp_i_g, &utfp_i_h, &utfp_i_i, &utfp_i_j, &utfp_i_k, &utfp_i_l);
     
