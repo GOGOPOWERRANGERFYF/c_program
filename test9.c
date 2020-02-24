@@ -17,6 +17,13 @@ void while_statements(void)
 {
     //把整数值0赋给变量start,赋值表达式
     int start = 0;
+    // C的当前标准(早期C标准的lvalue,rvalue的定义已经不能满足当前的状况)
+    // 左:
+    //  modifiable lvalue(可修改的左值)
+    //  object locator value(对象定位值)
+    // 右:
+    //  value of an expression(表达式的值)
+    //  常量,变量,可求值的表达式
 
     while(start<10)             /* starting the while loop  */
     //花括号之间的内容是要被重复的内容,用计算机术语说,就是程序循环这些语句
