@@ -15,6 +15,8 @@ int main(void)
 
 void while_block(void)
 {
+    //这里的 =运算符 表示 初始化而不是 赋值
+    const int ONE = 1;
     //把整数值0赋给变量start,赋值表达式
     int start = 0;
     // C的当前标准
