@@ -26,8 +26,8 @@ void while_block(void)
     //  *modifiable lvalue(可修改的左值)
     //  object locator value(对象定位值)
     // 右:
-    //  常量,变量,可求值的表达式
     //  *value of an expression(表达式的值)
+    //  包括常量,变量,可求值的表达式
     //《c primer plus第六版》中文版的定义:
     //赋值语句的目的是把值储存到内存位置,储存值的内存存储区域称为数据对象(data object)
     //我自己根据《c primer plus第六版》英文版的翻译
