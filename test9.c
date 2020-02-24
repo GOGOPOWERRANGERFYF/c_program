@@ -15,11 +15,11 @@ int main(void)
 void while_statements(void)
 {
     int start = 0;
-    while(start<10)
-    {
+    while(start<10)             /* starting the while loop  */
+    {                           /* start of block */
         start = start + 1;
         printf("%d\n", start);
-    }
+    }                           /* end of block */
     printf("The End!\n");
     return;
 }
