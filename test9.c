@@ -46,6 +46,7 @@ void while_block(void)
     // 常量是由系统在main函数运行前把常量赋值给常量的...(网上的说法,也不知道对错,待以后验证吧...)
     // 只有变量是可以引用内存地址的(个人理解,待验证,目前知识水平有限...)
         start = start + 1;      
+    // operand(the item项 to the left of =) = operator operate on
         printf("%d\n", start);
     }                           /* end of block */
     printf("The End!\n");
