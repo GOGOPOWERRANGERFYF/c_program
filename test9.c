@@ -15,6 +15,7 @@ int main(void)
 
 void while_statements(void)
 {
+    //把整数值0赋给变量start,赋值表达式
     int start = 0;
 
     while(start<10)             /* starting the while loop  */
