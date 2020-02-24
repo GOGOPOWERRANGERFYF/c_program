@@ -17,7 +17,9 @@ void while_statements(void)
 {
     //把整数值0赋给变量start,赋值表达式
     int start = 0;
-    // C的当前标准(早期C标准的lvalue,rvalue的定义已经不能满足当前的状况)
+    // C的当前标准
+    //(早期C标准的lvalue: left value
+    //,rvalue: right value的定义已经不能满足当前的状况)
     // 左:
     //  modifiable lvalue(可修改的左值)
     //  object locator value(对象定位值)
