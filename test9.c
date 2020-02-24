@@ -41,7 +41,7 @@ void while_block(void)
     /* start of block,花括号以及花括号括起来的部分被称为block */
     {                           
     // 目前个人的理解,下面整句为赋值语句,
-    // start + 1为表达式,它是程序计算的一个临时值,之后会被丢弃 
+    // start + 1为表达式的值(可求值的表达式),它是程序计算的一个临时值,之后会被丢弃 
         start = start + 1;      
         printf("%d\n", start);
     }                           /* end of block */
