@@ -24,6 +24,11 @@ void while_statements(void)
     // 右:
     //  value of an expression(表达式的值)
     //  常量,变量,可求值的表达式
+    //《c primer plus第六版》中文版的定义:
+    //赋值语句的目的是把值储存到内存位置,储存值的内存存储区域称为数据对象(data object)
+    //我自己根据《c primer plus第六版》英文版的翻译
+    //考虑一个赋值语句.它的目的是储存一个值在一个内存位置.
+    //数据对象是一个 用于存储所有值的数据存储区域的  通用术语
 
     while(start<10)/* starting the while loop  */
     //花括号之间的内容是要被重复的内容,用计算机术语说,就是程序循环这些语句
