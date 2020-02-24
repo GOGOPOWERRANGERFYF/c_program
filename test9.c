@@ -17,7 +17,9 @@ void while_block(void)
 {
     //这里的 =运算符 表示 初始化而不是 赋值
     const int ONE = 1;
+    
     //把整数值0赋给变量start,赋值表达式
+    // 可修改的左值 = 表达式的值(包括常量,变量,可求值的表达式) 
     int start = 0;
     // C的当前标准
     //(早期C标准的lvalue: left value
