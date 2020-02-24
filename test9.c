@@ -7,7 +7,7 @@ int main(void)
 {
     // operator:运算符; expression:表达式; statement:语句;
     // operand:运算数,操作数;
-    // = 赋值运算符
+    // = 赋值运算符(assignment operator)
     //格式字符串中的转换说明%s,后面的待输出项类型和熟练要与转换说明相匹配
     printf("These is operators: %s\n", OPERATORS);
     while_block();
