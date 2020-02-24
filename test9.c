@@ -25,10 +25,12 @@ void while_statements(void)
     //  value of an expression(表达式的值)
     //  常量,变量,可求值的表达式
 
-    while(start<10)             /* starting the while loop  */
+    while(start<10)/* starting the while loop  */
     //花括号之间的内容是要被重复的内容,用计算机术语说,就是程序循环这些语句
-    {                           /* start of block,花括号以及花括号括起来的部分被称为block */
-        start = start + 1;
+    /* start of block,花括号以及花括号括起来的部分被称为block */
+    {                           
+    // 目前个人的理解,下面整句为赋值语句,start + 1为表达式,待验证... 
+        start = start + 1;      
         printf("%d\n", start);
     }                           /* end of block */
     printf("The End!\n");
