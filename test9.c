@@ -5,6 +5,7 @@ void while_block(void);
 void addition_substraction_operator(void);
 void sign_operator(void);
 void sixty_four_game(void);
+void division_operator(void);
 
 int main(void)
 {
@@ -17,6 +18,7 @@ int main(void)
     addition_substraction_operator();
     sign_operator();
     sixty_four_game();
+    division_operator();
     return 0;
 }
 
@@ -117,8 +119,16 @@ void sixty_four_game(void)
     }
     printf("The Max of number: %22.1f\n", number);
     printf("The Max of total:  %23.1f\n", total);
-    printf("The End!");
+    printf("The End!\n");
     return;
 }
 
 //division operator除法运算符 /
+void division_operator(void)
+{
+    printf("5/3 = %d\n", 5/3);
+    return;
+}
+
+
+
