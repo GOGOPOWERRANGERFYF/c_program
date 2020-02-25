@@ -68,6 +68,7 @@ void addition_substraction_operator(void)
     ao_i_b = 1;
     // 关键知识点:
     // * ao_i_a + ao_i_b表达式,程序计算的一个临时值,计算完成后会被丢弃,它并不能表示特定的内存位置,
+    // * 个人推理:计算出的临时值,应该直接从寄存器直接赋给变量(可修改的左值的内存存储区域:数据对象)了,很合理吧...
     // * 因此不能赋值给它
     ao_i_c = ao_i_a + ao_i_b;
     printf("ao_i_a + ao_i_b = %d\n", ao_i_c);
