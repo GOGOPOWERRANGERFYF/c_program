@@ -3,6 +3,7 @@
 #define OPERATORS "= + - * /"
 void while_block(void);
 void addition_substraction_operator(void);
+void sign_operator(void);
 
 int main(void)
 {
@@ -13,6 +14,7 @@ int main(void)
     printf("These is operators: %s\n", OPERATORS);
     while_block();
     addition_substraction_operator();
+    sign_operator();
     return 0;
 }
 
@@ -74,6 +76,17 @@ void addition_substraction_operator(void)
     printf("ao_i_a + ao_i_b = %d\n", ao_i_c);
     ao_i_c = ao_i_a - ao_i_b;
     printf("ao_i_a - ao_i_b = %d\n", ao_i_c);
+    return;
+}
+
+// sign operator(符号运算符): + 和 -
+// unary operator(一元运算符),完成运算只需要一个运算数(operand)
+void sign_operator(void)
+{
+    int so_i_a, so_i_b;
+    so_i_a = 5;
+    so_i_b = -so_i_a;
+    printf("so_i_b = -so_i_a = %d\n", so_i_b);
     return;
 }
 
