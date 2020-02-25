@@ -92,6 +92,13 @@ void sign_operator(void)
     return;
 }
 
+// count初始化等于1
+// while循环,循环一次,count+1
+// 循环1:  count = 2
+// 循环2:  count = 3
+//  ... ...
+// 循环63: count = 64
+// 循环条件count<64,语句块循环了63次,count=64,循环停止
 void sixty_four_game(void)
 {
     int count = 1;
