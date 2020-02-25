@@ -95,7 +95,7 @@ void sign_operator(void)
 void sixty_four_game(void)
 {
     int count = 1;
-    double number = 1.0, max, total = 1.0;
+    double number = 1.0, total = 1.0;
     printf("count                ");
     printf("number                     ");
     printf("total\n");
