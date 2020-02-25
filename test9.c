@@ -4,6 +4,7 @@
 void while_block(void);
 void addition_substraction_operator(void);
 void sign_operator(void);
+void sixty_four_game(void);
 
 int main(void)
 {
@@ -15,6 +16,7 @@ int main(void)
     while_block();
     addition_substraction_operator();
     sign_operator();
+    sixty_four_game();
     return 0;
 }
 
@@ -87,6 +89,20 @@ void sign_operator(void)
     so_i_a = 5;
     so_i_b = -so_i_a;
     printf("so_i_b = -so_i_a = %d\n", so_i_b);
+    return;
+}
+
+void sixty_four_game(void)
+{
+    int count = 1;
+    double max, total;
+    printf("%d\n", count);
+    while(count<64)
+    {
+        count = count + 1;
+        printf("%d\n", count);
+    }
+    printf("The End!");
     return;
 }
 
