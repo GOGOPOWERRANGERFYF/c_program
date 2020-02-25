@@ -2,7 +2,7 @@
 //定义符号常量,预编译时后面的字符串替换前面的符号常量(文本)
 #define OPERATORS "= + - * /"
 void while_block(void);
-void addition_operator(void);
+void addition_substraction_operator(void);
 
 int main(void)
 {
@@ -12,7 +12,7 @@ int main(void)
     //格式字符串中的转换说明%s,后面的待输出项类型和熟练要与转换说明相匹配
     printf("These is operators: %s\n", OPERATORS);
     while_block();
-    addition_operator();
+    addition_substraction_operator();
     return 0;
 }
 
@@ -57,18 +57,22 @@ void while_block(void)
     return;
 }
 
-void addition_operator(void)
+//addition operator和subtraction operator称为bianry operator(二次元...哦,不,二元运算符XD)
+//即这些运算符需要两个运算数(operand)才能完成运算
+void addition_substraction_operator(void)
 {
     int ao_i_a, ao_i_b, ao_i_c;
     //assignment statment,赋值语句;assigement operator,赋值运算符;
     //可修改的左值(modifiable lvalue) = 表达式的值(an value of expression)(变量,常量,可求值的表达式)
-    ao_i_a = 1;
-    ao_i_b = 2;
+    ao_i_a = 2;
+    ao_i_b = 1;
     // 关键知识点:
     // * ao_i_a + ao_i_b表达式,程序计算的一个临时值,计算完成后会被丢弃,它并不能表示特定的内存位置,
     // * 因此不能赋值给它
     ao_i_c = ao_i_a + ao_i_b;
     printf("ao_i_a + ao_i_b = %d\n", ao_i_c);
+    ao_i_c = ao_i_a - ao_i_b;
+    printf("ao_i_a - ao_i_b = %d\n", ao_i_c);
     return;
 }
 
