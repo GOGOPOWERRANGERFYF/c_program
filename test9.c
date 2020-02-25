@@ -110,6 +110,7 @@ void sixty_four_game(void)
     while(count<64)
     {
         count = count + 1;
+        // * multiplication operator乘法运算符
         number = 2.0 * number;
         total = total + number;
         printf("%3d. %22.1f %25.1f\n", count, number, total);
