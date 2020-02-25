@@ -96,14 +96,19 @@ void sixty_four_game(void)
 {
     int count = 1;
     double number = 1.0, max, total = 1.0;
-    printf("%3d. %22.1f %30.1f\n", count, number, total);
+    printf("count                ");
+    printf("number                     ");
+    printf("total\n");
+    printf("%3d. %22.1f %25.1f\n", count, number, total);
     while(count<64)
     {
         count = count + 1;
         number = 2.0 * number;
         total = total + number;
-        printf("%3d. %22.1f %30.1f\n", count, number, total);
+        printf("%3d. %22.1f %25.1f\n", count, number, total);
     }
+    printf("The Max of number: %22.1f\n", number);
+    printf("The Max of total:  %23.1f\n", total);
     printf("The End!");
     return;
 }
