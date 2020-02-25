@@ -47,8 +47,8 @@ void while_block(void)
     // 只有变量是可以引用内存地址的(个人理解,待验证,目前知识水平有限...)
         start = start + 1;      
     // operand(the item项 to the left of =) = operator operate on
-    //    操作数(运算数)[赋值运算符左侧的项]  =  操作符(运算符)操作(运算)
-    //    modifiable lvalue(可修改的左值)   = 操作符(运算符)操作(运算)
+    //    操作数(运算数)[赋值运算符左侧的项]  = 操作数(运算数) 操作符(运算符)操作(运算) 操作数(运算数)
+    //    modifiable lvalue(可修改的左值)   =  操作数(运算数) 操作符(运算符)操作(运算) 操作数(运算数)
         printf("%d\n", start);
     }                           /* end of block */
     printf("The End!\n");
