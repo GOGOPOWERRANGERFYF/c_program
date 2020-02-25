@@ -130,7 +130,7 @@ void division_operator(void)
     printf("5/3 = %d\n", 5/3);
     //浮点数除法
     printf("6.0/3.0 = %f\n", 6.0/3.0);
-    //浮点数整数混合
+    //浮点数整数混合,一般情况下,还是要避免这种情况
     printf("6.0/3 = %f\n", 6.0/3);
     printf("6/3.0 = %f\n", 6/3.0);
     return;
