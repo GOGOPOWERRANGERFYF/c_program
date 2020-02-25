@@ -126,6 +126,7 @@ void sixty_four_game(void)
 //division operator除法运算符 /
 void division_operator(void)
 {
+    //在C语言中,整数除法的小数部分会被丢弃,称为截断
     printf("5/3 = %d\n", 5/3);
     return;
 }
