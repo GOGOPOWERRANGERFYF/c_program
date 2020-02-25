@@ -95,12 +95,14 @@ void sign_operator(void)
 void sixty_four_game(void)
 {
     int count = 1;
-    double max, total;
-    printf("%d\n", count);
+    double number = 1.0, max, total = 1.0;
+    printf("%3d. %22.1f %30.1f\n", count, number, total);
     while(count<64)
     {
         count = count + 1;
-        printf("%d\n", count);
+        number = 2.0 * number;
+        total = total + number;
+        printf("%3d. %22.1f %30.1f\n", count, number, total);
     }
     printf("The End!");
     return;
