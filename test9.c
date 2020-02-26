@@ -5,7 +5,7 @@ void while_block(void);
 void addition_substraction_operator(void);
 void sign_operator(void);
 void sixty_four_game(void);
-void division_operator(void);
+void multiplication_division_operator(void);
 
 int main(void)
 {
@@ -18,7 +18,7 @@ int main(void)
     addition_substraction_operator();
     sign_operator();
     sixty_four_game();
-    division_operator();
+    multiplication_division_operator();
     return 0;
 }
 
@@ -136,7 +136,7 @@ void sixty_four_game(void)
 // 除于一个数等于乘于这个数的乘法逆元(倒数)
 // 减去一个数等于加上这个数的加法逆元(相反数)
 //division operator除法运算符 /
-void division_operator(void)
+void multiplication_division_operator(void)
 {
     int var;
     //在C语言中,整数除法的计算结果小数部分会被丢弃,称为截断
