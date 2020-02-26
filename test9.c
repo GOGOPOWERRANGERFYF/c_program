@@ -139,6 +139,7 @@ void sixty_four_game(void)
 void multiplication_division_operator(void)
 {
     int var;
+    //整数除法
     //在C语言中,整数除法的计算结果小数部分会被丢弃,称为截断(truncation)
     //C99规定 趋零截断
     printf("7/4 = %d\n", 7/4);
@@ -150,11 +151,16 @@ void multiplication_division_operator(void)
     printf("var = -7/4 = %x (hexadecimal)\n", var = -7/4);
     printf("7/-4 = %d\n", 7/-4);
     printf("-7/-4 = %d\n", -7/-4);
+    
     //浮点数除法
     printf("7.0/4.0 = %f\n", 7.0/4.0);
+    printf("7.0/4.0 = %lx\n", 7.0/4.0);
     printf("-7.0/4.0 = %f\n", -7.0/4.0);
+    printf("-7.0/4.0 = %lx\n", -7.0/4.0);
     printf("7.0/-4.0 = %f\n", 7.0/-4.0);
+    printf("7.0/-4.0 = %lx\n", 7.0/-4.0);
     printf("-7.0/-4.0 = %f\n", -7.0/-4.0);
+    printf("-7.0/-4.0 = %lx\n", -7.0/-4.0);
     //浮点数整数混合,一般情况下,还是要避免这种情况
     //计算机并不能真正浮点数和整数相除,浮动数和整数在内存中的存储方式完全不同
     //下面两句代码中,在进行除法运算前,编译器会把整数转换为浮点数
