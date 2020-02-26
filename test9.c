@@ -139,7 +139,7 @@ void sixty_four_game(void)
 void multiplication_division_operator(void)
 {
     int var;
-    //在C语言中,整数除法的计算结果小数部分会被丢弃,称为截断
+    //在C语言中,整数除法的计算结果小数部分会被丢弃,称为截断(truncation)
     //C99规定 趋零截断
     printf("7/4 = %d\n", 7/4);
     printf("7/4 = %x (hexadecimal)\n", 7/4);
