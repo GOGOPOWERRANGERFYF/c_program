@@ -218,9 +218,8 @@ void multiplication_division_operator(void)
     // * 整数和浮点数乘除法:
     // * 关于sign的问题,乘法或除法,有一个operand为负,则运算结果sign为1;
     // *               两个operand都为正或都为负,则运算结果sign为0;
-    // * exponent: exponent小的转换成与exponent大的一致, Ea=Eb
-    // * mantissa: exponent变大,尾数变小
-    // *   1.尾数a *Ea/1.尾数b *Eb = 计算结果 --> 规格化
+    // * 加减法: exponent转换成与大的expoent一致,尾数进行加减运算
+    // * 乘除法: 直接乘除
     //CPU ALU(算术逻辑单元)必须按这个数学运算规则来实现乘除运算
     //只能根据C标准的浮点数存储格式和算法算出结果,但运算过程怎么实现的目前还不知道
     //(数字电路还没学,只有一点浅薄的硬件知识,理解未必正确或精准)
