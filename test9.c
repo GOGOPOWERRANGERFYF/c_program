@@ -153,6 +153,7 @@ void multiplication_division_operator(void)
     printf("-7/-4 = %d\n", -7/-4);
     
     //浮点数除法
+    //浮点数常量为双精度浮点类型double
     printf("sizeof(7.0)(%%zd): %zd\n", sizeof(7.0));
     printf("7.0/4.0 = %f\n", 7.0/4.0);
     printf("7.0/4.0 = %lx\n", 7.0/4.0);
