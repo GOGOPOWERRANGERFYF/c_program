@@ -138,11 +138,14 @@ void sixty_four_game(void)
 //division operator除法运算符 /
 void division_operator(void)
 {
+    int var;
     //在C语言中,整数除法的计算结果小数部分会被丢弃,称为截断
     //C99规定 趋零截断
     printf("7/4 = %d\n", 7/4);
     //欠7根辣条,分成4份,每份欠1.75根
-    printf("-7/4 = %d\n", -7/4);
+    printf("-7/4 = %d (integer)\n", -7/4);
+    printf("-7/4 = %x (hexadecimal)\n", -7/4);
+    printf("var = -7/4 = %x (hexadecimal)\n", var = -7/4);
     printf("7/-4 = %d\n", 7/-4);
     printf("-7/-4 = %d\n", -7/-4);
     //浮点数除法
