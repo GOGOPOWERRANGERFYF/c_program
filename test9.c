@@ -142,13 +142,13 @@ void multiplication_division_operator(void)
     //整数除法
     //在C语言中,整数除法的计算结果小数部分会被丢弃,称为截断(truncation)
     //C99规定 趋零截断
-    printf("7/4 = %d\n", 7/4);
-    printf("7/4 = %x (hexadecimal)\n", 7/4);
-    printf("var = 7/4 = %x (hexadecimal)\n", var = 7/4);
+    printf("7/4 = (%%d): %d\n", 7/4);
+    printf("7/4 = (hexadecimal): %x \n", 7/4);
+    printf("var = 7/4 = (hexadecimal): %x \n", var = 7/4);
     //欠7根辣条,分成4份,每份欠1.75根
-    printf("-7/4 = %d (integer)\n", -7/4);
-    printf("-7/4 = %x (hexadecimal)\n", -7/4);
-    printf("var = -7/4 = %x (hexadecimal)\n", var = -7/4);
+    printf("-7/4 = (integer): %d \n", -7/4);
+    printf("-7/4 = (hexadecimal): %x \n", -7/4);
+    printf("var = -7/4 = (hexadecimal): %x \n", var = -7/4);
     //  7 4bit two's complement: 0111
     // -7 4bit two's complement: 1001
     //  4 4bit two's complement: 0100
@@ -168,16 +168,16 @@ void multiplication_division_operator(void)
     //              0  
     //    1.11小数部分会被截断(truncation),小数部分丢弃
     //    --> 1 --> 0001 --> 有一个运算数为负数(二补数编码最高位为1) --> 1111
-    printf("7/-4 = %d\n", 7/-4);
-    printf("-7/-4 = %d\n", -7/-4);
+    printf("7/-4 = (%%d): %d\n", 7/-4);
+    printf("-7/-4 = (%%d): %d\n", -7/-4);
     
     //浮点数除法
     //浮点数常量为双精度浮点类型double
     printf("sizeof(7.0)(%%zd): %zd\n", sizeof(7.0));
-    printf("7.0 = (%lx):%lx\n", 7.0);
-    printf("4.0 = (%lx):%lx\n", 4.0);
-    printf("7.0/4.0 = %f\n", 7.0/4.0);
-    printf("7.0/4.0 = %lx\n", 7.0/4.0);
+    printf("7.0 = (%%lx):%lx\n", 7.0);
+    printf("4.0 = (%%lx):%lx\n", 4.0);
+    printf("7.0/4.0 = (%%f) %f\n", 7.0/4.0);
+    printf("7.0/4.0 = (%%lx) %lx\n", 7.0/4.0);
     // operand_1: 
     // 7.0 --> 111 * (2^0)10 --规格化--> 1.11 * (2^2)10
     // exponent:  bias_1023 --> 2 + 1023 = 1025 
@@ -201,6 +201,19 @@ void multiplication_division_operator(void)
     // sign   exponent                        mantissa
     //  0   10000000001  0000000000000000000000000000000000000000000000000000     
     // hexadecimal: 4010000000000000
+    //
+    // operand_1 / operand_2:
+    //   1.11 * (2^2)10 / 1.00 * (2^2)10
+    // = 111 / 100 = 1.11  -->  1.11 * (2^0)10
+    // exponent:  bias_1023 --> 0 + 1023 = 1023 
+    //             00000000000      阶码进行二补数运算(非二补数编码运算)
+    //          +  01111111111
+    //         -----------------
+    //             01111111111
+    // mantissa: 1.11 --隐含1.--> 1100 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    // sign   exponent                        mantissa
+    //  0   01111111111  1100000000000000000000000000000000000000000000000000     
+    // hexadecimal: 3ffc000000000000
     //
     printf("-7.0/4.0 = %f\n", -7.0/4.0);
     printf("-7.0/4.0 = %lx\n", -7.0/4.0);
