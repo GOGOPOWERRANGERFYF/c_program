@@ -219,7 +219,6 @@ void multiplication_division_operator(void)
     //关于sign的问题,乘法或除法,有一个operand为负,则运算结果sign为1;
     //              两个operand都为正或都为负,则运算结果sign为0;
     //CPU ALU(算术逻辑单元)必须按这个数学运算规则来实现乘除运算
-    //根据exponent左移或右移位数
     //(数字电路还没学,只有一点浅薄的硬件知识,理解未必正确或精准)
     //
     printf("-7.0/4.0 = %f\n", -7.0/4.0);
