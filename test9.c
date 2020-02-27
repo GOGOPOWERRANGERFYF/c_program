@@ -280,7 +280,7 @@ void multiplication_division_operator(void)
 //= (-a + a)*b
 //= 0*b
 //= 0
-//人们把(-a)*b定义为a*b的加法逆元,也就是-(a*b)
+//人们把(-a)*b定义为a*b的加法逆元,也就是-(a*b),异号为负
 // x = (-a)*(-b)
 //
 
