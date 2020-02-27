@@ -6,6 +6,7 @@ void addition_substraction_operator(void);
 void sign_operator(void);
 void sixty_four_game(void);
 void multiplication_division_operator(void);
+void operator_precedence(void);
 
 int main(void)
 {
@@ -19,6 +20,7 @@ int main(void)
     sign_operator();
     sixty_four_game();
     multiplication_division_operator();
+    operator_precedence();
     return 0;
 }
 
@@ -292,4 +294,12 @@ void multiplication_division_operator(void)
 //因此把(-a)*(-b)定义为a*b???这个是我自己推论的,不知道对不对,上面的是知乎大佬的原文...
 //啊...不纠结这个了...先跳过这里,以后再深究...
 //目前记住同号为正,异号为负就行了... 20200227
+
+// operator precedence 运算符优先级
+void operator_precedence(void)
+{
+    //跟数学四则运算规则是一样的,那必须的,要不然有啥意义呢...
+    printf("%d\n", 5 + 2*8/4);
+    return;
+}
 
