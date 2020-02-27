@@ -287,7 +287,7 @@ void multiplication_division_operator(void)
 // x = (-a)*(-b)
 //  x + a*b
 //= (-a)*(-b) + a*b
-//= [(-a)*(-1) + a]*b
+//= [(-a)*(-1) + a]*b     --> (-1)*b = -b 结果是b的加法逆元 --> (-1)*(-a) = -(-a) 结果是(-a)的加法逆元
 //= [-(-a) + a]b
 //= (a + a)b
 //= ab + ab
