@@ -242,5 +242,5 @@ void multiplication_division_operator(void)
     return;
 }
 
-
+// *乘法与除法运算,同号为正,异号为负.至于为什么,这就说来话长了...
 
