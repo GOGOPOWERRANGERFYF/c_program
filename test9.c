@@ -293,7 +293,7 @@ void multiplication_division_operator(void)
 //= ab + ab
 //因此把(-a)*(-b)定义为a*b???这个是我自己推论的,不知道对不对,上面的是知乎大佬的原文...
 //啊...不纠结这个了...先跳过这里,以后再深究...
-//目前记住同号为正,异号为负就行了... 20200227
+//目前记住乘法和除法同号为正,异号为负就行了... 20200227
 
 // operator precedence 运算符优先级
 void operator_precedence(void)
