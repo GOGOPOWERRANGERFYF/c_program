@@ -363,6 +363,8 @@ void second_to_minute(void)
     while(second >= 0)
     {
         // 结果小数截断(truncation)
+        // 数学上的除法理解为拆分成60份
+        // 这里的除法可以形象化为60一份,最大可以分几份,最小单元为1,不拆分
         min = second / SECOND_PER_MINUTE;
         // 结果为余数
         sec = second % SECOND_PER_MINUTE;
