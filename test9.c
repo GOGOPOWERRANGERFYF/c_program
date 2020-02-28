@@ -367,6 +367,7 @@ void second_to_minute(void)
         // 这里的除法可以形象化为60一份,最大可以分几份,最小单元为1,不拆分
         min = second / SECOND_PER_MINUTE;
         // 结果为余数
+        // 拆分60一份,余下不足60的数
         sec = second % SECOND_PER_MINUTE;
         printf("(minute:second) %d:%d\n", min, sec);
         printf("input second(negative number->quit): ");
