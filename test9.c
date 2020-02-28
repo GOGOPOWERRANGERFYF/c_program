@@ -1,6 +1,7 @@
 #include <stdio.h>
 //定义符号常量,预编译时后面的字符串替换前面的符号常量(文本)
 #define OPERATORS "= + - * /"
+#define SECOND_PER_MINUTE 60
 void while_block(void);
 void addition_substraction_operator(void);
 void sign_operator(void);
@@ -8,6 +9,7 @@ void sixty_four_game(void);
 void multiplication_division_operator(void);
 void operator_precedence(void);
 void sizeof_operator_and_size_type(void);
+void second_to_minute(void);
 
 int main(void)
 {
@@ -23,6 +25,7 @@ int main(void)
     multiplication_division_operator();
     operator_precedence();
     sizeof_operator_and_size_type();
+    second_to_minute();
     return 0;
 }
 
@@ -338,7 +341,24 @@ void sizeof_operator_and_size_type(void)
 // % modulus operator求模运算符
 // 求模运算符只用于整数
 // 左侧整数除以右侧整数的余数
-
+void second_to_minute(void)
+{
+    int second, min, sec;
+    printf("input second(negative number->quit): ");
+    // 空白字符包括转换说明前无空白字符的情况(%c除外)
+    // 读取输入缓冲区时会自动跳过 非符号字符 和 数字字符
+    scanf("%d", &second);
+    while(second >= 0)
+    {
+        min = second / SECOND_PER_MINUTE;
+        sec = second % SECOND_PER_MINUTE;
+        printf("(minute:second) %d:%d\n", min, sec);
+        printf("input second(negative number->quit): ");
+        scanf("%d", &second);        
+    }
+    printf("The End\n");
+    return;
+}
 
 
 
