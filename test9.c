@@ -328,6 +328,9 @@ void sizeof_operator_and_size_type(void)
     // (上层类型不相同,为了更容易描述我自己定义的,并没有上层类型这个概念)
     size_t st;
     printf("sizeof(st): %zd\n", sizeof(st));
+    // typedef关键字 可为现有变量创建别名,例如:
+    // typedef int integer
+    // integer n = 3;
     return;
 }
 
