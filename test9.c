@@ -372,6 +372,8 @@ void second_to_minute(void)
         // % 运算,第一个运算数为正,则结果为正
         //        第一个运算数为负,则结果为负
         // * C标准规定,可通过 a-(a/b)*b 来计算 a%b  (a,b为整数)
+        // 这里的取模运算可以形象化为60一份,最大可以分几份,最小单元为1,不拆分
+        // 剩余不足60的余数就是结果
         sec = second % SECOND_PER_MINUTE;
         printf("(minute:second) %d:%d\n", min, sec);
         printf("input second(negative number->quit): ");
