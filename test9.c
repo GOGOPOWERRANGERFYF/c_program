@@ -306,6 +306,7 @@ void operator_precedence(void)
     printf("result(%%d): %d\n", result);
     printf("5 + 2*8/4 =(%%d): %d\n", 5 + 2*8/4);
     printf("5 + 2*8/-4 =(%%d): %d\n", 5 + 2*8/-4);
+    printf("%d\n", -(3+2)+6*(4+3*(8+5)));
     return;
 }
 
