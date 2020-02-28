@@ -322,8 +322,10 @@ void operator_precedence(void)
 void sizeof_operator_and_size_type(void)
 {
     // size_t类型
+    // 文件test7.c中,stdio_include_stddef_size_type()函数的注释中有介绍
+    // 目前我正在用的编译器,size_t类型是long unsigned int的底层类型
     size_t st;
-    printf("%zd\n", sizeof(st));
+    printf("sizeof(st): %zd\n", sizeof(st));
     return;
 }
 
