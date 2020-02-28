@@ -368,6 +368,8 @@ void second_to_minute(void)
         min = second / SECOND_PER_MINUTE;
         // 结果为余数
         // 拆分60一份,余下不足60的数
+        // / 运算,同号为正,异号为负.  (%不适应)
+        // C标准规定,可通过 a-(a/b)*b 来计算 a%b  (a,b为整数)
         sec = second % SECOND_PER_MINUTE;
         printf("(minute:second) %d:%d\n", min, sec);
         printf("input second(negative number->quit): ");
