@@ -324,8 +324,11 @@ void sizeof_operator_and_size_type(void)
     // size_t类型
     // 文件test7.c中,stdio_include_stddef_size_type()函数的注释中有介绍
     // 目前我正在用的编译器,size_t类型是long unsigned int的底层类型
+    // size_t类型让程序的移植性更好,不同编译器的size_t类型的
+    // (上层类型不相同,为了更容易描述我自己定义的,并没有上层类型这个概念)
     size_t st;
     printf("sizeof(st): %zd\n", sizeof(st));
     return;
 }
+
 
