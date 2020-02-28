@@ -331,6 +331,7 @@ void sizeof_operator_and_size_type(void)
     // typedef关键字 可为现有变量创建别名,例如:
     // typedef int integer
     // integer n = 3;
+    // 使用size_t类型时,头文件可用typedef关键字根据不同系统替换标准的类型
     return;
 }
 
