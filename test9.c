@@ -362,7 +362,9 @@ void second_to_minute(void)
     //所以高位数值大的数,它的值就大
     while(second >= 0)
     {
+        // 结果小数截断(truncation)
         min = second / SECOND_PER_MINUTE;
+        // 结果为余数
         sec = second % SECOND_PER_MINUTE;
         printf("(minute:second) %d:%d\n", min, sec);
         printf("input second(negative number->quit): ");
