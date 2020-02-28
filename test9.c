@@ -336,4 +336,10 @@ void sizeof_operator_and_size_type(void)
 }
 
 // % modulus operator求模运算符
+// 求模运算符只用于整数
+// 左侧整数除以右侧整数的余数
+
+
+
+
 
