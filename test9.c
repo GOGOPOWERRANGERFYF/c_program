@@ -7,6 +7,7 @@ void sign_operator(void);
 void sixty_four_game(void);
 void multiplication_division_operator(void);
 void operator_precedence(void);
+void sizeof_operator_and_size_type(void);
 
 int main(void)
 {
@@ -21,6 +22,7 @@ int main(void)
     sixty_four_game();
     multiplication_division_operator();
     operator_precedence();
+    sizeof_operator_and_size_type();
     return 0;
 }
 
@@ -314,6 +316,14 @@ void operator_precedence(void)
     //= -5*6+43
     //= -30+43
     //= 13
+    return;
+}
+
+void sizeof_operator_and_size_type(void)
+{
+    // size_t类型
+    size_t st;
+    printf("%zd\n", sizeof(st));
     return;
 }
 
