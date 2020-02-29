@@ -22,7 +22,7 @@ void main(void)
     //test_base.c 重要知识点(编译系统的编译过程)
     //gcc --help查看gcc帮助文档
     //通过汇编文件(文本格式)理解
-    
+    // reverse engineering 逆向工程
     i_a++;
     ++i_b;
     //i_a = i_a++;
