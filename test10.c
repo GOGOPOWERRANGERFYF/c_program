@@ -4,14 +4,14 @@
 // q l w b 分别为 64bit 32bit 16bit 8bit
 // leal 把内存地址赋给寄存器
 // %rbp 寄存器,寄存器种类个数很多,硬件会不断发展的,知道是寄存器就好了
-//-4(%rbp) 把低位4个byte赋值
+//-4(%rbp) 把低位4个byte赋值,赋值多个变量,这个数字是累加的
 //$1 1为立即数,立即数前必须放一个$
 //
 
 void main(void)
 {
     int i_a = 1, i_b = 1;
-    long int li_a = 1;
+    long int li_a = 999;
     // ++ 递增运算符(increment operator),将其运算对象operand递增1
     // 看了运行结果,i++后缀模式,表达式本身没自增
     //             ++i前缀模式,表达式本身有自增
