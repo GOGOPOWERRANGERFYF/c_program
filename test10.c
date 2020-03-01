@@ -1,4 +1,5 @@
 #include <stdio.h>
+//汇编语言 assembly language
 //汇编知识(这玩意边看边查就好,不常用的话记不住的,搞不好掉头发...):
 // 带.前缀的语句为链接的语句
 // movl 把内存内容赋给寄存器
@@ -23,10 +24,10 @@ void main(void)
     //gcc --help查看gcc帮助文档
     //通过汇编文件(文本格式)理解
     // reverse engineering 逆向工程
-    i_a++;
-    ++i_b;
-    //i_a = i_a++;
-    //i_b = ++i_b;
+    //i_a++;
+    //++i_b;
+    i_a = i_a++;
+    i_b = ++i_b;
     //printf("%d %d\n", i_a, i_a++);
     //printf("%d %d\n", i_b, ++i_b);
     return;
@@ -48,7 +49,11 @@ void main(void)
 // 1024 * 4                MB
 // 4                       GB  这个过程反过来更好理解
 // 一个物理地址指向一个1B内存空间(虚拟地址与物理地址的映射由操作系统决定)
+//
+// 《深入理解计算机系统第三版》P113 机器级代码 machine-level code
 // optimize 优化 gcc -O
-
-
+// ISA(指令集架构,instruction set architecture)
+// PC(程序计数器,program counter.在x86-64中用%rip示),给出将要执行的下一条指令在内存中的地址
+// ip(instruction pointer) r我暂时理解为register吧...
+//
 
