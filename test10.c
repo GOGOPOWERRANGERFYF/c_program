@@ -11,7 +11,7 @@
 // %eax 累加寄存器: 函数返回值要存放在这个累加寄存器,返回值64bit,则低32bit存%eax,高32bit存%edx
 // %ebx 基地址寄存器: 存放计算中间值(个人猜测应该是前面所说的程序计算的临时值吧...),或一个指针
 // push pushq 压栈
-// nop 出栈
+// pop 出栈
 
 void main(void)
 {
@@ -49,11 +49,15 @@ void main(void)
 // 1024 * 4                MB
 // 4                       GB  这个过程反过来更好理解
 // 一个物理地址指向一个1B内存空间(虚拟地址与物理地址的映射由操作系统决定)
+// RAM random access memory 随机存取存储器 主存(内存),CPU高速缓存
+// ROM read only memory 只读存储器 多用于存放固件
 //
 // 《深入理解计算机系统第三版》P113 机器级代码 machine-level code
 // optimize 优化 gcc -O
 // ISA(指令集架构,instruction set architecture)
 // PC(程序计数器,program counter.在x86-64中用%rip示),给出将要执行的下一条指令在内存中的地址
 // ip(instruction pointer) r我暂时理解为register吧...
-//
+// stack 栈; heap 堆
+
+
 
