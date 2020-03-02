@@ -16,7 +16,7 @@
 // objdump: gun的反汇编器(disassembler) 反汇编-->可重定位目标程序(二进制文件) 后缀为 .o
 // 类似抓包工具(tcpdump) dump: v (尤指在不合适的地方)丢弃; n 垃圾场
 //
-// gcc -Og 优化调试体验,支持不影响调试的优化
+// gcc -Og 优化调试(debug)体验,支持不影响调试的优化
 
 void main(void)
 {
