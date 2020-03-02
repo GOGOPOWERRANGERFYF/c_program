@@ -92,6 +92,11 @@ void main(void)
 // PC(程序计数器,program counter.在x86-64中用%rip示),给出将要执行的下一条指令在内存中的地址
 // ip(instruction pointer) r我暂时理解为register吧...
 // 数据结构的知识: stack 栈; heap 堆
+//
+// 数据格式:《深入理解计算机系统第三版》P119
+// 字word 16位
+// 双字double word 32位
+// 四字quad word 64位
 
 
 
