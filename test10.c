@@ -12,6 +12,8 @@
 // %ebx 基地址寄存器: 存放计算中间值(个人猜测应该是前面所说的程序计算的临时值吧...),或一个指针
 // push pushq 压栈
 // pop 出栈
+// objdump: gun的反汇编器(disassembler) 反汇编-->可重定位目标程序(二进制文件) 后缀为 .o
+// 类似抓包工具(tcpdump)
 
 void main(void)
 {
