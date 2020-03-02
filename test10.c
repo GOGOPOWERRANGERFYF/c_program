@@ -62,7 +62,7 @@ void main(void)
 // ISA(指令集架构,instruction set architecture)
 // PC(程序计数器,program counter.在x86-64中用%rip示),给出将要执行的下一条指令在内存中的地址
 // ip(instruction pointer) r我暂时理解为register吧...
-// stack 栈; heap 堆
+// 数据结构的知识: stack 栈; heap 堆
 
 
 
