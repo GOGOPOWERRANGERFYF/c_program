@@ -13,7 +13,7 @@
 // push pushq 压栈
 // pop 出栈
 // objdump: gun的反汇编器(disassembler) 反汇编-->可重定位目标程序(二进制文件) 后缀为 .o
-// 类似抓包工具(tcpdump)
+// 类似抓包工具(tcpdump) dump: v (尤指在不合适的地方)丢弃; n 垃圾场
 
 void main(void)
 {
