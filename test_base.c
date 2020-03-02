@@ -43,13 +43,13 @@
 // * stdio.h是C编译器软件包的标准库的一个文件,它提供键盘输入和屏幕输出的支持
 // * cpp(c pre-processor:预处理器)会读取stdio.h文件的内容并插入到程序文本中
 // * 结果得到另外一个C程序,通常以.i作为文件扩展名
-// * 源程序(文本)hello.c --[cpp]-->修改了的源程序(文本)hello.i,
+// * 源程序source program(文本text)hello.c --[cpp]-->修改了的源程序modified source program(文本)hello.i,
 // * 旁注:(这里的文本编码格式是utf-8, 8bit unicode transformation format);
 // *      utf-8可节省编码储存长度,用utf-8编码unicdoe长度可变;
 // *      unicode码(4字节)是兼容ascii码(1字节)的.
-// * hello.i --[ccl: c compiler]--> hello.s汇编程序(文本)
-// * hello.s --[as: assembler]--> hello.o(relocatable object program可重定位目标程序(二进制文件))
-// * hello.o --[ld: linker]--> hello可执行目标程序(二进制)
+// * hello.i --[ccl: c compiler]--> hello.s汇编程序assembly program(文本)
+// * hello.s --[as: assembler]--> hello.o(relocatable object program可重定位目标程序(binary二进制文件))
+// * hello.o --[ld: linker]--> hello可执行目标程序executable object program(二进制)
 // * 把hello程序要调用到的标准C库的函数合并到hello.o程序中,
 // * 比如调用到printf函数,printf函数存在于一个名为printf.o的单独编译的可重定位目标程序中,
 // * printf.o以某种方式合并到hello.o文件,ld负责处理这种合并,
