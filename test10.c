@@ -22,8 +22,8 @@ void main(void)
     int i_a = 1, i_b = 1;
     long int li_a = 999;
     // ++ 递增运算符(increment operator),将其运算对象operand递增1
-    // 看了运行结果,i++后缀模式,表达式本身没自增
-    //             ++i前缀模式,表达式本身有自增
+    // * 看了运行结果,i++后缀模式,表达式本身没自增,运算结果为本身,然后自增1
+    // *             ++i前缀模式,表达式本身有自增,运算结果自增1
     //test_base.c 重要知识点(编译系统的编译过程)
     //gcc --help查看gcc帮助文档
     //通过汇编文件(文本格式)理解
@@ -52,13 +52,15 @@ void main(void)
     //
     // 注: %rbp只有在 -O0 不优化的编译条件下,还具有帧指针的含义
 
-    //li_a + 1;
+    li_a = li_a + 1;
     
-    i_a++;
-    ++i_b;
+    //i_a++;
+    //++i_b;
     
-    //i_a = i_a++;
-    //i_b = ++i_b;
+    i_a = i_a++;
+    i_b = ++i_b;
+    printf("i_a = i_a++; %d\n", i_a);
+    printf("i_b = ++i_b; %d\n", i_b);
     
     //printf("%d %d\n", i_a, i_a++);
     //printf("%d %d\n", i_b, ++i_b);
