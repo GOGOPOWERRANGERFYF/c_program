@@ -29,10 +29,15 @@ void main(void)
     //gcc --help查看gcc帮助文档
     //通过汇编文件(文本格式)理解
     // reverse engineering 逆向工程
-    //i_a++;
-    //++i_b;
-    i_a = i_a++;
-    i_b = ++i_b;
+    
+    //li_a + 1;
+    
+    i_a++;
+    ++i_b;
+    
+    //i_a = i_a++;
+    //i_b = ++i_b;
+    
     //printf("%d %d\n", i_a, i_a++);
     //printf("%d %d\n", i_b, ++i_b);
     return;
