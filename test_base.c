@@ -41,7 +41,8 @@
 #include <stdio.h> /* standard input & output . head头文件 */
 // * 重要知识点(编译系统的编译过程):
 // * stdio.h是C编译器软件包的标准库的一个文件,它提供键盘输入和屏幕输出的支持
-// * cpp(c pre-processor:预处理器)会读取stdio.h文件的内容并插入到程序文本中
+// * cpp(c pre-processor:预处理器)会读取stdio.h文件(C标准库的头文件)的内容并插入到程序文本中
+// * 还有删除注释,字符常量的替换
 // * 结果得到另外一个C程序,通常以.i作为文件扩展名
 // * 源程序source program(文本text)hello.c --[cpp]-->修改了的源程序modified source program(文本)hello.i,
 // * 旁注:(这里的文本编码格式是utf-8, 8bit unicode transformation format);
