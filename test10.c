@@ -103,6 +103,7 @@ void main(void)
 // 
 // 数据格式:《深入理解计算机系统第三版》P120 图3-2
 // CPU通用目的寄存器
+// %rbp register buttom pointer 基址寄存器
 // %rsp register stack pointer 栈指针寄存器
 //
 
