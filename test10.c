@@ -106,5 +106,7 @@ void main(void)
 // %rbp register buttom pointer 基址寄存器
 // %rsp register stack pointer 栈指针寄存器
 //
+// immediate 立即数(立即的)
+//
 
 
