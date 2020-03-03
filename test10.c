@@ -96,7 +96,7 @@ void main(void)
 // 数据格式:《深入理解计算机系统第三版》P119
 // 字节byte 8位
 // 字word 16位
-// 双字double word 32位
+// 双字double word 32位   "long word"
 // 四字quad word 64位
 // 
 
