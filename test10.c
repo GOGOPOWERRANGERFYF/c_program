@@ -94,10 +94,12 @@ void main(void)
 // 数据结构的知识: stack 栈; heap 堆
 //
 // 数据格式:《深入理解计算机系统第三版》P119
-// 字节byte 8位
-// 字word 16位
-// 双字double word 32位   "long word"
-// 四字quad word 64位
+//   字节byte 8位
+//   字word 16位
+//   双字double word 32位   "long word"
+//   四字quad word 64位
+// 数据格式:《深入理解计算机系统第三版》P119 图3-1
+//   C语言数据类型在x86-64中的大小
 // 
 
 
