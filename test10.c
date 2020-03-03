@@ -89,7 +89,8 @@ void main(void)
 // 《深入理解计算机系统第三版》P113 机器级代码 machine-level code
 // optimize 优化 gcc -O
 // ISA(指令集架构,instruction set architecture)
-// PC(程序计数器,program counter.在x86-64中用%rip示),给出将要执行的下一条指令在内存中的地址
+// PC(程序计数器,program counter.在x86-64中用%rip示),
+//    给出将要执行的下一条指令在内存中的地址,PC储存的也是指令
 // IR(指令寄存器 instruction register)
 // ip(instruction pointer) r我暂时理解为register吧...
 // 数据结构的知识: stack 栈; heap 堆
