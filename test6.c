@@ -302,6 +302,7 @@ int main(void)
     printf("These is exponential notation float: %e, %e, %e, %e.\n", f1, f2, f3, f4);
     printf("These is exponetial notation double: %e, %e.\n\n", d1, d2);
     //*注意:windows下用gcc编译(8.1.0),long double存在问题(网上说的,我linux系统删了,没法验证,但现在在windows7下确实输出结果有问题)
+    //*long double 后续补充: 《深入理解计算机系统》P119 3.3 第二段 历史上特殊的浮点数格式,不建议用,不能移植...好吧,反正我也没有要用...
     printf("These is decimal notation long double: %Lf, %Lf.\n", ld1, ld2);
     printf("These is exponetial notation long double: %Le, %Le.\n\n", ld1, ld2);
     //float有效为最少6位,double有效位至少10位,long double有效位至少13位,有效位就是小数点后保留的位数
