@@ -138,6 +138,16 @@ int main(void)
 //      | false 0 |  false 0 |  false 0  |
 //       --------------------------------
 //
+//  OR Gate 或门:
+//    电路由串联改成并联就行了,太麻烦了,懒得画了...
+//       ________________________________
+//      | input A | output B |  output   |
+//      | true  1 |  true  1 |  true  1  |
+//      | true  1 |  false 0 |  true  1  |
+//      | false 0 |  true  1 |  true  1  |
+//      | false 0 |  false 0 |  false 0  |
+//       --------------------------------
+//
 //
 
 
