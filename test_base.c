@@ -102,6 +102,33 @@ int main(void)
 //                                 \           通过控制线改变门的电荷electrical charge of the gate
 //                                  |          来控制半导体材料的导电性
 //                                 电极(可当成输出)
+//   布尔代数(boolean)
+//   not gate 非门:
+//  
+//                                电极
+//                                  |_____  output输出
+//                                 /
+//               input输入 --------|   
+//                                 \           
+//                                  |         
+//                                __|__
+//                                 ___    "接地"
+//   input off, output on  电流往output方向流动
+//   input on , output off 电流往接地方向流动
+//   logic table for Not:
+//       ____________________
+//      | input   |   output |
+//      | ture  1 |  false 0 |
+//      | false 0 |  true  1 |
+//       --------------------
 //
 //
-//
+
+
+
+
+
+
+
+
+
