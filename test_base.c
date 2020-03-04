@@ -103,8 +103,7 @@ int main(void)
 //                                  |          来控制半导体材料的导电性
 //                                 电极(可当成输出)
 //   布尔代数(boolean)
-//   not gate 非门:
-//  
+//   NOT Gate 非门:
 //                                电极
 //                                  |_____  output输出
 //                                 /
@@ -118,11 +117,29 @@ int main(void)
 //   logic table for Not:
 //       ____________________
 //      | input   |   output |
-//      | ture  1 |  false 0 |
+//      | true  1 |  false 0 |
 //      | false 0 |  true  1 |
 //       --------------------
 //
+//   AND Gate 与门:
 //
+//     _____  ____  _____  output
+//          \/    \/
+//         ----  ----
+//          |     |
+//      inputA  inputB 
+//
+//  logic table for And:
+//       ________________________________
+//      | input A | output B |  output   |
+//      | true  1 |  true  1 |  true  1  |
+//      | true  1 |  false 0 |  false 0  |
+//      | false 0 |  true  1 |  false 0  |
+//      | false 0 |  false 0 |  false 0  |
+//       --------------------------------
+//
+//
+
 
 
 
