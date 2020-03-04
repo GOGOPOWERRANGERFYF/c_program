@@ -148,6 +148,15 @@ int main(void)
 //      | false 0 |  false 0 |  false 0  |
 //       --------------------------------
 //
+// XOR Gate 异或门:
+//       ________________________________
+//      | input A | output B |  output   |
+//      | true  1 |  true  1 |  false 0  |
+//      | true  1 |  false 0 |  true  1  |
+//      | false 0 |  true  1 |  true  1  |
+//      | false 0 |  false 0 |  false 0  |
+//       --------------------------------
+//
 //
 
 
