@@ -149,6 +149,9 @@ int main(void)
 //       --------------------------------
 //
 // XOR Gate 异或门:
+// 
+//  =|=AND-Not-|
+//   |=OR------|=AND--
 //       ________________________________
 //      | input A | output B |  output   |
 //      | true  1 |  true  1 |  false 0  |
