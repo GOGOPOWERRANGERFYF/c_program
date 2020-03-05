@@ -160,7 +160,25 @@ int main(void)
 //      | false 0 |  false 0 |  false 0  |
 //       --------------------------------
 //
+// ALU: arithmetic logic unit
+//        an arithmetic unit and a logic unit
 //
+// half adder 半加法器:
+//       _______________________
+//      |   input   |  output   |
+//      ------------------------
+//      |  A  |  B  |carry| sum |
+//      ------------------------
+//      |  0  |  0  |  0  |  0  |
+//      |  0  |  1  |  0  |  1  |
+//      |  1  |  0  |  0  |  1  |
+//      |  1  |  1  |  1  |  0  |
+//      ------------------------
+//      
+//     =|XOR--- SUM
+//      |=AND-- CARRY
+//      
+//      
 
 
 
