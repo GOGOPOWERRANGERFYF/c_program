@@ -135,7 +135,14 @@ int main(void)
 //      | false 0 |  false 0 |  false 0  |
 //       --------------------------------
 // 3.OR Gate 或门:
-//    电路由串联改成并联就行了,太麻烦了,懒得画了...
+//   current电流
+//             __________     ___
+//            |          \___/   |
+// current ---|            |     |-- output
+//            |__     ____/-\____|
+//               \___/     |
+//                 |       |
+//              inputA   inputB  (transistor晶体管)
 //       ________________________________
 //      | input A | output B |  output   |
 //      | true  1 |  true  1 |  true  1  |
