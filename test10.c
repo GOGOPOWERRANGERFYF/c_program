@@ -161,4 +161,8 @@ void main(void)
 //                          |/
 //                         NOT
 //
+//         set设置1
+//       reset设置0,经过NOT门变1
+//         AND门相当于输入了两个1,output1,回路1
+//         set设置0后,回路1 加 NOT门,AND还是保持output1         
 //
