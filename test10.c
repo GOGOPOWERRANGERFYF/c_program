@@ -156,20 +156,20 @@ void main(void)
 //              |  ____                           |
 //              +--\   \               ___        |
 //                  |OR >-------+-----|   \       |
-//         set-----/___/    |\        |AND )------+----- output
+//   input set-----/___/    |\        |AND )------+----- output
 //       reset--------------| >-------|___/                         
 //                          |/
 //                         NOT
 //     第一步:
-//         set设置1
+//       input set设置1
 //       reset设置0,经过NOT门变1
-//         AND门相当于输入了两个1,output1,回路1
-//         set设置0后,回路1 加 NOT门,AND还是保持output1
+//       AND门相当于输入了两个1,output1,回路1
+//       input set设置0后,回路1 加 NOT门,AND还是保持output1
 //     第二步:
 //       reset设置1,经过NOT门变0         
 //       AND门output0,回路变0
 //     总结:
-//       set设置1,ouput1,保存1
+//     input set设置1,ouput1,保存1
 //     reset设置1,ouput0,保存0
 // 
 // 4.gate latch (门锁存器)
@@ -187,4 +187,6 @@ void main(void)
 //    设置允许输入线为0,数据输入线不管是1或0,数据输出都为0
 //  --> 只保存1bit没啥用,因此用一组门锁存器组成寄存器
 //
+//  设计成这样是为了逻辑上更容易理解
 //
+//  
