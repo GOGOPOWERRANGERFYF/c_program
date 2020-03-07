@@ -219,6 +219,47 @@ void main(void)
 //   write enable --> 0
 //   output保存0
 // 
+// 5.8-bit register(8bit寄存器):
+//        一根线连接所有允许写入线
+//                  |
+//                  |     ________
+//  data input  -----)---| gate   |      
+//                  |    | latch  |----- data out
+//  write enable    |----|________|
+//                  |     ________
+//  data input  -----)---| gate   |      
+//                  |    | latch  |----- data out
+//  write enable    |----|________|
+//                  |     ________
+//  data input  -----)---| gate   |      
+//                  |    | latch  |----- data out
+//  write enable    |----|________|
+//                  |     ________
+//  data input  -----)---| gate   |      
+//                  |    | latch  |----- data out
+//  write enable    |----|________|
+//                  |     ________
+//  data input  -----)---| gate   |      
+//                  |    | latch  |----- data out
+//  write enable    |----|________|
+//                  |     ________
+//  data input  -----)---| gate   |      
+//                  |    | latch  |----- data out
+//  write enable    |----|________|
+//                  |     ________
+//  data input  -----)---| gate   |      
+//                  |    | latch  |----- data out
+//  write enable    |----|________|
+//                  |     ________
+//  data input  -----)---| gate   |      
+//                  |    | latch  |----- data out
+//  write enable    +----|________|
+//
+//  存入8bit数据:
+//      连接所有允许输入线的线设置1
+//      然后每根数据写入线输入数据(正规讲法就是高电平就是1,低电平就是0咯...)
+//      数据写入后,允许输入线设置为0,数据保存成功
+//
 //
 
 
