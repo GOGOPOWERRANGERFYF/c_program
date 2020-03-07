@@ -176,7 +176,7 @@ void main(void)
 //  4.1先看抽象化后的gated latch门锁,看它所要完成的操作,就更容易理解里面的逻辑门为什么那样设计   
 //
 //   数据输入           ________
-//  data input   -----| gate   |      数据输出
+//  data input   -----| gated  |      数据输出
 //                    | latch  |----- data out
 //  write enable -----|________|
 //   允许写入线
@@ -223,35 +223,35 @@ void main(void)
 //        一根线连接所有允许写入线
 //                  |
 //                  |     ________
-//  data input  -----)---| gate   |      
+//  data input  -----)---| gated  |      
 //                  |    | latch  |----- data out
 //  write enable    |----|________|
 //                  |     ________
-//  data input  -----)---| gate   |      
+//  data input  -----)---| gated  |      
 //                  |    | latch  |----- data out
 //  write enable    |----|________|
 //                  |     ________
-//  data input  -----)---| gate   |      
+//  data input  -----)---| gated  |      
 //                  |    | latch  |----- data out
 //  write enable    |----|________|
 //                  |     ________
-//  data input  -----)---| gate   |      
+//  data input  -----)---| gated  |      
 //                  |    | latch  |----- data out
 //  write enable    |----|________|
 //                  |     ________
-//  data input  -----)---| gate   |      
+//  data input  -----)---| gated  |      
 //                  |    | latch  |----- data out
 //  write enable    |----|________|
 //                  |     ________
-//  data input  -----)---| gate   |      
+//  data input  -----)---| gated  |      
 //                  |    | latch  |----- data out
 //  write enable    |----|________|
 //                  |     ________
-//  data input  -----)---| gate   |      
+//  data input  -----)---| gated  |      
 //                  |    | latch  |----- data out
 //  write enable    |----|________|
 //                  |     ________
-//  data input  -----)---| gate   |      
+//  data input  -----)---| gated  |      
 //                  |    | latch  |----- data out
 //  write enable    +----|________|
 //
