@@ -203,7 +203,22 @@ void main(void)
 //                 |      +----| >---------|   \      |\              |AND )---------+----- output
 //                 |           |/ NOT      |AND )-----| >-------------|___/
 //  write enable --+-----------------------|___/      |/
-//                                                   NOT
+//
+// *理解下面这个过程:                                                   NOT
+//  实现output 0 --> 1:
+//   write enable --> 1
+//   data input --> 1
+//   output 1
+//   write enable --> 0
+//   (这个只是说明:data input --> 1或0,output都为1)
+//   output都保持1
+//  实现output 0 --> 1:
+//   write enable --> 1
+//   data input --> 0
+//   output --> 0
+//   write enable --> 0
+//   output保持1
+// 
 //
 
 
