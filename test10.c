@@ -171,4 +171,7 @@ void main(void)
 //     总结:
 //       set设置1,ouput1,保存1
 //     reset设置1,ouput0,保存0
-//     
+// 
+// 4.gate latch (门锁)
+//
+//    
