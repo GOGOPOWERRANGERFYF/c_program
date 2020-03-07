@@ -211,13 +211,13 @@ void main(void)
 //   output 1
 //   write enable --> 0
 //   (这个只是说明:data input --> 1或0,output都为1)
-//   output都保持1
+//   output保存1
 //  实现output 0 --> 1:
 //   write enable --> 1
 //   data input --> 0
 //   output --> 0
 //   write enable --> 0
-//   output保持1
+//   output保存0
 // 
 //
 
