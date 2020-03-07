@@ -160,9 +160,15 @@ void main(void)
 //       reset--------------| >-------|___/                         
 //                          |/
 //                         NOT
-//
+//     第一步:
 //         set设置1
 //       reset设置0,经过NOT门变1
 //         AND门相当于输入了两个1,output1,回路1
-//         set设置0后,回路1 加 NOT门,AND还是保持output1         
-//
+//         set设置0后,回路1 加 NOT门,AND还是保持output1
+//     第二步:
+//       reset设置1,经过NOT门变0         
+//       AND门output0,回路变0
+//     总结:
+//       set设置1,ouput1,保存1
+//     reset设置1,ouput0,保存0
+//     
