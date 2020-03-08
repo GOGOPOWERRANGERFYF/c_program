@@ -52,18 +52,19 @@ void main(void)
     //
     // 注: %rbp只有在 -O0 不优化的编译条件下,还具有帧指针的含义
 
-    li_a = li_a + 1;
+    //li_a = li_a + 1;
     
-    //i_a++;
-    //++i_b;
-    
-    i_a = i_a++;
-    i_b = ++i_b;
-    printf("i_a = i_a++; %d\n", i_a);
-    printf("i_b = ++i_b; %d\n", i_b);
-    
+    i_a++;
+    ++i_b;
+    printf("i_a++; %d\n", i_a);
+    printf("++i_b; %d\n", i_b);
     //printf("%d %d\n", i_a, i_a++);
     //printf("%d %d\n", i_b, ++i_b);
+    
+    //i_a = i_a++;
+    //i_b = ++i_b;
+    //printf("i_a = i_a++; %d\n", i_a);
+    //printf("i_b = ++i_b; %d\n", i_b);
     return;
 }
 
