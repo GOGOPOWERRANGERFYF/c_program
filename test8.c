@@ -7,7 +7,7 @@
 //  character 字符; character string 字符串.
 //
 //printf()和scanf()函数参数：
-//  [1] printf()函数使用变量,常量,表达式
+//  [1] printf()函数使用变量,常量,可求值的表达式,有返回值的函数
 //  [2] scanf()函数使用指向变量的指针
 //
 //scanf()读取基本类型变量的值,在变量名前加&
