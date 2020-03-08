@@ -19,7 +19,7 @@
 
 void main(void)
 {
-    int i_a = 1, i_b = 1;
+    int i_a = 1, i_aa = 1, i_b = 1;
     long int li_a = 999;
     // ++ 递增运算符(increment operator),将其运算对象operand递增1
     // * 看了运行结果,i++后缀模式,表达式运算结果等于变量值,然后变量的值自增1
@@ -55,8 +55,10 @@ void main(void)
     //li_a = li_a + 1;
     
     i_a++;
+    i_aa = i_aa++;
     ++i_b;
     printf("i_a++; %d\n", i_a);
+    printf("i_aa = i_aa++; %d\n", i_aa);
     printf("++i_b; %d\n", i_b);
     //printf("%d %d\n", i_a, i_a++);
     //printf("%d %d\n", i_b, ++i_b);
