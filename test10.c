@@ -149,12 +149,12 @@ void decrement_operator(void)
 
     while(do_i_a-- > 0)
     {
-        printf("%d\n", do_i_a);
+        printf("do_i_a: %d\n", do_i_a);
     }
 
     while(--do_i_b > 0)
     {
-        printf("%d\n", do_i_b);
+        printf("do_i_b: %d\n", do_i_b);
     }
     return;
 }
