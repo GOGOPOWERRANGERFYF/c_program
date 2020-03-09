@@ -19,8 +19,7 @@
 
 void main(void)
 {
-    int i_a = 1, i_aa = 1, i_b = 1;
-    long int li_a = 999;
+    int i_a = 1, i_aa = 1, i_b = 1, i_c = 1, i_d = 1;
     // ++ 递增运算符(increment operator),将其运算对象operand递增1
     // * 看了运行结果,i++后缀模式,表达式运算结果等于变量值,然后变量的值自增1
     // *             ++i前缀模式,表达式运算结果等于变量值加1,然后变量的值自增1
@@ -66,21 +65,15 @@ void main(void)
     // 注: %rbp只有在 -O0 不优化的编译条件下,还具有帧指针的含义
     //堆(heap)
 
-    //li_a = li_a + 1;
+    printf("i_a: %d, i_a++: %d\n", i_a, i_a++);
+    printf("i_b: %d, ++i_b: %d\n", i_b, ++i_b);
     
-    i_a++;
+    i_c++;
+    ++i_d;
     i_aa = i_aa++;
-    ++i_b;
-    printf("i_a++; %d\n", i_a);
-    printf("i_aa = i_aa++; %d\n", i_aa);
-    printf("++i_b; %d\n", i_b);
-    //printf("%d %d\n", i_a, i_a++);
-    //printf("%d %d\n", i_b, ++i_b);
-    
-    //i_a = i_a++;
-    //i_b = ++i_b;
-    //printf("i_a = i_a++; %d\n", i_a);
-    //printf("i_b = ++i_b; %d\n", i_b);
+    printf("i_c++: %d\n", i_c);
+    printf("++i_d: %d\n", i_d);
+    printf("i_aa = i_aa++: %d\n", i_aa);
     return;
 }
 
