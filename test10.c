@@ -5,7 +5,7 @@ void decrement_operator(void);
 // 带.前缀的语句为链接的语句
 // movl 把内存内容赋给寄存器
 // q l w b 分别为 64bit 32bit 16bit 8bit (大小指示符)
-// leal 把内存地址赋给寄存器
+// lea(load effective address加载有效地址) 把内存地址赋给寄存器
 // %rbp 寄存器,寄存器种类个数很多,硬件会不断发展的,知道是寄存器就好了
 // $1 1为立即数,立即数前必须放一个$
 // %eax 累加寄存器: 函数返回值要存放在这个累加寄存器,返回值64bit,则低32bit存%eax,高32bit存%edx
