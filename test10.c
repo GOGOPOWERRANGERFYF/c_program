@@ -57,8 +57,6 @@ void decrement_operator(void);
 // *   25:   90                      nop
 //
 
-
-
 void main(void)
 {
     int i_a = 1, i_aa = 1, i_b = 1, i_c = 1, i_d = 1;
