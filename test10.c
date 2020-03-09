@@ -1,4 +1,5 @@
 #include <stdio.h>
+void decrement_operator(void);
 //汇编语言 assembly language
 //汇编知识(这玩意边看边查就好,不常用的话记不住的,搞不好掉头发...):
 // 带.前缀的语句为链接的语句
@@ -77,11 +78,28 @@ void main(void)
     printf("i_c++: %d\n", i_c);
     printf("++i_d: %d\n", i_d);
     printf("i_aa = i_aa++: %d\n", i_aa);
+
+    decrement_operator();
     return;
 }
 
 // > < relational operator 关系运算符
 // -- decrement operator 递减运算符
+void decrement_operator(void)
+{
+    int do_i_a = 10, do_i_b = 10;
+
+    while(do_i_a-- > 0)
+    {
+        printf("%d\n", do_i_a);
+    }
+
+    while(--do_i_b > 0)
+    {
+        printf("%d\n", do_i_b);
+    }
+    return;
+}
 
 
 //========================================================================================
