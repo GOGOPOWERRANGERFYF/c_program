@@ -38,23 +38,23 @@ void decrement_operator(void);
 // *      return;
 // *  }
 // *
-// *  gcc -c xxx.c 
-// *  objdump -d xxx.o
+// * gcc -c xxx.c 
+// * objdump -d xxx.o
 // *
-// *   0000000000000000 <main>:
-// *     0:   55                      push   rbp                   
-// *     1:   48 89 e5                mov    rbp,rsp
-// *     4:   48 83 ec 30             sub    rsp,0x30
-// *     8:   e8 00 00 00 00          call   d <main+0xd>
-// *     d:   c7 45 fc 01 00 00 00    mov    DWORD PTR [rbp-0x4],0x1 (立即数1存入内存地址)
-// *    14:   83 45 fc 01             add    DWORD PTR [rbp-0x4],0x1 (内存地址的值加1,计算过程当然还要经过ALU和寄存器)
-// *    18:   8b 45 fc                mov    eax,DWORD PTR [rbp-0x4] (%eax一般存放返回值)
-// *    1b:   89 45 f8                mov    DWORD PTR [rbp-0x8],eax (拷贝%eax值到内存地址)
-// *    1e:   90                      nop
-// *    1f:   48 83 c4 30             add    rsp,0x30
-// *    23:   5d                      pop    rbp
-// *    24:   c3                      ret
-// *    25:   90                      nop
+// *  0000000000000000 <main>:
+// *    0:   55                      push   rbp                   
+// *    1:   48 89 e5                mov    rbp,rsp
+// *    4:   48 83 ec 30             sub    rsp,0x30
+// *    8:   e8 00 00 00 00          call   d <main+0xd>
+// *    d:   c7 45 fc 01 00 00 00    mov    DWORD PTR [rbp-0x4],0x1 (立即数1存入内存地址)
+// *   14:   83 45 fc 01             add    DWORD PTR [rbp-0x4],0x1 (内存地址的值加1,计算过程当然还要经过ALU和寄存器)
+// *   18:   8b 45 fc                mov    eax,DWORD PTR [rbp-0x4] (%eax一般存放返回值)
+// *   1b:   89 45 f8                mov    DWORD PTR [rbp-0x8],eax (拷贝%eax值到内存地址)
+// *   1e:   90                      nop
+// *   1f:   48 83 c4 30             add    rsp,0x30
+// *   23:   5d                      pop    rbp
+// *   24:   c3                      ret
+// *   25:   90                      nop
 //
 
 
