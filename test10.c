@@ -169,7 +169,8 @@ void increment_decrement_precedence(void)
     idp_b = -++idp_a;
     printf("idp_b: %d\n", idp_b);
     printf("idp_a: %2d\n", idp_a);
-    //从输出结果可以看出,++运算符优先级比一元运算符-优先级还高
+    //从输出结果可以推理出++运算符优先级比一元运算符-优先级还高
+    //通过反汇编文件可以证实这个推理
     return;
 }
 
