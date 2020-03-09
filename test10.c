@@ -1,5 +1,6 @@
 #include <stdio.h>
 void decrement_operator(void);
+void increment_decrement_precedence(void);
 //汇编语言 assembly language
 //汇编知识(这玩意边看边查就好,不常用的话记不住的,搞不好掉头发...):
 // 带.前缀的语句为链接的语句
@@ -136,6 +137,7 @@ void main(void)
     printf("i_aa = i_aa++: %d\n", i_aa);
 
     decrement_operator();
+    increment_decrement_precedence();
     return;
 }
 
@@ -143,7 +145,7 @@ void main(void)
 // -- decrement operator 递减运算符
 void decrement_operator(void)
 {
-    int do_i_a = 10, do_i_b = 10;
+    int do_i_a = 5, do_i_b = 5;
 
     while(do_i_a-- > 0)
     {
@@ -157,6 +159,19 @@ void decrement_operator(void)
     return;
 }
 
+// 自增运算符和自减运算符优先级只低于圆括号
+// 优先级:
+// () > ++/-- > +/-(一元运算符) > * / (二元运算符) > +/-(二元运算符) > =(赋值运算符)
+// precedence: 优先,优先权
+void increment_decrement_precedence(void)
+{
+    int idp_a = 1, idp_b = 0;
+    idp_b = -idp_a++;
+    printf("idp_b: %d\n", idp_b);
+    printf("idp_a: %d\n", idp_a);
+    //从输出结果可以看出,++运算符优先级比一元运算符-优先级还高
+    return;
+}
 
 //========================================================================================
 // 1bit一个物理地址,1byte(8bit)一个虚拟地址,虚拟地址由操作系统分配
