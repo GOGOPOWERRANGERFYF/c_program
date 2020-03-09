@@ -53,6 +53,30 @@ void decrement_operator(void);
 // *   25:   90                      nop
 // 学会查看可重定位目标程序的反汇编文件对理解程序在计算机中的运行很有用(intel格式对我这种没汇编基础的比较容易...)
 // i++和++i到底在机器级别是怎么实现的查看反汇编文件就好,不同编译系统,不同优化级别还是有差异的,具体环境具体分析吧
+//
+// #include <stdio.h>
+// void main(void){
+//     int i = 1, j = 0;
+//     j = i++;
+//     return;
+// }
+// * 0000000000000000 <main>:
+// *   0:   55                      push   rbp
+// *   1:   48 89 e5                mov    rbp,rsp
+// *   4:   48 83 ec 30             sub    rsp,0x30
+// *   8:   e8 00 00 00 00          call   d <main+0xd>
+// *   d:   c7 45 fc 01 00 00 00    mov    DWORD PTR [rbp-0x4],0x1
+// *  14:   c7 45 f8 00 00 00 00    mov    DWORD PTR [rbp-0x8],0x0
+// *  1b:   8b 45 fc                mov    eax,DWORD PTR [rbp-0x4]
+// *  1e:   8d 50 01                lea    edx,[rax+0x1]
+// *  21:   89 55 fc                mov    DWORD PTR [rbp-0x4],edx
+// *  24:   89 45 f8                mov    DWORD PTR [rbp-0x8],eax
+// *  27:   90                      nop
+// *  28:   48 83 c4 30             add    rsp,0x30
+// *  2c:   5d                      pop    rbp
+// *  2d:   c3                      ret
+// *  2e:   90                      nop
+//
 
 void main(void)
 {
