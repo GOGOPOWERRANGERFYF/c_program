@@ -51,6 +51,7 @@ void decrement_operator(void);
 // *   23:   5d                      pop    rbp
 // *   24:   c3                      ret
 // *   25:   90                      nop
+// 学会查看可重定位目标程序的反汇编文件对理解程序在计算机中的运行很有用(intel格式对我这种没汇编基础的比较容易...)
 //
 
 void main(void)
