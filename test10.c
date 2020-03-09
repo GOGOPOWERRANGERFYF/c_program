@@ -80,7 +80,8 @@ void main(void)
     return;
 }
 
-//decrement operator
+// > < relational operator 关系运算符
+// -- decrement operator 递减运算符
 
 
 //========================================================================================
