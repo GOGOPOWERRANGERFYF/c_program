@@ -21,10 +21,43 @@ void decrement_operator(void);
 // push pushq 压栈
 // pop 出栈
 //
-// objdump: gun的反汇编器(disassembler) 反汇编-->可重定位目标程序(二进制文件) 后缀为 .o
-// 类似抓包工具(tcpdump) dump: v (尤指在不合适的地方)丢弃; n 垃圾场
+// *  objdump: gun的反汇编器(disassembler) 反汇编-->可重定位目标程序(二进制文件) 后缀为 .o
+// *  类似抓包工具(tcpdump) dump: v (尤指在不合适的地方)丢弃; n 垃圾场
+// *
+// *  gcc -Og 优化调试(debug)体验,支持不影响调试的优化
+// *  gcc -O0 默认编译级别
+// *
+// *  #include <stdio.h>
+// *  void main(void)
+// *  {
+// *      int i = 1, j;
+// *      //j = i++;
+// *      //++i;
+// *      j = ++i;
+// *      // i = ++i;
+// *      return;
+// *  }
+// *
+// *  gcc -c xxx.c 
+// *  objdump -d xxx.o
+// *
+// *   0000000000000000 <main>:
+// *     0:   55                      push   rbp                   
+// *     1:   48 89 e5                mov    rbp,rsp
+// *     4:   48 83 ec 30             sub    rsp,0x30
+// *     8:   e8 00 00 00 00          call   d <main+0xd>
+// *     d:   c7 45 fc 01 00 00 00    mov    DWORD PTR [rbp-0x4],0x1 (立即数1存入内存地址)
+// *    14:   83 45 fc 01             add    DWORD PTR [rbp-0x4],0x1 (内存地址的值加1,计算过程当然还要经过ALU和寄存器)
+// *    18:   8b 45 fc                mov    eax,DWORD PTR [rbp-0x4] (%eax一般存放返回值)
+// *    1b:   89 45 f8                mov    DWORD PTR [rbp-0x8],eax (拷贝%eax值到内存地址)
+// *    1e:   90                      nop
+// *    1f:   48 83 c4 30             add    rsp,0x30
+// *    23:   5d                      pop    rbp
+// *    24:   c3                      ret
+// *    25:   90                      nop
 //
-// gcc -Og 优化调试(debug)体验,支持不影响调试的优化
+
+
 
 void main(void)
 {
