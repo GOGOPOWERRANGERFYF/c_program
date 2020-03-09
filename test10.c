@@ -28,13 +28,9 @@ void decrement_operator(void);
 // *  gcc -O0 默认编译级别
 // *
 // *  #include <stdio.h>
-// *  void main(void)
-// *  {
+// *  void main(void){
 // *      int i = 1, j;
-// *      //j = i++;
-// *      //++i;
 // *      j = ++i;
-// *      // i = ++i;
 // *      return;
 // *  }
 // *
