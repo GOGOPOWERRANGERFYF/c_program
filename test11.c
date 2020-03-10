@@ -51,3 +51,5 @@ void main(void)
 //    * 迭代语句: while(i<10)
 //    * 跳转语句: return 0;
 //
+//    int a; 声明不是表达式语句,因为 int a不是表达式,没有值
+//
