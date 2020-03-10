@@ -95,5 +95,5 @@ void main(void)
 //      i = i + 1;
 //      printf("%d\n", i);
 //    }
-//    while的另一种风格,不过对编译器来说都一样
+//    while的另一种风格,这种风格突出block块属于while循环,不过对编译器来说都一样
 //
