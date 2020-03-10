@@ -67,3 +67,6 @@ void main(void)
 //    i++;
 //    printf();  函数调用也是表达式
 //
+//    sequence point 序列点
+//    
+//
