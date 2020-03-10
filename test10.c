@@ -157,13 +157,11 @@ void decrement_operator(void)
 {
     int do_i_a = 5, do_i_b = 5;
 
-    while(do_i_a-- > 0)
-    {
+    while (do_i_a-- > 0) {
         printf("do_i_a: %d\n", do_i_a);
     }
 
-    while(--do_i_b > 0)
-    {
+    while (--do_i_b > 0) {
         printf("do_i_b: %d\n", do_i_b);
     }
     return;
