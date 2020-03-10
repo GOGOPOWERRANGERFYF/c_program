@@ -55,3 +55,8 @@ void main(void)
 //
 //    int a; 声明不是表达式语句,因为 int a不是表达式,没有值
 //
+//    condition 条件
+//    while(i<5)   关键字key word(测试条件test condition)
+//    后面只接一句语句的话可以不用花括号{}
+//    后面接多句语句的话要用花括号括起来{},这种语句称为复合语句.
+//
