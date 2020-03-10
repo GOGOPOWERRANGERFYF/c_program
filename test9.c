@@ -52,7 +52,7 @@ void while_block(void)
     //考虑一个赋值语句.它的目的是储存一个值在一个内存位置.
     //数据对象是一个 用于存储整个值的数据存储区域的 通用术语
 
-    while(start<10)/* starting the while loop  */
+    while (start<10)/* starting the while loop  */
     //花括号之间的内容是要被重复的内容,用计算机术语说,就是程序循环这些语句
     /* start of block,花括号以及花括号括起来的部分被称为block */
     {                           
@@ -116,7 +116,7 @@ void sixty_four_game(void)
     printf("number                     ");
     printf("total\n");
     printf("%3d. %22.1f %25.1f\n", count, number, total);
-    while(count<64)
+    while (count<64)
     {
         count = count + 1;
         // * multiplication operator乘法运算符
@@ -360,7 +360,7 @@ void second_to_minute(void)
     //数值位由高位向低位比较,因为1000>0111,
     //因为 后面位值最小的情况 也比 后面位值最大的情况 大
     //所以高位数值大的数,它的值就大
-    while(second >= 0)
+    while (second >= 0)
     {
         // 结果小数截断(truncation)
         // 数学上的除法理解为拆分成60份
