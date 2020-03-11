@@ -33,8 +33,13 @@ void part_one_type_conversion(void)
     printf("ascii(decimal:126) %%c: %c\n", 126);
 
     // unsigned int constant
+    // 2^10 = 1024
     printf("%zd\n", sizeof(2147483648U));
     printf("%x\n", 2147483648U);
+    //<深入理解计算机系统第三版>P79 非规格化的值: mantissa尾数是不隐含1的
+    printf("%a\n", 9223372036854775808LU);
+    printf("%e\n", 9223372036854775808LU);
+    printf("%f\n", 9223372036854775808LU);
     printf("%u\n", 2147483648U);
     printf("%d\n", 2147483648U);
     return;
