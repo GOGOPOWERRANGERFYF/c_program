@@ -37,6 +37,8 @@ void part_one_type_conversion(void)
     // 2^10 = 1024
     printf("%zd\n", sizeof(2147483648U));
     printf("%x\n", 2147483648U);
+    printf("%u\n", 2147483648U);
+    printf("%d\n", 2147483648U);
     //<深入理解计算机系统第三版>P79 非规格化的值: mantissa尾数是不隐含1的
     //当exponent阶码全为0时,表示的是浮点数的非规格化形式
     // B2U binary当做unsigned --mapper映射--> 真值true value
@@ -54,8 +56,8 @@ void part_one_type_conversion(void)
     printf("%16lx (%%16lx):2251799813685248LU\n", 2251799813685248LU);
     printf("2251799813685248LU %%f: %f\n", 2251799813685248LU);
     printf("2251799813685248LU %%a: %a\n", 2251799813685248LU);
-    printf("%u\n", 2147483648U);
-    printf("%d\n", 2147483648U);
+
+    //printf("%d\n", 2147483648U);
     return;
 }
 
