@@ -73,6 +73,9 @@ void assignment_statement_type_conversion(void)
     printf("sizeof(astc_b) %%zd : %zd\n", sizeof(astc_b));
     printf("sizeof(astc_a) %%zd : %zd\n", sizeof(astc_a));
     printf("sizeof(astc_a = astc_b) %%zd :%zd\n", sizeof(astc_a = astc_b));
+    printf("astc_b %%x : %x\n", astc_b);
+    astc_a = astc_b;
+    printf("%hd\n", astc_a);
 
     //赋值表达式计算结果升级(promotion)的情况
     printf("sizeof(astc_x) %%zd : %zd\n", sizeof(astc_x));
