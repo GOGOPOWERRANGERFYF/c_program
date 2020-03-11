@@ -31,6 +31,10 @@ void part_one_type_conversion(void)
     printf("sizeof(c) %%zd: %zd\n", sizeof(c+1));
     printf("expression: c+1 %%c: %c\n", c+1);
     printf("ascii(decimal:126) %%c: %c\n", 126);
+
+    // unsigned int constant
+    printf("%x\n", 2147483648U);
+    printf("%d\n", 2147483648U);
     return;
 }
 
