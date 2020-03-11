@@ -33,7 +33,9 @@ void part_one_type_conversion(void)
     printf("ascii(decimal:126) %%c: %c\n", 126);
 
     // unsigned int constant
+    printf("%zd\n", sizeof(2147483648U));
     printf("%x\n", 2147483648U);
+    printf("%u\n", 2147483648U);
     printf("%d\n", 2147483648U);
     return;
 }
