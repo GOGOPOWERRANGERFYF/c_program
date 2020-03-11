@@ -10,7 +10,8 @@ void main(void)
 
 void part_one_type_conversion(void)
 {
-    // 1.
+    // 1.当类型转换出现在表达式,无论signed或unsigned的char和short,都会转换成int
+    // 较小类型转换为较大类型(size小->大),这些转换称为升级(promotion)
     short int a = 1;
     unsigned short int b = 1;
     // american standard code for information interchange 美国信息交换标准码
