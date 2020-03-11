@@ -68,14 +68,14 @@ void assignment_statement_type_conversion(void)
     short int astc_a, astc_x = 10;
     int astc_b = 2147483647, astc_y;
     //在赋值表达式语句中,运算结果会转换成 被赋值变量 的类型
-    //赋值表达式运算结果降级(demotion)的情况
+    //赋值表达式运算结果降级(demotion)的情况: 存储长度长的赋值给存储长度短的 截断
     printf("sizeof(astc_b) %%zd : %zd\n", sizeof(astc_b));
     printf("sizeof(astc_a) %%zd : %zd\n", sizeof(astc_a));
     printf("sizeof(astc_a = astc_b) %%zd :%zd\n", sizeof(astc_a = astc_b));
     printf("astc_b %%x : %x\n", astc_b);
     astc_a = astc_b;
     printf("%hd\n", astc_a);
-    //赋值表达式运算结果升级(promotion)的情况
+    //赋值表达式运算结果升级(promotion)的情况: 存储长度短的赋值给存储长度长的
     printf("sizeof(astc_x) %%zd : %zd\n", sizeof(astc_x));
     printf("sizeof(astc_y) %%zd : %zd\n", sizeof(astc_y));
     printf("sizeof(astc_y = astc_x) %%zd :%zd\n", sizeof(astc_y = astc_x));
