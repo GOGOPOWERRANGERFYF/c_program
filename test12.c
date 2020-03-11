@@ -1,5 +1,6 @@
 // 类型转换(type conversions)
 #include <stdio.h>
+void part_one_type_conversion(void);
 void main(void)
 {
     short int a = 1;
@@ -21,8 +22,14 @@ void main(void)
     printf("sizeof(c) %%zd: %zd\n", sizeof(-c));
     printf("sizeof(c) %%zd: %zd\n", sizeof(c+1));
     printf("expression: c+1 %%c: %c\n", c+1);
+    printf("ascii(decimal:126) %%c: %c\n", 126);
+
+    part_one_type_conversion();
     return;
 }
 
-
+void part_one_type_conversion(void)
+{
+    return;
+}
 
