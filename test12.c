@@ -68,7 +68,7 @@ void assignment_statement_type_conversion(void)
     short int astc_a, astc_x = 10;
     int astc_b = 2147483647, astc_y;
 
-    //在赋值表达式中,运算结果会转换成 被赋值变量 的类型
+    //在赋值表达式语句中,运算结果会转换成 被赋值变量 的类型
     //赋值表达式运算结果降级(demotion)的情况
     printf("sizeof(astc_b) %%zd : %zd\n", sizeof(astc_b));
     printf("sizeof(astc_a) %%zd : %zd\n", sizeof(astc_a));
