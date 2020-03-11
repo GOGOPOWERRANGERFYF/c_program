@@ -40,6 +40,12 @@ void part_one_type_conversion(void)
     //当exponent阶码全为0时,表示的是浮点数的非规格化形式
     // B2U binary当做unsigned --mapper映射--> 真值true value
     // printf()会把float参数转换成double,因此 %f和%lf在printf函数是一样的,在scanf函数才会区分
+    //*非规格化值的用途之一: 表示浮点数的0 (规格化值尾数隐含1.所以无法表达浮点数0)
+    //*非规格化值exponent: 0000 0000 000(double); 0000 0000(float)
+    //*规格化值的setoff/bias偏置量: bias_1024 , bias_255
+    //*非规格化值mantissa尾数全为0: 直接2^0,不用再减去偏置量 
+    //*非规格化值mantissa尾数非全0: 
+    //   阶码exponent要减去偏置量(二补数运算,非二补数编码运算,我自己为了方便理解乱创的概念,别较真...)
     printf("9223372036854775808LU %%f: %f\n", 9223372036854775808LU);
     printf("9223372036854775808LU %%e: %e\n", 9223372036854775808LU);
     printf("9223372036854775808LU %%a: %a\n", 9223372036854775808LU);
