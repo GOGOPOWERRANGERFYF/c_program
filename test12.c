@@ -1,10 +1,12 @@
 // 类型转换(type conversions)
 #include <stdio.h>
 void part_one_type_conversion(void);
+void assignment_statement_type_conversion(void);
 
 void main(void)
 {
     part_one_type_conversion();
+    assignment_statement_type_conversion();
     return;
 }
 
@@ -60,4 +62,20 @@ void part_one_type_conversion(void)
     //printf("%d\n", 2147483648U);
     return;
 }
+
+void assignment_statement_type_conversion(void)
+{
+    short int astc_a, astc_x = 10;
+    int astc_b = 2147483647, astc_y;
+    //在赋值表达式中,计算结果会转换成 被赋值变量 的类型
+    //可能会降级(demotion),也可能会升级(promotion)
+    printf("%zd\n", sizeof(astc_a = astc_b));
+    astc_a = astc_b;
+    printf("%hd\n", astc_b);
+
+    //赋值表达式计算结果升级(promotion)的情况
+    printf("%zd\n", sizeof(astc_y = astc_x));
+    return;
+}
+
 
