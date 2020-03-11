@@ -38,6 +38,7 @@ void part_one_type_conversion(void)
     printf("%x\n", 2147483648U);
     //<深入理解计算机系统第三版>P79 非规格化的值: mantissa尾数是不隐含1的
     //当exponent阶码全为0时,表示的是浮点数的非规格化形式
+    // B2U binary当做unsigned --mapper映射--> 真值true value
     printf("%a\n", 9223372036854775808LU);
     printf("%e\n", 9223372036854775808LU);
     printf("%f\n", 9223372036854775808LU);
