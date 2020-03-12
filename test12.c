@@ -115,11 +115,18 @@ void type_conversion_ranking(void)
     // unsigned long long int > long long int > unsigned long int > long int >
     // unsigned int > int
     // short或char没有列出来是因为它们会被升级到 int 或 unsigned int
+    int tcr_a;
+    long int tcr_b;
+    long long int tcr_c;
+    printf("sizeof(tcr_a) %%zd : %zd\n", sizeof(tcr_a));
+    printf("sizeof(tcr_b) %%zd : %zd\n", sizeof(tcr_b));
+    printf("sizeof(tcr_c) %%zd : %zd\n", sizeof(tcr_c));
     return;
 }
 
 void type_conversion_example(void)
 {
+    // int 类型转换 float: 很简单粗暴...   65 --> 65.0  我刚开始想得有点太复杂了(￣ェ￣;)
     int tce_a = 65;
     float tce_b;
     tce_b = tce_a;
