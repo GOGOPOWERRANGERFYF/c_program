@@ -182,6 +182,6 @@ void type_conversion_example(void)
     return;
 }
 
-
+// <c primer plus第六版> P288 convert.c 程序很全面,看懂了感觉类型转换基本没啥问题了...
 
 
