@@ -144,16 +144,20 @@ void type_conversion_ranking(void)
 
 void type_conversion_example(void)
 {
-    //*注意: 类型转换的 升级 和 降级 不要与 常量,变量在输出函数的不同转换说明下的输出混为一谈
+    // *** 注意: 类型转换的 升级 和 降级(表达式,赋值表达式,函数的参数) 
+    // *** 不要与 常量,变量 在 输出函数的不同转换说明下的输出混为一谈(对数据做不同形式的输出而已)
 
     // int 类型转换 float: 很简单粗暴...   65 --> 65.0  
     // 我刚开始想得有点太复杂了(￣ェ￣;)
+    
     int tce_a = 65;
     float tce_b;
+    //float tce_b = tce_a;
     double tce_c = 201.5;
 
-    tce_b = tce_a;
+    //tce_b = tce_a;
     printf("%.2f\n", tce_b);
+    printf("%.2f\n", tce_b = 65);
 
     //赋值表达式语句,表达式求值结果的类型与被赋值变量的类型一致
     //这里是降级(demotion)
