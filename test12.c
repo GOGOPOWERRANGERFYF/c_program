@@ -1,4 +1,9 @@
 // 类型转换(type conversions)
+// 掌握两个重点:
+//  1. 类型转换(type conversion)和转换说明(conversion specification) 
+//     这个是我个人学习时弄混的点...仅限个人...
+//  2. 通常,在表达式和语句中应使用相同类型的常量和变量(我去年买了个表...┗( ▔, ▔ )┛)
+//     但还是要了解类型转换规则的,不然出错了都不知道...ヽ(ー_ー)ノ
 #include <stdio.h>
 void type_conversion_in_expression(void);
 void type_conversion_in_assignment_statement(void);
