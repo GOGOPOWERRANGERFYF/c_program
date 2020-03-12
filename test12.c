@@ -58,8 +58,6 @@ void part_one_type_conversion(void)
     printf("%16lx (%%16lx):2251799813685248LU\n", 2251799813685248LU);
     printf("2251799813685248LU %%f: %f\n", 2251799813685248LU);
     printf("2251799813685248LU %%a: %a\n", 2251799813685248LU);
-
-    //printf("%d\n", 2147483648U);
     return;
 }
 
