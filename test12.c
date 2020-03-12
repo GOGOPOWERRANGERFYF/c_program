@@ -189,6 +189,7 @@ void type_conversion_example(void)
 //         char a;
 //         a = 12.90;  --> 降级demotion,double类型转换char
 //         a = 256.90; --> 降级demotion,double类型转换char时发生溢出overflow错误
+// unsigned char [0,255],signed char [-128,127],无论整数或浮点数,值不超过[-128,255]这区间就不会发生溢出
 //
 //总结: 
 //  1. 发生类型转换在表达式,作为函数参数(升级或降级)
