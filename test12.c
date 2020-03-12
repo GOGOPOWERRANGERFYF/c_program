@@ -127,6 +127,7 @@ void type_conversion_ranking(void)
     float tcr_d;
     double tcr_e;
     long double tcr_f;
+    // 总体,浮点数 > 整数(整数之中,相同类型,unsigned > signed.整数类型默认都是signed)
     
     printf("sizeof(tcr_a) %%zd : %zd\n", sizeof(tcr_a));
     printf("sizeof(tcr_ua) %%zd : %zd\n", sizeof(tcr_ua));
