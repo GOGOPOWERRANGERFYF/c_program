@@ -190,5 +190,9 @@ void type_conversion_example(void)
 //         a = 12.90;  --> 降级demotion,double类型转换char
 //         a = 256.90; --> 降级demotion,double类型转换char时发生溢出overflow错误
 //
-
+//总结: 
+//  1. 发生类型转换在表达式,作为函数参数(升级或降级)
+//  2. 赋值表达式,表达式求值结果的类型与被赋值变量类型一致
+//  3. 类型级别高到低
+//  弄清这三点就差不多了
 
