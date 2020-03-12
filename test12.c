@@ -114,7 +114,9 @@ void type_conversion_ranking(void)
     // long double > double > float >
     // unsigned long long int > long long int > unsigned long int > long int >
     // unsigned int > int
-    // short或char没有列出来是因为它们会被升级到 int 或 unsigned int
+    // * short或char没有列出来是因为它们会被升级到 int 或 unsigned int:
+    // *   1. 在表达式中
+    // *   2. 作为函数的参数传递 
     int tcr_a;
     long int tcr_b;
     long long int tcr_c;
