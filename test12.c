@@ -2,6 +2,7 @@
 #include <stdio.h>
 void type_conversion_in_expression(void);
 void type_conversion_in_assignment_statement(void);
+void type_conversion_in_function_argument(void);
 
 void main(void)
 {
@@ -9,6 +10,7 @@ void main(void)
     //函数表达式: 函数调用(有返回值,哪怕是空值)
     type_conversion_in_expression();
     type_conversion_in_assignment_statement();
+    type_conversion_in_function_argument();
     return;
 }
 
@@ -81,5 +83,23 @@ void type_conversion_in_assignment_statement(void)
     printf("sizeof(astc_y = astc_x) %%zd :%zd\n", sizeof(astc_y = astc_x));
     return;
 }
+
+void type_conversion_in_function_argument(void)
+{
+    //5.做为函数参数传递时:
+    //  a. char和short被转换成int
+    //  b. float被转换成double   (scanf函数除外)
+    char tcfa_a;
+    short int tcfa_b;
+    float tcfa_c = 1.5;
+    double tcfa_d = 1.5;
+    // (float)1.5  --> 0     0111 1111 1000 0000 0000 0000 0000 000
+    // (double)1.5 --> 0 011 1111 1111 1000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    // 下面这行代码输出0,说明tcfa_c类型转换成double
+    printf("tcfa_c %%x: %x\n", tcfa_c);
+    printf("tcfa_d %%lx: %lx\n", tcfa_d);
+    return;
+}
+
 
 
