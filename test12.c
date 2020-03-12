@@ -91,7 +91,7 @@ void type_conversion_in_assignment_statement(void)
 void type_conversion_in_function_argument(void)
 {
     //5.做为函数参数传递时:
-    //  a. char和short被转换成int 暂时还不知道怎么证明...
+    //  a. char和short被转换成int 暂时还不知道怎么证明,先死记硬背吧...
     //  b. float被转换成double   (scanf函数除外)
     char tcfa_a;
     short int tcfa_b;
