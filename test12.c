@@ -184,4 +184,11 @@ void type_conversion_example(void)
 // 当 ch = 1107我的编译器gcc9.2.0会有溢出overflow报错... int --> char
 // char 默认是 signed char 还是 unsigned char 取决于编译器...
 
+//*类型转换: 升级通常没有什么问题,降级则可能会有溢出的问题
+// 例如: 
+//         char a;
+//         a = 12.90;  --> 降级demotion,double类型转换char
+//         a = 256.90; --> 降级demotion,double类型转换char时发生溢出overflow错误
+//
+
 
