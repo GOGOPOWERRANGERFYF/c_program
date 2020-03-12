@@ -144,6 +144,8 @@ void type_conversion_ranking(void)
 
 void type_conversion_example(void)
 {
+    //*注意: 类型转换的 升级 和 降级 不要与 常量,变量在输出函数的不同转换说明下的输出混为一谈
+
     // int 类型转换 float: 很简单粗暴...   65 --> 65.0  
     // 我刚开始想得有点太复杂了(￣ェ￣;)
     int tce_a = 65;
