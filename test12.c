@@ -184,5 +184,6 @@ void type_conversion_example(void)
 
 // <c primer plus第六版> P288 convert.c 程序很全面,看懂了感觉类型转换基本没啥问题了...
 // 当 ch = 1107我的编译器gcc9.2.0会有溢出overflow报错... int --> char
+// char 默认是 signed char 还是 unsigned char 取决于编译器...
 
 
