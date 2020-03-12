@@ -93,8 +93,9 @@ void type_conversion_in_function_argument(void)
     short int tcfa_b;
     float tcfa_c = 1.5;
     double tcfa_d = 1.5;
-    // (float)1.5  --> 0     0111 1111 1000 0000 0000 0000 0000 000
-    // (double)1.5 --> 0 011 1111 1111 1000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    //                 S         E                                  M
+    // (float)1.5  --> 0       0111 1111   1000 0000 0000 0000 0000 000
+    // (double)1.5 --> 0   011 1111 1111   1000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
     // 下面这行代码输出0,说明tcfa_c类型转换成double
     printf("tcfa_c %%x: %x\n", tcfa_c);
     printf("tcfa_d %%lx: %lx\n", tcfa_d);
