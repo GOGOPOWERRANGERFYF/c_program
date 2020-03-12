@@ -116,13 +116,19 @@ void type_conversion_ranking(void)
     // unsigned int > int
     // * short或char没有列出来是因为它们会被升级到 int 或 unsigned int:
     // *   1. 在表达式中
-    // *   2. 作为函数的参数传递 
+    // *   2. 作为函数的参数传递
     int tcr_a;
+    unsigned int tcr_ua;
     long int tcr_b;
+    unsigned long int tcr_ub;
     long long int tcr_c;
+    unsigned long long int tcr_uc;
     printf("sizeof(tcr_a) %%zd : %zd\n", sizeof(tcr_a));
+    printf("sizeof(tcr_ua) %%zd : %zd\n", sizeof(tcr_ua));
     printf("sizeof(tcr_b) %%zd : %zd\n", sizeof(tcr_b));
+    printf("sizeof(tcr_ub) %%zd : %zd\n", sizeof(tcr_ub));
     printf("sizeof(tcr_c) %%zd : %zd\n", sizeof(tcr_c));
+    printf("sizeof(tcr_uc) %%zd : %zd\n", sizeof(tcr_uc));
     return;
 }
 
