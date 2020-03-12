@@ -3,6 +3,7 @@
 void type_conversion_in_expression(void);
 void type_conversion_in_assignment_statement(void);
 void type_conversion_in_function_argument(void);
+void type_conversion_example(void);
 
 void main(void)
 {
@@ -11,6 +12,7 @@ void main(void)
     type_conversion_in_expression();
     type_conversion_in_assignment_statement();
     type_conversion_in_function_argument();
+    type_conversion_example();
     return;
 }
 
@@ -101,6 +103,20 @@ void type_conversion_in_function_argument(void)
     // 下面这行代码输出0,说明tcfa_c类型转换成double
     printf("tcfa_c %%x: %x\n", tcfa_c);
     printf("tcfa_d %%lx: %lx\n", tcfa_d);
+    return;
+}
+
+void type_conversion_example(void)
+{
+    //3.类型的级别高->低:
+    // long double > double > float >
+    // unsigned long long int > long long int > unsigned long int > long int >
+    // unsigned int > int
+    // short或char没有列出来是因为它们会被升级到 int 或 unsigned int
+    int tce_a = 65;
+    float tce_b;
+    tce_b = tce_a;
+    printf("%.2f\n", tce_b);
     return;
 }
 
