@@ -126,7 +126,8 @@ void type_conversion_ranking(void)
 
 void type_conversion_example(void)
 {
-    // int 类型转换 float: 很简单粗暴...   65 --> 65.0  我刚开始想得有点太复杂了(￣ェ￣;)
+    // int 类型转换 float: 很简单粗暴...   65 --> 65.0  
+    // 我刚开始想得有点太复杂了(￣ェ￣;)
     int tce_a = 65;
     float tce_b;
     tce_b = tce_a;
