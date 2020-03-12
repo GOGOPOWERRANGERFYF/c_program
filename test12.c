@@ -102,8 +102,6 @@ void type_conversion_in_function_argument(void)
     short int tcfa_b;
     float tcfa_c = 1.5;
     double tcfa_d = 1.5;
-    // a.
-    // b.
     //                 S         E                                  M
     // (float)1.5  --> 0       0111 1111   1000 0000 0000 0000 0000 000
     // (double)1.5 --> 0   011 1111 1111   1000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
