@@ -148,10 +148,22 @@ void type_conversion_example(void)
     // 我刚开始想得有点太复杂了(￣ェ￣;)
     int tce_a = 65;
     float tce_b;
+    double tce_c = 201.5;
+
     tce_b = tce_a;
     printf("%.2f\n", tce_b);
+
+    //赋值表达式语句,表达式求值结果的类型与被赋值变量的类型一致
+    //这里是降级(demotion)
+    // double 类型转换 int: 同样也是简单粗暴...直接去掉小数部分(包括小数点)就行了...
+    tce_a = tce_c;
+    printf("%zd\n", sizeof(tce_a)); 
+    printf("%d\n", tce_a); 
+    printf("%x\n", tce_a); 
+    printf("%ld\n", tce_a); 
     return;
 }
+
 
 
 
