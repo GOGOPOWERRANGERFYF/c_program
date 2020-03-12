@@ -152,14 +152,15 @@ void type_conversion_example(void)
     // int 类型转换 float: 很简单粗暴...   65 --> 65.0  
     // 我刚开始想得有点太复杂了(￣ェ￣;)
     
-    int tce_a = 65;
-    float tce_b;
-    //float tce_b = tce_a;
+    unsigned int tce_ua;
+    int tce_a = 65, tce_b = -65;
+    float tce_fb;
+    //float tce_fb = tce_a;
     double tce_c = 201.5;
 
-    //tce_b = tce_a;
-    printf("%.2f\n", tce_b);
-    printf("%.2f\n", tce_b = 65);
+    //tce_fb = tce_a;
+    printf("%.2f\n", tce_fb);
+    printf("%.2f\n", tce_fb = 65);
 
     //赋值表达式语句,表达式求值结果的类型与被赋值变量的类型一致
     //这里是降级(demotion)
@@ -168,7 +169,11 @@ void type_conversion_example(void)
     printf("%zd\n", sizeof(tce_a)); 
     printf("%d\n", tce_a); 
     printf("%x\n", tce_a); 
-    printf("%ld\n", tce_a); 
+    printf("%ld\n", tce_a);
+
+    tce_ua = tce_b;
+    printf("%u\n", tce_ua);
+    printf("%d\n", tce_ua);
     return;
 }
 
