@@ -1,16 +1,18 @@
 // 类型转换(type conversions)
 #include <stdio.h>
-void part_one_type_conversion(void);
-void assignment_statement_type_conversion(void);
+void type_conversion_in_expression(void);
+void type_conversion_in_assignment_statement(void);
 
 void main(void)
 {
-    part_one_type_conversion();
-    assignment_statement_type_conversion();
+    //每一个表达式都有一个值
+    //函数表达式: 函数调用(有返回值,哪怕是空值)
+    type_conversion_in_expression();
+    type_conversion_in_assignment_statement();
     return;
 }
 
-void part_one_type_conversion(void)
+void type_conversion_in_expression(void)
 {
     // 1.当类型转换出现在表达式,无论signed或unsigned的char和short,都会转换成int
     // 较小类型转换为较大类型(size小->大),这些转换称为升级(promotion)
@@ -61,7 +63,7 @@ void part_one_type_conversion(void)
     return;
 }
 
-void assignment_statement_type_conversion(void)
+void type_conversion_in_assignment_statement(void)
 {
     short int astc_a, astc_x = 10;
     int astc_b = 2147483647, astc_y;
