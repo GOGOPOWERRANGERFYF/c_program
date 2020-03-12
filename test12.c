@@ -123,12 +123,21 @@ void type_conversion_ranking(void)
     unsigned long int tcr_ub;
     long long int tcr_c;
     unsigned long long int tcr_uc;
+    
+    float tcr_d;
+    double tcr_e;
+    long double tcr_f;
+    
     printf("sizeof(tcr_a) %%zd : %zd\n", sizeof(tcr_a));
     printf("sizeof(tcr_ua) %%zd : %zd\n", sizeof(tcr_ua));
     printf("sizeof(tcr_b) %%zd : %zd\n", sizeof(tcr_b));
     printf("sizeof(tcr_ub) %%zd : %zd\n", sizeof(tcr_ub));
     printf("sizeof(tcr_c) %%zd : %zd\n", sizeof(tcr_c));
     printf("sizeof(tcr_uc) %%zd : %zd\n", sizeof(tcr_uc));
+    
+    printf("sizeof(tcr_d) %%zd : %zd\n", sizeof(tcr_d));
+    printf("sizeof(tcr_e) %%zd : %zd\n", sizeof(tcr_e));
+    printf("sizeof(tcr_f) %%zd : %zd\n", sizeof(tcr_f));
     return;
 }
 
