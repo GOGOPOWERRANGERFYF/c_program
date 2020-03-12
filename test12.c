@@ -3,6 +3,7 @@
 void type_conversion_in_expression(void);
 void type_conversion_in_assignment_statement(void);
 void type_conversion_in_function_argument(void);
+void type_conversion_ranking(void);
 void type_conversion_example(void);
 
 void main(void)
@@ -12,6 +13,7 @@ void main(void)
     type_conversion_in_expression();
     type_conversion_in_assignment_statement();
     type_conversion_in_function_argument();
+    type_conversion_ranking();
     type_conversion_example();
     return;
 }
@@ -106,13 +108,18 @@ void type_conversion_in_function_argument(void)
     return;
 }
 
-void type_conversion_example(void)
+void type_conversion_ranking(void)
 {
     //3.类型的级别高->低:
     // long double > double > float >
     // unsigned long long int > long long int > unsigned long int > long int >
     // unsigned int > int
     // short或char没有列出来是因为它们会被升级到 int 或 unsigned int
+    return;
+}
+
+void type_conversion_example(void)
+{
     int tce_a = 65;
     float tce_b;
     tce_b = tce_a;
