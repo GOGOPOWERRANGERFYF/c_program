@@ -26,6 +26,7 @@ void main(void)
 }
 
 // 函数头圆括号中包含了一个int类型变量n的声明
+// 该函数接受一个int类型的参数
 void while_loop_function(int n)
 {
     while (n-- > 0){
