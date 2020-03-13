@@ -34,13 +34,19 @@ void while_loop_function(int n)
 // C99标准中:
 //    actual argument / actual parameter term术语 argument实参
 //    formal argument / formal parameter term术语 parameter形参
-// 1.形参是函数头圆括号中声明的变量,例如: 上面程序的变量n
-// 2.实参是函数调用时提供的值,例如: 上面程序的变量c,a,f;常量10;
-//                                         表达式也可以,比如 c+1
+// 1.形参是函数头圆括号中声明的变量,
+//   例如: 上面程序的变量n
+// 2.实参是函数调用时提供(传递)的值,然后赋给形参
+//   例如: 上面程序的 变量c,a,f;
+//                   常量10;
+//                   表达式也可以,比如 c+1
 //
 // void while_loop_function(int n) 函数头
 // 圆括号中的变量声明创建了称为形参的变量n
 //
 // while_loop_function(10); 函数调用(function call)
 // 把实参10传递给函数
+//
+// while_loop_function(a);
+// 把a的值5赋给n
 //
