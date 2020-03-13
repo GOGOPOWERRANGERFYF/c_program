@@ -209,10 +209,17 @@ void type_conversion_cast_operator(void)
     // 3.3 -> 3 真值的截断(发生在类型转换type conversion)
     // 与计算机存储的数据(binary)的截断不一样(发生在转换说明conversion specification)
     int tcco_a;
+    float tcco_b;
+
     tcco_a = 1.6 + 1.7;
     printf("tcco_a %%d : %d\n", tcco_a);
     tcco_a = (int)1.6 + (int)1.7;
     printf("tcco_a %%d : %d\n", tcco_a);
+
+    tcco_b = 5 + 5;
+    printf("tcco_b %%.1f : %.1f\n", tcco_b);
+    tcco_b = (float)5 + (float)5;
+    printf("tcco_b %%.1f : %.1f\n", tcco_b);
     return;
 }
 
