@@ -1,6 +1,8 @@
 //带参数的函数 <c primer plus> P293
 #include <stdio.h>
-//原型(prototype),即函数的声明,描述函数的返回值和参数
+/* 有兴趣的可以详细了解:ANSI C之前,C的函数声明不是函数原型,只显示函数名和返回值类型(无参数类型) <c primer plus> P295 */
+//
+//原型(prototype),即函数的声明(function declaration),描述函数的返回值和参数
 //  1.该函数没有返回值(void空)
 //  2.声明int类型的参数
 void while_loop_function(int n);
