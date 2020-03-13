@@ -10,6 +10,7 @@ void type_conversion_in_assignment_statement(void);
 void type_conversion_in_function_argument(void);
 void type_conversion_ranking(void);
 void type_conversion_example(void);
+void type_conversion_cast_operator(void);
 
 void main(void)
 {
@@ -20,6 +21,7 @@ void main(void)
     type_conversion_in_function_argument();
     type_conversion_ranking();
     type_conversion_example();
+    type_conversion_cast_operator();
     return;
 }
 
@@ -196,4 +198,16 @@ void type_conversion_example(void)
 //  2. 赋值表达式,表达式求值结果的类型与被赋值变量类型一致
 //  3. 类型级别高到低,char和short int类型转换成int,作为函数参数float类型转换成double
 //  弄清这三点就差不多了
+
+// 以上都是自动类型转换,通常我们要避免自动类型转换,特别是类型降级
+// (如果小心使用的话,自动类型转换还是很方便的,存在即合理嘛...)
+// 
+// 有时我们想转换成自己想要的类型,咋办呢~别急,下面我跟你讲嚯~
+// (cast operator) 强制类型转换运算符.   cast:铸模,模子
+void type_conversion_cast_operator(void)
+{
+    return;
+}
+
+
 
