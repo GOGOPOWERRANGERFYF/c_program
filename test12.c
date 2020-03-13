@@ -52,10 +52,10 @@ void type_conversion_in_expression(void)
 
     // unsigned int constant
     // 2^10 = 1024
-    printf("%zd\n", sizeof(2147483648U));
-    printf("%x\n", 2147483648U);
-    printf("%u\n", 2147483648U);
-    printf("%d\n", 2147483648U);
+    printf("sizeof(2147483648U) %%zd : %zd\n", sizeof(2147483648U));
+    printf("2147483648U %%x : %x\n", 2147483648U);
+    printf("2147483648U %%u : %u\n", 2147483648U);
+    printf("2147483648U %%d : %d\n", 2147483648U);
     //<深入理解计算机系统第三版>P79 非规格化的值: mantissa尾数是不隐含1的
     //当exponent阶码全为0时,表示的是浮点数的非规格化形式
     // B2U binary当做unsigned --mapper映射--> 真值true value
@@ -87,7 +87,7 @@ void type_conversion_in_assignment_statement(void)
     printf("sizeof(astc_a = astc_b) %%zd :%zd\n", sizeof(astc_a = astc_b));
     printf("astc_b %%x : %x\n", astc_b);
     astc_a = astc_b;
-    printf("%hd\n", astc_a);
+    printf("astc_a %%hd : %hd\n", astc_a);
     //赋值表达式运算结果升级(promotion)的情况: 存储长度短的赋值给存储长度长的
     printf("sizeof(astc_x) %%zd : %zd\n", sizeof(astc_x));
     printf("sizeof(astc_y) %%zd : %zd\n", sizeof(astc_y));
