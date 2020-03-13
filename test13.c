@@ -1,4 +1,4 @@
-// 带参数的函数
+//带参数的函数 <c primer plus> P293
 #include <stdio.h>
 //原型(prototype),即函数的声明,描述函数的返回值和参数
 //  1.该函数没有返回值(void空)
