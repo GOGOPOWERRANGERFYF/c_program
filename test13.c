@@ -1,9 +1,12 @@
 // 带参数的函数
 #include <stdio.h>
-
-//函数声明,返回值类型为void空,声明int类型的参数
+//函数声明:
+//  1.该函数没有返回值(void空)
+//  2.声明int类型的参数
 void while_loop_function(int n);
+//int while_loop_function(int n); 函数返回值类型为int
 
+//主函数,程序入口
 void main(void)
 {
     char c;
