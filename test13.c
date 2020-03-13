@@ -61,5 +61,5 @@ void while_loop_function(int n)
 // while_loop_function(a);
 // 把a的值5赋给n
 //
-// *变量名是函数私有的,所以相同变量名在不同函数中是不冲突的
+// * 变量名(局部变量local variable)是函数私有的,所以相同变量名在不同函数中是不冲突的
 //
