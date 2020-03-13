@@ -164,21 +164,21 @@ void type_conversion_example(void)
     double tce_c = 201.5;
 
     //tce_fb = tce_a;
-    printf("%.2f\n", tce_fb);
-    printf("%.2f\n", tce_fb = 65);
+    printf("tce_fb %%.2f : %.2f\n", tce_fb);
+    printf("tce_fb = 65 %%.2f : %.2f\n", tce_fb = 65);
 
     //赋值表达式语句,表达式求值结果的类型与被赋值变量的类型一致
     //这里是降级(demotion)
     // double 类型转换 int: 同样也是简单粗暴...直接去掉小数部分(包括小数点)就行了...
     tce_a = tce_c;
-    printf("%zd\n", sizeof(tce_a)); 
-    printf("%d\n", tce_a); 
-    printf("%x\n", tce_a); 
-    printf("%ld\n", tce_a);
+    printf("sizeof(tce_a) %%zd : %zd\n", sizeof(tce_a)); 
+    printf("tce_a %%d : %d\n", tce_a); 
+    printf("tce_a %%x : %x\n", tce_a); 
+    printf("tce_a %%ld : %ld\n", tce_a);
 
     tce_ua = tce_b;
-    printf("%u\n", tce_ua);
-    printf("%d\n", tce_ua);
+    printf("tce_ua %%u : %u\n", tce_ua);
+    printf("tce_ua %%d : %d\n", tce_ua);
     return;
 }
 
@@ -208,6 +208,11 @@ void type_conversion_cast_operator(void)
 {
     // 3.3 -> 3 真值的截断(发生在类型转换type conversion)
     // 与计算机存储的数据(binary)的截断不一样(发生在转换说明conversion specification)
+    int tcco_a;
+    tcco_a = 1.6 + 1.7;
+    printf("tcco_a %%d : %d\n", tcco_a);
+    tcco_a = (int)1.6 + (int)1.7;
+    printf("tcco_a %%d : %d\n", tcco_a);
     return;
 }
 
