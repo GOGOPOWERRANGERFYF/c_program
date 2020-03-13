@@ -1,6 +1,7 @@
 // 带参数的函数
 #include <stdio.h>
 
+//函数声明,返回值类型为void空,声明int类型的参数
 void while_loop_function(int n);
 
 void main(void)
