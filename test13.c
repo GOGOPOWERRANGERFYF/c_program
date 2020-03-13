@@ -1,6 +1,6 @@
 // 带参数的函数
 #include <stdio.h>
-//原型(prototype),即函数的声明:
+//原型(prototype),即函数的声明,描述函数的返回值和参数
 //  1.该函数没有返回值(void空)
 //  2.声明int类型的参数
 void while_loop_function(int n);
