@@ -5,7 +5,7 @@
 //原型(prototype),即函数的声明(function declaration),描述函数的返回值和参数
 //  1.该函数没有返回值(void空)
 //  2.声明int类型的参数
-void while_loop_function(int n);
+void while_loop_function(int n); /* 函数原型声明function prototype declaration */
 //int while_loop_function(int n); 函数返回值类型为int
 
 //主函数,程序入口
