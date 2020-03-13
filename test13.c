@@ -8,9 +8,13 @@
 void while_loop_function(int n); /* 函数原型声明function prototype declaration */
 //int while_loop_function(int n); 函数返回值类型为int
 
+//全局变量(global variable)
+int gv_a = 0;
+
 //主函数,程序入口
 void main(void)
 {
+    //局部变量(local variable)
     char c;
     int a;
     float f;
