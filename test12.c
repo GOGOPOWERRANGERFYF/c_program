@@ -206,6 +206,8 @@ void type_conversion_example(void)
 // (cast operator) 强制类型转换运算符.   cast:铸模,模子
 void type_conversion_cast_operator(void)
 {
+    // 3.3 -> 3 真值的截断(发生在类型转换type conversion)
+    // 与计算机存储的数据(binary)的截断不一样(发生在转换说明conversion specification)
     return;
 }
 
