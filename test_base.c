@@ -1,3 +1,4 @@
+//git config --global credential.helper store (github免密码,要先账号密码登陆一次)
 #include <limits.h> /* 提供整数类型大小相关的信息,里面定义了明示常量 具体《c primer plus》P190  */
 #include <float.h>  /* 提供浮点数类型大小相关的信息,里面定义了明示常量 */
 //ascii(american standard code for information interchange):美国信息交换标准代码
