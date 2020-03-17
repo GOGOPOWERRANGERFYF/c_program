@@ -15,7 +15,7 @@ void main(void)
         printf("input integer:");
         status = scanf("%ld", &num);
     }
-    printf("Game Over!");
+    printf("Game Over!\n");
     return;
 }
 
