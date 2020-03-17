@@ -10,10 +10,10 @@ void main(void)
     status = scanf("%ld", &num);
     printf("status: %hu\n", status);
     while (status == 1){
-        printf("sum: %ld\n", num);
         sum = num + sum;
+        printf("sum: %ld\n", num);
         printf("input integer:");
-        scanf("%ld", &num);
+        status = scanf("%ld", &num);
     }
     printf("Game Over!");
     return;
