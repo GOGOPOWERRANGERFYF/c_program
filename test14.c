@@ -11,7 +11,7 @@ void main(void)
     printf("status: %hu\n", status);
     while (status == 1){
         sum = num + sum;
-        printf("sum: %ld\n", num);
+        printf("sum: %ld\n", sum);
         printf("input integer:");
         status = scanf("%ld", &num);
     }
