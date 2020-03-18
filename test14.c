@@ -11,6 +11,9 @@ void main(void)
     printf("input integer:");
     status = scanf("%ld", &num);
     printf("status: %hu\n", status);
+    //该while循环的测试条件(test condition)为如下表达式(expression),也是(full expression)
+    // status == 1 (这表达式结束就是一个序列点sequence point)
+    // == 相等运算符(equality operator)
     while (status == 1){
         sum = num + sum;
         printf("sum: %ld\n", sum);
