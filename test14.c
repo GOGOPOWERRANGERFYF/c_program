@@ -39,8 +39,8 @@ void main(void)
 // statement可以是以分号结束的简单语句,也可以是花括号括起来的复合语句
 //
 // expression都是使用关系表达式,expression的值为非零(真),执行statement部分一次
-// 再判断expression的值是否为0
-// 直到expression值为0(假),循环停止
+// 再判断expression
+// 直到expression值为0(假),循环结束
 // 每次循环都称为一次迭代(iteration)
 //
 
