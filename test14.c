@@ -29,3 +29,6 @@ void main(void)
 // * clang是llvm编译系统(low level virtual machine)的前端
 //   llvm  objdump -d -x86-asm-syntax=intel
 //   与gcc objdump -d -m intel 不相同
+
+// iteration 迭代
+
