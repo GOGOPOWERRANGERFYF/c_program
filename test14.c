@@ -31,4 +31,9 @@ void main(void)
 //   与gcc objdump -d -m intel 不相同
 
 // iteration 迭代
+// multiplexer 多路复用器
+
+
+
+
 
