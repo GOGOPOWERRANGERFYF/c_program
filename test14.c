@@ -33,7 +33,16 @@ void main(void)
 // iteration 迭代
 // multiplexer 多路复用器
 
-
+// while循环的通用形式:
+//     while (expression)        
+//        statement
+// statement可以是以分号结束的简单语句,也可以是花括号括起来的复合语句
+//
+// expression都是使用关系表达式,expression的值为非零,执行statement部分一次
+// 再判断expression的值是否为0
+// 直到expression值为0,循环停止
+// 每次循环都称为一次迭代(iteration)
+//
 
 
 
