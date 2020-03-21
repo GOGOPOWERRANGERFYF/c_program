@@ -59,6 +59,8 @@ void main(void)
 // entry condition 入口(进入)条件
 // while (expression)           这里的expression(表达式)是一个入口条件
 // 必须满足条件才会进入循环体
+// infinite loop 无限循环
+
 
 
 
