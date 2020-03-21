@@ -1,7 +1,7 @@
 #include <stdio.h>
 int while_null_statement(void);
 //scanf()函数返回值,读取成功返回1,读取失败返回0
-void main(void)
+int main(void)
 {
     //这里用long int类型常量(constant)0L,
     //用0其实也没问题(int类型常量0会隐式转换为long int)
@@ -26,7 +26,7 @@ void main(void)
     }
     while_null_statement();
     printf("Game Over!\n");
-    return;
+    return 0;
 }
 
 // 数学小知识点:
@@ -74,9 +74,10 @@ void main(void)
 //
 int while_null_statement(void)
 {
-    int num;
-    while (scanf("%d", &num) == 1)
-    ;
+    char char_a;
+    while (scanf("%c", &char_a) == 1)
+    // %c scanf函数的conversion specification会读取键盘的enter字符
+        printf("printf function flag %c; ", char_a);
     return 0;
 }
 
