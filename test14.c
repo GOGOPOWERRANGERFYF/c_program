@@ -61,7 +61,15 @@ void main(void)
 // 必须满足条件才会进入循环体
 // infinite loop 无限循环
 
-
+// 1.
+// while (n < 3);
+// 2.
+// while (n < 3)
+// ;
+//
+// 测试条件后面的语句
+// ; null statement空语句
+//
 
 
 
