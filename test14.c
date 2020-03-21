@@ -1,4 +1,5 @@
 #include <stdio.h>
+int while_null_statement(void);
 //scanf()函数返回值,读取成功返回1,读取失败返回0
 void main(void)
 {
@@ -23,6 +24,7 @@ void main(void)
         printf("input integer:");
         status = scanf("%ld", &num);
     }
+    while_null_statement();
     printf("Game Over!\n");
     return;
 }
@@ -66,15 +68,15 @@ void main(void)
 // 2.
 // while (n < 3)
 // ;
-//
+// 推荐用第二种方式
 // 测试条件后面的语句
 // ; null statement空语句
 //
-
-
-
-
-
-
-
+int while_null_statement(void)
+{
+    int num;
+    while (scanf("%d", &num) == 1)
+    ;
+    return 0;
+}
 
