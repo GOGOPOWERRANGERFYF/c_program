@@ -33,6 +33,9 @@ void main(void)
 // = 100000 - 1001
 // =  10111
 // 假设位宽为4bit,结果为0111
+// B2T(0111)= 7
+// B2T(10111)= -16 + 7 = -8  最高位位权 -2^4
+// 7 + (-2^4) = 8
 //
 // * clang是llvm编译系统(low level virtual machine)的前端
 //   llvm  objdump -d -x86-asm-syntax=intel
