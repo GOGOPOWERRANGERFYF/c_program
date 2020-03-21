@@ -56,5 +56,13 @@ void main(void)
 // 每次循环都称为一次迭代(iteration)
 //
 
+// entry condition 入口(进入)条件
+// while (expression)           这里的expression(表达式)是一个入口条件
+
+
+
+
+
+
 
 
