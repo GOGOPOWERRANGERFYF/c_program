@@ -72,7 +72,8 @@ int main(void)
 // 测试条件后面的语句
 // ; null statement空语句
 //
-// enter ascii 13
+// 换行 ascii 10
+// 回车 ascii 13
 // q ascii 113
 int while_null_statement(void)
 {
@@ -80,12 +81,12 @@ int while_null_statement(void)
     // char,short类型自动转换为int
     scanf("%c", &var);
     printf("%c\n", var);
-    // while (scanf("%c", &char_a) == 1){
-    //     scanf("%c", &var);
-    //     printf("%hd\n", var);
-    //     //%c scanf函数的conversion specification会读取键盘的enter字符
-    //     printf("printf function flag %c;", char_a);
-    // }
+    //%c scanf函数的conversion specification会读取键盘的enter字符
+    while (scanf("%c", &char_a) == 1){
+        printf("enter: %hd;", char_a);
+        scanf("%c", &var);
+        printf("%hd\n", var);
+    }
     return 0;
 }
 
