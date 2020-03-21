@@ -17,6 +17,7 @@ void main(void)
     // status == 1 status是否等于1
     // status = 1  赋值1给变量status
     while (status == 1){
+    //只有对测试条件求值时,才决定继续还是终止循环
         sum = num + sum;
         printf("sum: %ld\n", sum);
         printf("input integer:");
