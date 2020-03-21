@@ -73,6 +73,7 @@ int main(void)
 // ; null statement空语句
 //
 // enter ascii 13
+// q ascii 113
 int while_null_statement(void)
 {
     char var, char_a;
