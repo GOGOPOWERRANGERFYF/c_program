@@ -26,6 +26,14 @@ void main(void)
     return;
 }
 
+// 数学小知识点:
+//    -1000 - 0001 = -1001  
+//    减去一个数,加上它的二补数
+// =  10000 - 1000 + 10000 - 0001    
+// = 100000 - 1001
+// =  10111
+// 假设位宽为4bit,结果为0111
+//
 // * clang是llvm编译系统(low level virtual machine)的前端
 //   llvm  objdump -d -x86-asm-syntax=intel
 //   与gcc objdump -d -m intel 不相同
