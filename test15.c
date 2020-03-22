@@ -49,6 +49,8 @@ int true_value(void)
 // 在C中,所有非零值为真,0为假,表达式都有一个值,函数大部分都有返回值
 
 
+// C99新增_Bool类型   
+// 表示真或假的变量称为布尔变量(boolean variable)
 
 
 
