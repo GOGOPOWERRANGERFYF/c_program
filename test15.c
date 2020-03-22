@@ -8,7 +8,7 @@ int main(void)
     double double_input;
     true_value();
     //while循环经常依赖测试表达式作比较,
-    //这样的表达式被称为关系表达式(relational expression)
+    //一般常用的表达式为关系表达式(relational expression)
     //出现在关系表达式中的运算符被称为关系运算符(relational operator)
     // <c primer plus第六版> P328 表6.1 关系运算符
     // absolute value 绝对值
@@ -28,8 +28,8 @@ int main(void)
 //      printf("q\n");
 //  }
 //  测试表达式q的值为真1
-//*在C中,所有非零值都为真(1),只有0被视为假,表达式一定有一个值(这句话是核心,重点)
 //关系表达式为真,求值为1;关系表达式为假,求值为0
+// * 在C中,所有非零值都为真(1),只有0被视为假,表达式一定有一个值(这句话是核心,重点)
 
 int true_value(void)
 {
