@@ -10,6 +10,7 @@ int main(void)
     // <c primer plus第六版> P328 表6.1 关系运算符
     // absolute value 绝对值
     scanf("%lf", &double_input);
+    // fabs函数,返回值为浮点数的绝对值
     // double_input和PI的差的绝对值小于等于0.0001,while循环才会结束
     while (fabs(double_input - PI) > 0.0001){
         printf("No! input again: ");
