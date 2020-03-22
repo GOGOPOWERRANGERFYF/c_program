@@ -39,3 +39,6 @@ int true_value(void)
     return 0;
 }
 
+// == 关系相等运算符;
+// =  赋值运算符
+
