@@ -80,12 +80,12 @@ int while_null_statement(void)
     char var, char_a;
     // char,short类型自动转换为int
     scanf("%c", &var);
-    printf("%c\n", var);
+    printf("c_0: %hd\n", var);
     //%c scanf函数的conversion specification会读取键盘的enter字符
     while (scanf("%c", &char_a) == 1){
-        printf("enter: %hd;", char_a);
+        printf("c_1: %hd;\n input: ", char_a);
         scanf("%c", &var);
-        printf("%hd\n", var);
+        printf("c_2: %hd\n", var);
     }
     return 0;
 }
