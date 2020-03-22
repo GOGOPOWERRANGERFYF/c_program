@@ -72,6 +72,10 @@ int main(void)
 // 测试条件后面的语句
 // ; null statement空语句
 //
+// *不同系统对回车的处理是不同的:
+//    1. windows /r/n   ascii(decimal): 13 10
+//    2. linux   /n     ascii(decimal): 10
+//    3. mac     运行下面这段代码可得出结果,跟inux一样的
 // 换行 ascii 10
 // 回车 ascii 13
 // q ascii 113
