@@ -27,9 +27,23 @@ int bool_variable(void)
     // 包含了该头文件后,代码可以与C++兼容,true和false,bool为c++的关键字
     bool a;
     int b;
+    //
+    // 1. 精简写法:
     while (scanf("%d", &b)){
         printf("true\n");
     }
+    // 2. 非常啰嗦写法...
+    //a = scanf("%d", &b) == 1;
+    //while (a){
+    //    printf("true\n");
+    //    a = scanf("%d", &b) == 1;
+    //}
+    // 3. 啰嗦写法...
+    //a = scanf("%d", &b);
+    //while (a){
+    //    printf("true\n");
+    //    a = scanf("%d", &b);
+    //}
     printf("false\n");
     return 0;
 }
