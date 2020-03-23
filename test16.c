@@ -56,6 +56,6 @@ int bool_variable(void)
     return 0;
 }
 
-// precedence of relational operators
-// 关系运算符优先级
-//
+// precedence of relational operators(关系运算符优先级)
+// 关系运算符优先级比算术运算符低,比赋值运算符高
+// 
