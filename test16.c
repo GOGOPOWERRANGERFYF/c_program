@@ -58,4 +58,5 @@ int bool_variable(void)
 
 // precedence of relational operators(关系运算符优先级)
 // 关系运算符优先级比算术(arithmetic)运算符低,比赋值运算符高
+// 优先级高的先结合
 // 
