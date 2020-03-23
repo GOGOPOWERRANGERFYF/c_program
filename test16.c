@@ -51,6 +51,7 @@ int bool_variable(void)
     //    printf("true\n");
     //    a = scanf("%d", &b);
     //}
+    //越啰嗦,可读性越高,但写起来确实啰嗦啊...
     printf("false\n");
     return 0;
 }
