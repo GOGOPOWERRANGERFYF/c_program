@@ -33,12 +33,19 @@ int bool_variable(void)
         printf("true\n");
     }
     // 2. 非常啰嗦写法...
+    // 不用小括号, ==运算符优先级也比=高
+    //a = (scanf("%d", &b) == 1);
+    //while (a){
+    //    printf("true\n");
+    //    a = scanf("%d", &b) == 1;
+    //}
+    // 3. 很啰嗦写法...
     //a = scanf("%d", &b) == 1;
     //while (a){
     //    printf("true\n");
     //    a = scanf("%d", &b) == 1;
     //}
-    // 3. 啰嗦写法...
+    // 4. 啰嗦写法...
     //a = scanf("%d", &b);
     //while (a){
     //    printf("true\n");
