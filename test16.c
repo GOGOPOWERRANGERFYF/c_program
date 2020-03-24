@@ -87,9 +87,11 @@ int for_loop(void)
 {
     int a;
     // a = 1; 初始化只会在循环开始时执行一次
+    // for循环圆括号中的表达式也叫控制表达式,它们都是完整表达式
     for (a = 1; a <= 5; a++){
-        printf("%d\n", a);
+        printf("for loop: %d\n", a);
     }
+    printf("out of for loop, a: %d\n", a);
     return 0;
 }
 
