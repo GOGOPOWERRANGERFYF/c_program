@@ -5,6 +5,7 @@
 // _Bool类型变量只能储存1(真)或0(假)
 // 把非零值赋给_Bool类型变量是,该变量会被设置为1(这反映C把所有非零值视为真)
 int bool_variable(void);
+int for_loop(void);
 
 int main(void)
 {
@@ -17,6 +18,7 @@ int main(void)
     printf("e = \"abcd\": %2d\n", d);
 
     bool_variable();
+    for_loop();
     return 0;
 }
 
@@ -78,7 +80,12 @@ int bool_variable(void)
 // 2.计数循环(counting loop) 循环之前就知道要循环多少次
 //  (1) 计数器初始化
 //  (2) 测试条件(与有限值比较)
-//  (3) 计数器递增
+//  (3) 计数器递增(更新)
 
+//for循环可以把上述3个行为(初始化,测试,递增[更新])组合在一起
+int for_loop(void)
+{
 
+    return 0;
+}
 
