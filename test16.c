@@ -120,6 +120,7 @@ int for_loop_nine_methods(void)
         printf("character: %c, ASCII(decimal): %d\n", c, c);
     }
     // 上面三条测试条件都是测试迭代(iteration)次数 
+    // 还可以测试其他条件,例如 n * n < 100,测试限制n的平方的大小
     return 0;
 }
 
