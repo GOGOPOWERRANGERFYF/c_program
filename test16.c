@@ -71,3 +71,7 @@ int bool_variable(void)
 //      statement                         
 // statement可以是简单语句,也可以是复合语句(花括号括起来)
 // expression部分为假或0前,重复执行statement部分
+
+// <c primer plus> P343
+// 不确定循环(indefinite loop)
+// 计数循环(counting loop)
