@@ -91,6 +91,7 @@ int for_loop(void)
     for (a = 1; a <= 5; a++){
         printf("for loop: %d\n", a);
     }
+    // 由此可看出,a <= 5表达式为假0,循环结束,后面的a++表达式不执行
     printf("out of for loop, a: %d\n", a);
     return 0;
 }
