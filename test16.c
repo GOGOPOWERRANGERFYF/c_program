@@ -66,4 +66,7 @@ int bool_variable(void)
 // 与其他大多数运算符一样,关系运算符的结合律也是从左到右 
 // <c primer plus> P340 表6.2 运算符优先级
 
-
+// while语句是一种入口条件循环
+// while (test expression/test condition)
+//      statement                         
+// statement可以是简单语句,也可以是复合语句(花括号括起来)
