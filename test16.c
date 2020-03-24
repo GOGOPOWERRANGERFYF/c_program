@@ -86,6 +86,7 @@ int bool_variable(void)
 int for_loop(void)
 {
     int a;
+    // a = 1; 初始化只会在循环开始时执行一次
     for (a = 1; a <= 5; a++){
         printf("%d\n", a);
     }
