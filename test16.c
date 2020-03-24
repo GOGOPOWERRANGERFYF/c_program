@@ -6,6 +6,7 @@
 // 把非零值赋给_Bool类型变量是,该变量会被设置为1(这反映C把所有非零值视为真)
 int bool_variable(void);
 int for_loop(void);
+int for_loop_nine_methods(void);
 
 int main(void)
 {
@@ -19,6 +20,7 @@ int main(void)
 
     bool_variable();
     for_loop();
+    for_loop_nine_methods();
     return 0;
 }
 
@@ -99,4 +101,15 @@ int for_loop(void)
     printf("out of for loop, a: %d\n", a);
     return 0;
 }
+
+int for_loop_nine_methods(void)
+{
+    int n;
+    // for循环 控制表达式
+    for (n = 5; n >= 0; n--){
+        printf("decrement counter n-- : %d\n", n);
+    } 
+    return 0;
+}
+
 
