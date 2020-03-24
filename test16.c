@@ -85,7 +85,10 @@ int bool_variable(void)
 //for循环可以把上述3个行为(初始化,测试,递增[更新])组合在一起
 int for_loop(void)
 {
-
+    int a;
+    for (a = 1; a <= 5; a++){
+        printf("%d\n", a);
+    }
     return 0;
 }
 
