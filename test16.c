@@ -86,8 +86,9 @@ int bool_variable(void)
 int for_loop(void)
 {
     int a;
-    // a = 1; 初始化只执行一次(once)
+    // a = 1; 初始化只执行一次(once),循环开始前
     // for循环圆括号中的表达式也叫控制表达式,它们都是完整表达式
+    // a++循环结束时求值
     for (a = 1; a <= 5; a++){
         printf("for loop: %d\n", a);
     }
