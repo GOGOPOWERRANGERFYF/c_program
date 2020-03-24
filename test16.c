@@ -73,5 +73,9 @@ int bool_variable(void)
 // expression部分为假或0前,重复执行statement部分
 
 // <c primer plus> P343
-// 不确定循环(indefinite loop) while测试表达式为假0之前,不确定要循环多少次
-// 计数循环(counting loop) 循环之前就知道要循环多少次
+// 1.不确定循环(indefinite loop) while测试表达式为假0之前,不确定要循环多少次
+//
+// 2.计数循环(counting loop) 循环之前就知道要循环多少次
+//  (1) 计数器初始化
+//  (2) 测试条件(与有限值比较)
+//  (3) 计数器递增
