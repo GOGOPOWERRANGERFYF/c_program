@@ -115,7 +115,7 @@ int for_loop_nine_methods(void)
     for (n = 5; n <= 10; n = n + 2){
         printf("increment counter n = n + 2 : %d\n", n);
     }
-    // 可以字符代替数字计数,(该程序能正常运行,是因为字符在计算机内部以二进制数存储)
+    // 可以用字符代替数字计数,(该程序能正常运行,是因为字符在计算机内部跟数字一样以二进制数存储)
     for (c = 'a'; c <= 'z'; c++){
         printf("character: %c, ASCII(decimal): %d\n", c, c);
     } 
