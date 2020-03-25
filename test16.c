@@ -151,6 +151,7 @@ int for_loop_nine_methods(void)
         m++;
         printf("OK_2!\n");
     }
+
     return 0;
 }
 // *** for循环控制表达式总结(核心知识点,遵循一下三点原则):
@@ -163,5 +164,9 @@ int for_loop_nine_methods(void)
 //     1表达式 可以放在for语句前进行初始化
 //     2表达式 空语句值一直为真
 //     3表达式 可以放循环体内
+
+// 个人总结(while和for的区别):
+//      while (测试条件test condition)
+//      for (控制表达式,三个表达式) 
 
 
