@@ -108,7 +108,7 @@ int for_loop_nine_methods(void)
     int n, m = 2;
     //int n, m;
     char c;
-    double e, f;
+    double f;
     // for循环 控制表达式   n--,n=n-2,n=n-10也可以,根据需求
     for (n = 5; n >= 0; n--){
         printf("decrement counter n-- : %d\n", n);
@@ -138,7 +138,7 @@ int for_loop_nine_methods(void)
     }
     printf("%d\n", n);
     // for循环的控制表达式,三个表达式可以使用不同的变量
-    for (n = 1, f = 1.0; e <= 5.0; e = 2 * n * f){
+    for (n = 1, f = 1.0; f <= 5.0; f = 2 * n * f){
         printf("OK_1!\n");
     }
 
