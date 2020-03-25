@@ -124,7 +124,7 @@ int for_loop_nine_methods(void)
     // 还可以测试其他条件,例如 n * n < 100,测试限制n的平方的大小
     // 递增的量可以算术增长,也可以几何增长
     for (f = 1.0; f <= 10.0; f = f * 1.2){
-        printf("f * 1.2 : %f\n", f);
+        printf("f * 1.2 : %.13f\n", f);
     }
 
     return 0;
