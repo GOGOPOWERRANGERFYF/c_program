@@ -131,7 +131,7 @@ int for_loop_nine_methods(void)
     // for (x = 1; y <= 50; y = ++x * 2 + 5)
     // 这里可以这么理解,计数器x的代数计算的值赋值给y,对y作测试
     // 可以正常运行,但编程风格不好
-    for (n = 1; n <= 5){
+    for (n = 1; n <= 5;){
         n = n + 2;
     }
     printf("%d\n", n);
