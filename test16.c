@@ -107,6 +107,7 @@ int for_loop_nine_methods(void)
 {
     int n;
     char c;
+    double f;
     // for循环 控制表达式   n--,n=n-2,n=n-10也可以,根据需求
     for (n = 5; n >= 0; n--){
         printf("decrement counter n-- : %d\n", n);
@@ -119,8 +120,13 @@ int for_loop_nine_methods(void)
     for (c = 'a'; c <= 'z'; c++){
         printf("character: %c, ASCII(decimal): %d\n", c, c);
     }
-    // 上面三条测试条件都是测试迭代(iteration)次数 
+    // 上面三条测试条件都是测试 迭代(iteration)次数(控制循环次数) 
     // 还可以测试其他条件,例如 n * n < 100,测试限制n的平方的大小
+    // 递增的量可以算术增长,也可以几何增长
+    for (f = 1.0; f <= 10.0; f = f * 1.2){
+        printf("f * 1.2 : %f\n", f);
+    }
+
     return 0;
 }
 
