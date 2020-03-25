@@ -126,6 +126,7 @@ int for_loop_nine_methods(void)
     for (f = 1.0; f <= 10.0; f = f * 1.2){
         printf("f * 1.2 : %.13f\n", f);
     }
+    // 第三个表达式可以使用任何合法的表达式,无论是什么表达式,每次迭代都会更新该表达式的值
 
     return 0;
 }
