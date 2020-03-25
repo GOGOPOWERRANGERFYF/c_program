@@ -173,6 +173,7 @@ int for_loop_nine_methods(void)
 // 个人总结(while和for的区别):
 //      while (测试条件test condition)
 //      for (控制表达式,三个表达式) 
+//      while和for都是入口条件循环(entry condition loop)
 //
 //  while: 1.不确定循环; (程序运行完成前无法确定循环迭代次数)
 //         2.计数循环;   (程序运行前就可知循环迭代次数,计数循环一般用for)
@@ -182,6 +183,14 @@ int for_loop_nine_methods(void)
 //  计数器初始化可以在for语句前,只在for循环前执行一次
 //  计数器更新可以在循环体内,迭代一次,执行一次;在控制表达式,循环迭代结束一次,执行一行
 //  测试条件为空语句,值为真
+
+// 形式:
+//  for (initialize; test; update)
+//      statement
+//
+//  initialize 初始化    (计数器初始化)
+//  test       测试      (测试条件)
+//  update     更新      (计数器更新)
 
 
 
