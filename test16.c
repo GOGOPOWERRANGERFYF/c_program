@@ -127,6 +127,8 @@ int for_loop_nine_methods(void)
         printf("f * 1.2 : %.13f %a\n", f, f);
     }
     // 第三个表达式可以使用任何合法的表达式,无论是什么表达式,每次迭代都会更新该表达式的值
+    // int y = 10;
+    // for (x = 1; y <= 50; y = ++x * 2 + 5)
 
     return 0;
 }
