@@ -191,6 +191,7 @@ int for_loop_nine_methods(void)
 //      statement
 //
 //  initialize 初始化    (计数器初始化)
+//  initialize表达式在for循环迭代之前值执行一次
 //  test       测试      (测试条件)
 //  update     更新      (计数器更新)
 int for_example(void)
