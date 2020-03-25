@@ -168,5 +168,12 @@ int for_loop_nine_methods(void)
 // 个人总结(while和for的区别):
 //      while (测试条件test condition)
 //      for (控制表达式,三个表达式) 
+//
+//  while: 1.不确定循环; (程序运行完成前无法确定循环迭代次数)
+//         2.计数循环;   (程序运行前就可知循环迭代次数,计数循环一般用for)
+
+
+
+
 
 
