@@ -7,6 +7,7 @@
 int bool_variable(void);
 int for_loop(void);
 int for_loop_nine_methods(void);
+int for_example(void);
 
 int main(void)
 {
@@ -21,6 +22,7 @@ int main(void)
     bool_variable();
     for_loop();
     for_loop_nine_methods();
+    for_example();
     return 0;
 }
 
@@ -191,7 +193,16 @@ int for_loop_nine_methods(void)
 //  initialize 初始化    (计数器初始化)
 //  test       测试      (测试条件)
 //  update     更新      (计数器更新)
-
+int for_example(void)
+{
+    int x;
+    //三个控制表达式
+    for (x = 1; x < 1; x++){
+       printf("OK");
+    }
+    printf("%d\n", x);
+    return 0;
+}
 
 
 
