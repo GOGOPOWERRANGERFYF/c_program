@@ -251,7 +251,7 @@ int comma_operator(void)
     printf("x: %d\n", x);
     return 0;
     //逗号运算符(comma operator),当作一个序列点(sequence point)
-    //逗号运算符的运算符级别是C所有运算符里最低的(google查的...)
+    //逗号运算符的运算符优先级是C所有运算符里最低的(google查的...)
 }
 // *逗号也可用作分隔符,不是逗号运算符,例如在变量声明和函数参数列表中的逗号就是分隔符
 
