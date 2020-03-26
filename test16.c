@@ -241,6 +241,7 @@ int comma_operator(void)
     x = (y = 3, (z = ++y + 2) + 5);
     printf("%d\n", x);
     return 0;
+    //个人结论:逗号运算符(comma operator)的运算优先级只比圆括号低
 }
 // *逗号也可用作分隔符,不是逗号运算符,例如在变量声明和函数参数列表中的逗号就是分隔符
 
