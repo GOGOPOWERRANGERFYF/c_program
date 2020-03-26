@@ -8,6 +8,7 @@ int bool_variable(void);
 int for_loop(void);
 int for_loop_nine_methods(void);
 int for_example(void);
+int comma_operator(void);
 
 int main(void)
 {
@@ -23,6 +24,7 @@ int main(void)
     for_loop();
     for_loop_nine_methods();
     for_example();
+    comma_operator();
     return 0;
 }
 
@@ -217,11 +219,22 @@ int for_example(void)
 // 1.组合形式的赋值运算符让代码更紧凑
 // 2.与一般形式相比,这些组合形式的赋值运算符生成的机器代码更高效
 
-// 逗号运算符 ,
+// 逗号运算符(comma) ,
 // 逗号运算符并不局限于for循环使用(声明和初始化多个变量时也有用)
 // 逗号运算符的两个性质:
 //  1.保证了被它分隔的表达式从左到右求值
 //    (换言之,逗号是一个序列点sequence point,左侧项的所有副作用side effect在执行右侧项之前发生)
 //    n++, n * 2;    左侧子表达式,右侧子表达式
 //  2.整个逗号表达式的值是右侧项的值
-//
+int comma_operator(void)
+{
+    int a;
+    //逗号comma表达式的值是右侧(项/表达式)的值
+    a = (5,6);
+    printf("%d\n", a);
+    //逗号运算符(comma operator)的运算优先级比=赋值运算符低
+    a = 5,6;
+    printf("%d\n", a);
+    return 0;
+}
+
