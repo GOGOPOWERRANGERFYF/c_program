@@ -240,6 +240,10 @@ int comma_operator(void)
     //逗号运算符,整个逗号表达式的值是右侧项的值
     x = (y = 3, (z = ++y + 2) + 5);
     printf("%d\n", x);
+    //逗号运算符,整个逗号表达式,两个子表达式(subexpression)
+    //整个逗号表达式的值等于逗号右边的子表达式的值
+    x = y = 3, (z = ++y + 2) + 5;
+    printf("%d\n", x);
     return 0;
     //逗号运算符(comma operator),当作一个序列点(sequence point)
 }
