@@ -228,13 +228,16 @@ int for_example(void)
 //  2.整个逗号表达式的值是右侧项的值
 int comma_operator(void)
 {
-    int a;
+    int a, x, y, z;
     //逗号comma表达式的值是右侧(项/表达式)的值
     a = (5,6);
     printf("%d\n", a);
     //先执行赋值表达式,右侧子表达式什么也没做(实际在计算机内部有没有做还要看汇编代码)
     a = 5,6;
     printf("%d\n", a);
+
+    x = (y = 3, (z = ++y + 2) + 5);
+    printf("%d\n", x);
     return 0;
 }
 // *逗号也可用作分隔符,例如在变量声明和函数参数列表中的逗号就是分隔符
