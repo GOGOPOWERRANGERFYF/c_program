@@ -233,6 +233,7 @@ int comma_operator(void)
     a = (5,6);
     printf("%d\n", a);
     //逗号运算符(comma operator)的运算优先级比=赋值运算符低
+    //先执行赋值表达式,右侧子表达式什么也没做(实际在计算机内部有没有做还要看汇编代码)
     a = 5,6;
     printf("%d\n", a);
     return 0;
