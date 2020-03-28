@@ -274,11 +274,11 @@ int comma_operator(void)
 
 // 入口条件循环 entry condition loop   
 // while for
-// 循环每次迭代前检查测试条件 
+// 循环每次迭代前检查(执行)测试条件 
 
 // 出口条件循环 exit condition loop
 // 出口条件循环 do while
-// 循环的每次迭代之后检查测试条件
+// 循环的每次迭代之后检查(执行)测试条件
 // do
 // {
 //    statement  
