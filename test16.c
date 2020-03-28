@@ -9,6 +9,7 @@ int for_loop(void);
 int for_loop_nine_methods(void);
 int for_example(void);
 int comma_operator(void);
+int exit_condition_loop(void);
 
 int main(void)
 {
@@ -25,6 +26,7 @@ int main(void)
     for_loop_nine_methods();
     for_example();
     comma_operator();
+    exit_condition_loop();
     return 0;
 }
 
@@ -278,5 +280,15 @@ int comma_operator(void)
 // 出口条件循环 do while
 // 循环的每次迭代之后检查测试条件
 
-
+int exit_condition_loop(void)
+{
+    int a = 1;
+    do
+    {
+        printf("exit condition loop: %d\n", a);
+        a++;
+    } while (a <= 5);
+    printf("exit loop: %d\n", a);
+    return 0;
+}
 
