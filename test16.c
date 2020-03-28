@@ -296,3 +296,15 @@ int exit_condition_loop(void)
     return 0;
 }
 
+//入口条件循环用for或while都可以:
+// 让for像while一样
+// for ( ;test; ) 与 while (test) 效果相同
+//
+// 让while像for一样
+// 计数器初始化;
+// while (测试条件) {
+//  循环体;
+//  计数器更新;
+// }
+// 与 for (计数器初始化;测试条件;计数器更新) 循环效果相同
+//
