@@ -309,4 +309,5 @@ int exit_condition_loop(void)
 // 与 for (计数器初始化;测试条件;计数器更新) 循环效果相同
 // 具体看<c primer plus第六版> P372,觉得有点啰嗦,懒得做笔记...
 // 我个人总结的话: while适合不确定循环,for适合计数循环
+// do while 适合先执行一次循环的迭代,再执行测试条件
 
