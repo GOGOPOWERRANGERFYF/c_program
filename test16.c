@@ -275,7 +275,8 @@ int comma_operator(void)
 // 循环每次迭代前检查测试条件 
 
 // 出口条件循环 exit condition loop
-
 // 出口条件循环 do while
+// 循环的每次迭代之后检查测试条件
+
 
 
