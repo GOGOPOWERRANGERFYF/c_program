@@ -319,9 +319,11 @@ int nested_loop(void)
 {
     int m;
     char c;
+    // outer loop 外层循环
     for (m = 0; m <= 5; m++){
         // loop body
         printf("row %d: ", m);
+        // inner loop 内层循环
         for(c = 'a'; c <= 'z'; c++){
             // nested loop body
             printf("%c", c);
