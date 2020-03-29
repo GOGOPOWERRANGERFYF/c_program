@@ -332,5 +332,6 @@ int nested_loop(void)
     }
     return 0;
 }
+// 嵌套循环(nested loop)中,外层循环(outer loop)每迭代一次,内层循环(inner loop)迭代到测试条件为假0为止
 
 
