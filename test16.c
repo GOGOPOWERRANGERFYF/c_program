@@ -320,7 +320,7 @@ int nested_loop(void)
     int m;
     char c;
     for (m = 0; m <= 5; m++){
-        // body
+        // loop body
         printf("row %d: ", m);
         for(c = 'a'; c <= 'z'; c++){
             // nested loop body
