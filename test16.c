@@ -10,6 +10,7 @@ int for_loop_nine_methods(void);
 int for_example(void);
 int comma_operator(void);
 int exit_condition_loop(void);
+int nested_loop(void);
 
 int main(void)
 {
@@ -27,6 +28,7 @@ int main(void)
     for_example();
     comma_operator();
     exit_condition_loop();
+    nested_loop();
     return 0;
 }
 
@@ -313,3 +315,20 @@ int exit_condition_loop(void)
 
 // nested loop 嵌套循环
 // 指在一个循环内包含另一个循环
+int nested_loop(void)
+{
+    int m;
+    char c;
+    for (m = 0; m <= 5; m++){
+        // body
+        printf("row %d: ", m);
+        for(c = 'a'; c <= 'z'; c++){
+            // nested loop body
+            printf("%c", c);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
