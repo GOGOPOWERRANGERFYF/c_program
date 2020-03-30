@@ -11,6 +11,7 @@ int for_example(void);
 int comma_operator(void);
 int exit_condition_loop(void);
 int nested_loop(void);
+int nested_loop_other(void);
 
 int main(void)
 {
@@ -29,6 +30,7 @@ int main(void)
     comma_operator();
     exit_condition_loop();
     nested_loop();
+    nested_loop_other();
     return 0;
 }
 
@@ -333,5 +335,20 @@ int nested_loop(void)
     return 0;
 }
 // 嵌套循环(nested loop)中,外层循环(outer loop)每迭代一次,内层循环(inner loop)迭代到测试条件为假0为止
+
+int nested_loop_other(void)
+{
+    int m;
+    char c;
+    // 三个控制表达式
+    for (m = 0; m <= 5; m++){
+        for (c = 'A' + m; c <= 'F'; c++ ){
+            printf("%c", c);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
 
 
