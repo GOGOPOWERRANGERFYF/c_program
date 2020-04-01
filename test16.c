@@ -352,5 +352,5 @@ int nested_loop_other(void)
     return 0;
 }
 
-
+// array数组,是按顺序存储的一系列类型相同的值
 
