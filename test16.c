@@ -364,7 +364,10 @@ int nested_loop_other(void)
 // 数组的类型可以是任意数据类型
 int array(void)
 {
+    // 声明int类型数组
     int a[9];
+    // 声明char类型数组
+    char c[9];
     a[0] = 15;
     printf("%d\n", a[0]);
     return 0;
