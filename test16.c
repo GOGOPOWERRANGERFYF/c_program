@@ -355,6 +355,7 @@ int nested_loop_other(void)
 // array数组,是按顺序存储的一系列类型相同的值
 // 整个数组有一个数组名
 // 通过整数下标(subscript)访问单独的项(item)或元素(element)
+// 下标(subscript)必须是整数
 // 编译器不会检测数组下标的错误
 // int a[10];   声明可储存10个int类型整数的数组
 // a[0] = 10;   数组下标(subscript)从0开始
