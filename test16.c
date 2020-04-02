@@ -12,6 +12,7 @@ int comma_operator(void);
 int exit_condition_loop(void);
 int nested_loop(void);
 int nested_loop_other(void);
+int array(void);
 
 int main(void)
 {
@@ -31,6 +32,7 @@ int main(void)
     exit_condition_loop();
     nested_loop();
     nested_loop_other();
+    array();
     return 0;
 }
 
@@ -360,7 +362,13 @@ int nested_loop_other(void)
 // a[0] = 10;   数组下标(subscript)从0开始
 // a[15] = 10;  数据还是会被存放,有可能会导致程序异常中断
 // 数组的类型可以是任意数据类型
-
+int array(void)
+{
+    int a[9];
+    a[0] = 15;
+    printf("%d\n", a[0]);
+    return 0;
+}
 
 
 
