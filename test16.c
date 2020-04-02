@@ -354,7 +354,7 @@ int nested_loop_other(void)
 
 // array数组,是按顺序存储的一系列类型相同的值
 // 整个数组有一个数组名
-// 通过整数下标(subscript)访问单独的项(iterm)或元素(element)
+// 通过整数下标(subscript)访问单独的项(item)或元素(element)
 //
 
 
