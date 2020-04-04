@@ -394,7 +394,7 @@ int for_array_average(void)
         printf("%d ", score[subscript]);
     }
     printf("\n");
-    printf("%.2f\n", sum/5.0);
+    printf("average: %.2f\n", sum/5.0);
     return 0;
 }
 
