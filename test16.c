@@ -13,6 +13,7 @@ int exit_condition_loop(void);
 int nested_loop(void);
 int nested_loop_other(void);
 int array(void);
+int for_array_average(void);
 
 int main(void)
 {
@@ -33,6 +34,7 @@ int main(void)
     nested_loop();
     nested_loop_other();
     array();
+    for_array_average();
     return 0;
 }
 
@@ -45,9 +47,9 @@ int bool_variable(void)
     int b;
     printf("input decimal number:\n");
     // 1. 精简写法:
-    while (scanf("%d", &b)){
-        printf("true\n");
-    }
+    //while (scanf("%d", &b)){
+    //    printf("true\n");
+    //}
     // 2. 非常啰嗦写法...
     // 不用小括号, ==运算符优先级也比=高
     //a = (scanf("%d", &b) == 1);
@@ -373,5 +375,21 @@ int array(void)
     return 0;
 }
 
-
-
+int for_array_average(void)
+{
+    int subscript, score[5];
+    double sum = 0;
+    
+    printf("input 5 scores:\n");
+    for (subscript = 0; subscript < 5; subscript++){
+        scanf("%d", &score[subscript]);
+        sum += score[subscript];
+    }
+    
+    printf("scores: ");
+    for (subscript = 0; subscript < 5; subscript++){
+        printf("%d ", score[subscript]);
+    }
+    printf("\n");
+    return 0;
+}
