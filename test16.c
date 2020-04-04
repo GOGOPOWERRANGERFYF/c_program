@@ -45,11 +45,12 @@ int bool_variable(void)
     // 包含了该头文件后,代码可以与C++兼容,true和false,bool为c++的关键字
     bool a;
     int b;
+    char c;
     printf("input decimal number:\n");
     // 1. 精简写法:
-    //while (scanf("%d", &b)){
-    //    printf("true\n");
-    //}
+    while (scanf("%d", &b)){
+        printf("true\n");
+    }
     // 2. 非常啰嗦写法...
     // 不用小括号, ==运算符优先级也比=高
     //a = (scanf("%d", &b) == 1);
@@ -70,7 +71,8 @@ int bool_variable(void)
     //    a = scanf("%d", &b);
     //}
     //越啰嗦,可读性越高,但写起来确实啰嗦啊...
-    printf("false\n");
+    scanf("%c", &c);
+    printf("false! %d\n", c);
     return 0;
 }
 
