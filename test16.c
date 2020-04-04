@@ -385,6 +385,7 @@ int for_array_average(void)
     printf("input 5 scores:\n");
     for (subscript = 0; subscript < 5; subscript++){
         scanf("%d", &score[subscript]);
+        //隐式转换 int --> double
         sum += score[subscript];
     }
     
@@ -393,6 +394,7 @@ int for_array_average(void)
         printf("%d ", score[subscript]);
     }
     printf("\n");
+    printf("%.2f\n", sum/5.0);
     return 0;
 }
 
