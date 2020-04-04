@@ -385,7 +385,7 @@ int for_array_average(void)
     printf("input 5 scores:\n");
     for (subscript = 0; subscript < 5; subscript++){
         scanf("%d", &score[subscript]);
-        //隐式转换 int --> double
+        //隐式转换 int --> double 类型级别低的转换为类型级别高的
         sum += score[subscript];
     }
     
