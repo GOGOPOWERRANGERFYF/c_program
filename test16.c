@@ -393,3 +393,7 @@ int for_array_average(void)
     printf("\n");
     return 0;
 }
+
+
+
+
