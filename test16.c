@@ -397,7 +397,7 @@ int for_array_average(void)
     printf("average: %.2f\n", sum/5.0);
     return 0;
 }
-
+// 键入enter键后程序开始读取输入缓冲区的数据
 
 
 
