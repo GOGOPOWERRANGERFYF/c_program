@@ -399,5 +399,5 @@ int for_array_average(void)
 }
 // 键入enter键后程序开始读取输入缓冲区的数据
 
-
+// 函数返回值的循环示例
 
