@@ -408,7 +408,7 @@ double power(double n, int limit_e)
     int e;
     double pow = 1.0;
     for (e = 1; e <= limit_e; e++){
-        pow *= pow;
+        pow *= n;
     }
     //返回值类型已在函数头声明,为double类型
     return pow;
