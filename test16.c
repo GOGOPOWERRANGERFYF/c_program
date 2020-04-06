@@ -14,6 +14,9 @@ int nested_loop(void);
 int nested_loop_other(void);
 int array(void);
 int for_array_average(void);
+// 函数原型声明 function prototype declaration
+// 1.函数名; 2.返回值类型; 3.传入参数
+double power(double n, int limit_e);
 
 int main(void)
 {
@@ -400,4 +403,18 @@ int for_array_average(void)
 // 键入enter键后程序开始读取输入缓冲区的数据
 
 // 函数返回值的循环示例
+double power(double n, int limit_e)
+{
+    int e;
+    double pow = 1.0;
+    for (e = 1; e <= limit_e; e++){
+        pow *= pow;
+    }
+    //返回值类型已在函数头声明,为double类型
+    return pow;
+}
+
+
+
+
 
