@@ -419,6 +419,7 @@ double power(double n, int limit_e)
         // 指数为1,幂的值为底数本身
         // 指数为2,幂的值为n * n
         pow *= n;
+        // 左值乘以右值赋给左值
     }
     //返回值类型已在函数头声明,为double类型
     return pow;
