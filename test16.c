@@ -424,6 +424,7 @@ double power(double n, int limit_e)
         // 左侧的项乘以右侧的项,再把乘积付给左侧的项
     }
     //返回值类型已在函数头声明,为double类型
+    //可以返回 常量,变量,表达式
     return pow;
 }
 
