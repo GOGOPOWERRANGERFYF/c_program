@@ -407,11 +407,17 @@ int for_array_average(void)
 // 键入enter键后程序开始读取输入缓冲区的数据
 
 // 函数返回值的循环示例
+// 幂power
+// n^e     n为底数,e为指数
 double power(double n, int limit_e)
 {
     int e;
+    //从算法理解,先把power的结果(幂的值)初始化为1.0
     double pow = 1.0;
+    //幂的指数e在for循环三个控制表达式的第一个表达式计数器初始化中初始化
     for (e = 1; e <= limit_e; e++){
+        // 指数为1,幂的值为底数本身
+        // 指数为2,幂的值为n * n
         pow *= n;
     }
     //返回值类型已在函数头声明,为double类型
