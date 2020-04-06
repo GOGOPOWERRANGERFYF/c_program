@@ -425,6 +425,7 @@ double power(double n, int limit_e)
     }
     //返回值类型已在函数头声明,为double类型
     //可以返回 常量,变量,表达式
+    //返回值为 常量的值,变量的值,表达式的值
     return pow;
 }
 
