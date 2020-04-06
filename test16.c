@@ -22,6 +22,7 @@ int main(void)
 {
     _Bool a = 1, b = 'a', c = 0, d = 88
     , e = "abcd";
+    double power_return_value;
     printf("a = 1: %3d\n", a);
     printf("b = 'a': %d\n", b);
     printf("c = 0: %3d\n", c);
@@ -38,6 +39,9 @@ int main(void)
     nested_loop_other();
     array();
     for_array_average();
+
+    power_return_value = power(5.0, 5);
+    printf("%.2f", power_return_value);
     return 0;
 }
 
