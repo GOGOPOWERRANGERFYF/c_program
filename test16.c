@@ -22,7 +22,8 @@ int main(void)
 {
     _Bool a = 1, b = 'a', c = 0, d = 88
     , e = "abcd";
-    double power_return_value;
+    int input_limit_e;
+    double power_return_value, input_n;
     printf("a = 1: %3d\n", a);
     printf("b = 'a': %d\n", b);
     printf("c = 0: %3d\n", c);
@@ -40,8 +41,21 @@ int main(void)
     array();
     for_array_average();
 
-    power_return_value = power(5.0, 5);
-    printf("%.2f", power_return_value);
+    // scanf函数输入成功,返回值为输入项个数
+    // scanf函数输入失败,返回值为EOF,end of file,文件终止符
+    // EOF在windows,linux,mac中有区别,具体上网查去,老子现在没心情也没空...
+    printf("input number and exponent:\n");
+    // 函数原型里n为double类型,输入整数类型也没关系,double类型等级比所有证书类型高,
+    // 整数类型会被自动转换(隐式转换)成double类型
+    // 函数原型power函数底数的变量用double类型是因为double类型能表示的范围更大更全面
+    //
+    // 输入 10 文本(ascii码),编译系统把它转换成 10.0 文本的double类型的binary储存
+    // (编译器具体怎么实现不清楚,但这个思路和结果应该是对的...至少结果是对的)
+    while (scanf(" %lf %d", &input_n, &input_limit_e) == 2){
+        power_return_value = power(input_n, input_limit_e);
+        printf("number^exponent = %.2f\n", power_return_value);
+    }
+    printf("Game over! Bye bye~");
     return 0;
 }
 
