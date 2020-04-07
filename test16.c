@@ -57,7 +57,7 @@ int main(void)
         power_return_value = power(input_n, input_limit_e);
         printf("number^exponent = %.2f\n", power_return_value);
     }
-    printf("Game over! Bye bye~");
+    printf("Game over! Bye~");
     return 0;
 }
 
