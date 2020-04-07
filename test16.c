@@ -49,8 +49,10 @@ int main(void)
     // 整数类型会被自动转换(隐式转换)成double类型
     // 函数原型power函数底数的变量用double类型是因为double类型能表示的范围更大更全面
     //
-    // 输入 10 文本(ascii码),编译系统把它转换成 10.0 文本的double类型的binary储存
-    // (编译器具体怎么实现不清楚,但这个思路和结果应该是对的...至少结果是对的)
+    // 输入 10 文本(ascii码),编译系统把它转换成 10.0 文本,再转换成double类型的binary储存
+    // (编译器具体怎么实现不清楚,但这个思路和结果应该是对的...
+    //  至少结果是对的,目前水平有限,这个思路让我能理解,未必精准或正确)
+    // 输入 a 文本或符号文本,则输入错误,
     while (scanf(" %lf %d", &input_n, &input_limit_e) == 2){
         power_return_value = power(input_n, input_limit_e);
         printf("number^exponent = %.2f\n", power_return_value);
