@@ -17,6 +17,7 @@ int for_array_average(void);
 // 函数原型声明 function prototype declaration
 // 1.函数名; 2.返回值类型; 3.传入参数
 double power(double n, int limit_e);
+// 让编译系统知道函数返回值的类型
 
 // 这段main()程序是一个驱动(driver)示例,这段程序用来测试其它函数(function)
 int main(void)
