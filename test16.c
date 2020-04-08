@@ -26,7 +26,7 @@ double power(double n, int limit_e);
 // (函数原型如果在main函数前,函数原型声明可以省略,但这不是C的标准风格)
 //  附:通常函数定义(function definition)放在在其它文件中
 //2.printf(),scanf()这些函数的原型声明(function prototype declaration)包含在stdio.h头文件里,
-//  #include <stdio.h>预处理指令读取并插入头文件里的文本 
+//  #include <stdio.h>预处理指令,读取并插入头文件里的文本 
 
 // 这段main()程序是一个驱动(driver)示例,这段程序用来测试其它函数(function)
 int main(void)
