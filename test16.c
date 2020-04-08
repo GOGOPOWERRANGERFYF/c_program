@@ -23,8 +23,8 @@ double power(double n, int limit_e);
 
 // encounter 遇到,遭遇
 // <c primer plus第六版> P388 对函数声明和使用带返回值的函数有比较详细的解释(很值得看的知识点)
-//1.程序执行到调用函数时,程序并没有执行到函数定义,不知道函数的返回值类型
-//  通过前置声明(forward declaration)可知道函数的返回值类型
+//1.编译器遇到调用函数语句时,还没有遭遇到函数定义,不知道函数的返回值类型
+//  通过前置声明(forward declaration)可让编译器知道函数的返回值类型
 //  (函数定义如果在main函数前,函数原型声明可以省略,但这不是C的标准风格)
 //  附:通常函数定义(function definition)放在在其它文件中
 //2.printf(),scanf()这些函数的原型声明(function prototype declaration)包含在stdio.h头文件里,
