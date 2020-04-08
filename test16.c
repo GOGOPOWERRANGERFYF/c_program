@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
+// 符号常量/明示常量(manifest constant)
+#define NAME "fyf"
 // C99新增_Bool类型   
 // 表示真或假的变量称为布尔变量(boolean variable)
 // _Bool类型变量只能储存1(真)或0(假)
