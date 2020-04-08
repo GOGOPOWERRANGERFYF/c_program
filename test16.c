@@ -41,8 +41,8 @@ int main(void)
     array();
     for_array_average();
 
-    // scanf函数输入成功,返回值为输入项个数
-    // scanf函数输入失败,返回值为EOF,end of file,文件终止符
+    // scanf函数返回值为成功读取输入项个数,读取成功几个项返回值就为几,读取成功0个就为0
+    // EOF,end of file,文件终止符
     // EOF在windows,linux,mac中有区别,具体上网查去,老子现在没心情也没空...
     printf("input number and exponent:\n");
     // 函数原型里n为double类型,输入整数类型也没关系,double类型等级比所有证书类型高,
