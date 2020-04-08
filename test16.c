@@ -20,6 +20,10 @@ double power(double n, int limit_e);
 // 让编译系统知道函数返回值的类型,知道返回值有多少字节数据
 
 // <c primer plus第六版> P388 对函数声明和使用带返回值的函数有比较详细的解释(很值得看的知识点)
+//1.前置声明(forward declaration),是为了程序执行到调用函数时,知道该函数的返回值类型,函数定义在其它地方
+// (函数原型如果在main函数前,函数原型声明可以省略,但这不是C的标准风格)
+//2.printf(),scanf()这些函数的原型声明和原型已经包含在stdio.h头文件里,
+//  #include <stdio.h>预处理指令读取并插入头文件里的文本 
 
 // 这段main()程序是一个驱动(driver)示例,这段程序用来测试其它函数(function)
 int main(void)
