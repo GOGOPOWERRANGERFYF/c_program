@@ -18,6 +18,7 @@ int for_array_average(void);
 // 1.函数名; 2.返回值类型; 3.传入参数
 double power(double n, int limit_e);
 
+// 这段main()程序是一个驱动(driver)示例,这段程序用来测试其它函数(function)
 int main(void)
 {
     _Bool a = 1, b = 'a', c = 0, d = 88
