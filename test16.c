@@ -21,6 +21,7 @@ int for_array_average(void);
 double power(double n, int limit_e);
 // 让编译系统知道函数返回值的类型,知道返回值有多少字节数据
 
+// encounter 遇到,遭遇
 // <c primer plus第六版> P388 对函数声明和使用带返回值的函数有比较详细的解释(很值得看的知识点)
 //1.程序执行到调用函数时,程序并没有执行到函数定义,不知道函数的返回值类型
 //  通过前置声明(forward declaration)可知道函数的返回值类型
