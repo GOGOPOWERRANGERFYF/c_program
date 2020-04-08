@@ -19,6 +19,8 @@ int for_array_average(void);
 double power(double n, int limit_e);
 // 让编译系统知道函数返回值的类型,知道返回值有多少字节数据
 
+// <c primer plus第六版> P388 对函数声明和使用带返回值的函数有比较详细的解释
+
 // 这段main()程序是一个驱动(driver)示例,这段程序用来测试其它函数(function)
 int main(void)
 {
