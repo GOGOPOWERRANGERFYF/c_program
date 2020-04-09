@@ -25,6 +25,7 @@ int for_array_average(void);
 // 不写函数原型声明其实编译系统编译时会进行隐式函数原型声明,不过编译时会有警告 -w选项忽略警告
 // 还是不要偷懒,即使编译过了,也可以运行,但可能有预料不到的错误
 double power(double n, int limit_e);
+//double power(double, int); 这样声明也可以
 // 让编译系统知道函数返回值的类型,知道返回值有多少字节数据
 
 // encounter 遇到,遭遇
