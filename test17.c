@@ -7,6 +7,7 @@ int main(void)
     int pass_count = 0, input_count = 0;
 
     printf("Input score:\n");
+    // 输入int,scanf函数会把输入值promotion升级为double类型
     while (scanf("%lf", &score) == 1){
         input_count++;
         if (score >= pass_line){
