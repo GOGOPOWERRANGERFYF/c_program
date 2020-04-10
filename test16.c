@@ -60,13 +60,14 @@ int main(void)
     // 1.隐式函数声明,c99标准后已淘汰
     // 2.函数类型声明 function type declaration
     //      int xxx();
-    //   缺点: 编译器检查不到函数调用时传入参数的类型和个数错误
+    //   缺点: 编译器检查不到函数调用时传入实参的类型和个数错误
     // 3.函数定义声明,把函数定义放主函数前
     //   缺点: 不利于代码的组织
     // 4.函数原型声明 function prototype declaration
     //      int xxx(int xxx, float xxx);
     //      int xxx(void);
     //   直接用函数原型声明就完事了...
+    // * C编译器很古老,有历史包袱...只会从头到尾编译一遍,所以有以上这些问题,比较新的语言就不会有这些声明的问题
     bool_variable();
     for_loop();
     for_loop_nine_methods();
