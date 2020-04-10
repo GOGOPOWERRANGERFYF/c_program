@@ -6,7 +6,7 @@ int main(void)
     double score;
     int pass_count = 0, input_count = 0;
 
-    pintf("Input score:\n");
+    printf("Input score:\n");
     while (scanf("%lf", &score) == 1){
         input_count++;
         if (score >= pass_line){
