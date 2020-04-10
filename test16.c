@@ -65,6 +65,7 @@ int main(void)
     //   缺点: 不利于代码的组织
     // 4.函数原型声明 function prototype declaration
     //      int xxx(int xxx, float xxx);
+    //      int xxx(void);
     //   直接用函数原型声明就完事了...
     bool_variable();
     for_loop();
