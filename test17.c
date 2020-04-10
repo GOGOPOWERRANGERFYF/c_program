@@ -15,8 +15,8 @@ int main(void)
     }
 
     if (input_count != 0){
-        printf("How many scores: %d, ");
-        printf("How many pass: %d");
+        printf("How many scores: %d, ", input_count);
+        printf("How many pass: %d", pass_count);
     }
     if (input_count == 0){
         printf("No score!");
