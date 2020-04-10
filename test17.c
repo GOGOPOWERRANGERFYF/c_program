@@ -26,4 +26,6 @@ int main(void)
     return 0;
 }
 
-
+// if语句被称为branching statement分支语句或selection statement选择语句
+// if (expression)
+//     statement
