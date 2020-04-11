@@ -1,5 +1,5 @@
 #include <stdio.h>
-int putchar_getchar(void);
+int getchar_putchar(void);
 
 int main(void)
 {
@@ -26,13 +26,13 @@ int main(void)
 
     if (input_count != 0){
         printf("How many scores: %d, ", input_count);
-        printf("How many pass: %d", pass_count);
+        printf("How many pass: %d\n", pass_count);
     }
     else {
-        printf("No score!");
+        printf("No score!\n");
     }
 
-    putchar_getchar();
+    getchar_putchar();
     return 0;
 }
 
@@ -61,8 +61,12 @@ int main(void)
 int getchar_putchar(void)
 {
     char ch;
+    
     ch = getchar();
     putchar(ch);
+    ch = getchar();
+    putchar(ch);
+    
     return 0;
 }
 
