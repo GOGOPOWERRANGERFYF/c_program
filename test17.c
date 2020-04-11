@@ -36,3 +36,21 @@ int main(void)
 // if语句被称为branching statement分支语句或selection statement选择语句
 // if (expression)
 //     statement
+//
+// if (expression)
+//     statement
+// else
+//     statement
+//
+// if (expression){
+//     statement
+// }
+// else {
+//     statement
+// }
+
+
+
+
+
+
