@@ -48,6 +48,9 @@ int main(void)
 // else {
 //     statement
 // }
+//
+// statement可以是简单语句或复合语句
+// 复合语句必须用花括号括起来,跟循环语句是一样的
 
 
 
