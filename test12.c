@@ -156,6 +156,7 @@ void type_conversion_example(void)
 
     // int 类型转换 float: 很简单粗暴...   65 --> 65.0  
     // 我刚开始想得有点太复杂了(￣ェ￣;)
+    // 这是转换结果,转换过程(在计算机中怎么实现)就不懂了...
     
     unsigned int tce_ua;
     int tce_a = 65, tce_b = -65;
