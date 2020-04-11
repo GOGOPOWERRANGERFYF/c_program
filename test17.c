@@ -1,4 +1,5 @@
 #include <stdio.h>
+int putchar_getchar(void);
 
 int main(void)
 {
@@ -30,6 +31,8 @@ int main(void)
     else {
         printf("No score!");
     }
+
+    putchar_getchar();
     return 0;
 }
 
@@ -52,8 +55,16 @@ int main(void)
 // statement可以是简单语句或复合语句
 // 复合语句必须用花括号括起来成为一个块,跟循环语句是一样的
 
-
-
+// getchar()和putchar()函数只处理字符 (它们通常是预处理宏,不是真正的函数,第16章有函数的宏的知识点)
+// ch = getchar()与scanf("%c", &ch)效果相同
+// putchar(ch)与printf("%c", ch)效果相同
+int getchar_putchar(void)
+{
+    char ch;
+    ch = getchar();
+    putchar(ch);
+    return 0;
+}
 
 
 
