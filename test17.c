@@ -58,6 +58,7 @@ int main(void)
 // getchar()和putchar()函数只处理字符 (它们通常是预处理宏,不是真正的函数,第16章有函数的宏的知识点)
 // ch = getchar()与scanf("%c", &ch)效果相同
 // putchar(ch)与printf("%c", ch)效果相同
+// 不需要转换说明,比scanf()和printf()更快,更简洁
 int getchar_putchar(void)
 {
     char ch;
