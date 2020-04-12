@@ -86,7 +86,7 @@ int getchar_putchar(void)
     //        ch = getchar();
     //    }
     //}
-    // 把读取输入字符放在while循环测试条件里,代码更简洁
+    // 把读取输入字符放在while循环测试条件里执行,代码更简洁
     while ((ch = getchar()) != '\n'){
         if (ch == ' '){
             putchar(ch);
