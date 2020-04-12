@@ -68,6 +68,7 @@ int getchar_putchar(void)
     ch = getchar();
     putchar(ch);
     printf("enter key(ASCII): %d;", ch);
+    // escape character 转义字符
     /* '\' 续行符和转移字字符; '\\' 把\转义为符号字符 */
     printf("\\n(ASCII): %d.", '\n');
     // short和character会被自动转换(隐式转换)为int,升级(promotion)
