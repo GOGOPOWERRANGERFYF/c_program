@@ -75,7 +75,7 @@ int getchar_putchar(void)
     // short和character会被自动转换(隐式转换)为int,升级(promotion)
     // 所以ch+1为int运算,只是把结果存入ch时会产生溢出截断
 
-    ch = getchar();
+    //ch = getchar();
     //while (ch != '\n'){
     //    if (ch == ' '){
     //        putchar(ch);
@@ -86,7 +86,7 @@ int getchar_putchar(void)
     //        ch = getchar();
     //    }
     //}
-    // 把读取输入字符放在while循环测试条件里执行,代码更简洁
+    //把读取输入字符放在while循环测试条件里执行,代码更简洁
     while ((ch = getchar()) != '\n'){
         if (ch == ' '){
             putchar(ch);
