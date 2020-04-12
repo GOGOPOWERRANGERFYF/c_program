@@ -68,6 +68,7 @@ int getchar_putchar(void)
     ch = getchar();
     putchar(ch);
     printf("enter key(ASCII): %d;", ch);
+    /* '\' 续行符和转移字字符; '\\' 把\转义为符号字符 */
     printf("\\n(ASCII): %d.", '\n');
     // short和character会被自动转换(隐式转换)为int,升级(promotion)
     // 所以ch+1为int运算,只是把结果存入ch时会产生溢出截断
