@@ -68,7 +68,7 @@ int getchar_putchar(void)
     ch = getchar();
     putchar(ch);
     printf("%d", ch);
-    // short和character会被自动转换为int
+    // short和character会被自动转换(隐式转换)为int,升级(promotion)
     // 所以ch+1为int运算,只是把结果存入ch时会产生溢出截断
     return 0;
 }
