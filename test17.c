@@ -76,14 +76,23 @@ int getchar_putchar(void)
     // 所以ch+1为int运算,只是把结果存入ch时会产生溢出截断
 
     ch = getchar();
-    while (ch != '\n'){
+    //while (ch != '\n'){
+    //    if (ch == ' '){
+    //        putchar(ch);
+    //        ch = getchar();
+    //    }
+    //    else {
+    //        putchar(ch + 1);
+    //        ch = getchar();
+    //    }
+    //}
+    //优化版本:
+    while ((ch = getchar()) != '\n'){
         if (ch == ' '){
             putchar(ch);
-            ch = getchar();
         }
         else {
             putchar(ch + 1);
-            ch = getchar();
         }
     }
     printf("\n%d", ch);
