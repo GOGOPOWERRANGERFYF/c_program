@@ -86,7 +86,6 @@ int getchar_putchar(void)
             ch = getchar();
         }
     }
-    putchar(ch);
     printf("%d", ch);
     return 0;
 }
