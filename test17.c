@@ -62,7 +62,7 @@ int main(void)
 int getchar_putchar(void)
 {
     char ch;
-    
+    // getchar函数返回值为成功读取的字符
     ch = getchar();
     putchar(ch);
     ch = getchar();
