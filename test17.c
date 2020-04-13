@@ -107,6 +107,7 @@ int getchar_putchar(void)
 
 // alpha 希腊字母第一个字母. 在字母解释法中,也代表字母A
 // isalpha()函数的原型声明在ctype.h头文件中
+// isalpha()函数接受一个字符作为参数
 // 字母字符,函数返回值为1; 非字母字符,函数返回值为0
 int isalpha_function(void)
 {
