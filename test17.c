@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include <ctype.h>
 int getchar_putchar(void);
+int isalpha_function(void);
 
 int main(void)
 {
@@ -33,6 +35,7 @@ int main(void)
     }
 
     getchar_putchar();
+    isalpha_function();
     return 0;
 }
 
@@ -104,6 +107,12 @@ int getchar_putchar(void)
 
 // alpha 希腊字母第一个字母. 在字母解释法中,也代表字母A
 // isalpha()函数的原型声明在ctype.h头文件中
-
+// 字母字符,函数返回值为1; 非字母字符,函数返回值为0
+int isalpha_function(void)
+{
+    printf("%d\n", isalpha('A'));
+    printf("%d\n", isalpha(','));
+    return 0;
+}
 
 
