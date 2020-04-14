@@ -109,10 +109,11 @@ int getchar_putchar(void)
 // ctype.h头文件包含一系列处理字符的函数,参数为特定类型字符,函数返回值为真1或非0,反之为假0
 // isalpha()函数的原型声明在ctype.h头文件中
 // isalpha()函数接受一个字符作为参数
-// 字母字符,函数返回值为1; 非字母字符,函数返回值为0
+// 字母字符,函数返回值为真(非0值); 非字母字符,函数返回值为0
 int isalpha_function(void)
 {
     printf("isalpha('A'): %d\n", isalpha('A'));
+    printf("isalpha('f'): %d\n", isalpha('f'));
     printf("isalpha(','): %d\n", isalpha(','));
     char ch;
     // ch = getchar() 读取输入字符并赋给ch字符类型变量
