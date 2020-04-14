@@ -114,6 +114,19 @@ int isalpha_function(void)
 {
     printf("%d\n", isalpha('A'));
     printf("%d\n", isalpha(','));
+    char ch;
+    // ch = getchar() 读取输入字符并赋给ch字符类型变量
+    while ((ch = getchar()) != '\n'){
+        if (isalpha(ch) == 1){
+            putchar(ch + 1);
+        }
+        else {
+            putchar(ch);
+        }
+    }
+    putchar(ch);
+    printf("ASCII: %d\n", ch);
+    printf("game over!");
     return 0;
 }
 
