@@ -112,12 +112,12 @@ int getchar_putchar(void)
 // 字母字符,函数返回值为1; 非字母字符,函数返回值为0
 int isalpha_function(void)
 {
-    printf("%d\n", isalpha('A'));
-    printf("%d\n", isalpha(','));
+    printf("isalpha('A'): %d\n", isalpha('A'));
+    printf("isalpha(','): %d\n", isalpha(','));
     char ch;
     // ch = getchar() 读取输入字符并赋给ch字符类型变量
     while ((ch = getchar()) != '\n'){
-        if (isalpha(ch) == 1){
+        if (isalpha(ch)){
             putchar(ch + 1);
         }
         else {
