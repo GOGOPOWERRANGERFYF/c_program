@@ -130,5 +130,7 @@ int isalpha_function(void)
     printf("game over!");
     return 0;
 }
-
+// <c primer plus第六版> P421 表7.1 ctype.h头文件中处理字符的函数
+// 字符测试函数 测试特定类型字符,是特定类型字符,返回值为真,反之为假0
+// 字符映射函数 返回值为修改后的值,但不修改原值
 
