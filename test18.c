@@ -20,6 +20,8 @@ int step_rate(void)
 
     printf("input kwh:\n");    
     // 11 --> 11.0  int --> double promotion升级
+    // 11.0 --> 11  double --> int demotion降级
+    // 输出为映射真值,与升级降级不同,不要弄混
     while (scanf("%lf", &kwh) == 1){
         if (kwh < 0){
             printf("wrong data!\n");
