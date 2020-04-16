@@ -58,9 +58,10 @@ int step_rate(void)
 
 // C99标准要求编译器至少支持127层嵌套
 
-// if与else的匹配
+// if与else的匹配(先if后else,else if不在这里的讨论范围)
 // 没有花括号,else与离它最近的if匹配
-// 有花括号,else与括号里包含if语句(statement)的第一个if
+// 有花括号,else与最近的括号的对应的if匹配
+// *编译器是忽略缩进的,因此不能通过缩进来判断if与else的匹配
 //
 // if (expression)
 //     statement;
