@@ -39,10 +39,18 @@ int step_rate(void)
             printf("count: %.3f\n", STEP1 + STEP2 + STEP3 + (kwh - kwh_c) * RATE3);
         }
     }
-
     // <c primer plus第六版> P424 
     // if else嵌套形式也可以实现,效果一样,但还是上面的else if清晰明了
     // if else嵌套形式有兴趣可以了解
+    // 
+    // if (expression)
+    //     statement;
+    // else
+    //    if (expression)
+    //         statement;
+    //    else
+    //         statement; 
+    //
     
     printf("game over!\n");
     return 0;
