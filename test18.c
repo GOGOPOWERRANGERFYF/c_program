@@ -50,8 +50,8 @@ int step_rate(void)
     //         statement;
     //    else
     //         statement; 
-    //
-    
+    // 嵌套的if else语句被视为一条语句,因此可以不用花括号括起来,但括起来让代码更加清晰
+    // 好了,说了这么多if else嵌套语句,总结,else if语句真香...
     printf("game over!\n");
     return 0;
 }
