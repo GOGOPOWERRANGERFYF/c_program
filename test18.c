@@ -60,7 +60,8 @@ int step_rate(void)
 
 // if与else的匹配(先if后else,else if不在这里的讨论范围)
 // 没有花括号,else与离它最近的if匹配
-// 有花括号,else与最近的括号的对应的if匹配
+// 有花括号,else与最近的花括号对应的if匹配
+// *找else相匹配的if要向前找
 // *编译器是忽略缩进的,因此不能通过缩进来判断if与else的匹配
 //
 // if (expression)
