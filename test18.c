@@ -60,5 +60,20 @@ int step_rate(void)
 
 // if与else的匹配
 // 没有花括号,else与离它最近的if匹配
-// 有花括号,else与括号里包含if语句的第一个if
+// 有花括号,else与括号里包含if语句(statement)的第一个if
+//
+// if (expression)
+//     statement;
+// if (expression)  -- if
+//     statement;       |  匹配
+// else             -- else
+//     statement;
+//
+// if (expression){       -- if
+//     statement;             |
+//     if (expression)        | 匹配
+//         statement;         |
+// }                          |
+// else                   -- else
+//     statement;
 //
