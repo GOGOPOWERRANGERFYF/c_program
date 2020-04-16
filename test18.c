@@ -19,7 +19,7 @@ int step_rate(void)
     double kwh;
 
     printf("input kwh:\n");    
-    // 11 --> 11.0 
+    // 11 --> 11.0  int --> double promotion升级
     while (scanf("%lf", &kwh) == 1){
         if (kwh < 0){
             printf("wrong data!\n");
