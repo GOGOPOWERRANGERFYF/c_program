@@ -91,7 +91,7 @@ int division(void)
         // num模除div,余数为0的就是能整除的
         // 
         if (num % div == 0){
-            printf("div = %d, num / div = %d\n", div, num / div);
+            printf("num / div = %d, div = %d\n", num / div, div);
         }
     }
     // optimize 优化
