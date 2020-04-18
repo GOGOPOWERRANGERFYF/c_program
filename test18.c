@@ -6,10 +6,12 @@
 #define STEP2 (kwh_b - kwh_a) * RATE2
 #define STEP3 (kwh_c - kwh_b) * RATE3
 int step_rate(void);
+int division(void);
 
 int main(void)
 {
-    step_rate();
+    //step_rate();
+    division();
     return 0;
 }
 
@@ -57,6 +59,7 @@ int step_rate(void)
 }
 
 // C99标准要求编译器至少支持127层嵌套
+// nested if 嵌套if
 
 // if与else的匹配(先if后else,else if不在这里的讨论范围)
 // else与离它最近的if语句(包括有括号和无括号的if语句)匹配
@@ -79,3 +82,18 @@ int step_rate(void)
 // else                   -- else
 //     statement;
 //
+
+int division(void)
+{
+    int div, num;
+    for (div = 2, scanf("%d", &num); div < num; div++ ){
+        if (num % div == 0){
+            printf("%d\n", div);
+        }
+    }
+    return 0;
+}
+
+
+
+
