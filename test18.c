@@ -88,7 +88,7 @@ int division(void)
     int div, num;
     for (div = 2, scanf("%d", &num); div < num; div++ ){
         if (num % div == 0){
-            printf("%d\n", div);
+            printf("div = %d, num / div = %d\n", div, num / div);
         }
     }
     // optimize 优化
