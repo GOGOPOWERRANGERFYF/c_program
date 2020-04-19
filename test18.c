@@ -112,7 +112,7 @@ int prime_number(void)
     long unsigned int div, num;
     // bool为_Bool的别名,在stdbool.h头文件中定义
     bool is_prime_number;
-    while (scanf("%lu", &num) == 1 && num != 1LU)
+    while (scanf("%lu", &num) == 1)
     {
         // for 计数循环(counting loop)
         // 根据素数的定义,除了1和数本身,依次循环2至少数的前一位数
