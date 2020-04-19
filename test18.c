@@ -114,15 +114,19 @@ int prime_number(void)
     bool is_prime_number;
     while (scanf("%lu", &num) == 1)
     {
+        // for 计数循环(counting loop)
+        // 根据素数的定义,除了1和数本身,依次循环2至少数的前一位数
+        // for循环开始前div,is_prime_number初始化,且仅初始化一次
         for (div = 2, is_prime_number = true; div < num; div++)
         {
+            // 如果数能被其它自然数整除,这个数就不是素数,标记flag设置为假false
             if (num % div == 0){
                 printf("Not prime number, %lu is divisible by %lu.\n"
                 , num, div);
                 is_prime_number = false;
             }
         }
-
+        // is_prime_number为真,说明数不能被除1和本身之外的自然数整除,是素数(质数)
         if (is_prime_number == true){
             printf("Yes, %lu is prime number!\n", num);
         }
