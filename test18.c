@@ -90,7 +90,7 @@ int step_rate(void)
 int division(void)
 {
     int div, num;
-    for (div = 2, scanf("%d", &num); div < num; div++ ){
+    for (div = 2, scanf("%d", &num); div < num; div++){
         // num % div 
         // num模除div,余数为0的就是能整除的
         // 
