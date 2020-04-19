@@ -107,12 +107,26 @@ int division(void)
 // 数学知识点:
 //   自然数: 0和正整数
 //   素数(质数prime number):  大于1的自然数,且除了1和自身,不能被其它自然数整除
-int prime_numer(void)
+int prime_number(void)
 {
     long unsigned int div, num;
     // bool为_Bool的别名,在stdbool.h头文件中定义
     bool is_prime_number;
+    while (scanf("%lu", &num) == 1)
+    {
+        for (div = 2, is_prime_number = true; div < num; div++)
+        {
+            if (num % div == 0){
+                printf("Not prime number, %lu is divisible by %lu.\n"
+                , num, div);
+                is_prime_number = false;
+            }
+        }
 
+        if (is_prime_number == true){
+            printf("Yes, %lu is prime number!\n", num);
+        }
+    }
     return 0;
 }
 
