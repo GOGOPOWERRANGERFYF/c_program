@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 #define RATE1 1.0
 #define RATE2 2.0
 #define RATE3 3.0
@@ -7,11 +8,13 @@
 #define STEP3 (kwh_c - kwh_b) * RATE3
 int step_rate(void);
 int division(void);
+int prime_number(void);
 
 int main(void)
 {
     //step_rate();
-    division();
+    //division();
+    prime_number();
     return 0;
 }
 
@@ -103,8 +106,15 @@ int division(void)
 
 // 数学知识点:
 //   自然数: 0和正整数
-//   素数(质数):  大于1的自然数,且出来1和自身,不能被其它自然数整除
+//   素数(质数prime number):  大于1的自然数,且除了1和自身,不能被其它自然数整除
+int prime_numer(void)
+{
+    long unsigned int div, num;
+    // bool为_Bool的别名,在stdbool.h头文件中定义
+    bool is_prime_number;
 
+    return 0;
+}
 
 
 
