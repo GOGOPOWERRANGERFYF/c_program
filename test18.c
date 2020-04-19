@@ -133,7 +133,7 @@ int prime_number(void)
     }
     return 0;
 }
-// 2也是素数,但在程序中,for测试条件为假,is_prime_number为真,
+// 2也是素数(比较特殊的素数),但在程序中,for测试条件为假,is_prime_number为真,
 // 没经过if测试语句验证,经过if测试语句的话is_prime_number就为假了,所以for测试条件为假算是歪打正着吧...
 // 这段程序还是有个缺陷,会把1当成素数,学到后面的逻辑运算符再完善
 
