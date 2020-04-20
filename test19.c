@@ -28,3 +28,7 @@ int char_count(void)
 // && 与
 // || 或
 // !  非
+// operator precedence 运算符优先级
+// 逻辑运算符的优先级比关系运算符低
+
+
