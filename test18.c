@@ -142,5 +142,25 @@ int prime_number(void)
 // || 或
 // !  非
 
+// if else
+//
+// if (expression)
+//     statement
+//
+// if (expression)
+//     statement1
+// else
+//     statement2
+//
+// if (expression1)
+//     statement1
+// else if (expression2)
+//     statement2
+// else
+//     statement3
+//
+// statement可以是一条简单语句或复合语句
+
+
 
 
