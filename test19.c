@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <iso646.h>
 #define SPACE ' '
 #define COMMA ','
 int char_count(void);
@@ -36,4 +37,6 @@ int char_count(void)
 // && 与    and
 // || 或    or
 // !  非    not
+// iso646.h头文件定义了一批常用运算符的可选拼写
+
 
