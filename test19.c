@@ -30,5 +30,10 @@ int char_count(void)
 // !  非  运算对象为真,整个表达式的值为假;运算对象为假,整个表达式的值为真
 // operator precedence 运算符优先级
 // 逻辑运算符的优先级比关系运算符低
-
+//
+// <c primer plus第六版> P440
+//        iso646.h
+// && 与    and
+// || 或    or
+// !  非    not
 
