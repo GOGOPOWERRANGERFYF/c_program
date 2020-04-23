@@ -24,6 +24,8 @@ int char_count(void)
     }
 
     printf("character count: %d\n", count);
+    ch = getchar();
+    printf("function char_count last input(%%d): %d\n", ch);
     return 0;
 }
 
@@ -110,7 +112,7 @@ int lower_character(void)
     // for (ch = 97; ch <= 122; ch++){
         printf("%c ", ch);
     }
-
+    
     return 0;
 }
 
