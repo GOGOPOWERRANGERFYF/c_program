@@ -102,6 +102,7 @@ int char_count(void)
 int lower_character(void)
 {
     char ch;
+    int n;
     printf("\na: %d ,z: %d.\n", 'a', 'z');
     printf("lower character:\n");
     for (ch = 'a'; ch <= 'z'; ch++){
