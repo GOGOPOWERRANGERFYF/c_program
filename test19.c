@@ -103,6 +103,7 @@ int lower_character(void)
 {
     char ch;
     printf("lower character:\n");
+    // char,shor int运算时是会升级promotion成int类型
     for (ch = 'a'; ch <= 'z'; ch++){
         printf("%c ", ch);
     }
