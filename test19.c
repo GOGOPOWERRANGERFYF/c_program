@@ -102,6 +102,7 @@ int char_count(void)
 int lower_character(void)
 {
     char ch;
+    printf("\na: %d ,z: %d.\n", 'a', 'z');
     printf("lower character:\n");
     for (ch = 'a'; ch <= 'z'; ch++){
     // char,shor int运算时被升级(promotion)成int类型
@@ -109,7 +110,6 @@ int lower_character(void)
         printf("%c ", ch);
     }
 
-    printf("\na: %d ,z: %d.\n", 'a', 'z');
     return 0;
 }
 
