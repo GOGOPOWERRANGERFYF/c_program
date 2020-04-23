@@ -112,7 +112,18 @@ int lower_character(void)
     // for (ch = 97; ch <= 122; ch++){
         printf("%c ", ch);
     }
-    
+
+    printf("\n");
+    for (n = 100; n <= 150; n++){
+        if (n >= 'a' && n <= 'z'){
+            printf("Lower character, %d, %c\n",
+            n, n);
+        }
+        else {
+            printf("Not lower character: %d.\n",
+            n);
+        }
+    }    
     return 0;
 }
 
