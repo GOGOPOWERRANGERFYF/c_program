@@ -127,6 +127,10 @@ int lower_character(void)
     return 0;
 }
 
-
+// <c primer plus第六版> P443
+// EBCDIC不像ASCII码那样编码和字符相邻一一对应
+// 因此不能像ASCII码处理
+// 要判断EBCDIC是否为小写字符,用islower()函数来处理
+// islower()函数原型声明在ctype.h头文件
 
 
