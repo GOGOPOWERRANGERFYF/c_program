@@ -103,10 +103,13 @@ int lower_character(void)
 {
     char ch;
     printf("lower character:\n");
-    // char,shor int运算时被升级(promotion)成int类型
     for (ch = 'a'; ch <= 'z'; ch++){
+    // char,shor int运算时被升级(promotion)成int类型
+    // for (ch = 97; ch <= 122; ch++){
         printf("%c ", ch);
     }
+
+    printf("\na: %d ,z: %d.\n", 'a', 'z');
     return 0;
 }
 
