@@ -3,10 +3,12 @@
 #define SPACE ' '
 #define COMMA ','
 int char_count(void);
+int lower_character(void);
 
 int main(void)
 {
     char_count();
+    lower_character();
     return 0;
 }
 
@@ -97,7 +99,15 @@ int char_count(void)
 // , 逗号运算符,序列点,同上
 // ; 序列点,左侧语句副作用发生完,再执行右侧语句
 
-
+int lower_character(void)
+{
+    char ch;
+    printf("lower character:\n");
+    for (ch = 'a'; ch <= 'z'; ch++){
+        printf("%c ", ch);
+    }
+    return 0;
+}
 
 
 
