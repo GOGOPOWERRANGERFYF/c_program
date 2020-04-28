@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <stdbool.h>
 
 int main(void)
 {
+    printf("true:%d false:%d\n", true, false);
     return 0;
 }
 
