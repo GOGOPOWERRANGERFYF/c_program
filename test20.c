@@ -6,6 +6,9 @@ int main(void)
 {
     _Bool bool_a;
     bool bool_b;
+    int int_a;
+
+    printf("sizeof(int_a):%zd\n", sizeof(int_a));
     printf("sizeof(bool_a):%zd sizeof(bool_a):%zd\n",
      sizeof(bool_a), sizeof(bool_b));
     printf("true:%d false:%d\n", true, false);
