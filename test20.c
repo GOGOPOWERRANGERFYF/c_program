@@ -4,6 +4,8 @@
 
 int main(void)
 {
+    _Bool bool_a;
+    bool bool_b;
     printf("true:%d false:%d\n", true, false);
     return 0;
 }
