@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <stdbool.h>
+int text_counter(void);
 
 int main(void)
 {
@@ -12,6 +13,8 @@ int main(void)
     printf("sizeof(bool_a):%zd sizeof(bool_a):%zd\n",
      sizeof(bool_a), sizeof(bool_b));
     printf("true:%d false:%d\n", true, false);
+
+    text_counter();
     return 0;
 }
 
@@ -21,6 +24,12 @@ int main(void)
 //
 // c提供了检查空白字符的函数isspace(),函数原型声明在ctype.h头文件
 // isspace(c),c为空白字符,函数返回值为真,c为非空白字符,函数返回值为假
+
+int text_counter(void)
+{
+    char c;
+    return 0;
+}
 
 
 
