@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <stdbool.h>
+#define INPUT_FINISH_FLAG '|'
 int text_counter(void);
 
 int main(void)
@@ -27,7 +28,12 @@ int main(void)
 
 int text_counter(void)
 {
-    char c;
+    char ch;
+    
+    while ((ch = getchar()) != INPUT_FINISH_FLAG){
+
+    }
+
     return 0;
 }
 
