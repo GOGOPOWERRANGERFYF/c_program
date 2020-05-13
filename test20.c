@@ -31,11 +31,12 @@ int text_counter(void)
 {
     char ch;
     int line_counter = 0;    
+
     while ((ch = getchar()) != INPUT_FINISH_FLAG){
-        if (ch == '\n')
-        {
+        if (ch == '\n'){
             line_counter++;
         }
+
     }
 
     printf("lines number:%d", line_counter);
