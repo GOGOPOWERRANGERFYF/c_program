@@ -2,6 +2,7 @@
 #include <ctype.h>
 #include <stdbool.h>
 #define INPUT_FINISH_FLAG '|'
+#define LINE_FLAG '\n'
 int text_counter(void);
 
 int main(void)
@@ -29,9 +30,12 @@ int main(void)
 int text_counter(void)
 {
     char ch;
-    
+    int line_counter = 0;    
     while ((ch = getchar()) != INPUT_FINISH_FLAG){
-
+        if (ch == '\n')
+        {
+            line_counter++;
+        }
     }
 
     return 0;
