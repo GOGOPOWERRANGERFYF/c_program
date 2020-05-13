@@ -29,17 +29,29 @@ int main(void)
 
 int text_counter(void)
 {
+    bool word_flag = false;
     char ch;
-    int line_counter = 0;    
+    int lines_counter = 0;    
+    int words_counter = 0;
 
     while ((ch = getchar()) != INPUT_FINISH_FLAG){
+        // lines
         if (ch == '\n'){
-            line_counter++;
+            lines_counter++;
         }
+        // words
+        // 遇到第一个非空白字符
+        // 字符为 非空白字符 且 单词标记为假
+        if (!isspace(ch) && !word_flag){
+            words_counter++;            
+        }
+        // 读取非空白字符之后读取到的首个空白字符
+        // 重置word_flag为假
 
     }
 
-    printf("lines number:%d", line_counter);
+    printf("words number:%d\n", words_counter);
+    printf("lines number:%d\n", lines_counter);
     return 0;
 }
 
