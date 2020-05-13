@@ -52,7 +52,6 @@ int text_counter(void)
         if (isspace(ch) && word_flag){
             word_flag = false;
         }
-
     }
 
     printf("words number:%d\n", words_counter);
