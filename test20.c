@@ -44,9 +44,13 @@ int text_counter(void)
         // 字符为 非空白字符 且 单词标记为假
         if (!isspace(ch) && !word_flag){
             words_counter++;            
+            word_flag = true;
         }
         // 读取非空白字符之后读取到的首个空白字符
         // 重置word_flag为假
+        if (isspace(ch) && word_flag){
+            word_flag = false;
+        }
 
     }
 
