@@ -30,7 +30,7 @@ int main(void)
 int text_counter(void)
 {
     char ch;
-    int line_counter = 1;    
+    int line_counter = 0;    
     while ((ch = getchar()) != INPUT_FINISH_FLAG){
         if (ch == '\n')
         {
