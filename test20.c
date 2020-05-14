@@ -89,6 +89,10 @@ int max_integer(void)
     int a, b, max;
     while (scanf(" %d %d", &a, &b) == 2){
         max = (a > b) ? a : b;
+        // a > b  a为最大值:取a值
+        // 以下为!(a > b)的两种情况:取b值
+        // a = b  a和b都为最大值,因此取a值或b值都是一样的
+        // a < b  b为最大值
         printf("max=%d\n", max);
     }
 }
