@@ -73,6 +73,7 @@ int text_counter(void)
 int conditional_operator(void)
 {
     int x, y;
+    printf("input y:");
     while (scanf("%d", &y) == 1){
         x = (y >= 0) ? -y : -y;
         printf("x=%d y=%d\n", x, y);
