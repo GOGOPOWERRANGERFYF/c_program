@@ -65,6 +65,7 @@ int text_counter(void)
 // 条件表达式: expression1 ? expression2 : expression3
 //     如果expression1的值为真,整个条件表达式的值为expression2的值
 //     如果expression1的值为假,整个条件表达式的值为expression3的值
+// 非0为真,0为假
 // 相当于:
 //     if (y >= 0)
 //          x = -y;
