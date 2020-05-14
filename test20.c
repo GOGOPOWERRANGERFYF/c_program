@@ -4,6 +4,7 @@
 #define INPUT_FINISH_FLAG '|'
 #define LINE_FLAG '\n'
 int text_counter(void);
+int conditional_operator(void);
 
 int main(void)
 {
@@ -16,7 +17,8 @@ int main(void)
      sizeof(bool_a), sizeof(bool_b));
     printf("true:%d false:%d\n", true, false);
 
-    text_counter();
+    //text_counter();
+    conditional_operator();
     return 0;
 }
 
@@ -59,5 +61,22 @@ int text_counter(void)
     return 0;
 }
 
-
+// 条件运算符(唯一一个三元运算符) ?:
+// 条件表达式: expression1 ? expression2 : expression3
+//     如果expression1的值为真,整个条件表达式的值为expression2的值
+//     如果expression1的值为假,整个条件表达式的值为expression3的值
+// 相当于:
+//     if (y >= 0)
+//          x = -y;
+//     else
+//          x = -y;
+int conditional_operator(void)
+{
+    int x, y;
+    while (scanf("%d", &y) == 1){
+        x = (y >= 0) ? -y : -y;
+        printf("x=%d y=%d\n", x, y);
+    }
+    return 0;
+}
 
