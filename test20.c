@@ -5,6 +5,7 @@
 #define LINE_FLAG '\n'
 int text_counter(void);
 int conditional_operator(void);
+int max_integer(void);
 
 int main(void)
 {
@@ -18,7 +19,8 @@ int main(void)
     printf("true:%d false:%d\n", true, false);
 
     //text_counter();
-    conditional_operator();
+    //conditional_operator();
+    max_integer();
     return 0;
 }
 
@@ -80,5 +82,14 @@ int conditional_operator(void)
         printf("x=%d y=%d\n", x, y);
     }
     return 0;
+}
+
+int max_integer(void)
+{
+    int a, b, max;
+    while (scanf(" %d %d", &a, &b) == 2){
+        max = (a > b) ? a : b;
+        printf("max=%d\n", max);
+    }
 }
 
