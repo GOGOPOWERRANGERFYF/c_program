@@ -5,13 +5,10 @@
 #define INPUT_FINISH_FLAG '|'
 #define LINE_FLAG '\n'
 
-#define AREA 20
-
 int text_counter(void);
 int conditional_operator(void);
 int max_integer(void);
-
-int paint(void);
+int cans_of_paint(void);
 
 int main(void)
 {
@@ -26,7 +23,8 @@ int main(void)
 
     //text_counter();
     //conditional_operator();
-    max_integer();
+    //max_integer();
+    cans_of_paint();
     return 0;
 }
 
@@ -103,8 +101,9 @@ int max_integer(void)
     }
 }
 
-int paint(void)
+int cans_of_paint(void)
 {
+    const int can_area = 20;
     int paint_area, cans;
     return 0;
 }
