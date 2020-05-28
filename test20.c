@@ -1,11 +1,17 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <stdbool.h>
+
 #define INPUT_FINISH_FLAG '|'
 #define LINE_FLAG '\n'
+
+#define AREA 20
+
 int text_counter(void);
 int conditional_operator(void);
 int max_integer(void);
+
+int paint(void);
 
 int main(void)
 {
@@ -97,8 +103,11 @@ int max_integer(void)
     }
 }
 
-// git push origin master: test
-
+int paint(void)
+{
+    int paint_area;
+    return 0;
+}
 
 
 
