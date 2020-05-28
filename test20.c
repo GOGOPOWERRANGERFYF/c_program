@@ -105,6 +105,13 @@ int cans_of_paint(void)
 {
     const int can_area = 20;
     int paint_area, cans;
+
+    while (scanf("%d", &paint_area) == 1){
+        cans = paint_area / can_area;
+        cans += (paint_area % can_area == 0) ? 0 : 1;
+        printf("%d\n", cans);
+    };
+    printf("over!");
     return 0;
 }
 
