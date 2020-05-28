@@ -105,7 +105,7 @@ int max_integer(void)
 
 int paint(void)
 {
-    int paint_area;
+    int paint_area, cans;
     return 0;
 }
 
