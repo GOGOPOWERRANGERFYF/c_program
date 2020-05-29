@@ -122,7 +122,11 @@ int cans_of_paint(void)
     return 0;
 }
 
-
+// ?: 条件运算符 是 三元运算符
+// 需要三个运算对象,每个运算对象都是一个表达式
+// expression1 ? expression2 : expression3 (条件表达式)
+// expression1的值为真,则整个表达式的值为expression2的值
+// expression1的值为假,则整个表达式的值为expression3的值
 
 
 
