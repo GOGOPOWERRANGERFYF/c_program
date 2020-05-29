@@ -99,6 +99,7 @@ int max_integer(void)
         // a < b  b为最大值
         printf("max=%d\n", max);
         
+        //条件运算符的第2和第3个运算对象可以是字符串        
         printf("%s", (a > b) ? "a > b" : "a <= b");
     }
 }
