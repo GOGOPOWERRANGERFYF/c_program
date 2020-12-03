@@ -130,10 +130,3 @@ int cans_of_paint(void)
 
 //20201202 test git
 
-
-
-
-
-
-
-
