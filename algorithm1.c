@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-int algorithm_1(void);
+int quick_find_algorithem(void);
 
 // algorithm 算法
 int main(void)
 {
     printf("algorithm!\n");
-    algorithm_1();
+    quick_find_algorithem();
     return 0;
 }
 
-int algorithm_1(void)
+int quick_find_algorithem(void)
 {
     return 0;
 }
