@@ -1,6 +1,8 @@
 #include <stdio.h>
-
+// quick find 快速查找算法
 int quick_find_algorithem_version1(void);
+// quick union 快速合并算法
+int quick_union_algorithem_version1(void);
 
 // algorithm 算法
 int main(void)
