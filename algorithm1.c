@@ -10,6 +10,7 @@ int main(void)
     return 0;
 }
 
+// 数组(array)是基本的数据结构
 int quick_find_algorithem(void)
 {
     return 0;
