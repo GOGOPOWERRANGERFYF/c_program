@@ -30,6 +30,8 @@ void main(void)
 
 int sum_version1(void)
 {
+    // i变量为数列的项
+    // n为数列值最大的项
     int sum, i, n = 100; 
     return 0;
 }
