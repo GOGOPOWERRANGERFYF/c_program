@@ -19,4 +19,22 @@
 // ADT (abstract data type:抽象数据类型)
 // 算法(algorithm)是解决特定问题求解步骤的描述,在计算机中表现为
 // 指令(instruction)的有限序列,并且每条序列表示一个或多个操作。
+#include <stdio.h>
+int sum_version1(void);
+int sum_version2(void);
 
+void main(void)
+{
+    sum_version1();
+}
+
+int sum_version1(void)
+{
+    int sum, i, n = 100; 
+    return 0;
+}
+
+int sum_version2(void)
+{
+    return 0;
+}
