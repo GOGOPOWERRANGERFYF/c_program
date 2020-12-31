@@ -40,3 +40,7 @@ int sum_version2(void)
 {
     return 0;
 }
+
+// n为输入规模; 
+// f(n)基本操作的数量 f(n)=n  f(n)=1 f(n)=n^2
+// 基本操作的数量必须表示成输入规模的函数
