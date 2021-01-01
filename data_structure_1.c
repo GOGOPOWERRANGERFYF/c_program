@@ -58,3 +58,5 @@ int sum_version2(void)
 // T(n)=O(f(n))
 // n: 问题规模;输入规模.
 //
+// logarithms 对数
+// log2n
