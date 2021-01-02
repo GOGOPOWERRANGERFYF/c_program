@@ -127,6 +127,5 @@ int cans_of_paint(void)
 // expression1 ? expression2 : expression3 (条件表达式)
 // expression1的值为真,则整个表达式的值为expression2的值
 // expression1的值为假,则整个表达式的值为expression3的值
-
-//20201202 test git
+// 《c primer plus 第六版 中文版》P453
 
