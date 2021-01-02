@@ -21,7 +21,7 @@ int main(void)
 
     /* short long unsigned 附属关键字 《c primer plus》P125 */
     /* short = short int, long = long int, unsigned = unsighed int */
-    /* unsighed 无符号类型. int,float,double默认其实都是有符号类型signed */
+    /* unsigned 无符号类型. int,float,double默认其实都是有符号类型signed */
     short s;
     short int si;
     int i;
