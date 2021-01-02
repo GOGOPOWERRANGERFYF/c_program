@@ -21,11 +21,13 @@
 // 指令(instruction)的有限序列,并且每条序列表示一个或多个操作。
 #include <stdio.h>
 int sum_version1(void);
-int sum_version2(void);
+// gauss algorithm 高斯算法
+int gauss_algorithm(void);
 
 void main(void)
 {
-    sum_version1();
+    //sum_version1();
+    gauss_algorithm();
 }
 
 int sum_version1(void)
@@ -36,8 +38,15 @@ int sum_version1(void)
     return 0;
 }
 
-int sum_version2(void)
+int gauss_algorithm(void)
 {
+    long int n, i, sum;
+    double x;
+    while (scanf("%d", &n) == 1){
+        // n + 1和n互为奇偶数,所以肯定能被2整除
+        sum = (n + 1) * n / 2;
+        printf("%d\n", sum);
+    }
     return 0;
 }
 
