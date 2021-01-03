@@ -64,5 +64,5 @@
 
 //计算机组成原理
 // endianness 端序
-// big endian 大端序
-// little endian 小端序
+// big endian 大端序: 数据高位存低地址
+// little endian 小端序: 数据低位存低地址
