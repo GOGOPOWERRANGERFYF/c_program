@@ -143,6 +143,7 @@ void function8(void){
     //0 0111 1111 110 1000 后面12个0000
     //内存拷贝函数
     //函数原型声明在<sting.h>
+    //string 串,一串,线,一系列,一连串
     memcpy( &a, &f, 4);
     printf("%x\n", a);
     //printf("%d\n", sizeof(f));
