@@ -338,7 +338,7 @@ void increment_decrement_precedence(void)
 //    write enable --> 0
 //    (这个只是说明:data input --> 1或0,output都为1)
 //    output保存1
-//   实现output 0 --> 1:
+//   实现output 1 --> 0:
 //    write enable --> 1
 //    data input --> 0
 //    output --> 0
