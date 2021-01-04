@@ -72,3 +72,4 @@ int gauss_algorithm(void)
 // logarithms 对数(对数是对幂运算的逆运算)
 // 2^x=n x=log2n (2为底数;n为真数;x是以2为底的N的对数)
 // 
+//  O(n^3) 立方阶; O(2^n) 指数阶;
