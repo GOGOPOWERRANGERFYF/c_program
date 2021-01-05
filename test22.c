@@ -24,7 +24,7 @@ int main(void){
 //   
 
 int pointer_a(void){
-    int a = 10, b, *int_pointer1;
+    int a = 10, b, * int_pointer1;
     // & 地址运算符 P624
     // 把int类型变量a的地址赋给int_pointer1
     // 这里的地址是指虚拟地址,不是物理地址
