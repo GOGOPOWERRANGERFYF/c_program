@@ -175,6 +175,7 @@ int function9(void){
     memcpy( &long_int_temp, &a, 8);
     printf("int_temp: %x\n", int_temp);
     printf("long_int_temp: %lx\n", long_int_temp);
+    printf("%f\n", *(double *)&a);
     
     return 0;
 }
