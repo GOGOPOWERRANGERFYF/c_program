@@ -155,8 +155,12 @@ int function9(void){
     int_pointer1 = &a;
     int_pointer2 = &b;
     printf("sizeof(int_pointer1): %d\n", sizeof(int_pointer1));
-    printf("%016lx\n", int_pointer1);
-    printf("%016lx\n", int_pointer2);
-    printf("%8d\n", 8);
+    printf("%p\n", int_pointer1);
+    printf("%p\n", int_pointer2);
+    printf("%lx\n", int_pointer1);
+    printf("%lx\n", int_pointer2);
+    printf("%#lx\n", int_pointer1);
+    printf("%#lx\n", int_pointer2);
+    //printf("%8d\n", 8);
     return 0;
 }

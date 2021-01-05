@@ -41,3 +41,4 @@ int pointer_a(void){
     printf("%d\n", b);
     return 0;
 }
+// 9.7.2 声明指针
