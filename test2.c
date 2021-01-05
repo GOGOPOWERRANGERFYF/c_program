@@ -79,7 +79,7 @@ int main(void)
     
     /* 'a'表示- a的字符字面量*/
     /* "a"表示- a的字符串字面量(指针) */
-    scanf("%f", &n);  // & 取地址运算符 取变量n内存地址
+    scanf("%f", &n);  // & 地址运算符 取变量n内存地址
     value = n * n;
     printf("n = %.2f, value = n * n = %.2f.\n", n, value);
     

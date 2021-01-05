@@ -18,6 +18,7 @@ int main(void){
 // char类型变量的值是字符,int类型变量的值是整数,指针变量的值是地址
 int pointer_a(void){
     int a = 10, b, *int_pointer1;
+    // & 地址运算符
     int_pointer1 = &a;
     b = *int_pointer1;
     printf("%d\n", b);
