@@ -151,16 +151,20 @@ void function8(void){
 }
 
 int function9(void){
-    int a = 10, b, *int_pointer1, *int_pointer2;
+    float array1[2], a = 0.75f, b = 1.5f, * int_pointer1, * int_pointer2;
     int_pointer1 = &a;
     int_pointer2 = &b;
+    array1[0] = *int_pointer1;
+    array1[1] = *int_pointer2;
     printf("sizeof(int_pointer1): %d\n", sizeof(int_pointer1));
-    printf("%p\n", int_pointer1);
-    printf("%p\n", int_pointer2);
-    printf("%lx\n", int_pointer1);
-    printf("%lx\n", int_pointer2);
-    printf("%#lx\n", int_pointer1);
-    printf("%#lx\n", int_pointer2);
+    printf("%%p: %p\n", int_pointer1);
+    printf("%%p: %p\n", int_pointer2);
+    printf("%f\n", array1[0]);
+    printf("%f\n", array1[1]);
+    //printf("%lx\n", int_pointer1);
+    //printf("%lx\n", int_pointer2);
+    //printf("%#lx\n", int_pointer1);
+    //printf("%#lx\n", int_pointer2);
     //printf("%8d\n", 8);
     return 0;
 }
