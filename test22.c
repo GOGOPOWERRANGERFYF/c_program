@@ -18,12 +18,12 @@ int main(void){
 // char类型变量的值是字符,int类型变量的值是整数,指针变量的值是地址
 int pointer_a(void){
     int a = 10, b, *int_pointer1;
-    // & 地址运算符
+    // & 地址运算符 P624
     int_pointer1 = &a;
     b = *int_pointer1;
     printf("%d\n", b);
     return 0;
 }
 
-// 9.7.1 *间接运算符
+// 9.7.1 *间接运算符(乘法运算法与间接运算符都是*)
 //  
