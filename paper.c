@@ -153,11 +153,14 @@ void function8(void){
 int function9(void){
     int int_temp;
     long int long_int_temp;
-    double array1[2], a = 0.75f, b = 1.5f, * int_pointer1, * int_pointer2;
+    double array1[2], a = 0.75f, b = 1.5f,
+     * int_pointer1, * int_pointer2;
+    
     int_pointer1 = &a;
     int_pointer2 = &a;
     array1[0] = *int_pointer1;
     array1[1] = *int_pointer2;
+    
     printf("sizeof(int_pointer1): %d\n", sizeof(int_pointer1));
     printf("%%p: %p\n", int_pointer1);
     printf("%%p: %p\n", int_pointer2);
@@ -172,5 +175,6 @@ int function9(void){
     memcpy( &long_int_temp, &a, 8);
     printf("int_temp: %x\n", int_temp);
     printf("long_int_temp: %lx\n", long_int_temp);
+    
     return 0;
 }
