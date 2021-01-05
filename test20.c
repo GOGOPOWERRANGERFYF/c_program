@@ -129,3 +129,4 @@ int cans_of_paint(void)
 // expression1的值为假,则整个表达式的值为expression3的值
 // 《c primer plus 第六版 中文版》P453
 
+// 循环辅助: continue和break
