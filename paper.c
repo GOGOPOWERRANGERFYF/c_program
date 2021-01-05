@@ -9,6 +9,7 @@ int function5(int a, int b);
 int function6(void);
 int function7(void);
 void function8(void);
+int function9(void);
 
 int main(void)
 {
@@ -32,9 +33,7 @@ int main(void)
     //    }
     //}
     //printf("input is not integer\n");
-    //function6();
-    //function7();
-    function8();
+    function9();
     return 0;
 }
 
@@ -149,4 +148,15 @@ void function8(void){
     //printf("%d\n", sizeof(f));
     //printf("%d\n", 
     //strlen("0011111111101000000000000000000000000000000000000000000000000000"));
+}
+
+int function9(void){
+    int a = 10, b, *int_pointer1, *int_pointer2;
+    int_pointer1 = &a;
+    int_pointer2 = &b;
+    printf("sizeof(int_pointer1): %d\n", sizeof(int_pointer1));
+    printf("%016lx\n", int_pointer1);
+    printf("%016lx\n", int_pointer2);
+    printf("%8d\n", 8);
+    return 0;
 }
