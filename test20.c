@@ -130,3 +130,7 @@ int cans_of_paint(void)
 // 《c primer plus 第六版 中文版》P453
 
 // 循环辅助: continue和break
+
+// 7.6
+// ......
+// 7.12
