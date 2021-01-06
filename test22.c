@@ -70,3 +70,4 @@ int pointer_a(void){
 //  虚拟地址: OS 操作系统
 //  MMU(memory management unit): 内存管理单元
 //      功能包括: 虚拟地址到物理地址的转换
+//  虚拟地址--(MMU)映射--物理地址
