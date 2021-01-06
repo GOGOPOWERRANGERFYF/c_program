@@ -10,6 +10,7 @@ int function6(void);
 int function7(void);
 void function8(void);
 int function9(void);
+int function10(void);
 
 int main(void)
 {
@@ -33,7 +34,7 @@ int main(void)
     //    }
     //}
     //printf("input is not integer\n");
-    function9();
+    function10();
     return 0;
 }
 
@@ -180,5 +181,11 @@ int function9(void){
     // 2. 数据类型
     printf("%lx\n", *(long int *)&a);
     
+    return 0;
+}
+
+int function10(void){
+    float f = 0.75;
+    printf("%x\n", *(int *)&f);
     return 0;
 }
