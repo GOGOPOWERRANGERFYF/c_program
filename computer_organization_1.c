@@ -20,3 +20,6 @@
 //  以上知识只是为了能够形象理解内存存储,非实际的数字电路布局
 
 // 存储器的两个基本操作: 即load(read fetch)和store(write)
+
+// 2.5 P33 寻址方式
+//  EA(effective address): 有效地址
