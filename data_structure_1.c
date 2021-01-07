@@ -86,4 +86,5 @@ int gauss_algorithm(void)
 
 
 // 第三章 线性表: 零个或多个元素的有限序列
+//  线性表(list)
 
