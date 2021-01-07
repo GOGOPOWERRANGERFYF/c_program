@@ -201,7 +201,9 @@ int function10(void){
     //  但编译器生成的为 float类型操作数的值和指向float类型变量的指针
     //      两个指针的值(虚拟地址)不相同
     //  因此读取不到正确的操作数的值
-    printf("%x\n", *&i);
+    printf("%p\n", &i);
+    printf("%lx\n", &i);
+    //printf("%x\n", *&i);
     //printf("%x\n", *(float *)&i);
     printf("%x\n", *(int *)&f);
     return 0;
