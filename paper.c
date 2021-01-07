@@ -1,3 +1,4 @@
+// 草稿纸
 #include <stdio.h>
 #include <string.h>
 #define NAME "fyf"
@@ -191,6 +192,15 @@ int function10(void){
     // 《计算机组成》P32 寻址方式
     //《计算机组成》P34 间接和指针
     // &i为int变量i的指针的值
+    //个人推论(根据目前的知识水平推论):
+    //  &float变量 不同的变量类型,分配的虚拟地址(指针的值)不同
+    //  打印函数待打印列表(, float变量),%x为int类型的转换说明
+    //  cpu Load(write,fetch)的操作数地址为 
+    //      按int变量 分配的 float类型操作数的指针读取
+    //          Move (int类型指针) R1
+    //  但编译器生成的为float类型变量的指针
+    //      两个指针的值 不相同
+    //  因此读取不到正确的操作数的值
     printf("%x\n", *&i);
     //printf("%x\n", *(float *)&i);
     printf("%x\n", *(int *)&f);
