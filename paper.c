@@ -187,6 +187,7 @@ int function9(void){
 
 int function10(void){
     int i = 1;
+    long int li;
     float f = 0.75;
     // 基于目前个人知识水平的理解,
     // 《计算机组成》P32 寻址方式
