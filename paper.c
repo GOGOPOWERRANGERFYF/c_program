@@ -185,7 +185,14 @@ int function9(void){
 }
 
 int function10(void){
+    int i = 1;
     float f = 0.75;
-    printf("%x\n", *(int *)&f);
+    // 基于目前个人知识水平的理解,
+    // 《计算机组成》P32 寻址方式
+    //《计算机组成》P34 间接和指针
+    // &i为int变量i的指针的值
+    printf("%x\n", *&i);
+    //printf("%x\n", *(float *)&i);
+    //printf("%x\n", *(int *)&f);
     return 0;
 }
