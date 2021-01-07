@@ -193,6 +193,6 @@ int function10(void){
     // &i为int变量i的指针的值
     printf("%x\n", *&i);
     //printf("%x\n", *(float *)&i);
-    //printf("%x\n", *(int *)&f);
+    printf("%x\n", *(int *)&f);
     return 0;
 }
