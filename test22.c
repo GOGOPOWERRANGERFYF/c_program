@@ -19,6 +19,7 @@ void funciton_definition(void);
 // 下面的函数原型的签名为整数类型返回值,没有参数
 // int funciton_definition(void);
 
+// 声明 带形式参数的函数原型
 void function_a(char c, int i);
 
 int pointer_a(void);
@@ -31,10 +32,21 @@ int main(void){
     // 该变量只属于main函数
     // 其它函数有相同变量名不会冲突
     int count = 0;
+    
     // 函数表达式语句
     putchar('*');
+    
     // 函数调用 function call
     funciton_definition();
+
+    // 在函数调用中,实际参数(actual argument),简称实参
+    // 提供了c和i的值
+    // 实际参数是'c' 和 10,这两个参数被赋给了相应的形式参数 变量c和i
+    // 形式参数是被调函数(called function)中的变量
+    // 实际参数是主调函数(calling function)赋给被调函数的具体值
+    // 实际参数可以是常量,变量和可求值的表达式(记得还有函数表达式,可求值为带返回值)
+    function_a('c', 10);
+
     pointer_a();
     return 0;
 }
