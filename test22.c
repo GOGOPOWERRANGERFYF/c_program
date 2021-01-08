@@ -1,5 +1,9 @@
 // 第九章 函数
 // 9.1
+
+// ANSI C标准库,被分为多个系列,每一系列都有各自的头文件.
+// 这些头文件除了其他内容,还包含了本系列所有的函数声明
+// 函数的代码在另一个库函数的文件中
 #include <stdio.h>
 // ANSI C风格 函数原型 function prototype
 //  void function_definition(void);
