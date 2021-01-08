@@ -52,7 +52,15 @@ int main(void){
     function_a('c', 10);
 
     pointer_a();
+
+    // return语句的另一个作用是,终止函数并把控制返回给主调函数的一条语句
+    // 函数控制流
+    // return 后面可以跟 常量 变量 可求值的表达式
+    //  int类型函数,return float类型变量,会隐式转换为int类型
+    // return; 只有void函数才会用到这种形式
     return 0;
+    // 下面这条语句将永远不会执行
+    printf("This's statement will not print!");
 }
 
 // 函数定义 function definition
