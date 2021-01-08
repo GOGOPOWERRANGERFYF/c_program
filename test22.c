@@ -65,6 +65,8 @@ int main(void){
     // 上面介绍了如何把信息从主调函数传递给被调函数
     // 函数的返回值可以把信息从被调函数传回给主调函数
     function_a('c', 10);
+    // 1.主调函数把实参存储在栈中,根据实参个数和类型存储 
+    // 2.被调函数根据它的形参个数和类型读取栈中的实参
 
     pointer_a();
 
@@ -89,6 +91,8 @@ void function_definition(void){
 // *ANSI C要求每个变量前都声明其类型,不能像普通变量声明那样使用同一类型的变量列表
 // void function_a(char c, i) 无效的函数头
 void function_a(char c, int i){
+    // 
+    return;
 }
 
 // 9.7 指针简介
