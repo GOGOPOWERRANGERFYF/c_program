@@ -17,6 +17,10 @@
 // 下面的函数原型的签名为没有返回值,没有参数
 void funciton_definition(void);
 // 下面的函数原型的签名为整数类型返回值,没有参数
+// int funciton_definition(void);
+
+void function_a(char c, int i);
+
 int pointer_a(void);
 
 // 全局变量 global ariable
@@ -38,7 +42,14 @@ int main(void){
 // 函数定义 function definition
 void function_definition(void){
     printf("This is function definition.\n");
-    return 0;
+}
+
+// 变量c和i被称为 形式参数(formal parameter,最新标准推荐使用),简称形参
+// 和定义在函数中的变量一样,形式参数也是局部变量,属于函数私有
+// 这意味着在其他函数使用同名变量不会引起冲突
+// *ANSI C要求每个变量前都声明其类型,不能像普通变量声明那样使用同一类型的变量列表
+// void function_a(char c, i) 无效的函数头
+void function_a(char c, int i){
 }
 
 // 9.7 指针简介
