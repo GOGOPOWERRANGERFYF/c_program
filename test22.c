@@ -34,6 +34,7 @@ void funciton_definition(void);
 // 函数声明的作用:告知编译器函数的类型,函数类型指的是函数返回值的类型
 // 在ANSI C标准之前,不用声明形参,而这种函数声明是有缺陷的
 // 下面的语句是按照ANSI C标准的 函数原型 声明
+// p585
 void function_a(char c, int i);
 
 int pointer_a(void);
