@@ -19,7 +19,16 @@ void funciton_definition(void);
 // 下面的函数原型的签名为整数类型返回值,没有参数
 int pointer_a(void);
 
+// 全局变量 global ariable
+int global_variable_a;
+
 int main(void){
+    // 局部变量 local variable
+    // 该变量只属于main函数
+    // 其它函数有相同变量名不会冲突
+    int count = 0;
+    // 函数表达式语句
+    putchar('*');
     // 函数调用 function call
     funciton_definition();
     pointer_a();
