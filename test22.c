@@ -1,14 +1,34 @@
 // 第九章 函数
-
 // 9.1
-// ......
-// 9.6
-
 #include <stdio.h>
+// ANSI C风格 函数原型 function prototype
+//  void function_definition(void);
+// 不识别ANSI C风格的编译器,函数声明改成:
+//  void function_definition();
+// 一些老版本的编译器连void都识别不了,
+//  就要把没有返回值的函数声明改成:
+//  int function_definition();  
+//  当然最好还是换编译器
+//  后面两种情况了解一下就行,按ANSI C风格写就好
+
+// 函数原型指明了 函数的返回值类型 和 函数接受的参数类型
+// 这些信息称为该函数的签名(signature)
+
+// 下面的函数原型的签名为没有返回值,没有参数
+void funciton_definition(void);
+// 下面的函数原型的签名为整数类型返回值,没有参数
 int pointer_a(void);
 
 int main(void){
+    // 函数调用 function call
+    funciton_definition();
     pointer_a();
+    return 0;
+}
+
+// 函数定义 function definition
+void function_definition(void){
+    printf("This is function definition.\n");
     return 0;
 }
 
