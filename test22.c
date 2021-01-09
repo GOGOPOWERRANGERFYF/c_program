@@ -132,6 +132,7 @@ void recursion_a(int i){
         // 依次类推,第3级递归,第n级递归...
         recursion_a(i + 1);
         // 函数每执行一次,变量i是每级递归私有的局部变量
+        // 每执行一次函数,操作数i的地址都是不一样的,栈中有多个i操作数
     }
     printf("<== variable i = %d, location: %p\n", i, &i);
     return;
