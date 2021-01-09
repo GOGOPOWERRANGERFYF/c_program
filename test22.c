@@ -37,6 +37,16 @@ void funciton_definition(void);
 void function_a(char c, int i);
 // 函数原型声明 除了告诉编译器函数(返回值类型)类型还有参数个数和类型
 
+// 按照ANSI C标准要求,使用函数原型(function prototype)来声明
+// 函数的返回值类型、参数的个数和每个参数的类型
+// 可以使用下面两种函数原型来声明:
+// 第一种:
+int function_b(int, int);
+// 第二种:
+int function_c(int a, int b);
+// 这里的变量名是假名,不必与函数定义的形式参数名一致
+// 实际参数与形式参数类型不匹配,编译器会把实际参数转换成形式参数的类型
+
 int pointer_a(void);
 
 // 全局变量 global ariable
@@ -67,7 +77,6 @@ int main(void){
     function_a('c', 10);
     // 1.主调函数把实参存储在栈中,根据实参个数和类型存储 
     // 2.被调函数根据它的形参个数和类型读取栈中的实参
-    // P587 9.2.2
 
     pointer_a();
 
