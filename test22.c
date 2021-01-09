@@ -46,8 +46,13 @@ int function_b(int, int);
 int function_c(int a, int b);
 // 这里的变量名是假名,不必与函数定义的形式参数名一致
 // 实际参数与形式参数类型不匹配,编译器会把实际参数转换成形式参数的类型
-
 // 错误与警告的区别:错误导致无法编译,而警告仍然允许编译
+
+// 9.2.4 无参数与未指定参数
+// 旧式函数声明
+//  void function();
+// 函数原型
+//  void funciton(void); 
 
 int pointer_a(void);
 
