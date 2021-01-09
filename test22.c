@@ -131,6 +131,7 @@ void recursion_a(int i){
         // recursion_a()函数调用recursion_a()自己,成为 第2级递归
         // 依次类推,第3级递归,第n级递归...
         recursion_a(i + 1);
+        // 函数每执行一次,变量i是每级递归私有的局部变量
     }
     printf("<== variable i = %d, location: %p\n", i, &i);
     return;
