@@ -131,8 +131,12 @@ void recursion_a(int i){
         // recursion_a()函数调用recursion_a()自己,成为 第2级递归
         // 依次类推,第3级递归,第n级递归...
         recursion_a(i + 1);
-        // 函数每执行一次,变量i是每级递归私有的局部变量
-        // 每执行一次函数,操作数i的地址都是不一样的,栈中有多个i操作数
+        // 函数每被调用一次,操作数i的地址都是不一样的,栈中有多个i操作数,
+        // 变量i是每级递归私有的局部变量
+        // 原理called function对calling function是黑盒
+        // 被调函数根据形参从主调函数的实参读取(拷贝)实参的副本
+        // 实参的副本赋值给形参i,i存放在新的存储单元
+        // 被调函数的形参i是被调函数的私有局部变量
     }
     printf("<== variable i = %d, location: %p\n", i, &i);
     return;
