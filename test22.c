@@ -125,10 +125,11 @@ void function_a(char c, int i){
 // recursion
 // C允许函数调用它自己,这种调用过程成为递归
 void recursion_a(int i){
-    printf("variable i = %d, location: %p\n", i, &i);
+    printf("==> variable i = %d, location: %p\n", i, &i);
     if (i < 5){
-        recursion_a(++i);
+        recursion_a(i + 1);
     }
+    printf("<== variable i = %d, location: %p\n", i, &i);
     return;
 }
 
