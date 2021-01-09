@@ -130,7 +130,7 @@ void recursion_a(int i){
         // 主函数main()第1次调用recursion_a(),成为 第1级递归
         // recursion_a()函数调用recursion_a()自己,成为 第2级递归
         // 依次类推,第3级递归,第n级递归...
-        recursion_a(i + 1);
+        recursion_a(i + 1); //*递归调用
         // 函数每被调用一次,操作数i的地址都是不一样的,栈中有多个i操作数,
         // 变量i是每级递归私有的局部变量
         // 原理called function对calling function是黑盒
