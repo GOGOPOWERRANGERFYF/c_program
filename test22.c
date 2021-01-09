@@ -73,10 +73,10 @@ int main(void){
     int count = 0;
     
     // 函数表达式语句
-    putchar('*');
+    //putchar('*');
     
     // 函数调用 function call
-    funciton_definition();
+    //funciton_definition();
 
     // 在函数调用中,实际参数(actual argument),简称实参
     // 提供了c和i的值
@@ -88,11 +88,13 @@ int main(void){
     // 被调函数使用的值从主调函数拷贝而来,因此不论被调函数如何操作,都不会影响主调函数中的原始数据
     // 上面介绍了如何把信息从主调函数传递给被调函数
     // 函数的返回值可以把信息从被调函数传回给主调函数
-    function_a('c', 10);
+    //function_a('c', 10);
     // 1.主调函数把实参存储在栈中,根据实参个数和类型存储 
     // 2.被调函数根据它的形参个数和类型读取栈中的实参
 
-    pointer_a();
+    recursion_a(1);
+
+    //pointer_a();
 
     // return语句的另一个作用是,终止函数并把控制返回给主调函数的一条语句
     // 函数控制流
@@ -123,7 +125,10 @@ void function_a(char c, int i){
 // recursion
 // C允许函数调用它自己,这种调用过程成为递归
 void recursion_a(int i){
-    
+    printf("variable i = %d, location: %p\n", i, &i);
+    if (i < 5){
+        recursion_a(++i);
+    }
     return;
 }
 
