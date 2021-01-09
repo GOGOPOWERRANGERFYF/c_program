@@ -127,6 +127,9 @@ void function_a(char c, int i){
 void recursion_a(int i){
     printf("==> variable i = %d, location: %p\n", i, &i);
     if (i < 5){
+        // 主函数main()第1次调用recursion_a(),成为 第1级递归
+        // recursion_a()函数调用recursion_a()自己,成为 第2级递归
+        // 依次类推,第3级递归,第n级递归...
         recursion_a(i + 1);
     }
     printf("<== variable i = %d, location: %p\n", i, &i);
