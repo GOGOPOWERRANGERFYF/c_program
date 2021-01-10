@@ -12,6 +12,7 @@ int function7(void);
 void function8(void);
 int function9(void);
 int function10(void);
+void function11(void);
 
 int main(void)
 {
@@ -35,7 +36,7 @@ int main(void)
     //    }
     //}
     //printf("input is not integer\n");
-    function10();
+    //function10();
     return 0;
 }
 
@@ -208,4 +209,8 @@ int function10(void){
     //printf("%x\n", *(float *)&i);
     printf("%x\n", *(int *)&f);
     return 0;
+}
+
+void function11(void){
+    return;
 }
