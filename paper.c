@@ -12,15 +12,15 @@ int function7(void);
 void function8(void);
 int function9(void);
 int function10(void);
-void function11(void);
+void function11(int n);
 
 int main(void)
 {
-    char name[3] = "fy";
-    int a, b;
-    printf("NAME(%%s): %s\n", NAME);
-    printf("NAME(%%c%%c,enter key:ascii(decimal)=%%d): *%c%c%d*\n"
-        , name[0], name[1], name[2]);
+    //char name[3] = "fy";
+    //int a, b;
+    //printf("NAME(%%s): %s\n", NAME);
+    //printf("NAME(%%c%%c,enter key:ascii(decimal)=%%d): *%c%c%d*\n"
+    //    , name[0], name[1], name[2]);
     //function1();
     //function2();
     //function3();
@@ -37,6 +37,7 @@ int main(void)
     //}
     //printf("input is not integer\n");
     //function10();
+    function11(1);
     return 0;
 }
 
@@ -211,6 +212,12 @@ int function10(void){
     return 0;
 }
 
-void function11(void){
+void function11(int n){
+    // function 缩写:func/fn
+    printf("recursion %d -> n = %d location: %p\n", n, n, &n);
+    if (n < 3){
+        function11(n + 1);
+    }
+    printf("recursion %d <- n = %d location: %p\n", n, n, &n);
     return;
 }
