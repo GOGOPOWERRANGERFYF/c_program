@@ -1,8 +1,19 @@
 #include <stdio.h>
+#include <stdlib.h>
+//#include <math.h>
 typedef float height;
+typedef int randomNumber;
+
 void main(void){
-    height h1 = 1.72;
-    printf("person height: %.2fm\n", h1);
+    //height h1 = 1.72;
+    //printf("person height: %.2fm\n", h1);
+
+    randomNumber counter, rn1;
+    printf("sizeof(rand()) %dbyte.\n", sizeof(rand()));
+    for (counter = 1; counter < 6; counter++){
+        rn1 = rand();
+        printf("random number: %d\n", rn1);
+    }
     return;
 }
 // 《算法:C语言实现》 
