@@ -214,10 +214,10 @@ int function10(void){
 
 void function11(int n){
     // function 缩写:func/fn
-    printf("recursion %d -> n = %d location: %p\n", n, n, &n);
+    printf("recursive call level%d -> n = %d location: %p\n", n, n, &n);
     if (n < 3){
         function11(n + 1);
     }
-    printf("recursion %d <- n = %d location: %p\n", n, n, &n);
+    printf("recursive call level%d <- n = %d location: %p\n", n, n, &n);
     return;
 }
