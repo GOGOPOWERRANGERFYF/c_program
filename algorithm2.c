@@ -22,3 +22,6 @@ void main(void){
 //  int float char 这些为c语言内置数据类型
 //  定义3.1 数据类型是值的集合和在这些值上的操作集  
 //  declare 声明
+
+// ascii to integer function
+// atoi()
