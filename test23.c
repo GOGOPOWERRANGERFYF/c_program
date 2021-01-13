@@ -6,6 +6,7 @@ void designated_initializer(void);
 
 void main(void){
     array_a();
+    designated_initializer();
     return;
 }
 
