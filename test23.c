@@ -35,7 +35,7 @@ void array_a(void){
 
     // 对于其他一些存储类别的变量和数组,如果声明时未初始化
     // 编译器会把它们的值设置为0
-    // 如果是自动存储类别,数组的值不是随机变动的(所以static为静止的固定值为0)
+    // 如果是自动存储类别,数组的值是随机变动的(所以static为静止的固定值为0)
     printf("array2[0]: %d\n", array2[0]);
     printf("array3[0]: %d\n", array3[3]);
     printf("array_auto1[0]: %d\n", array_auto1[7]);
