@@ -49,6 +49,7 @@ void array_a(void){
 // designated 指定;指明
 // initializer 初始值;初始化程序
 // designated initializer 指定初始化器 (C99标准)
+// 指定初始化的元素
 void designated_initializer(void){
     int array1[5] = {[4] = 15};
     printf("%d\n", array1[4]);
