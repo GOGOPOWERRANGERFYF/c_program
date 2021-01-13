@@ -21,6 +21,8 @@ void array_a(void){
     // 初始化列表的元素个数少于数组元素个数时,编译器会把剩余的元素初始化为0
     // 初始化列表的元素个数多于数组元素个数时,编译器会把提示错误
     int array3[5] = {2,4};
+    // 让编译器自动匹配数组元素个数并初始化
+    int array_auto1[] = {1,2,3,4,5,6,7,8};
 
     // storage class存储类别
     // 数组与其他变量类似,可以把数组创建成不同存储类别
@@ -33,8 +35,8 @@ void array_a(void){
 
     // 对于其他一些存储类别的变量和数组,如果声明时未初始化
     // 编译器会把它们的值设置为0
-    printf("%d\n", array2[0]);
-    printf("%d\n", array3[3]);
-
+    printf("array2[0]: %d\n", array2[0]);
+    printf("array3[0]: %d\n", array3[3]);
+    printf("array_auto1[0]: %d\n", array_auto1[7]);
     return;
 }
