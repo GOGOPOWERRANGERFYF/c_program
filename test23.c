@@ -15,6 +15,7 @@ void array_a(void){
     // 不支持ANSI的编译器需要在数组声明前加static
     // 逗号分隔的值列表
     int array1[5] = {2,4,6,8,10};
+    // storage class存储类别
     const birthday[3] = {1987,11,9};
     return;
 }
