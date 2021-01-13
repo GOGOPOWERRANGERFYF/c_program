@@ -52,6 +52,11 @@ void array_a(void){
 // 指定初始化的元素
 void designated_initializer(void){
     int array1[5] = {[4] = 15};
+    // 声明数组后,可以借助数组下标subscript(索引index)给数组元素赋值
+    int array2[2];
+    array2[1] = 5;
+
     printf("%d\n", array1[4]);
+    printf("%d\n", array2[1]);
     return;
 }
