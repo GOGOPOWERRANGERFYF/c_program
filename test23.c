@@ -40,6 +40,6 @@ void array_a(void){
     printf("array3[0]: %d\n", array3[3]);
     printf("array_auto1[0]: %d\n", array_auto1[7]);
     // size 大小,尺码
-    printf("array size of array2: %d\n", sizeof(array2));
+    printf("array size of array2: %d bytes\n", sizeof(array2));
     return;
 }
