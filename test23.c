@@ -2,6 +2,7 @@
 //
 #include <stdio.h>
 void array_a(void);
+void designated_initializer(void);
 
 void main(void){
     array_a();
@@ -41,5 +42,14 @@ void array_a(void){
     printf("array_auto1[0]: %d\n", array_auto1[7]);
     // size 大小,尺码
     printf("array size of array2: %d bytes\n", sizeof(array2));
+    return;
+}
+
+// designated 指定;指明
+// initializer 初始值;初始化程序
+// designated initializer 指定初始化器 (C99标准)
+void designated_initializer(void){
+    int array1[5] = {[4] = 15};
+    printf("%d\n", array1[4]);
     return;
 }
