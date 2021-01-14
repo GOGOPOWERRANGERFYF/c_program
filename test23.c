@@ -70,6 +70,9 @@ int array_element_assignment(void){
     int i;
     // 花括号初始化列表 只能在数组初始化时使用,声明之后是没有办法使用的
     // error错误: array1[5] = {1,2,3,4,5};
+    // error错误: array1 = {1,2,3,4,5};
+    // array1[5] = 1; 数组下标越界
+    // array1数组的最后一个元素array1[5-1]
     for (i = 0; i < 5; i++){
         array1[i] = 2 * i;
         printf("array1[%d]: %d\n", i, array1[i]);
