@@ -86,9 +86,31 @@ void array_element_assignment(void){
 // 程序可以编译运行,但运行结果会很奇怪,或异常中止
 
 void array_size(void){
+    int i, j;
+
     // symbolic integer constant 符号整数常量
     int array1[SIZE];
     // literal integer constant 字面整数常量 
-    double array2[10];
+    float array2[10];
+
+    // C99标准之前,声明数组时只能在中括号中使用整型常量表达式
+    // 所谓整型常量表达式,就是由整型常量构成的表达式
+    //  int n; 
+    //  float f;
+    //  int array1[n]; 
+    //  int array2[n+1];
+    //  int array3[2*n+1];
+    //  int array4[(int)f];
+    // sizeof表达式被视为整型表达式
+    // 但const(关键字,限制变量为只读)值不是,与c++不同
+    // 另外,整型表达式的值必须大于0
+    // 错误代码示范:
+    //      int array[-1];
+    //      int array[0];
+    //      int array[2.5];
+
+    // 变长数组(variable-length array) C99标准
+    // C11标准又把把变长数组设定为可选,不是语言必备特性 额。。。真能折腾。。。
+    int array3[i], array4[j];
     return;
 }
