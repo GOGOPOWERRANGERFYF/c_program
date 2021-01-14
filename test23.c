@@ -6,6 +6,7 @@ void array_a(void);
 void designated_initializer(void);
 void array_element_assignment(void);
 void array_size(void);
+void multidimensional_array(void);
 
 void main(void){
     array_a();
@@ -118,3 +119,9 @@ void array_size(void){
 }
 
 // 多维数组
+void multidimensional_array(void){
+    // 主数组(master array)有5个元素
+    // 每个元素是一个包含12个元素的数组
+    int data1[5][12];
+    return;
+}
