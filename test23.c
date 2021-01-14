@@ -116,3 +116,5 @@ void array_size(void){
     int array3[i], array4[j];
     return;
 }
+
+// 多维数组
