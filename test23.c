@@ -1,9 +1,11 @@
 // 第十章 数组和指针
 //
 #include <stdio.h>
+#define SIZE 10
 void array_a(void);
 void designated_initializer(void);
-int array_element_assignment(void);
+void array_element_assignment(void);
+void array_size(void);
 
 void main(void){
     array_a();
@@ -64,7 +66,7 @@ void designated_initializer(void){
 }
 
 // 给数组元素赋值
-int array_element_assignment(void){
+void array_element_assignment(void){
     // c不允许把数组作为一个单元赋给另一个数组 
     int array1[5];
     int i;
@@ -77,9 +79,16 @@ int array_element_assignment(void){
         array1[i] = 2 * i;
         printf("array1[%d]: %d\n", i, array1[i]);
     }
-    return 0;
+    return;
 }
 // 在C标准中,使用越界下标的结果是未定义的
 // 编译器是不会检查使用的数组下标是否越界的
 // 程序可以编译运行,但运行结果会很奇怪,或异常中止
 
+void array_size(void){
+    // symbolic integer constant 符号整数常量
+    int array1[SIZE];
+    // literal integer constant 字面整数常量 
+    double array2[10];
+    return;
+}
