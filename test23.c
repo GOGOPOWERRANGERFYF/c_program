@@ -111,6 +111,7 @@ void array_size(void){
 
     // 变长数组(variable-length array) C99标准
     // C11标准又把把变长数组设定为可选,不是语言必备特性 额。。。真能折腾。。。
+    // 声明VLA时不能进行初始化
     int array3[i], array4[j];
     return;
 }
