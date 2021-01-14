@@ -3,10 +3,12 @@
 #include <stdio.h>
 void array_a(void);
 void designated_initializer(void);
+int array_element_assignment(void);
 
 void main(void){
     array_a();
     designated_initializer();
+    array_element_assignment();
     return;
 }
 
@@ -59,4 +61,18 @@ void designated_initializer(void){
     printf("%d\n", array1[4]);
     printf("%d\n", array2[1]);
     return;
+}
+
+// 给数组元素赋值
+int array_element_assignment(void){
+    // c不允许把数组作为一个单元赋给另一个数组 
+    int array1[5];
+    int i;
+    // 花括号初始化列表 只能在数组初始化时使用,声明之后是没有办法使用的
+    // error错误: array1[5] = {1,2,3,4,5};
+    for (i = 0; i < 5; i++){
+        array1[i] = 2 * i;
+        printf("array1[%d]: %d\n", i, array1[i]);
+    }
+    return 0;
 }
