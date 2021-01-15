@@ -1,6 +1,7 @@
 // 第十章 数组和指针
-//
 #include <stdio.h>
+#include <unistd.h>
+//#include <windows.h>
 #define SIZE 10
 void array_a(void);
 void designated_initializer(void);
@@ -133,5 +134,7 @@ void multidimensional_array(void){
     };
     float data2[5][12];
     printf("%d\n", data1[1][11]);
+    sleep(5);
+    printf("%d\n", data1[2][10]);
     return;
 }
