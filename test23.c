@@ -123,5 +123,6 @@ void multidimensional_array(void){
     // 主数组(master array)有5个元素
     // 每个元素是一个包含12个元素的数组
     int data1[5][12];
+    float data2[5][12];
     return;
 }
