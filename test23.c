@@ -12,6 +12,7 @@ void main(void){
     array_a();
     designated_initializer();
     array_element_assignment();
+    multidimensional_array();
     return;
 }
 
@@ -122,7 +123,15 @@ void array_size(void){
 void multidimensional_array(void){
     // 主数组(master array)有5个元素
     // 每个元素是一个包含12个元素的数组
-    int data1[5][12];
+    int data1[5][12] =
+    {
+        {1,2,3,4,5,6,7,8,9,10,11,12},
+        {1,2,3,4,5,6,7,8,9,10,11,12},
+        {1,2,3,4,5,6,7,8,9,10,11,12},
+        {1,2,3,4,5,6,7,8,9,10,11,12},
+        {1,2,3,4,5,6,7,8,9,10,11,12}
+    };
     float data2[5][12];
+    printf("%d\n", data1[1][11]);
     return;
 }
