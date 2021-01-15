@@ -10,9 +10,9 @@ void array_size(void);
 void multidimensional_array(void);
 
 void main(void){
-    array_a();
-    designated_initializer();
-    array_element_assignment();
+    //array_a();
+    //designated_initializer();
+    //array_element_assignment();
     multidimensional_array();
     return;
 }
@@ -48,8 +48,7 @@ void array_a(void){
     printf("array2[0]: %d\n", array2[0]);
     printf("array3[0]: %d\n", array3[3]);
     printf("array_auto1[0]: %d\n", array_auto1[7]);
-    // size 大小,尺码
-    printf("array size of array2: %d bytes\n", sizeof(array2));
+    // size 大小,尺码 printf("array size of array2: %d bytes\n", sizeof(array2));
     return;
 }
 
@@ -122,19 +121,23 @@ void array_size(void){
 
 // 多维数组
 void multidimensional_array(void){
+    unsigned int i, j;
     // 主数组(master array)有5个元素
     // 每个元素是一个包含12个元素的数组
-    int data1[5][12] =
+    int data1[2][12] =
     {
-        {1,2,3,4,5,6,7,8,9,10,11,12},
-        {1,2,3,4,5,6,7,8,9,10,11,12},
-        {1,2,3,4,5,6,7,8,9,10,11,12},
         {1,2,3,4,5,6,7,8,9,10,11,12},
         {1,2,3,4,5,6,7,8,9,10,11,12}
     };
-    float data2[5][12];
-    printf("%d\n", data1[1][11]);
-    sleep(5);
-    printf("%d\n", data1[2][10]);
+    float data2[3][12];
+    //printf("%d\n", data1[1][11]);
+    //printf("%d\n", data1[2][10]);
+    for (i = 0; i < 2; i++){
+        for (j = 0; j < 12; j++){
+            sleep(2);
+            printf("data1[%2u][%2u]:%3d;\n", i, j, data1[i][j]);
+        }
+        printf("\n");
+    }
     return;
 }
