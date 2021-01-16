@@ -149,6 +149,7 @@ void multidimensional_array_2(void){
      total_of_array_element, average_of_array_element,
      total_of_array_element_of_element, average_of_array_element_of_element;
     unsigned int i, j;
+    // float data1[2] 一维数组
     // 初始化二维数组(two-dimensional array)
     float data1[2][12] =
     {
