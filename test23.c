@@ -145,8 +145,10 @@ void multidimensional_array_1(void){
 }
 
 void multidimensional_array_2(void){
-    static float total_of_array_element, average_of_array_element;
+    static float total_of_array_element, average_of_array_element,
+     total_of_array_element_of_element, average_of_array_element_of_element;
     unsigned int i, j;
+    // 初始化二维数组(two-dimensional array)
     float data1[2][12] =
     {
         {1,2,3,4,5,6,7,8,9,10,11,12},
@@ -162,6 +164,16 @@ void multidimensional_array_2(void){
         }
         printf("total_of_array_element[%d]: %.2f; ", i, total_of_array_element);
         printf("average_of_array_element[%d]: %.2f\n", i, total_of_array_element / j);
+    }
+    
+    for (j = 0; j < 12; j++){
+        for (i = 0, total_of_array_element_of_element = 0; i < 2; i++){
+            total_of_array_element_of_element += data1[i][j];
+        }
+        printf("total_of_array_element_of_element[i][%d]: %.2f; ",
+         j, total_of_array_element_of_element);
+        printf("average_of_array_element_of_element[i][%d]: %.2f\n",
+         j, total_of_array_element_of_element / i);
     }
     return;
 }
