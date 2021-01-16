@@ -150,9 +150,11 @@ void multidimensional_array_2(void){
      total_of_array_element_of_element, average_of_array_element_of_element;
     unsigned int i, j;
     // float data1[2] 一维数组
+    // {1,2,3,4,5,6,7,8,9,10,11,12} 数值列表
     // 初始化二维数组(two-dimensional array)
     float data1[2][12] =
     {
+        // 数组元素个数不匹配问题与一维数组一致
         {1,2,3,4,5,6,7,8,9,10,11,12},
         {13,14,15,16,17,18,19,20,21,22,23,24}
     };
