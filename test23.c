@@ -165,6 +165,6 @@ void multidimensional_array_2(void){
     printf("for loop exit, j = %d\n", j);
     printf("total_of_array_element: %.2f\n", total_of_array_element);
     average_of_array_element = total_of_array_element / (2 * j);
-    printf("%.2f\n", average_of_array_element);
+    printf("average_of_array_element: %.2f\n", average_of_array_element);
     return;
 }
