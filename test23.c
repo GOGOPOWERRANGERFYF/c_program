@@ -7,13 +7,15 @@ void array_a(void);
 void designated_initializer(void);
 void array_element_assignment(void);
 void array_size(void);
-void multidimensional_array(void);
+void multidimensional_array_1(void);
+void multidimensional_array_2(void);
 
 void main(void){
     //array_a();
     //designated_initializer();
     //array_element_assignment();
-    multidimensional_array();
+    //multidimensional_array_1();
+    multidimensional_array_2();
     return;
 }
 
@@ -120,14 +122,14 @@ void array_size(void){
 }
 
 // 多维数组
-void multidimensional_array(void){
+void multidimensional_array_1(void){
     unsigned int i, j;
     // 主数组(master array)有5个元素
     // 每个元素是一个包含12个元素的数组
     int data1[2][12] =
     {
         {1,2,3,4,5,6,7,8,9,10,11,12},
-        {1,2,3,4,5,6,7,8,9,10,11,12}
+        {13,14,15,16,17,18,19,20,21,22,23,24}
     };
     float data2[3][12];
     //printf("%d\n", data1[1][11]);
@@ -138,6 +140,25 @@ void multidimensional_array(void){
             printf("data1[%2u][%2u]:%3d;\n", i, j, data1[i][j]);
         }
         printf("\n");
+    }
+    return;
+}
+
+void multidimensional_array_2(void){
+    static int average_of_array_element, average_of_array,
+        total_of_array_element, total_of_array;
+    unsigned int i, j;
+    int data1[2][12] =
+    {
+        {1,2,3,4,5,6,7,8,9,10,11,12},
+        {13,14,15,16,17,18,19,20,21,22,23,24}
+    };
+
+    for (i = 0; i < 2; i++){
+        for (j = 0; j < 12; j++){
+            total_of_array_element += data1[i][j];
+        }
+        printf("total_of_array_element[%d]: %d\n", i, total_of_array_element);
     }
     return;
 }
