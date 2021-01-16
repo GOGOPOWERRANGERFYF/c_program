@@ -147,28 +147,21 @@ void multidimensional_array_1(void){
 void multidimensional_array_2(void){
     static float total_of_array_element, average_of_array_element;
     unsigned int i, j;
-
-    printf("total_of_array_element = %.2f; average_of_array_element = %.2f\n",
-     total_of_array_element, average_of_array_element);
-    
     float data1[2][12] =
     {
         {1,2,3,4,5,6,7,8,9,10,11,12},
         {13,14,15,16,17,18,19,20,21,22,23,24}
     };
 
+    printf("total_of_array_element = %.2f; average_of_array_element = %.2f\n",
+     total_of_array_element, average_of_array_element);
+
     for (i = 0; i < 2; i++){
         for (j = 0, total_of_array_element = 0; j < 12; j++){
             total_of_array_element += data1[i][j];
         }
         printf("total_of_array_element[%d]: %.2f; ", i, total_of_array_element);
-        printf("average_of_array_element[%d]: %.2f\n",
-         i, total_of_array_element / j);
+        printf("average_of_array_element[%d]: %.2f\n", i, total_of_array_element / j);
     }
-
-    //printf("for loop exit, j = %d\n", j);
-    //printf("total_of_array_element: %.2f\n", total_of_array_element);
-    //average_of_array_element = total_of_array_element / (2 * j);
-    //printf("average_of_array_element: %.2f\n", average_of_array_element);
     return;
 }
