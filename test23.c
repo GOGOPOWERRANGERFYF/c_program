@@ -145,7 +145,8 @@ void multidimensional_array_1(void){
 }
 
 void multidimensional_array_2(void){
-    static float total_of_array_element, average_of_array_element,
+    static float total_horizon, total_vertical,
+     total_of_array_element, average_of_array_element,
      total_of_array_element_of_element, average_of_array_element_of_element;
     unsigned int i, j;
     // 初始化二维数组(two-dimensional array)
@@ -155,13 +156,14 @@ void multidimensional_array_2(void){
         {13,14,15,16,17,18,19,20,21,22,23,24}
     };
 
-    printf("total_of_array_element = %.2f; average_of_array_element = %.2f\n",
+    printf("static variable total_of_array_element = %.2f; average_of_array_element = %.2f\n\n",
      total_of_array_element, average_of_array_element);
 
     for (i = 0; i < 2; i++){
         for (j = 0, total_of_array_element = 0; j < 12; j++){
             total_of_array_element += data1[i][j];
         }
+        total_horizon += total_of_array_element;
         printf("total_of_array_element[%d]: %.2f; ", i, total_of_array_element);
         printf("average_of_array_element[%d]: %.2f\n", i, total_of_array_element / j);
     }
@@ -170,10 +172,14 @@ void multidimensional_array_2(void){
         for (i = 0, total_of_array_element_of_element = 0; i < 2; i++){
             total_of_array_element_of_element += data1[i][j];
         }
+        total_vertical += total_of_array_element_of_element;
         printf("total_of_array_element_of_element[i][%d]: %.2f; ",
          j, total_of_array_element_of_element);
         printf("average_of_array_element_of_element[i][%d]: %.2f\n",
          j, total_of_array_element_of_element / i);
     }
+
+    printf("\ntotal_horizon: %.2f; total_vertical: %.2f\n",
+     total_horizon, total_vertical);
     return;
 }
