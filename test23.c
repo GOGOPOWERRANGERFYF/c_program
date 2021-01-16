@@ -190,3 +190,7 @@ void multidimensional_array_2(void){
      total_horizon, total_vertical);
     return;
 }
+
+// 其他多为数组,例如三维数组 float array[x][y][z],
+// 按照二维数组类推即可,包括四维数组,五维数组等...
+
