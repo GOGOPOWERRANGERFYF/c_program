@@ -147,6 +147,10 @@ void multidimensional_array_1(void){
 void multidimensional_array_2(void){
     static float total_of_array_element, average_of_array_element;
     unsigned int i, j;
+
+    printf("total_of_array_element = %.2f; average_of_array_element = %.2f\n",
+     total_of_array_element, average_of_array_element);
+    
     float data1[2][12] =
     {
         {1,2,3,4,5,6,7,8,9,10,11,12},
