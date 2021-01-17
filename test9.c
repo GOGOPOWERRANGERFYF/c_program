@@ -36,6 +36,7 @@ void while_block(void)
     
     //把整数值0赋给变量start,赋值表达式
     // 可修改的左值 = 表达式的值(包括常量,变量,可求值的表达式) 
+    // 表达式有函数表达式
     int start = 0;
     // C的当前标准
     //(早期C标准的lvalue: left value
