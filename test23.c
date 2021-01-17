@@ -213,5 +213,10 @@ void pointer_and_array(void){
     printf("array1 == &array1[0]?: %s\n", array1 == &array1[0]?"true":"false");
     printf("array1(virtual address): %p\n", array1);
     printf("&array1(virtual address): %p\n", &array1[0]);
+    // 数组的地址就是数组首元素的地址
+
+    // 在系统中,地址是按字节编址的(虚拟地址)
+    // 在C中,指针+1指的是增加一个存储单元(指针指向下一个存储单元)
+    // 在数组中,+1后就是下一个元素的地址
     return;
 }
