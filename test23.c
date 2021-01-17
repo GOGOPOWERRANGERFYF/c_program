@@ -206,6 +206,8 @@ void pointer_and_array(void){
     // 指针变量未初始化,其值是随机的
     int * p1, * p2;
     int array1[3];
+    printf("wild pointer p1/p2: %p, %p.\n", p1, p2);
+
     // 没有布尔类型的转换说明
     // array1和&array1[0]两者都是常量,程序运行过程中不会改变
     // array1 = &a; 无法赋值,编译器会报错,因此在程序运行过程中它是constant常量
