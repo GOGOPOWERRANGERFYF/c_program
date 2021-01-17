@@ -202,7 +202,7 @@ void pointer_and_array(void){
     char c;
     short int si;
     int a;
-    // 指针变量未初始化之前为野指针
+    // 指针变量未初始化之前为野指针(wild pointer)
     // 指针变量未初始化,其值是随机的
     int * p1, * p2;
     int array1[3];
