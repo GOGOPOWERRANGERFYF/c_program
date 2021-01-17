@@ -207,7 +207,7 @@ void pointer_and_array(void){
     // array1 = &a; 无法赋值,编译器会报错,因此在程序运行过程中它是constant常量
     // 但程序下一次运行时地址会改变
 
-    // 可以把它们赋给指针变量
+    // 可以把它们(就跟地址常量一样)赋给指针变量
     p1 = array1;
     p2 = &array1[0];
     printf("array1 == &array1[0]?: %s\n", array1 == &array1[0]?"true":"false");
