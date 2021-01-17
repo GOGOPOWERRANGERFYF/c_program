@@ -206,7 +206,7 @@ void pointer_and_array(void){
     // 指针变量未初始化,其值是随机的
     int * p1, * p2;
     int array1[3];
-    printf("wild pointer p1/p2: %p, %p.\n", p1, p2);
+    //printf("wild pointer p1/p2: %p, %p.\n", p1, p2);
 
     // 没有布尔类型的转换说明
     // array1和&array1[0]两者都是常量,程序运行过程中不会改变
@@ -220,15 +220,14 @@ void pointer_and_array(void){
     printf("array1(virtual address): %p\n", array1);
     printf("&array1(virtual address): %p\n", &array1[0]);
     // 数组的地址就是数组首元素的地址
+    printf("&c: %p; &c + 1: %p\n", &c, &c + 1);
+    printf("&si: %p; &si + 1: %p\n", &si, &si + 1);
 
     // 在系统中,地址是按字节编址的(虚拟地址)
     // 在C中,指针+1指的是增加一个存储单元(指针指向下一个存储单元)
     // 在数组中,+1后就是下一个元素的地址
     // 这就是指针变量必须声明所指向对象类型的原因之一
     // 因为只知道存储对象地址是不够的,计算机需要知道对象的存储需要多少个字节
-    // (本质就是告诉编译器数组元素的数据类型,知道元素的存储空间大小)
     // 指针指向标量变量和数组都要知道变量的类型,不然无法正确取回地址上的值
-    printf("&c: %p; &c + 1: %p\n", &c, &c + 1);
-    printf("&si: %p; &si + 1: %p\n", &si, &si + 1);
     return;
 }
