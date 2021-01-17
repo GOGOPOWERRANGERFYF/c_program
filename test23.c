@@ -199,6 +199,8 @@ void multidimensional_array_2(void){
 // 数组表示法其实是在变相使用指针
 // 数组名是数组首元素的地址
 void pointer_and_array(void){
+    char c;
+    short int si;
     int a;
     int * p1, * p2;
     int array1[3];
@@ -218,5 +220,7 @@ void pointer_and_array(void){
     // 在系统中,地址是按字节编址的(虚拟地址)
     // 在C中,指针+1指的是增加一个存储单元(指针指向下一个存储单元)
     // 在数组中,+1后就是下一个元素的地址
+    printf("&c: %p; &c + 1: %p\n", &c, &c + 1);
+    printf("&si: %p; &si + 1: %p\n", &si, &si + 1);
     return;
 }
