@@ -199,8 +199,12 @@ void multidimensional_array_2(void){
 // 数组表示法其实是在变相使用指针
 // 数组名是数组首元素的地址
 void pointer_and_array(void){
+    int a;
     int array1[3];
     // 没有布尔类型的转换说明
+    // array1和&array1[0]两者都是常量,程序运行过程中不会改变
+    // array1 = &a; 无法赋值,编译器会报错,因此在程序运行过程中它是constant常量
+    // 但程序下一次运行时地址会改变
     printf("array1 == &array1[0]?: %s\n", array1 == &array1[0]?"true":"false");
     printf("array1(virtual address): %p\n", array1);
     printf("&array1(virtual address): %p\n", &array1[0]);
