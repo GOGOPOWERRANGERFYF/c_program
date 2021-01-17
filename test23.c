@@ -9,13 +9,15 @@ void array_element_assignment(void);
 void array_size(void);
 void multidimensional_array_1(void);
 void multidimensional_array_2(void);
+void pointer_and_array(void);
 
 void main(void){
     //array_a();
     //designated_initializer();
     //array_element_assignment();
     //multidimensional_array_1();
-    multidimensional_array_2();
+    //multidimensional_array_2();
+    pointer_and_array();
     return;
 }
 
@@ -194,3 +196,11 @@ void multidimensional_array_2(void){
 // 按照二维数组类推即可,包括四维数组,五维数组等...
 
 // 指针和数组
+// 数组表示法其实是在变相使用指针
+// 数组名是数组首元素的地址
+void pointer_and_array(void){
+    int array1[3];
+    // 没有布尔类型的转换说明
+    printf("%s\n", array1 == &array1[0]?"true":"false");
+    return;
+}
