@@ -201,6 +201,8 @@ void multidimensional_array_2(void){
 void pointer_and_array(void){
     int array1[3];
     // 没有布尔类型的转换说明
-    printf("%s\n", array1 == &array1[0]?"true":"false");
+    printf("array1 == &array1[0]?: %s\n", array1 == &array1[0]?"true":"false");
+    printf("array1(virtual address): %p\n", array1);
+    printf("&array1(virtual address): %p\n", &array1[0]);
     return;
 }
