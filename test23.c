@@ -205,6 +205,7 @@ void pointer_and_array(void){
     // 指针变量未初始化之前为野指针(wild pointer)
     // 指针变量未初始化,其值是随机的
     int * p1, * p2;
+    char char_array1[3];
     int array1[3];
     //printf("wild pointer p1/p2: %p, %p.\n", p1, p2);
 
@@ -229,5 +230,7 @@ void pointer_and_array(void){
     // 这就是指针变量必须声明所指向对象类型的原因之一
     // 因为只知道存储对象地址是不够的,计算机需要知道对象的存储需要多少个字节
     // 指针指向标量变量和数组都要知道变量的类型,不然无法正确取回地址上的值
+    printf("&char_array1[0]: %p\n&char_array1[1]: %p\n&char_array1[2]: %p\n",
+     &char_array1[0], &char_array1[1], &char_array1[2]);
     return;
 }
