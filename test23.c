@@ -232,5 +232,7 @@ void pointer_and_array(void){
     // 指针指向标量变量和数组都要知道变量的类型,不然无法正确取回地址上的值
     printf("&char_array1[0]: %p\n&char_array1[1]: %p\n&char_array1[2]: %p\n",
      &char_array1[0], &char_array1[1], &char_array1[2]);
+    printf("&array1[0]: %p\n&array1[1]: %p\n&array1[2]: %p\n",
+     &array1[0], &array1[1], &array1[2]);
     return;
 }
