@@ -234,6 +234,6 @@ void pointer_and_array(void){
      &char_array1[0], &char_array1[1], &char_array1[2]);
     printf("&array1[0]: %p\n&array1[1]: %p\n&array1[2]: %p\n",
      &array1[0], &array1[1], &array1[2]);
-    // 指针的值是它所指向对象的地址
+    // 指针的值是它所指向数据对象的地址
     return;
 }
