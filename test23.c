@@ -269,7 +269,7 @@ void pointer_and_array(void){
 
 // 函数原型的形参可以省略参数名(假名),也可以与函数定义头的形参名不同
 void pointer_parameter(){
-    // int * array 和 int array[] 作为参数时
+    // int * array和int array[]在函数原型和函数定义的函数头里
     // 才可以用int array[]替换int * array
     // 下面的array编译器会报错,数组和指针类型冲突
     // int * array;
