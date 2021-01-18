@@ -217,7 +217,8 @@ void pointer_and_array(void){
     // 可以把它们(就跟地址常量一样)赋给指针变量
     p1 = array1;
     p2 = &array1[0];
-    printf("array1 == &array1[0]?: %s\n", array1 == &array1[0]?"true":"false");
+
+    printf("array1 == &array1[0]?: %s\n", array1 == &array1[0] ? "true" : "false");
     printf("array1(virtual address): %p\n", array1);
     printf("&array1(virtual address): %p\n", &array1[0]);
     // 数组的地址就是数组首元素的地址
@@ -235,5 +236,13 @@ void pointer_and_array(void){
     printf("&array1[0]: %p\n&array1[1]: %p\n&array1[2]: %p\n",
      &array1[0], &array1[1], &array1[2]);
     // 指针的值是它所指向数据对象的地址
+    // 在指针前面使用*运算符(间接运算符)可以得到该指针所指向数据对象的值
+    // 指针加1,指针的值递增它所指向数据对象类型的大小(以字节byte为单位)
+    // 数组与指针的关系十分密切
+    // 可以使用指针标识数组元素和获得数组元素的值
+    printf("array1 == &array1[0]: %s\n", array1 == &array1[0] ? "true" : "false");
+    printf("array1 + 1 == &array1[0 + 1]: %s\n", array1 + 1 == &array1[0 + 1] ? "true" : "false");
+    printf("*array1 == array1[0]: %s\n", *array1 == array1[0] ? "true" : "false");
+    printf("*(array1 + 1) == array1[0 + 1]: %s\n", *(array1 + 1) == array1[0 + 1] ? "true" : "false");
     return;
 }
