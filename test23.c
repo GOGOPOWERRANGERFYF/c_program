@@ -271,9 +271,13 @@ void pointer_and_array(void){
 void pointer_parameter(){
     // int * array和int array[]在函数原型和函数定义的函数头里
     // 才可以用int array[]替换int * array
+    // 在函数原型和函数头里这两个是等价的,可以互相替换
+    // 相当于知道数组首元素地址但不知道数组长度
+
     // 下面的array编译器会报错,数组和指针类型冲突
     // int * array;
     // int array[] = {1, 2};
+    // 数组和指针并不相同
     return;
 }
 //void pointer_parameter_a(int array[], int n){
