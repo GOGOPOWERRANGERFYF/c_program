@@ -16,7 +16,7 @@ void pointer_parameter();
 // 等价函数原型:
 // 函数原型可省略形参名
 //void pointer_parameter_a(int *, int);
-void pointer_parameter_a(int *array, int n);
+void pointer_parameter_a(int * array, int n);
 void pointer_parameter_b(int array[], int n);
 
 void main(void){
@@ -276,14 +276,16 @@ void pointer_parameter(){
     // 数组和指针并不相同
     return;
 }
-void pointer_parameter_a(int *array, int n){
+void pointer_parameter_a(int * array, int n){
     // int * array和int array[]在函数原型和函数定义的函数头里
     // 才可以用int array[]替换int * array
     // 在函数原型和函数头里这两个是等价的,可以互相替换
     // 相当于知道数组首元素地址但不知道数组长度
+    printf("pointer variable array: %p\n", array);
+    printf(" *array: %d;  *(array + 1): %d\n", *array, *(array + 1));
     return;
 }
-void pointer_parameter_a(int array[], int n){
+void pointer_parameter_b(int array[], int n){
 
     return;
 }
