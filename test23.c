@@ -258,7 +258,7 @@ void pointer_and_array(void){
     return;
 }
 
-// 函数原型的形参可以省略参数名,也可以与函数定义头的形参名不同
+// 函数原型的形参可以省略参数名(假名),也可以与函数定义头的形参名不同
 void pointer_parameter(int *array, int n){
 
     return;
