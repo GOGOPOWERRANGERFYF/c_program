@@ -16,8 +16,8 @@ void pointer_parameter();
 // 等价函数原型:
 // 函数原型可省略形参名
 //void pointer_parameter_a(int *, int);
-//void pointer_parameter_a(int array[], int n);
 void pointer_parameter_a(int *array, int n);
+void pointer_parameter_b(int array[], int n);
 
 void main(void){
     int array[2] = {1, 12};
@@ -28,6 +28,7 @@ void main(void){
     //multidimensional_array_2();
     //pointer_and_array();
     pointer_parameter_a(array, 2);
+    pointer_parameter_b(array, 2);
     return;
 }
 
@@ -275,7 +276,6 @@ void pointer_parameter(){
     // 数组和指针并不相同
     return;
 }
-//void pointer_parameter_a(int array[], int n){
 void pointer_parameter_a(int *array, int n){
     // int * array和int array[]在函数原型和函数定义的函数头里
     // 才可以用int array[]替换int * array
@@ -283,3 +283,8 @@ void pointer_parameter_a(int *array, int n){
     // 相当于知道数组首元素地址但不知道数组长度
     return;
 }
+void pointer_parameter_a(int array[], int n){
+
+    return;
+}
+
