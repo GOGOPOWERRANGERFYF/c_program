@@ -10,7 +10,12 @@ void array_size(void);
 void multidimensional_array_1(void);
 void multidimensional_array_2(void);
 void pointer_and_array(void);
+
+// 等价函数原型:
+// 函数原型可省略形参名
+// void pointer_parameter(int *, int);
 void pointer_parameter(int *array, int n);
+
 
 void main(void){
     //array_a();
