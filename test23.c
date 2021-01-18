@@ -20,12 +20,14 @@ void pointer_parameter();
 void pointer_parameter_a(int *array, int n);
 
 void main(void){
+    int array[2] = {1, 12};
     //array_a();
     //designated_initializer();
     //array_element_assignment();
     //multidimensional_array_1();
     //multidimensional_array_2();
-    pointer_and_array();
+    //pointer_and_array();
+    pointer_parameter_a(array, 2);
     return;
 }
 
@@ -273,7 +275,6 @@ void pointer_parameter(){
     // int array[] = {1, 2};
     return;
 }
-
 //void pointer_parameter_a(int array[], int n){
 void pointer_parameter_a(int *array, int n){
     return;
