@@ -10,6 +10,7 @@ void array_size(void);
 void multidimensional_array_1(void);
 void multidimensional_array_2(void);
 void pointer_and_array(void);
+void pointer_parameter(int *array, int n);
 
 void main(void){
     //array_a();
@@ -254,5 +255,11 @@ void pointer_and_array(void){
     // 数组表示法 array notation    array[index]
     // 指针表示法 pointer notation  *(&array + index)
     // 指针表示法和数组表示法是两种等效的方法
+    return;
+}
+
+// 函数原型的形参可以省略参数名,也可以与函数定义头的形参名不同
+void pointer_parameter(int *array, int n){
+
     return;
 }
