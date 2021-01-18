@@ -244,5 +244,11 @@ void pointer_and_array(void){
     printf("array1 + 1 == &array1[0 + 1]: %s\n", array1 + 1 == &array1[0 + 1] ? "true" : "false");
     printf("*array1 == array1[0]: %s\n", *array1 == array1[0] ? "true" : "false");
     printf("*(array1 + 1) == array1[0 + 1]: %s\n", *(array1 + 1) == array1[0 + 1] ? "true" : "false");
+
+    // 间接运算符*(一元运算符)优先级高于算术运算符+ - * /
+    // *array + 1 不等于 *(array + 1)
+    // *array + 1 等于数组首元素的值加1 *(&array[0]) + 1
+    // *(array + 1) 到array的内存地址,然后移动一个array元素数据类型的大小(存储空间大小)
+    //  再获取移动后的地址所存储的值
     return;
 }
