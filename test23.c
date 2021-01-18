@@ -11,10 +11,13 @@ void multidimensional_array_1(void);
 void multidimensional_array_2(void);
 void pointer_and_array(void);
 
+void pointer_parameter();
+
 // 等价函数原型:
 // 函数原型可省略形参名
-// void pointer_parameter(int *, int);
-void pointer_parameter(int *array, int n);
+//void pointer_parameter_a(int *, int);
+//void pointer_parameter_a(int array[], int n);
+void pointer_parameter_a(int *array, int n);
 
 void main(void){
     //array_a();
@@ -263,9 +266,15 @@ void pointer_and_array(void){
 }
 
 // 函数原型的形参可以省略参数名(假名),也可以与函数定义头的形参名不同
-void pointer_parameter(int array[], int n){
-//void pointer_parameter(int *array, int n){
-    int * array;
-    //int array[];
+void pointer_parameter(){
+    // int * array 和 int array[] 作为形参时C编译器才会把它们解释成一样
+    // 下面的array编译器会报错,数组和指针类型冲突
+    // int * array;
+    // int array[] = {1, 2};
+    return;
+}
+
+//void pointer_parameter_a(int array[], int n){
+void pointer_parameter_a(int *array, int n){
     return;
 }
