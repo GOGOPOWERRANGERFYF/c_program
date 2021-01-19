@@ -276,6 +276,8 @@ void pointer_parameter(){
     // 数组和指针并不相同
     return;
 }
+
+// 下面两种函数定义等价
 void pointer_parameter_a(int * array, int n){
     // int * array和int array[]在函数原型和函数定义的函数头里
     // 才可以用int array[]替换int * array
