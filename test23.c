@@ -20,6 +20,8 @@ void pointer_parameter();
 void pointer_parameter_a(int * array, int n);
 void pointer_parameter_b(int array[], int n);
 
+void use_pointer_parameter(int *, int *);
+
 void main(void){
     int array[2] = {1, 12};
     //array_a();
@@ -300,3 +302,10 @@ void pointer_parameter_b(int array[], int n){
     return;
 }
 
+
+// 使用指针形参
+// 函数原型可以省略形参名,函数定义的函数头不可以省略
+void use_pointer_parameter(int * a, int * b){
+
+    return;
+}
