@@ -227,15 +227,17 @@ void function11(int n){
 
 //void function12(char * c[]){
 void function12(){
-    int a;
+    int a, b;
     // incomplete type 不完整类型
     // 无法确认该描述符大小的类型
     // 例如: int * i[]; 一个数组没有指定大小
     //int * i[] = &a;
     int * i[2];
     i[0] = &a;
-    printf("%p\n", i[0]);
-    printf("%zd\n", sizeof(i));
-    printf("%p\n", &a);
+    i[1] = &b;
+    printf("sizeof(i): %zd\n", sizeof(i));
+    printf("i[0]: %p\n", i[0]);
+    printf("i[1]: %p\n", i[1]);
+    printf("&a: %p\n", &a);
     return;
 }
