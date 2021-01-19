@@ -16,6 +16,7 @@ void pointer_parameter();
 // 等价函数原型:
 // 函数原型可省略形参名
 //void pointer_parameter_a(int *, int);
+//void pointer_parameter_b(int [], int);
 void pointer_parameter_a(int * array, int n);
 void pointer_parameter_b(int array[], int n);
 
