@@ -13,7 +13,8 @@ void function8(void);
 int function9(void);
 int function10(void);
 void function11(int n);
-void function12(char * c[]);
+//void function12(char * c[]);
+void function12();
 
 int main(void)
 {
@@ -39,7 +40,7 @@ int main(void)
     //printf("input is not integer\n");
     //function10();
     //function11(1);
-    //function12();
+    function12();
     return 0;
 }
 
@@ -224,8 +225,17 @@ void function11(int n){
     return;
 }
 
-void function12(char * c[]){
-    printf("%zd\n", sizeof(1.0));
-    printf("%zd\n", sizeof(1.0f));
+//void function12(char * c[]){
+void function12(){
+    int a;
+    // incomplete type 不完整类型
+    // 无法确认该描述符大小的类型
+    // 例如: int * i[]; 一个数组没有指定大小
+    //int * i[] = &a;
+    int * i[2];
+    i[0] = &a;
+    printf("%p\n", i[0]);
+    printf("%zd\n", sizeof(i));
+    printf("%p\n", &a);
     return;
 }
