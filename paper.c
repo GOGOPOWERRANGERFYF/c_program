@@ -239,5 +239,6 @@ void function12(){
     printf("i[0]: %p\n", i[0]);
     printf("i[1]: %p\n", i[1]);
     printf("&a: %p\n", &a);
+    printf("&b: %p\n", &b);
     return;
 }
