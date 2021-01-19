@@ -288,13 +288,15 @@ void pointer_parameter_a(int * array, int n){
     printf(" *array: %d;  *(array + 1): %d\n", *array, *(array + 1));
     return;
 }
+// 利用C中数组和指针的特殊关系,用数组表示法来表示
+// 指针array,main函数中array数组的数组名,为首元素指针,为常量,程序运行时不能修改
 void pointer_parameter_b(int array[], int n){
     printf("(array first element adress: array name -> array: %p\n", array);
     printf(" *array[0]: %d;  array[1] %d\n", array[0], array[1]);
     // gcc -w 忽略警告 下面的输出语句编译器会警告
     // array数组名为数组首元素的地址,是指针
     printf("sizeof(array): %zd\n", sizeof(array));
+    // %zd sizeof()的转换说明,如果编译器不支持,可以用%u或%lu代替
     return;
 }
 
-// %zd sizeof()的转换说明,如果编译器不支持,可以用%u或%lu代替
