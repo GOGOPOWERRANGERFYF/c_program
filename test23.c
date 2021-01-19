@@ -294,3 +294,4 @@ void pointer_parameter_b(int array[], int n){
     return;
 }
 
+// %zd sizeof()的转换说明,如果编译器不支持,可以用%u或%lu代替
