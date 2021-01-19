@@ -13,6 +13,7 @@ void function8(void);
 int function9(void);
 int function10(void);
 void function11(int n);
+void function12(void);
 
 int main(void)
 {
@@ -37,7 +38,8 @@ int main(void)
     //}
     //printf("input is not integer\n");
     //function10();
-    function11(1);
+    //function11(1);
+    function12();
     return 0;
 }
 
@@ -219,5 +221,11 @@ void function11(int n){
         function11(n + 1);
     }
     printf("recursive call level%d <- n = %d location: %p\n", n, n, &n);
+    return;
+}
+
+void function12(void){
+    printf("%zd\n", sizeof(1.0));
+    printf("%zd\n", sizeof(1.0f));
     return;
 }
