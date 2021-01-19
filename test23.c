@@ -292,6 +292,7 @@ void pointer_parameter_b(int array[], int n){
     printf("(array first element adress: array name -> array: %p\n", array);
     printf(" *array[0]: %d;  array[1] %d\n", array[0], array[1]);
     // gcc -w 忽略警告 下面的输出语句编译器会警告
+    // array数组名为数组首元素的地址,是指针
     printf("sizeof(array): %zd\n", sizeof(array));
     return;
 }
