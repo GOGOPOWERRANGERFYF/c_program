@@ -291,6 +291,8 @@ void pointer_parameter_a(int * array, int n){
 void pointer_parameter_b(int array[], int n){
     printf("(array first element adress: array name -> array: %p\n", array);
     printf(" *array[0]: %d;  array[1] %d\n", array[0], array[1]);
+    // gcc -w 忽略警告 下面的输出语句编译器会警告
+    printf("sizeof(array): %zd\n", sizeof(array));
     return;
 }
 
