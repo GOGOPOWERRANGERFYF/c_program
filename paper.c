@@ -13,7 +13,7 @@ void function8(void);
 int function9(void);
 int function10(void);
 void function11(int n);
-void function12(void);
+void function12(char * c[]);
 
 int main(void)
 {
@@ -39,7 +39,7 @@ int main(void)
     //printf("input is not integer\n");
     //function10();
     //function11(1);
-    function12();
+    //function12();
     return 0;
 }
 
@@ -224,7 +224,7 @@ void function11(int n){
     return;
 }
 
-void function12(void){
+void function12(char * c[]){
     printf("%zd\n", sizeof(1.0));
     printf("%zd\n", sizeof(1.0f));
     return;
