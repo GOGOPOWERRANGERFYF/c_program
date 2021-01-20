@@ -3,3 +3,6 @@
 void main(void){
     return;
 }
+
+// malloc 全称:memory allocation
+// allocation 分配,拨给的场地
