@@ -11,6 +11,7 @@ void main(void){
 // malloc 全称:memory allocation
 // allocation 分配,拨给的场地
 void memory_allocation(void){
+    // 使用malloc()函数创建数组
     char * char_pointer;
     int * int_pointer;
     int_pointer = (int *)malloc(4 * sizeof(int));
