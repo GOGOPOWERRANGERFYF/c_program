@@ -310,3 +310,8 @@ void use_pointer_parameter(int * a, int * b){
     return;
 }
 // 678
+
+// 不完整类型(incomplete type): 
+// 描述标识符但缺少标识符大小信息的类型
+//  例如: 尚未指定其维度的数组类型 array[]
+//  此外还有: 未指定成员的结构(structrue)类型和联合(union)类型
