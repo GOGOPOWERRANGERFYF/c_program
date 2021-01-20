@@ -12,7 +12,9 @@ void main(void){
 // allocation 分配,拨给的场地
 void memory_allocation(void){
     int * int_pointer;
-    //int_pointer = malloc(8);
+    int_pointer = malloc(4 * sizeof(int));
+    printf("%zd\n", sizeof(int));
+    printf("%d\n", 4 * sizeof(int));
     //printf("%p\n", int_pointer);
     return;
 }
