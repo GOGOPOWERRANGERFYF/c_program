@@ -15,6 +15,7 @@ int function10(void);
 void function11(int n);
 //void function12(char * c[]);
 void function12();
+void function13();
 
 int main(void)
 {
@@ -40,7 +41,8 @@ int main(void)
     //printf("input is not integer\n");
     //function10();
     //function11(1);
-    function12();
+    //function12();
+    function13();
     return 0;
 }
 
@@ -244,5 +246,13 @@ void function12(){
     printf("i[1]: %p\n", i[1]);
     printf("&a: %p\n", &a);
     printf("&b: %p\n", &b);
+    return;
+}
+
+void function13(){
+    char character_string[] = {"This is character string!"};
+    printf("sizeof(character_string): %zd bytes\n", sizeof(character_string));
+    printf("character_string[0](decimal): %hu\n", character_string[0]);
+    printf("character_string[25](decimal): %hu\n", character_string[25]);
     return;
 }
