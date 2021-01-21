@@ -25,3 +25,11 @@ void main(void){
 
 // ascii to integer function
 // atoi()
+
+
+// sieve of erathosthenes 埃拉托斯特尼筛法,也称素数筛
+// 找出一定范围内的所有素数
+void sieve_of_erathosthenes(void){
+    
+    return;
+}
