@@ -33,6 +33,7 @@ void main(void){
 
 // sieve of erathosthenes 埃拉托斯特尼筛法,也称素数筛
 // 找出一定范围内的所有素数
+// 素数(质数prime number),在大于1的自然数中,除了1和自然数自身,无法被其它自然数整除的数
 // 遍历从2开始(1能被自己和1整除),然后把2的倍数筛掉,
 // 因为它们不仅能被1和自己整除,知道还能被2整除,肯定不是素数
 void sieve_of_erathosthenes(void){
