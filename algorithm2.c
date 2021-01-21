@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 //#include <math.h>
+#define N 50
 typedef float height;
 typedef int randomNumber;
 void sieve_of_erathosthenes(void);
@@ -9,12 +10,14 @@ void main(void){
     //height h1 = 1.72;
     //printf("person height: %.2fm\n", h1);
 
-    randomNumber counter, rn1;
-    printf("sizeof(rand()) %dbyte.\n", sizeof(rand()));
-    for (counter = 1; counter < 6; counter++){
-        rn1 = rand();
-        printf("random number: %d\n", rn1);
-    }
+    //randomNumber counter, rn1;
+    //printf("sizeof(rand()) %dbyte.\n", sizeof(rand()));
+    //for (counter = 1; counter < 6; counter++){
+    //    rn1 = rand();
+    //    printf("random number: %d\n", rn1);
+    //}
+
+    sieve_of_erathosthenes();
     return;
 }
 // 《算法:C语言实现》 
@@ -33,6 +36,8 @@ void main(void){
 // 遍历从2开始(1能被自己和1整除),然后把2的倍数筛掉,
 // 因为它们不仅能被1和自己整除,知道还能被2整除,肯定不是素数
 void sieve_of_erathosthenes(void){
-    
+    int index, element, sequence[N];    
+    for (index = 0; index < N; index++) sequence[index] = index;
+    for (index = 0; index < N; index++) printf("%d\n", sequence[index]);
     return;
 }
