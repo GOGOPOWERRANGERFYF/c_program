@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 //#include <math.h>
-#define N 50
+#define N 20
 typedef float height;
 typedef int randomNumber;
 void sieve_of_erathosthenes(void);
@@ -31,14 +31,21 @@ void main(void){
 // atoi()
 
 
-// sieve of erathosthenes 埃拉托斯特尼筛法,也称素数筛
+// sieve of erathosthenes 埃拉托色尼筛法,也称素数筛
 // 找出一定范围内的所有素数
 // 素数(质数prime number),在大于1的自然数中,除了1和自然数自身,无法被其它自然数整除的数
+// 在大于1的自然数中,除了1和自然数自身,能被其它自然数整除的数称为合数
 // 遍历从2开始(1能被自己和1整除),然后把2的倍数筛掉,
 // 因为它们不仅能被1和自己整除,知道还能被2整除,肯定不是素数
 void sieve_of_erathosthenes(void){
-    int index, element, sequence[N];    
-    for (index = 0; index < N; index++) sequence[index] = index;
-    for (index = 0; index < N; index++) printf("%d\n", sequence[index]);
+    int index, i, sequence[N];    
+    // 自动存储类型,数组不初始化,元素会有垃圾值,并不一定是0
+    // 一个十六进制位相当于四个二进制位
+    for (i = 0; i < N; i++){
+        printf("array element (hex): %08x\n", sequence[i]);
+    }
+     
+    //for (index = 2; index < N; index++) sequence[index] = 1;
+    //for (index = 0; index < N; index++) printf("index%2d: %d\n",index , sequence[index]);
     return;
 }
