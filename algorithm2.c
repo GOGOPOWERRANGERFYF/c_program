@@ -38,11 +38,16 @@ void main(void){
 // 遍历从2开始(1能被自己和1整除),然后把2的倍数筛掉,
 // 因为它们不仅能被1和自己整除,知道还能被2整除,肯定不是素数
 void sieve_of_erathosthenes(void){
-    int index, i, sequence[N];    
+    int index, i, sequence1[N], sequence2[N];    
     // 自动存储类型,数组不初始化,元素会有垃圾值,并不一定是0
     // 一个十六进制位相当于四个二进制位
     for (i = 0; i < N; i++){
-        printf("array element (hex): %08x\n", sequence[i]);
+        printf("array sequence1 element (hex): %08x\n", sequence1[i]);
+    }
+    // 与指定初始化器一致,只要有一个元素初始化了,剩余的元素会被编译器初始化为0
+    sequence2[15] = 5;
+    for (i = 0; i < N; i++){
+        printf("array sequence2 element (hex): %08x\n", sequence2[i]);
     }
      
     //for (index = 2; index < N; index++) sequence[index] = 1;
