@@ -260,6 +260,6 @@ void function13(){
 }
 
 void sieve_of_erathosthenes(void){
-    int i, j, ;
+    int i, j, array[20];
     return;
 }
