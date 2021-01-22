@@ -261,5 +261,12 @@ void function13(){
 
 void sieve_of_erathosthenes(void){
     int i, j, array[20];
+    for (i = 2; i < 20; i++) array[i] = 1;
+    for (i = 2; i < 20; i++) 
+        if (array[i])
+            for (j = i; i * j < 20; j++) array[i * j] = 0;
+    for (i = 2; i < 20; i++)
+        if (array[i])
+            printf("%d\n", i);
     return;
 }
