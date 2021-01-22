@@ -16,6 +16,7 @@ void function11(int n);
 //void function12(char * c[]);
 void function12();
 void function13();
+void sieve_of_erathosthenes(void);
 
 int main(void)
 {
@@ -42,7 +43,8 @@ int main(void)
     //function10();
     //function11(1);
     //function12();
-    function13();
+    //function13();
+    sieve_of_erathosthenes();
     return 0;
 }
 
@@ -254,5 +256,10 @@ void function13(){
     printf("sizeof(character_string): %zd bytes\n", sizeof(character_string));
     printf("character_string[0](decimal): %hu\n", character_string[0]);
     printf("character_string[25](decimal): %hu\n", character_string[25]);
+    return;
+}
+
+void sieve_of_erathosthenes(void){
+    int i, j, ;
     return;
 }
