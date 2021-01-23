@@ -8,6 +8,15 @@ void main(void){
     return;
 }
 
+// storage class 存储类别
+
+// 面向对象语言的对象(object)指的是
+//  类对象,对象包括数据(属性)和允许对数据的操作(操作)
+
+// C语言(面向过程语言)中的对象:
+//  
+
+
 // malloc 全称:memory allocation
 // allocation 分配,拨给的场地
 void memory_allocation(void){
