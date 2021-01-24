@@ -284,7 +284,7 @@ void pointer_parameter(){
 void pointer_parameter_a(int * array, int n){
     // int * array和int array[]在函数原型和函数定义的函数头里
     // 才可以用int array[]替换int * array
-    // 在函数原型和函数头里这两个是等价的,可以互相替换
+    // 在函数原型和函数头里作为形参这两个是等价的,可以互相替换
     // 相当于知道数组首元素地址但不知道数组长度
     printf("pointer variable array: %p\n", array);
     printf(" *array: %d;  *(array + 1): %d\n", *array, *(array + 1));
