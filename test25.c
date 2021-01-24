@@ -18,6 +18,7 @@ void main(void){
 // C语言用术语对象object来表示这一块内存 
 // 一个对象可以存储一个或多个值
 // 一个对象也可能还没有一个存储值
+// 但它能以正确的存储长度保存相应的值
 
 // malloc 全称:memory allocation
 // allocation 分配,拨给的场地
