@@ -302,6 +302,8 @@ void pointer_parameter_b(int array[], int n){
     return;
 }
 
+// segmentation fault
+// 一种特殊的错误:访问了未分配给C程序的内存位置(不允许访问的,不合法的)
 
 // 使用指针形参
 // 函数原型可以省略形参名,函数定义的函数头不可以省略
