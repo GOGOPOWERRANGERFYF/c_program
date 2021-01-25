@@ -329,7 +329,6 @@ void use_pointer_parameter(int * start, int * end){
     }
     return;
 }
-// 678
 
 // 不完整类型(incomplete type): 
 // 描述标识符但缺少标识符大小信息的类型
