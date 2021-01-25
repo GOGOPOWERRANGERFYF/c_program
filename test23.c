@@ -326,6 +326,9 @@ void use_pointer_parameter(int * start, int * end){
         //int类型指针变量start递增,递增一个int类型的大小(长度)
         //使指针指向int类型数组的下一个元素
         start++;
+        // 一元运算符*和++优先级相同,结合律从右往左
+        // int sum;
+        // sum += *start++;
     }
     return;
 }
