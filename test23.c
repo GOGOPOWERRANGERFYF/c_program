@@ -312,10 +312,19 @@ void pointer_parameter_b(int array[], int n){
 // 函数原型可以省略形参名,函数定义的函数头不可以省略
 // 函数处理数组的两种方式:
 //  1. 知道数组在哪里开始,数组元素个数: void func(int * start, int array_size)
+//      用int变量array_size来结束循环
 //  2. 知道数组在哪里开始,在哪里结束: void func(int * start, int * end)
+//      用指针end来结束循环
 void use_pointer_parameter(int * start, int * end){
+    //用第二个指针end来结束循环
+    //测试条件用的是关系运算符<
+    //所以循环所处理的最后一个数组元素是end指针指向地址的前一个元素
+    //C保证给数组分配空间时,指向数组最后一个元素的后面的第一个指针仍是有效指针
+    //虽然C保证了该指针的有效,但对该地址上的值未作保证,因此程序不能访问该位置
     while (start < end){
         printf("*formal parameter --> *start: %d\n", *start);
+        //int类型指针变量start递增,递增一个int类型的大小(长度)
+        //使指针指向int类型数组的下一个元素
         start++;
     }
     return;
