@@ -310,6 +310,9 @@ void pointer_parameter_b(int array[], int n){
 
 // 使用指针形参
 // 函数原型可以省略形参名,函数定义的函数头不可以省略
+// 函数处理数组的两种方式:
+//  1. 知道数组在哪里开始,数组元素个数: void func(int * start, int array_size)
+//  2. 知道数组在哪里开始,在哪里结束: void func(int * start, int * end)
 void use_pointer_parameter(int * start, int * end){
     while (start < end){
         printf("*formal parameter --> *start: %d\n", *start);
