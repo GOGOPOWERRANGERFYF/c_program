@@ -330,7 +330,7 @@ void use_pointer_parameter(int * start, int * end){
         // int sum;
         //         <------
         //        操作数先与++结合
-        // sum += *start++;
+        // sum += *start++;         等价于*(start++)
         //        操作数先与++结合
         //        *++start
         //        操作数先与*结合
