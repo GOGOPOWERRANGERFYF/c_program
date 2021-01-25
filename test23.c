@@ -312,7 +312,7 @@ void pointer_parameter_b(int array[], int n){
 // 函数原型可以省略形参名,函数定义的函数头不可以省略
 void use_pointer_parameter(int * start, int * end){
     while (start < end){
-        printf("%d\n", *start);
+        printf("*formal parameter --> *start: %d\n", *start);
         start++;
     }
     return;
