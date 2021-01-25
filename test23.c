@@ -335,6 +335,8 @@ void use_pointer_parameter(int * start, int * end){
         //        *++start
         //        操作数先与*结合
         //        ++*start
+        //        操作数先与*结合
+        //        (*start)++
         // P679
     }
     return;
