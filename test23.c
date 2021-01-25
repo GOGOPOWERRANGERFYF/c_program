@@ -298,7 +298,9 @@ void pointer_parameter_b(int array[], int n){
     printf(" *array[0]: %d;  array[1] %d\n", array[0], array[1]);
     // gcc -w 忽略警告 下面的输出语句编译器会警告
     // array数组名为数组首元素的地址,是指针
-    printf("sizeof(array): %zd\n", sizeof(array));
+    //下面的sizeof不完整类型数组编译器会警告,
+    //不完整类型数组未初始化前数组元素个数并不确定
+    //printf("sizeof(array): %zd\n", sizeof(array));
     // %zd sizeof()的转换说明,如果编译器不支持,可以用%u或%lu代替
     return;
 }
