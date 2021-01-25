@@ -20,18 +20,19 @@ void pointer_parameter();
 void pointer_parameter_a(int * array, int n);
 void pointer_parameter_b(int array[], int n);
 
-void use_pointer_parameter(int *, int *);
+void use_pointer_parameter(int * start, int * end);
 
 void main(void){
-    int array[2] = {1, 12};
+    int array[2] = {1, 12}, array1[5] = {1, 2, 3, 4, 5};
     //array_a();
     //designated_initializer();
     //array_element_assignment();
     //multidimensional_array_1();
     //multidimensional_array_2();
     //pointer_and_array();
-    pointer_parameter_a(array, 2);
-    pointer_parameter_b(array, 2);
+    //pointer_parameter_a(array, 2);
+    //pointer_parameter_b(array, 2);
+    use_pointer_parameter(array1, array1 + 5);
     return;
 }
 
@@ -307,8 +308,11 @@ void pointer_parameter_b(int array[], int n){
 
 // 使用指针形参
 // 函数原型可以省略形参名,函数定义的函数头不可以省略
-void use_pointer_parameter(int * a, int * b){
-
+void use_pointer_parameter(int * start, int * end){
+    while (start < end){
+        printf("%d\n", *start);
+        start++;
+    }
     return;
 }
 // 678
