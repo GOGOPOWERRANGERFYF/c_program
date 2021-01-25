@@ -328,7 +328,14 @@ void use_pointer_parameter(int * start, int * end){
         start++;
         // 一元运算符*和++优先级相同,结合律从右往左
         // int sum;
+        //         <------
+        //        操作数先与++结合
         // sum += *start++;
+        //        操作数先与++结合
+        //        *++start
+        //        操作数先与*结合
+        //        ++*start
+        // P679
     }
     return;
 }
