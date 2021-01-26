@@ -28,6 +28,7 @@ void memory_allocation(void){
     // 使用malloc()函数创建数组
     char * char_pointer;
     int * int_pointer;
+    // sizeof 数据类型关键字
     int_pointer = (int *)malloc(4 * sizeof(int));
     *int_pointer = 1;
     *(int_pointer + 1) = 2;
