@@ -22,6 +22,11 @@
 // 1.2.3 级数
 //  级数是将数列的项依次用加号连接起来的函数
 //  例子(等比数列和/几何级数):
+//  geometric 几何
+//  progression 进展
+//  sequense 序列
+//  geometric sequense 等比数列
+//  geometric progression 几何级数
 //  common ratio 公比
 //  a为等比数列首项,r为公比
 //  一般项 an = a*r^n-1
