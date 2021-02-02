@@ -25,7 +25,7 @@
 //  geometric 几何
 //  progression 进展
 //  sequense 序列
-//  geometric sequense 等比数列
+//  geometric sequense 等比数列/几何数列
 //  geometric progression 几何级数
 //  common ratio 公比
 //  a为等比数列首项,r为公比
