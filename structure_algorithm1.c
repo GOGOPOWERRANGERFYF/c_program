@@ -28,8 +28,8 @@
 //  geometric sequense 等比数列/几何数列
 //  geometric progression 几何级数
 //  common ratio 公比
-//  a为等比数列首项,r为公比
-//  一般项 an = a*r^n-1
+//  a为等比数列首项(首项r的指数为0,r^0 = 1),r为公比
+//  一般项/通项 an = a*r^n-1
 //  N∑i=0 = a*r^i
 //  N∑i=0 = 1*2^i (公比2,对所有项,后一个项除以前一个项得到常数r,r为公比) 
 //
