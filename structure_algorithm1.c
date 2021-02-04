@@ -24,8 +24,8 @@
 //  例子(等比数列和/几何级数):
 //  geometric 几何
 //  progression 进展
-//  sequense 序列
-//  geometric sequense 等比数列/几何数列
+//  sequence 序列
+//  geometric sequence 等比数列/几何数列
 //  geometric progression 几何级数
 //  common ratio 公比
 //  a为等比数列首项(首项r的指数为0,r^0 = 1),r为公比
@@ -61,6 +61,7 @@
 //  如果0<A<1
 //  N∑i=0 A^i ≤ 1 / (1 - A)
 //
-//  算术序列
-//  算术级数    
+//  算术序列/算术数列/等差数列 arithmetic sequence
+//  算术级数 arithmetic progression    
+//  公差 common difference
 //  N∑i=1 i = N*(N+1)/2 ≈ N^2/2  (参照高斯算法)
