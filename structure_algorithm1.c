@@ -1,3 +1,10 @@
+#include <stdio.h>
+void funciton_recursion();
+
+void main(void){
+    funciton_recursion();
+    return;
+}
 // data structures and algorithm analysis in c
 // 《数据结构与算法分析 c语言描述 第2版》
 //
@@ -224,3 +231,6 @@
 
 //  1.3 递归简论
 //  
+void funciton_recursion(){
+    return;
+}
