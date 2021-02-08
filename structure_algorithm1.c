@@ -261,3 +261,8 @@ int funciton_recursion(int x){
         //给主调函数返回x
         return x;
 }
+//  递归不是循环逻辑(circular logic)
+//  通俗理解:
+//    通过F(5)的到F(5)的值才是循环的
+//    通过F(4)的到F(5)的值不是循环的,除非F(4)的求值又要用到F(5)的值才是循环
+//          
