@@ -242,10 +242,13 @@ int funciton_recursion(int x){
     //它满足F(0)=0且F(n)=2F(n-1)+n^2
     if (x == 0){
         printf("%p: F(0) = %d.\n", &x, x); 
+        //给主调函数返回0
         return 0;
     }
     else
+        //这里用到了C语言的递归调用
         printf("%p: F(n)=2F(n-1)+n^2 = %d.\n",
         &x ,x = 2 * funciton_recursion(x - 1) + x * x); 
+        //给主调函数返回x
         return x;
 }
