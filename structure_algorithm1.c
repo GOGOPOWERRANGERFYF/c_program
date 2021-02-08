@@ -1,8 +1,8 @@
 #include <stdio.h>
-void funciton_recursion();
+int funciton_recursion();
 
 void main(void){
-    funciton_recursion();
+    funciton_recursion(5);
     return;
 }
 // data structures and algorithm analysis in c
@@ -234,6 +234,18 @@ void main(void){
 
 //  1.3 递归简论
 //  
-void funciton_recursion(){
-    return;
+//  华氏温度转换成摄氏温度的公式: C = 5(F-32)/9
+//  
+int funciton_recursion(int x){
+    //有时候数学函数以不太标准的形式来定义
+    //例子: 在非负整数集上定义一个函数F
+    //它满足F(0)=0且F(n)=2F(n-1)+n^2
+    if (x == 0){
+        printf("%p: F(0) = %d.\n", &x, x); 
+        return 0;
+    }
+    else
+        printf("%p: F(n)=2F(n-1)+n^2 = %d.\n",
+        &x ,x = 2 * funciton_recursion(x - 1) + x * x); 
+        return x;
 }
