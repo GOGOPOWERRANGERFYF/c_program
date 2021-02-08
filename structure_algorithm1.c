@@ -245,6 +245,8 @@ int funciton_recursion(int x){
         //给主调函数返回0
         return 0;
     }
+    //上面的if代码处理基准情形(base case)
+    //即此时函数的值可以直接算出而不用求助递归
     else
         //这里用到了C语言的递归调用
         printf("%p: F(n)=2F(n-1)+n^2 = %d.\n",
