@@ -273,3 +273,6 @@ int funciton_recursion(int x){
 //  2. 不断推进(making progress)
 //  递归调用必须是朝向产生基准情形的方向推进
 
+//  routine 常规
+
+//  
