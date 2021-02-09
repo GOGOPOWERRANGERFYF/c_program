@@ -277,6 +277,8 @@ void print_digit(unsigned int n){
     if (n >= 10){
         print_digit(n / 10);
     }
-    printf("%u\n", n % 10);
+    printf("pointer: %p, ", &n);
+    printf("n = %5u,", n);
+    printf("n %% 10 = %5u\n", n % 10);
     return;
 }
