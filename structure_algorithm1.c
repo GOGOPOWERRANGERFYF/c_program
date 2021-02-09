@@ -282,6 +282,6 @@ void print_digit(unsigned int n){
     }
     printf("pointer: %p, ", &n);
     printf("n = %5u,", n);
-    printf("n %% 10 = %5u\n", n % 10);
+    printf("n %% 10 = %u\n", n % 10);
     return;
 }
