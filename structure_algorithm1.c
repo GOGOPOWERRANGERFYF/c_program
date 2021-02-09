@@ -274,6 +274,15 @@ int funciton_recursion(int x){
 //  你必须总有某些基准情形,它们不用递归就能求解(简而言之,就是要有终止条件)
 //  2. 不断推进(making progress)
 //  递归调用必须是朝向产生基准情形的方向推进
+//  3. 设计法则
+//  假设所有递归调用都能运行
+//  4. compound interest rule
+//  compound 复合物 n; 符合的 adj.
+//  interest 兴趣,利益
+//  书本翻译:合成效益法则
+//  第4条法则的正确性将会在后面的章节给予证明
+//  现在我也看不懂啥意思...
+//  递归不应简单作为for循环的替代物
 
 //  routine 常规
 void print_digit(unsigned int n){
