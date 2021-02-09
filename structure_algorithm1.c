@@ -278,8 +278,8 @@ int funciton_recursion(int x){
 //  routine 常规
 void print_digit(unsigned int n){
     if (n >= 10){
-        //(形参n为被调函数的私有局部变量)
         //(实参n/10的n为主调函数的局部私有变量n)
+        //(形参n为被调函数的私有局部变量)
         //被调函数的形参n接收实参n/10
         print_digit(n / 10);
         //*递归调用很关键的一点:
