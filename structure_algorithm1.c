@@ -279,6 +279,8 @@ int funciton_recursion(int x){
 void print_digit(unsigned int n){
     if (n >= 10){
         print_digit(n / 10);
+        //*递归调用很关键的一点:
+        // 被调函数把控制流交还给主调函数,主调函数的该递归调用语句执行结束
     }
     printf("pointer: %p, ", &n);
     printf("n = %5u,", n);
