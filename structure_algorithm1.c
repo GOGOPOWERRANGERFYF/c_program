@@ -287,6 +287,8 @@ void print_digit(unsigned int n){
     }
     printf("pointer: %p, ", &n);
     printf("n = %5u,", n);
+    //mod操作耗费是很大的
+    // n % 10 = n - (n / 10) * 10
     printf("n %% 10 = %u\n", n % 10);
     return;
 }
