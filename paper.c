@@ -17,6 +17,7 @@ void function11(int n);
 void function12();
 void function13();
 void sieve_of_erathosthenes(void);
+void print_digit(unsigned int n);
 
 int main(void)
 {
@@ -44,7 +45,8 @@ int main(void)
     //function11(1);
     //function12();
     //function13();
-    sieve_of_erathosthenes();
+    //sieve_of_erathosthenes();
+    print_digit(76234);
     return 0;
 }
 
@@ -270,3 +272,12 @@ void sieve_of_erathosthenes(void){
             printf("%d\n", i);
     return;
 }
+
+//void print_digit(unsigned int n){
+//    if (n >= 10){
+//        print_digit(n / 10);
+//    }
+//
+//
+//    return;
+//}
