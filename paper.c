@@ -273,11 +273,10 @@ void sieve_of_erathosthenes(void){
     return;
 }
 
-//void print_digit(unsigned int n){
-//    if (n >= 10){
-//        print_digit(n / 10);
-//    }
-//
-//
-//    return;
-//}
+void print_digit(unsigned int n){
+    if (n >= 10){
+        print_digit(n / 10);
+    }
+    printf("%u\n", n % 10);
+    return;
+}
