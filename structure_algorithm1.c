@@ -1,8 +1,10 @@
 #include <stdio.h>
 int funciton_recursion();
+void print_digit(unsigned int n);
 
 void main(void){
-    funciton_recursion(5);
+    //funciton_recursion(5);
+    print_digit(76234);
     return;
 }
 // data structures and algorithm analysis in c
@@ -274,5 +276,12 @@ int funciton_recursion(int x){
 //  递归调用必须是朝向产生基准情形的方向推进
 
 //  routine 常规
-
-//  
+void print_digit(unsigned int n){
+    if (n >= 10){
+        print_digit(n / 10);
+    }
+    printf("pointer: %p, ", &n);
+    printf("n = %5u,", n);
+    printf("n %% 10 = %5u\n", n % 10);
+    return;
+}
