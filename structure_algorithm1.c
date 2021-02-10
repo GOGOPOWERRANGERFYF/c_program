@@ -304,13 +304,3 @@ void print_digit(unsigned int n){
 
 
 // 第2章 算法分析 
-//
-//  T(n)表示代码执行时间
-//  n表示数据规模大小
-//  f(n)基本操作执行次数  
-
-//  时间复杂度
-//  T(n) <= cf(n) 
-//  T(n) = O(f(n)) 
-//  O(f(n))渐进时间复杂度
-//  最坏情况时间复杂度,worst case time complexity 
