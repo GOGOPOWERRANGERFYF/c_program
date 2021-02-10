@@ -305,4 +305,7 @@ void print_digit(unsigned int n){
 
 // 第2章 算法分析 
 //  时间复杂度
-//  O(n)最坏情况时间复杂度,worst case time complexity 
+//  T(n) <= cf(n) 
+//  T(n) = O(f(n)) 
+//  O(f(n))渐进时间复杂度
+//  最坏情况时间复杂度,worst case time complexity 
