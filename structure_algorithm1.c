@@ -304,6 +304,9 @@ void print_digit(unsigned int n){
 
 
 // 第2章 算法分析 
+//  相对增长率(relative rate of growth)
+
+//  查找资料======================================
 //  算法的时间复杂度,用来度量算法的运行时间
 //  n表示输入大小input size
 //  算法执行时间的增长速度用f(n)描述
@@ -312,3 +315,4 @@ void print_digit(unsigned int n){
 //  f(n)代表T(N)的上界
 //
 //  big O notation 大O符号
+//  查找资料======================================
