@@ -337,6 +337,7 @@ void print_digit(unsigned int n){
 //  g(N)是T(N)的下界(lower bound)
 //
 //  3.T(N)=θ(h(N))
+//  当且仅当T(N)=O(h(N))且T(N)=Ω(h(N))
 //  T(N)增长速度=h(N)
 //
 //  4.T(N)=o(p(N))
