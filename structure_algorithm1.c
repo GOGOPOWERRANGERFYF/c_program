@@ -422,3 +422,5 @@ void print_digit(unsigned int n){
 //  Tavg(N)≤Tworst(N)
 //  算法所花费的平均运行时间和最坏情况下运行时间
 //  
+//  最大的子序列和问题
+//  
