@@ -1,10 +1,12 @@
 #include <stdio.h>
 int funciton_recursion();
 void print_digit(unsigned int n);
+int series_sum_1(int n);
 
 void main(void){
     //funciton_recursion(5);
-    print_digit(76234);
+    //print_digit(76234);
+    series_sum_1(5);
     return;
 }
 // data structures and algorithm analysis in c
@@ -431,4 +433,17 @@ void print_digit(unsigned int n){
 //  算法所花费的平均运行时间和最坏情况下运行时间
 //  
 //  最大的子序列和问题
-//  
+
+//  2.4 运行时间计算
+//      为了简化分析,不存在特定的时间单位
+//      个人心得:就是之前我的理解,时间复杂度是算法运行时间的度量
+//               算法分析中,大O用得最多
+//  2.4.1 一个简单的例子
+//        计算i=1∑N i^3
+int series_sum_1(int n){
+    int i, series_sum = 0;
+    for (i = 1; i <= n; i++){
+        series_sum += i * i * i;
+    }
+    return series_sum;
+}
