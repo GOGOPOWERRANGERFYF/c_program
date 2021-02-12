@@ -338,7 +338,7 @@ void print_digit(unsigned int n){
 //
 //  3.T(N)=θ(h(N))
 //  当且仅当T(N)=O(h(N))且T(N)=Ω(h(N))
-//  T(N)增长速度=h(N)
+//  T(N)增长速度=h(N),增长速度同一量级
 //
 //  4.T(N)=o(p(N))
 //  T(N)=O(f(N))且T(N)≠θ(h(N))
