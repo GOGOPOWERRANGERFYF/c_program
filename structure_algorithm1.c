@@ -323,7 +323,8 @@ void print_digit(unsigned int n){
 //  1.T(N)=O(f(N))
 //  定义:如果存在正常数n0和c是的当N≥n0时T(N)≤f(N),
 //       则记为T(N)=O(f(N)),貌似T(N)∈O(f(N))也可以,待以后确认
-//  T(N)增长速度≤f(N)
+//  T(N)增长速度≤f(N),T(N)以不快于f(N)的速度增长
+//  f(N)是T(N)的上界upper bound
 //  形象化理解,用xy轴线图,x轴代表N,y轴代表T(N),f(N)
 //  T(N)增长率小于等于f(N),但N值较小时,可能存在T(N)大于f(N)的情况,
 //  曲线T(N)和f(N)交叉点N=n0,
@@ -333,6 +334,7 @@ void print_digit(unsigned int n){
 //
 //  2.T(N)=Ω(g(N))
 //  T(N)增长速度≥g(N)
+//  g(N)是T(N)的下界(lower bound)
 //
 //  3.T(N)=θ(h(N))
 //  T(N)增长速度=h(N)
