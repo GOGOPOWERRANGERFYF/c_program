@@ -441,9 +441,20 @@ void print_digit(unsigned int n){
 //  2.4.1 一个简单的例子
 //        计算i=1∑N i^3
 int series_sum_1(int n){
-    int i, series_sum = 0;
+    // 程序分析
+    // 声明不计时间 
+    int i, series_sum;
+    // 1. 占一个时间单元    
+    series_sum = 0;
+    // 2. 初始化一个时间单元
+    //    所有测试N+1个时间单元
+    //    自增运算N个时间单元,第一次运算i=2 -> 最后一次i=N+1
     for (i = 1; i <= n; i++){
+        // 3. 每执行一次占用四个时间单元
+        //    加法一次,乘法两次,赋值一次
+        //    执行N次共占用4N个时间单元
         series_sum += i * i * i;
     }
+    // 4. 占一个时间单元
     return series_sum;
 }
