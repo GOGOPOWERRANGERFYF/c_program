@@ -4,9 +4,10 @@ void print_digit(unsigned int n);
 int series_sum_1(int n);
 
 void main(void){
+    int return_value;
     //funciton_recursion(5);
     //print_digit(76234);
-    series_sum_1(5);
+    return_value = series_sum_1(5);
     return;
 }
 // data structures and algorithm analysis in c
