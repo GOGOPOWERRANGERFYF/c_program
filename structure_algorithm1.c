@@ -538,6 +538,7 @@ int series_sum_1(int n){
 //  个人心得:下面的程序例子看成先执行完测试,再执行“循环体(递归)”
 //  所以时间复杂度为O(n)
 //  long int func(int n){
+//  首先分析调用(递归调用)
 //      if (n <= 1)
 //          return 1;
 //      else
