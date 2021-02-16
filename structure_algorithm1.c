@@ -524,4 +524,6 @@ int series_sum_1(int n){
 //      statement1
 //  else
 //      statement2
+//  一个if/else语句的运行时间不超过 测试 加上 s1和s2中
+//  运行时间长的 运行时间总和
 //  
