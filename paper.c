@@ -18,6 +18,7 @@ void function12();
 void function13();
 void sieve_of_erathosthenes(void);
 void print_digit(unsigned int n);
+void for_example(void);
 
 int main(void)
 {
@@ -46,7 +47,8 @@ int main(void)
     //function12();
     //function13();
     //sieve_of_erathosthenes();
-    print_digit(76234);
+    //print_digit(76234);
+    for_example();
     return 0;
 }
 
@@ -280,5 +282,14 @@ void print_digit(unsigned int n){
     printf("pointer: %p, ", &n);
     printf("n = %5u,", n);
     printf("n %% 10 = %5u\n", n % 10);
+    return;
+}
+
+void for_example(void){
+    int i, n = 5;
+    //for (i = 0; i <= n; i + 1, i + 2){
+    for (i = 0; i <= n; i = i + 1){
+        printf("%d\n", i);
+    }
     return;
 }
