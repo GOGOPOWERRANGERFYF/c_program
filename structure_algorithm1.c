@@ -605,7 +605,6 @@ int series_sum_1(int n){
 //      fib(n+1)=fib(n)+fib(n-1)
 //      T(n+1)≥fib(n+1)
 //      T(n)+T(n-1)+2 ≥ fib(n)+fib(n-1)
-//      T(n-1)+T(n-2)+T(n-1)+2 ≥ fib(n-1)+fib(n-2)+fib(n-1)
 //
 //
 //  用归纳法证明T(n)≥f(n) 运行时间(n)≥斐波那契数列的项(n)
