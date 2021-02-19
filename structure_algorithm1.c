@@ -595,17 +595,16 @@ int series_sum_1(int n){
 //  fib(0)=1, fib(1)=1, fib(2)=2, fib(3)=3, fib(4)=5, fib(5)=8
 //  T(0)=2,   T(1)=2,   T(2)=6,   T(3)=10,   T(4)=18,   T(5)=30
 //
-//  归纳法证明T(N)≥Fib(N)
 //    T(n)=T(n-1)+T(n-2)+2    
 //    fib(n)=fib(n-1)+fib(n-2) 
+//  归纳法证明T(N)≥Fib(N)
 //  1.基准情形base case: T(n)≥fib(n)
-//      T(0)=2 T(1)=2 fib(0)=1 fib(1)=1
-//      T(0)≥fib(0) 
-//      T(1)≥fib(1)
-//    T(2)≥fib(2)
-//    T(1)+T(0)+2 ≥ fib(1)+fib(0)
-//    T(n)≥fib(n) 在n∈[0,n]成立
-//    
+//    T(0)=2 T(1)=2 fib(0)=1 fib(1)=1
+//    T(0)≥fib(0) 
+//    T(1)≥fib(1)
+//      T(1)+T(0)+2 ≥ fib(1)+fib(0)
+//      T(2)≥fib(2)
+//      假设 T(n)≥fib(n) 在n∈[0,n]成立
 //  2.证明T(n+1)≥fib(n+1)  
 //      T(n+1)=T(n)+T(n-1)+2    
 //      fib(n+1)=fib(n)+fib(n-1)
